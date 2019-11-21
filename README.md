@@ -2,7 +2,7 @@
 Anda mengetahui aplikasi `lapor` yang dibuat oleh pemerintah republik indonesia? jika tidak silahkan kunjungi 
 http://lapor.go.id, maka anda akan mendapatkan laman seperti gambar di bawah
 
-![](tampilan/lapor.png)
+![](tampilan-acuan/lapor.png)
 
 Kali ini kita akan membuat aplikasi web seperti `lapor` untuk mengumpulkan laporan/komentar terkait layanan
 di program studi teknik informatika ITERA.
@@ -47,7 +47,7 @@ Anda diminta untuk membuat tampilan sedemikian hingga mirip dengan tampilan beri
 responsive. Desain tampilan tidak perlu dibuat indah. Icon dan jenis font tidak harus sama dengan contoh. Warna font, 
 garis pemisah, dan perbedaan ukuran font harus terlihat sesuai contoh. Perhatikan juga tata letak elemen-elemen.
 
-![](tampilan/utama.png)
+![](tampilan-acuan/utama.png)
 - Search bar diletakkan di bagian paling atas dibawah judul.
 - Tombol "cari" berada di sebelah kanan search bar.
 - **Buat LAPOR!** digunakan untuk mengirimkan laporan/komentar baru.
@@ -55,12 +55,12 @@ garis pemisah, dan perbedaan ukuran font harus terlihat sesuai contoh. Perhatika
 - Tampilan pertanyaan tidak harus urut berdasarkan "Laporan/Komentar terakhir", 
 namun tulisan "Laporan/komentar Terakhir" ini harus ada.
 
-![](tampilan/buat.png)
+![](tampilan-acuan/buat.png)
 - Tampilan di atas digunakan untuk mengajukan atau mengubah laporan/komentar.
 - Perhatikan label dari field pada form berada di dalam field (tidak di luar)
 - Apek yang dilaporkan ditampilkan dalam bentuk `select`
 
-![](tampilan/detail.png)
+![](tampilan-acuan/detail.png)
 - Bagian ini menampilkan laporan/komentar. Bagian `datetime` harus ada. Tanda `kuote` tidak harus ada
 - Perhatikan label dari field pada form berada di dalam field (tidak di luar)
 
