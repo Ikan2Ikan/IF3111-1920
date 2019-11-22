@@ -1,0 +1,56 @@
+
+.container{
+	margin:auto;
+	margin-top: 50px;
+	width: 900px;
+	background-color: #eee;
+	padding: 10px;
+	border-radius: 10px; 
+}
+
+.container h1{
+	text-align:center;
+	top:30px;
+	left:50%;
+	margin-bottom: 25px;
+	font-size: 48px;
+}
+
+.container form input{
+	border-radius: 10px;
+	margin-right: -6px;
+	width: 500px;
+	height: 25px;
+	margin-left:20%;
+}
+
+.container form button{
+	border-radius: 10px;
+	width: 50px;
+	height: 30px;
+}
+
+.container h3{
+	 text-align: center; 
+	 margin-top: 5px; 
+	 margin-bottom: 50px;
+}
+
+.container .lampiran{
+	float: left;
+}
+
+.container .waktu , .container .detail{
+	float: right;
+}
+
+.container a{
+	text-decoration: none; 
+	color: black;
+}
+
+.container a:hover{
+	text-decoration: none; 
+	color: red;
+	background-color: black;
+}
