@@ -9,6 +9,7 @@
 </head>
 
 <body>
+  <h1>Halo,<?= $nama; ?> !</h1>
   <label for="username">username</label>
   <input type="text" name="username" id="username" placeholder="username">
   <br>
