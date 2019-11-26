@@ -10,11 +10,11 @@ class Auth extends CI_Controller
 
   private function _login()
   {
-    $username = $this->input->post('username');
+    $fullname = $this->input->post('fullname');
     $password = $this->input->post('password');
 
     // cek email terdaftar
-    $user = $this->db->get_where('user', ['username' => $username])->result_array()[0];
+    $user = $this->db->get_where('user', ['fullname' => $fullname])->result_array()[0];
     var_dump($user);
     if ($user) {
       if (password_verify($password, $user['password'])) {
