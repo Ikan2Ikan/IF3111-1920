@@ -1,5 +1,7 @@
 <div class="content">
     <h1>SIMPLE LAPOR!</h1>
+    <!-- Contoh pake fontawesome -->
+    <i class="fa fa-plus-circle" aria-hidden="true"></i>
 
     <div class="head">
         Buat Laporan/Komentar
