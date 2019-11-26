@@ -1,6 +1,6 @@
   <form action="<?= base_url('auth/register') ?>" method="post">
-    <label for="username">username</label>
-    <input type="text" name="username" id="username" placeholder="username">
+    <label for="fullname">Full Name</label>
+    <input type="text" name="fullname" id="fullname" placeholder="Full Name">
     <br>
     <label for="email">email</label>
     <input type="text" name="email" id="email" placeholder="email">

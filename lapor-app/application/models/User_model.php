@@ -16,7 +16,7 @@ class User_model extends CI_model
   {
     $data = [
       'user_id' => '',
-      'username' => htmlspecialchars($this->input->post('username', true)),
+      'fullname' => htmlspecialchars($this->input->post('fullname', true)),
       'password' => password_hash($this->input->post('password', true), PASSWORD_DEFAULT),
       'image' => "default.jpg",
       'email' => htmlspecialchars($this->input->post('email', true)),
