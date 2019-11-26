@@ -16,7 +16,7 @@ header h1 {
 #search-bar {
 	display: inline-block;
 	width: 80%;
-	height: 60px;
+	height: 10%;
 	border-style: solid;
 	border-color: lightgrey;
 	border-top-left-radius: 5px;
@@ -27,8 +27,8 @@ header h1 {
 
 #search-button {
 	display: inline-block;
-	height: 60px;
-	width: 130px;
+	height: 10%;
+	width: 10%;
 	background-color: rgb(255, 42, 113);
 	color: whitesmoke;
 	border: none;
@@ -56,6 +56,19 @@ header h1 {
 	font-size: 15px;
 	text-decoration: none;
 	color: black;
+}
+
+.laporan-terakhir {
+	margin-left: 4.7vw;
+	margin-right: 4.7vw;
+}
+
+.laporan-terakhir p {
+	font-size: 15px;
+}
+
+.laporan-terakhir hr {
+	border: 1px solid lightgrey;
 }
 
 footer {

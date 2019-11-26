@@ -8,3 +8,7 @@
 <div class="lapor">
     <a href="#">Buat Laporan/Komentar</a>
 </div>
+<div class="laporan-terakhir">
+    <p>Laporan/Komentar Terakhir</p>
+    <hr>
+</div>
