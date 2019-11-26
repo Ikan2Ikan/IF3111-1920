@@ -18,17 +18,20 @@
         <br>
 
         <div class="aspect">
-            <select name="file_aspect">
+            <select name="aspect">
                 <option default>Pilih Aspek Pelaporan/Komentar</option>
-                <option>Infrastruktur</option>
-                <option>Ekomoni</option>
+                <option value="Dosen">Dosen</option>
+                <option value="Staff">Staff</option>
+                <option value="Mahasiswa">Mahasiswa</option>
+                <option value="Infrastruktur">Infrastruktur</option>
+                <option value="Pengajaran">Pengajaran</option>
             </select>
         </div>
 
         <br>
 
         <div class="file">
-            <input class="file_in" type="file" name="doc">
+            <input class="file_in" type="file" name="lampiran">
         </div>
 
         <br>
