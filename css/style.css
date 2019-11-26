@@ -1,44 +1,52 @@
-body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+body {
+	font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-header{
-    display: block;
-    height: 100px;
-    text-align: center;
+header {
+	display: block;
+	height: 100px;
+	text-align: center;
 }
 
-header h1{
-    line-height: 100px;
+header h1 {
+	line-height: 100px;
+	font-weight: 600;
 }
 
-#search-bar{
-    display: inline-block;
-    width: 80%;
-    height: 40px;
-    border-style: solid;
-    border-color: lightgrey;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
+#search-bar {
+	display: inline-block;
+	width: 80%;
+	height: 60px;
+	border-style: solid;
+	border-color: lightgrey;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	padding: 10px;
+	font-size: 15px;
 }
 
-#search-button{
-    display: inline-block;
-    height: 40px;
-    width: 50px;
-    background-color: darkblue;
-    color: whitesmoke;
-    border: none;
-    position: relative;
-    left: -6px;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+#search-button {
+	display: inline-block;
+	height: 60px;
+	width: 130px;
+	background-color: rgb(255, 42, 113);
+	color: whitesmoke;
+	border: none;
+	position: relative;
+	left: -6px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	font-size: 15px;
 }
 
-.searchbar{
-    text-align: center;
+#search-button:hover {
+	background-color: rgb(255, 92, 146);
 }
 
-.lapor{
-    text-align: center;
+.searchbar {
+	text-align: center;
+}
+
+.lapor {
+	text-align: center;
 }
