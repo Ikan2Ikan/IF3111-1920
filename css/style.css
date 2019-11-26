@@ -7,3 +7,38 @@ header{
     height: 100px;
     text-align: center;
 }
+
+header h1{
+    line-height: 100px;
+}
+
+#search-bar{
+    display: inline-block;
+    width: 80%;
+    height: 40px;
+    border-style: solid;
+    border-color: lightgrey;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+#search-button{
+    display: inline-block;
+    height: 40px;
+    width: 50px;
+    background-color: darkblue;
+    color: whitesmoke;
+    border: none;
+    position: relative;
+    left: -6px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.searchbar{
+    text-align: center;
+}
+
+.lapor{
+    text-align: center;
+}
