@@ -1,9 +1,5 @@
     <footer>
-        <p>Dikembangkan oleh: <br></p>
-        <ol>
-            <li>Riwandy (14117098)</li>
-            <li>Jefri Manurung (14117107)</li>
-        </ol>
+        <p>Copyright &copy 2019 | Riwandy (14117098) | Jefri Manurung (14117107).</p>
     </footer>
 </body>
 </html>
