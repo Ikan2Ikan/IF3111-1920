@@ -16,10 +16,10 @@ class User_model extends CI_model
   {
     $data = [
       'user_id' => '',
-      'username' => $this->input->post('username'),
-      'password' => password_hash($this->input->post('password'), PASSWORD_BCRYPT),
-      'image' => 'default.jpg',
-      'email' => $this->input->post('email'),
+      'username' => htmlspecialchars($this->input->post('username', true)),
+      'password' => password_hash($this->input->post('password', true), PASSWORD_DEFAULT),
+      'image' => "default.jpg",
+      'email' => htmlspecialchars($this->input->post('email', true)),
       'role_id' => 1
     ];
     $this->db->insert('user', $data);

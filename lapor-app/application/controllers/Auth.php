@@ -8,6 +8,24 @@ class Auth extends CI_Controller
     // $this->load->library('database');
   }
 
+  private function _login()
+  {
+    $username = $this->input->post('username');
+    $password = $this->input->post('password');
+
+    // cek email terdaftar
+    $user = $this->db->get_where('user', ['username' => $username])->result_array()[0];
+    var_dump($user);
+    if ($user) {
+      if (password_verify($password, $user['password'])) {
+        redirect('home');
+      }
+    } else {
+      // redirect('auth/register');
+      echo "user tidak ada";
+    }
+  }
+
   public function index()
   {
     $data['title'] = "User Login";
@@ -15,24 +33,29 @@ class Auth extends CI_Controller
     $this->load->view('templates/header', $data);
     $this->load->view('auth/login', $data);
     $this->load->view('templates/footer', $data);
-    // $username = $this->input->post('username');
-    // $password = $this->input->post('password');
-    // $result = $this->db->get_where('user', ['username' => $username])->result_array();
-    // var_dump($result);
+
+    $this->_login();
   }
 
   public function register()
   {
     $data['title'] = "Register page";
-    $data['username'] = $this->input->post('username');
     $this->load->view('templates/header', $data);
     $this->load->view('auth/register', $data);
     $this->load->view('templates/footer', $data);
-  }
 
-  public function insert()
-  {
-    $this->User_model->insertUserData();
-    redirect('user');
+    // $data = [
+    //   'user_id' => '',
+    //   'username' => htmlspecialchars($this->input->post('username', true)),
+    //   'password' => password_hash($this->input->post('password'), PASSWORD_DEFAULT),
+    //   'image' => "default.jpg",
+    //   'email' => htmlspecialchars($this->input->post('email', true)),
+    //   'role_id' => 1
+    // ];
+
+    if (isset($_POST['register'])) {
+      $this->User_model->insertUserData();
+      redirect('auth');
+    }
   }
 }

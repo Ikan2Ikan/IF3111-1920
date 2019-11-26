@@ -1,4 +1,4 @@
-  <form action="<?= base_url() ?>user/insert" method="post">
+  <form action="<?= base_url('auth/register') ?>" method="post">
     <label for="username">username</label>
     <input type="text" name="username" id="username" placeholder="username">
     <br>
@@ -11,6 +11,6 @@
     <label for="password2">ulangi password</label>
     <input type="password" name="password2" id="password2" placeholder="ulangi password">
     <br>
-    <button type="submit">Login</button>
+    <button type="submit" name="register">Register</button>
   </form>
   <a class="small" href="<?= base_url('auth') ?>">Already have an account? Login!</a>
