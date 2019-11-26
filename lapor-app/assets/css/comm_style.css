@@ -1,4 +1,34 @@
-.head {
+hr {
+	border: 0.5px solid black;
+}
+
+.content {
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+.content h1 {
 	text-align: center;
-	color: red;
+}
+
+.content .main textarea {
+	width: 100%;
+	height: 250px;
+	padding: 6px;
+	border: 0.5px solid black;
+}
+
+.content .aspect select {
+	padding: 6px;
+	border: 0.5px solid black;
+}
+
+.content .btn_submit {
+	float: right;
+}
+
+.content .btn_submit button {
+	background: transparent;
+	padding: 6px;
+	border: 0.5px solid black;
 }
