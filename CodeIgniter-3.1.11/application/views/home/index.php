@@ -15,7 +15,7 @@
 		<button type="submit" name="submit"> CARI </button>
 	</form>
 
-	<a href="" ><h3>Buat Laporan / Komentar</h3></a>
+	<a href="buatlaporan.html" ><h3>Buat Laporan / Komentar</h3></a>
 	<h4>Laporan / Komentar Terakhir</h4>
 	<hr />
 	
