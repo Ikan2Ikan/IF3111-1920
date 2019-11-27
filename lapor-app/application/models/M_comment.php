@@ -21,7 +21,7 @@ class M_comment extends CI_Model
 
   public function showAllComments()
   {
-    $data = $this->db->get('comment')->result_array();
+    $data = $this->db->query("select * from user natural join comment natural join user_role")->result_array();
     return $data;
   }
 }

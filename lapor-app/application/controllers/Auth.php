@@ -5,20 +5,25 @@ class Auth extends CI_Controller
   {
     parent::__construct();
     $this->load->model('User_model');
-    // $this->load->library('database');
   }
 
   private function _login()
   {
-    $fullname = $this->input->post('fullname');
+    $email = $this->input->post('email');
     $password = $this->input->post('password');
 
     // cek email terdaftar
-    $user = $this->db->get_where('user', ['fullname' => $fullname])->result_array()[0];
-    var_dump($user);
+    $user = $this->db->get_where('user', ['email' == $email])->result_array()[0];
     if ($user) {
       if (password_verify($password, $user['password'])) {
-        redirect('home');
+        $user_data = $this->db->query('select * from user natural join comment natural join user_role')->result_array()[0];
+        // var_dump($user_data['user_id']);
+        // die;
+
+        $this->session->set_userdata('logged_in', true);
+        $this->session->set_userdata('id', $user_data['user_id']);
+        $this->session->set_userdata('fullname', $user_data['fullname']);
+        redirect(base_url('home/user_logged_in'));
       }
     } else {
       // redirect('auth/register');
