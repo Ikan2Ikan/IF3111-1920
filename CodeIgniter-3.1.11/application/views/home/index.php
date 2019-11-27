@@ -15,7 +15,7 @@
 		<button type="submit" name="submit"> CARI </button>
 	</form>
 
-	<a href="<?php echo base_url() ?>index.php/Tambah/index" ><h3>Buat Laporan / Komentar</h3></a>
+	<a href="buatlaporan.html" ><h3>Buat Laporan / Komentar</h3></a>
 	<h4>Laporan / Komentar Terakhir</h4>
 	<hr />
 	
@@ -24,7 +24,7 @@
 		<li>
 			<h4 style="margin-bottom: 20px;"><?php echo $value["isi"]; ?></h4>
 			<h4 class="lampiran">Lampiran : foto.jpg</h4>
-			<a href="<?php echo base_url() ?>index.php/Detail/index"><h4 class="detail">Selengkapnya >>></h4></a>
+			<a href=""><h4 class="detail">Selengkapnya >>></h4></a>
 			<h4 class="waktu" style="margin-right: 10px;">Waktu : <?php echo $value["tanggal"]; ?></h4>
 			<div style="clear: both"></div>
 		</li>
@@ -33,10 +33,14 @@
 	<?php } ?>
 	</ul>
 
-	<footer>
-		&copyCopyright 2019 - itera.ac.id
-	</footer>
 </div>
+
+</div>
+
+<div id="footer">
+&copyCopyright 2019 - itera.ac.id
+</div>
+
 
 </body>
 </html>
