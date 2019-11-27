@@ -3,7 +3,7 @@
 	margin-top: 50px;
 	width: 1000px;
 	background-color: whitesmoke;
-	padding: 10px;
+	border:1px solid;
 	padding-top: 25px;
 	padding-bottom: 25px;
 	padding-right: 25px;
@@ -71,6 +71,7 @@ footer {
 	text-align: center;
 	font-weight: bold;
 	width:1000px;
+	margin-top: 50px;
 	}
 
 .container embed{
@@ -78,4 +79,29 @@ footer {
 	margin-bottom:30px; 
 	width: 800px;
 	height: 1000px;
+}
+
+select{
+	margin-top: 30px;
+	margin-bottom: 30px;
+	width: 300px;
+	border:2px solid;
+}
+
+#file{
+	width: 300px;
+	margin-left: 0px;
+	margin-bottom: 30px; 
+}
+
+#submit{
+	float: right;
+	width: 100px;
+	margin-bottom: 30px;
+}
+
+#submit:hover, .container form button:hover{
+	background-color: salmon;
+	color: black;
+	font-weight:bold;
 }
