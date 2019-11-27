@@ -7,5 +7,12 @@ class Page extends CI_Controller {
                 $this->load->view('template/header');
                 $this->load->view('pages/'.$halaman);
                 $this->load->view('template/footer');
-	}
+    }
+    
+    public function add($halaman = 'add'){
+                $this->load->helper('url');
+                $this->load->view('template/header');
+                $this->load->view('pages/'.$halaman);
+                $this->load->view('template/footer');
+    }
 }
