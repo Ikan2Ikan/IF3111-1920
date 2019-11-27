@@ -28,11 +28,19 @@
         <?php foreach ($home as $hm )  :?>
          <?php $id = $hm['id_lapor']; ?>
           <p><?= $hm['id_lapor']; ?> </p>
-          <p><?= $hm['laporan']; ?> </p>
+          <!-- <p><?= $hm['laporan']; ?> </p> -->
+          <p><?php echo substr($hm['laporan'], 0, 30); ?></p>
+	        <!-- <p><a href="<?php echo site_url('news/'.$hm['laporan']); ?>">Read More</a></p> -->
           <p><?= $hm['waktu']; ?> </p>
-          <a class="detail" href="<?php base_url();?>detail">Lihat Selengkapnya </a> <br>
-          <a class="detail" href='detail?detail_id=$id'>Lihat Selengkapnya</a>	
-       
+          <!-- <a class="detail" href="<?php base_url();?>detail" >Lihat Selengkapnya </a> <br> -->
+          <!-- <a class="detail" href='detail?detail_id=<$id '>Lihat Selengkapnya</a><br> -->
+          <?php
+          echo "<tr>
+
+          <a class='detail' href='detail?detail_id=$id' class='btn btn-warning'>Lihat Selengkapnya</a>		
+
+          </tr>";
+        ?>
         <?php endforeach; ?>
       </div>
   </div>
