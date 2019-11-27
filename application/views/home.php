@@ -15,7 +15,7 @@
   <input class="search" type="text" placeholder="Cari..." required>	
   <input class="button" type="button" value="Cari">		
 </form>
-    <a href="">Buat Laporan / Komentar </a>
+    <a href="buat_laporan">Buat Laporan / Komentar </a>
 </body>
 </html>
 
