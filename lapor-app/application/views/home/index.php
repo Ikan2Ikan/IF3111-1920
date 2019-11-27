@@ -1,22 +1,26 @@
-<<<<<<< HEAD
-<!DOCTYPE html>
-<html lang="en">
+<h1>SIMPLE LAPOR!</h1>
+<form action="" method="get">
+  <label for=""></label>
+  <input type="text" name="search" id="search" aria-describedby="helpId" placeholder="Masukkan keyword . . .">
+  <button type="submit" name="cari">cari</button>
+</form>
+<a href="">Buat Laporan/Komentar &plus;</a>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Halaman home</title>
-</head>
-
-<body>
-  <h1>SIMPLE LAPOR!</h1>
-  <div>
-
+<div class="container">
+  <h4>Laporan/Komentar Terkini</h4>
+  <hr>
+  <div class="laporan">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, nostrum est. Natus odit aspernatur quisquam facere. Soluta corporis itaque ipsum enim perferendis, nostrum quos nam dolorem cum! Soluta, necessitatibus cumque.</p>
+    <span><span id="lampiran">Lampiran: </span> <span id="timestamp">21 Nov 2019 | 20:37 WIB</span></span>
+    <hr>
   </div>
-</body>
-
-</html>
-=======
-  <h1>Halaman home</h1>
->>>>>>> a618baab540afdb6f9118414a49ad22f181b9374
+  <?php foreach ($result as $d) :
+    ?>
+    <div class="laporan">
+      <p><?= $d['comm'] ?></p>
+      <span><span id="lampiran"><?= $d['lampiran'] ?> </span> <span id="timestamp"><?= $d['timestamp'] ?> WIB</span></span>
+      <hr>
+    </div>
+  <?php endforeach;
+  ?>
+</div>

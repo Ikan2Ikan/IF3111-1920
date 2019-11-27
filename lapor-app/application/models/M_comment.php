@@ -18,4 +18,10 @@ class M_comment extends CI_Model
     ];
     var_dump($data);
   }
+
+  public function showAllComments()
+  {
+    $data = $this->db->get('comment')->result_array();
+    return $data;
+  }
 }
