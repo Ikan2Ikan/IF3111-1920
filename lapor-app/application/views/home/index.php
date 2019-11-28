@@ -1,29 +1,39 @@
-<h1>SIMPLE LAPOR!</h1>
-<form action="" method="get">
-  <label for=""></label>
-  <input type="text" name="search" id="search" aria-describedby="helpId" placeholder="Masukkan keyword . . .">
-  <button type="submit" name="cari">cari</button>
-</form>
-<a href="<?= base_url('comment') ?>">Buat Laporan/Komentar &plus;</a>
-
 <div class="container">
-  <h4>Laporan/Komentar Terkini</h4>
+
+  <h1>SIMPLE LAPOR!</h1>
+
+  <form action="" method="get">
+    <input type="text" name="search" id="search" aria-describedby="helpId" placeholder="Masukkan Keyword">
+    <button type="submit" name="cari">Cari</button>
+  </form>
+  <br>
+  <a href="<?= base_url('comment') ?>">Buat Laporan/Komentar &plus;</a>
+
+  <h3>Laporan/Komentar Terkini</h3>
   <hr>
-  <div class="laporan">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, nostrum est. Natus odit aspernatur quisquam facere. Soluta corporis itaque ipsum enim perferendis, nostrum quos nam dolorem cum! Soluta, necessitatibus cumque.</p>
-    <span><span id="lampiran">Lampiran: </span> <span id="timestamp">21 Nov 2019 | 20:37 WIB</span></span>
-    <hr>
-  </div>
+
   <?php foreach ($result as $d) :
     ?>
     <div class="laporan">
-      <b>
-        <p><?= $d['fullname'] ?></p>
-      </b>
+
+      <a href="#"><?= $d['fullname'] ?></a>
+
       <p><?= $d['comm'] ?></p>
-      <span><span id="lampiran"><?= $d['lampiran'] ?> </span> <span id="timestamp"><?= $d['timestamp'] ?> WIB</span></span>
+
+      <div class="details">
+        <span>
+          <span id="lampiran"><?= $d['lampiran'] ?> </span>
+          <span id="timestamp"><?= $d['timestamp'] ?> WIB</span>
+        </span>
+
+        <span>
+          <a href="#">Selengkapnya</a>
+        </span>
+      </div>
+
       <hr>
     </div>
   <?php endforeach;
   ?>
+
 </div>
