@@ -1,5 +1,10 @@
 <div class="container">
 
+  <div class="log-reg">
+    <a href="<?= base_url('auth') ?>">Login</a>
+    <a href="<?= base_url('auth/register') ?>">Register</a>
+  </div>
+
   <h1>SIMPLE LAPOR!</h1>
 
   <form action="" method="get">

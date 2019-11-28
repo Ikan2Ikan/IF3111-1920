@@ -7,6 +7,7 @@ if (!$this->session->has_userdata['login']) {
   ";
   redirect(base_url('auth'));
 } ?>
+
 <h1>SIMPLE LAPOR!</h1>
 <h4>Selamat Datang, <?= $this->session->userdata('fullname'); ?></h4>
 <a href="<?= base_url('home/logOut') ?>">Logout</a>

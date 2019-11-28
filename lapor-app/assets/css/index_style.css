@@ -6,6 +6,23 @@
 	display: fix;
 }
 
+.container .log-reg {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.container .log-reg a {
+	padding: 4px;
+	margin-right: 10px;
+	border: 1px solid green;
+	border-radius: 5px;
+}
+
+.container .log-reg a:hover {
+	background: greenyellow;
+	color: green;
+}
+
 .container h1 {
 	text-align: center;
 	color: green;
@@ -19,6 +36,7 @@
 	width: 300px;
 	padding: 5px;
 	border: 1px solid green;
+	border-radius: 10px;
 }
 
 .container form button {
@@ -26,6 +44,7 @@
 	width: 50px;
 	padding: 5px;
 	border: 1px solid green;
+	border-radius: 10px;
 }
 
 .container form button:hover {
