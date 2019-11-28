@@ -8,17 +8,14 @@
     justify-content: center;
 }
 .search {
-    background-image: url("assets/icon/cari.png");
+ 
     margin:10px auto;
     padding:20px;
     width: 100%;
     background: white;
     border:1px solid black;
 }
-.cari{
-    
-  
-}
+
 .button {
     margin:10px auto;
     /* position:relative; */
@@ -27,6 +24,7 @@
     border:1px solid black;
     background-color:white;
     color:black;
+    
 }
 .button:hover  {
     background-color:#fafafa;
@@ -97,13 +95,51 @@ select{
 }
 hr{
     color: black;
-    border: 0.5px solid black;
+    border: 0.8px solid black;
 }
 .detail{
     font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
     font-size: 13px;
     display: flex;
     float: right;
-    text-decoration: none;
+    margin-right: 10px;
     color: black;
+}
+.more{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 13px;
+    display: flex;
+    float: right;
+    color: black;
+
+}
+.waktu{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 13px;
+    display: flex;
+    float: right;
+    margin-right: 15px;
+    color: black;
+
+}
+.arsip{
+    text-align: justify;
+}
+.lampir{
+    /* font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 13px;
+    display: flex;
+    float: left;
+    color: black; */
+}
+ .gambar{
+    padding: 20px; 
+    width: 20px; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
