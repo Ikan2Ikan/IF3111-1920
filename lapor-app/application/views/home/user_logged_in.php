@@ -1,7 +1,6 @@
 <h1>SIMPLE LAPOR!</h1>
 <h4>Selamat Datang, <?= $this->session->userdata('fullname'); ?></h4>
-<a href="<? base_url('home/logOut');
-          redirect(base_url('home')) ?>">Logout</a>
+<a href="<?= base_url('home/logOut') ?>">Logout</a>
 <form action="" method="get">
   <label for=""></label>
   <input type="text" name="search" id="search" aria-describedby="helpId" placeholder="Masukkan keyword . . .">

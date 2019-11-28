@@ -17,6 +17,14 @@ class User_model extends CI_model
       'email' => htmlspecialchars($this->input->post('email', true)),
       'role_id' => 1
     ];
+    // var_dump($data);
+    // die;
     $this->db->insert('user', $data);
+  }
+
+  public function logOut()
+  {
+    $this->session->unset_userdata();
+    redirect(base_url('auth'));
   }
 }
