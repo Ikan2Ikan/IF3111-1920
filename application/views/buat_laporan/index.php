@@ -17,10 +17,11 @@
                 <textarea name="laporan" ></textarea><br>
             <br>
                 <select id="aspek" name="aspek">
-                    <option>Pilih Aspek Pelaporan/Komentar</option>
-                    <option value="pendidikan">Pendidikan</option>
+                    <option value="Dosen">Dosen</option>
+                    <option value="Staff">Staff</option>
+                    <option value="Mahasiswa">Mahasiswa</option>
                     <option value="Infrastruktur">Infrastruktur</option>
-                    <option value="Lingkungan">Lingkungan</option>
+                    <option value="Pengajaran">Pengajaran</option>
                 </select><br>
             
             <br>
