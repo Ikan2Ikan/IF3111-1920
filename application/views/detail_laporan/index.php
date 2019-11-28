@@ -12,9 +12,11 @@
     <p class="subjudul">Detail Laporan / Komentar</p>
     <hr>
 <br>
-<?php foreach ($detail as $hm )  :?>
- <p><?= $hm['laporan']; ?> </p>
- <?php endforeach; ?>
+<div class="arsip">
+    <?php foreach ($detail as $hm )  :?>
+        <p><?= $hm['laporan']; ?> </p>
+    <?php endforeach; ?>
+ </div>
 <br>
     
 <br>
