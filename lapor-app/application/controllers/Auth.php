@@ -42,7 +42,7 @@ class Auth extends CI_Controller
   {
     $data['title'] = "User Login";
     // $data['users'] = $this->User_model->getAllUser();
-    $this->load->view('templates/header', $data);
+    $this->load->view('templates/login_header', $data);
     $this->load->view('auth/login', $data);
     $this->load->view('templates/footer', $data);
 
