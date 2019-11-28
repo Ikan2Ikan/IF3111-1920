@@ -1,10 +1,51 @@
-* {
-	margin: 0;
-	padding: 0;
+div {
+	border: 2px solid green;
+	padding: 20px;
+	margin-left: 500px;
+	margin-right: 500px;
+	margin-top: 140px;
 }
 
 .container {
 	text-align: center;
 }
 
-label {}
+.container button {
+	background: transparent;
+	width: 80px;
+	padding: 6px;
+	border: 1px solid green;
+	color: green;
+	border-radius: 20px;
+}
+
+.container button:hover {
+	background: greenyellow;
+}
+
+.container label {
+	color: green;
+}
+
+.container .fa {
+	color: green;
+}
+
+.container input {
+	border: 1px solid green;
+	border-radius: 15px;
+	padding: 5px;
+}
+
+.container h2 {
+	color: green;
+}
+
+.container a {
+	text-decoration: none;
+	color: green;
+}
+
+.container a:hover {
+	color: greenyellow;
+}
