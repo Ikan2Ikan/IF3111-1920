@@ -1,7 +1,13 @@
 <?php
 class Home_model extends CI_model{
     public function getAllHome(){
-        return $this->db->get('simple_lapor')->result_array();
+        // return $this->db->get('simple_lapor',)->result_array();
+        
+        $this->db->order_by("id_lapor", "desc");
+        return $this->db->get('simple_lapor',4)->result_array();
+        // $query = $this->db->get(); 
+         
+        // return $query->result();
     }
     public function tambahLaporan()
     {
