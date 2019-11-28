@@ -1,12 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-</html>
+<div class="container">
+	<div class="buat-laporan">
+		<!-- <p>Buat Laporan/Komentar</p>
+		<hr> -->
+		<textarea placeholder="Ketik Laporan Anda..."></textarea>
+		<!-- <div class="custom-select">
+			<select name="">
+				<option hidden>Pilih Aspek Pelaporan/Komentar</option>
+				<option value="dosen">Dosen</option>
+				<option value="staff">Staff</option>
+				<option value="mahasiswa">Mahasiswa</option>
+				<option value="infrastruktur">Infrastruktur</option>
+				<option value="pengajaran">Pengajaran</option>
+			</select>
+		</div> -->
+	</div>
+</div>
