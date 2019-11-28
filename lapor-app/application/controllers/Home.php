@@ -6,7 +6,7 @@ class Home extends CI_Controller
     $this->load->model('M_comment');
     $data['result'] = $this->M_comment->showAllComments();
     $data['title'] = "Halaman Utama";
-    $this->load->view('templates/header', $data);
+    $this->load->view('templates/index_header', $data);
     $this->load->view('home/index.php', $data);
     $this->load->view('templates/footer');
   }
@@ -15,7 +15,7 @@ class Home extends CI_Controller
     $this->load->model('M_comment');
     $data['result'] = $this->M_comment->showAllComments();
     $data['title'] = "Halaman Utama";
-    $this->load->view('templates/header', $data);
+    $this->load->view('templates/userloggin_header', $data);
     $this->load->view('home/user_logged_in', $data);
     $this->load->view('templates/footer');
   }
