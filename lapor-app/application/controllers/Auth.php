@@ -9,6 +9,9 @@ class Auth extends CI_Controller
 
   private function _login()
   {
+    if ($this->session->has_userdata('logged_in')) {
+      redirect(base_url('home/user_logged_in'));
+    }
     $email = $this->input->post('email');
     $password = $this->input->post('password');
     // cek email terdaftar
