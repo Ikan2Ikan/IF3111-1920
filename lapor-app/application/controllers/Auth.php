@@ -15,7 +15,7 @@ class Auth extends CI_Controller
     if (isset($_POST['login'])) {
       $user = $this->db->get_where('user', ['email' => $email])->result_array();
 
-      // var_dump($user['']);
+      // var_dump($user);
       // die;
 
       if (!empty($user)) {
@@ -27,7 +27,8 @@ class Auth extends CI_Controller
           $this->session->set_userdata('logged_in', true);
           $this->session->set_userdata('id', $user_data['user_id']);
           $this->session->set_userdata('fullname', $user_data['fullname']);
-
+          // var_dump($this->session->userdata());
+          // die;
           redirect(base_url('home/user_logged_in'));
         } else {
           echo "password salah!";
