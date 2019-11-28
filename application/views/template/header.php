@@ -6,7 +6,7 @@
     <title>LAPOR!</title>
     <link rel = "stylesheet" type = "text/css" href = "<?php echo base_url(); ?>css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
-
+    <script src="<?php echo base_url(); ?>js/script.js"></script>
 </head>
 <body>
     <header>
