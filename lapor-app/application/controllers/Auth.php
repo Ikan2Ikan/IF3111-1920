@@ -11,23 +11,29 @@ class Auth extends CI_Controller
   {
     $email = $this->input->post('email');
     $password = $this->input->post('password');
-
     // cek email terdaftar
-    $user = $this->db->get_where('user', ['email' == $email])->result_array()[0];
-    if ($user) {
-      if (password_verify($password, $user['password'])) {
-        $user_data = $this->db->query('select * from user natural join comment natural join user_role')->result_array()[0];
-        // var_dump($user_data['user_id']);
-        // die;
+    if (isset($_POST['login'])) {
+      $user = $this->db->get_where('user', ['email' => $email])->result_array();
+      // var_dump($user['']);
+      // die;
 
-        $this->session->set_userdata('logged_in', true);
-        $this->session->set_userdata('id', $user_data['user_id']);
-        $this->session->set_userdata('fullname', $user_data['fullname']);
-        redirect(base_url('home/user_logged_in'));
+      if (!empty($user)) {
+        if (password_verify($password, $user[0]['password'])) {
+          $user_data = $this->db->query("select * from user natural join comment natural join user_role where email='$email'")->result_array()[0];
+          // var_dump($user_data);
+          // die;
+
+          $this->session->set_userdata('logged_in', true);
+          $this->session->set_userdata('id', $user_data['user_id']);
+          $this->session->set_userdata('fullname', $user_data['fullname']);
+          redirect(base_url('home/user_logged_in'));
+        } else {
+          echo "password salah!";
+        }
+      } else {
+        // redirect('auth/register');
+        echo "user tidak ada";
       }
-    } else {
-      // redirect('auth/register');
-      echo "user tidak ada";
     }
   }
 

@@ -14,9 +14,10 @@ class M_comment extends CI_Model
       'comment' => $this->input->post('comment'),
       'aspek' => $this->input->post('aspect'),
       'lampiran' => $this->input->post('lampiran'),
-      'user_id' => 10
+      'user_id' => $this->session->userdata('id')
     ];
     var_dump($data);
+    die;
   }
 
   public function showAllComments()

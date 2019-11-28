@@ -19,9 +19,9 @@ class Home extends CI_Controller
     $this->load->view('home/user_logged_in', $data);
     $this->load->view('templates/footer');
   }
-
   public function logOut()
   {
-    $this->session->unset_userdata();
+    $this->session->sess_destroy();
+    redirect(base_url('auth'));
   }
 }
