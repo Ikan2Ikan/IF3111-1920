@@ -1,6 +1,6 @@
 <?php
 var_dump($this->session->userdata());
-if (!$this->session->has_userdata['logged_in']) {
+if (!isset($this->session->userdata['logged_in'])) {
   echo "<script>
         alert('you have not access to this page!')
         </script>
