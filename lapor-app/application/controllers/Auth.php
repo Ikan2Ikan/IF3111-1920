@@ -13,20 +13,20 @@ class Auth extends CI_Controller
     $password = $this->input->post('password');
     // cek email terdaftar
     if (isset($_POST['login'])) {
-      $user = $this->db->get_where('user', ['email' => $email])->result_array();
-
+      $user = $this->db->get_where('user', ['email' => $email])->row_array();
+      // $user_data = "select * from user natural join comment natural join user_role where email='$email'";
       // var_dump($user);
       // die;
 
       if (!empty($user)) {
-        if (password_verify($password, $user[0]['password'])) {
-          $user_data = $this->db->query("select * from user natural join comment natural join user_role where email='$email'")->result_array()[0];
+        if (password_verify($password, $user['password'])) {
+
           // var_dump($user_data);
           // die;
 
           $this->session->set_userdata('logged_in', true);
-          $this->session->set_userdata('id', $user_data['user_id']);
-          $this->session->set_userdata('fullname', $user_data['fullname']);
+          $this->session->set_userdata('id', $user['user_id']);
+          $this->session->set_userdata('fullname', $user['fullname']);
           // var_dump($this->session->userdata());
           // die;
           redirect(base_url('home/user_logged_in'));

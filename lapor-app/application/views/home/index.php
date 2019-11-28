@@ -20,8 +20,10 @@
   <?php foreach ($result as $d) :
     ?>
     <div class="laporan">
-
-      <a href="#"><?= $d['fullname'] ?></a>
+      <a> href="#">
+        <h4><?= $d['comm_title'] ?></h4>
+        <small><?= $d['fullname'] ?></small>
+      </a>
 
       <p><?= $d['comm'] ?></p>
 

@@ -12,6 +12,7 @@ class M_comment extends CI_Model
     $data = [
       'comm_id' => '',
       'timestamp' => date('d M Y | H:i:s'),
+      'comm_title' => $this->input->post('comm_title'),
       'comm' => $this->input->post('comment'),
       'aspek' => $this->input->post('aspect'),
       'lampiran' => $this->input->post('lampiran'),

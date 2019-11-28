@@ -10,7 +10,9 @@
 
     <form method="post" action="#">
 
+
         <div class="main">
+            <input type="text" placeholder="Title" name="comm_title">
             <textarea name="comment" placeholder="Laporan/Komentar"></textarea>
         </div>
 

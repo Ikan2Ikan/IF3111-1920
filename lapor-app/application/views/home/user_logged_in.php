@@ -2,10 +2,10 @@
 var_dump($this->session->userdata());
 if (!isset($this->session->userdata['logged_in'])) {
   echo "<script>
-        alert('you have not access to this page!')
+        alert('you have not access to this page!');
+        window.location.href= '" . base_url('auth') . "'
         </script>
   ";
-  redirect(base_url('auth'));
 }
 ?>
 <h1>SIMPLE LAPOR!</h1>
