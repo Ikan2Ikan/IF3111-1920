@@ -53,7 +53,7 @@ class Auth extends CI_Controller
   public function register()
   {
     $data['title'] = "Register page";
-    $this->load->view('templates/header', $data);
+    $this->load->view('templates/register_header', $data);
     $this->load->view('auth/register', $data);
     $this->load->view('templates/footer', $data);
 
