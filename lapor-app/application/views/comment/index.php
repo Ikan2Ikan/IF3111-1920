@@ -2,11 +2,10 @@
     <h1>SIMPLE LAPOR!</h1>
     <!-- Contoh pake fontawesome -->
     <i class="fa fa-plus-circle" aria-hidden="true"></i>
-
     <div class="head">
         Buat Laporan/Komentar
     </div>
-
+    <i class="fa fa-leaf" aria-hidden="true"></i>
     <hr>
 
     <form method="post" action="#">

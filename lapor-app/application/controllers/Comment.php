@@ -18,7 +18,11 @@ class Comment extends CI_Controller
                 $this->M_comment->addComment();
             }
         } else {
-            echo "login dulu!";
+            echo "<script>
+                    alert('anda belum login!');
+                </script>
+            ";
+            redirect(base_url('auth'));
         }
     }
 }

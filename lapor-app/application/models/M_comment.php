@@ -10,14 +10,14 @@ class M_comment extends CI_Model
   public function addComment()
   {
     $data = [
+      'comm_id' => '',
       'timestamp' => date('d M Y | H:i:s'),
-      'comment' => $this->input->post('comment'),
+      'comm' => $this->input->post('comment'),
       'aspek' => $this->input->post('aspect'),
       'lampiran' => $this->input->post('lampiran'),
       'user_id' => $this->session->userdata('id')
     ];
-    var_dump($data);
-    die;
+    $this->db->insert('comment', $data);
   }
 
   public function showAllComments()
