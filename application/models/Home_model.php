@@ -12,14 +12,14 @@ class Home_model extends CI_model{
     public function tambahLaporan()
     {
         
-			$ekstensi_diperbolehkan	= array('png','jpg','jpeg');
-			$img = $_FILES['myFile']['name'];
-			$x = explode('.', $img);
+			$ekstensi_diperbolehkan	= array('doc','docx','xls','xlsx','ppt','pptx','pdf');
+			$file = $_FILES['myFile']['name'];
+			$x = explode('.', $file);
 			$ekstensi = strtolower(end($x));
 			$ukuran	= $_FILES['myFile']['size'];
             $file_tmp = $_FILES['myFile']['tmp_name'];
             
-            move_uploaded_file($file_tmp, 'foto/'.$img);
+            move_uploaded_file($file_tmp, 'assets/file/'.$file);
 
         date_default_timezone_set("Asia/Jakarta");
         // $tgl = date("Y/m/d H:i:s");
@@ -27,7 +27,7 @@ class Home_model extends CI_model{
         
         $data = [ 
             "laporan" => $this->input->post('laporan',true),
-            "lampiran" => $img,
+            "lampiran" => $file,
             "waktu" => $now,
             "aspek" => $this->input->post('aspek',true)
         ];
