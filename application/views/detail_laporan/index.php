@@ -18,9 +18,9 @@
     <?php endforeach; ?>
  </div>
 <br>
-    
+    <p class="">Lampiran:</p>
 <br>
-
+    <img src="assets/file/'.$file.'" width="500" height="500">
 <br>
 
 <br>
