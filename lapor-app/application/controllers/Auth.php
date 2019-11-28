@@ -14,6 +14,7 @@ class Auth extends CI_Controller
     // cek email terdaftar
     if (isset($_POST['login'])) {
       $user = $this->db->get_where('user', ['email' => $email])->result_array();
+
       // var_dump($user['']);
       // die;
 
