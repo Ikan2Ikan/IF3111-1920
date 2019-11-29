@@ -10,6 +10,9 @@
             Buat Laporan/Komentar
         </a>
         </div>
+        <div class="laporan_terakhir">
+            =lorem()
+        </div>
     </div>
     
 </body>
