@@ -12,9 +12,15 @@
 	<h1>SIMPLE LAPOR !</h1>
     <h4>Buat Laporan/Komentar</h4>
    <hr />
-
-   <form method="post" action="" enctype="">
-	    <textarea rows="16" cols="136" name="isi" form="usrform"></textarea>
+   <?php 
+   date_default_timezone_set('Asia/Jakarta');
+   echo date("Y-m-d H:i:s");
+   if(validation_errors()):
+   echo validation_errors(); 
+   endif;
+	?>
+   <form method="post" action="" enctype="multipart/form-data">
+	    <textarea rows="16" cols="136"  name="isi"></textarea><br \>
 		<select name="aspek">
 			<option>- Pilih Aspek Pelaporan/Komentar -</option>
 			<option value="Dosen">Dosen</option>
