@@ -11,17 +11,17 @@
         </a>
         </div>
         <div class="laporan_terakhir">
-        Laporan/Komentar Terakhir<br>
-        <hr>
-        >Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aut quasi voluptatibus magnam beatae nisi ea, nulla autem ut ipsa odit tempora saepe error culpa ratione asperiores, accusamus harum eum.<br>
-        Lampiran: Gambar.jpg <br>
-        <hr>
-        >Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, ipsam consectetur vel ea quod, odio dolorum atque qui officia, laborum numquam laudantium libero exercitationem ad. Nisi illo assumenda quasi hic! <br>
-        Lampiran: Gambar.doc<br>
-        <hr>
-        >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet ut at, magnam aliquam earum repellat, pariatur praesentium soluta explicabo temporibus iste. Mollitia eveniet id molestias ipsam vel quis sapiente. Eius. <br>
-        Lampiran: Gambar.jpg <br>
-        <hr>
+            Laporan/Komentar Terakhir<br>
+            <hr>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aut quasi voluptatibus magnam beatae nisi ea, nulla autem ut ipsa odit tempora saepe error culpa ratione asperiores, accusamus harum eum.<br><br>
+            Lampiran: Gambar.jpg  <div class="more">Waktu :20-11-2019 20:00 <a href>Lihat selengkapnya</a></div> 
+            <hr><br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aut quasi voluptatibus magnam beatae nisi ea, nulla autem ut ipsa odit tempora saepe error culpa ratione asperiores, accusamus harum eum.<br><br>
+            Lampiran: Gambar.jpg  <div class="more">Waktu :20-11-2019 20:00 <a href>Lihat selengkapnya</a></div> 
+            <hr><br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aut quasi voluptatibus magnam beatae nisi ea, nulla autem ut ipsa odit tempora saepe error culpa ratione asperiores, accusamus harum eum.<br><br>
+            Lampiran: Gambar.jpg  <div class="more">Waktu :20-11-2019 20:00 <a href>Lihat selengkapnya</a></div> 
+            <hr><br>
         </div>
     </div>
     
