@@ -12,7 +12,7 @@ class Home_model extends CI_model{
     public function tambahLaporan()
     {
         
-			$ekstensi_diperbolehkan	= array('jpg','jpeg','png','gif','bmp','doc','docx','xls','xlsx','ppt','pptx','pdf');
+			$ekstensi_diperbolehkan	= array('doc','docx','xls','xlsx','ppt','pptx','pdf');
 			$file = $_FILES['myFile']['name'];
 			$x = explode('.', $file);
 			$ekstensi = strtolower(end($x));

@@ -125,16 +125,6 @@ hr{
     color: black;
 
 }
-.waktu2{
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;
-    font-size: 13px;
-    display: flex;
-    float: left;
-    margin-right: 15px;
-    color: black;
-
-}
 .arsip{
     text-align: justify;
 }
@@ -145,14 +135,6 @@ hr{
     display: flex;
     float: left;
     color: black; */
-}
-.aspek{
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;
-    font-size: 13px;
-    display: flex;
-    margin-left: 13px;
-    color: black;
 }
  .gambar{
     padding: 20px; 
