@@ -31,7 +31,7 @@
     </div>
 
     <div class="buttonlapor">
-    
+    <button type="submit" name="namabuttonlapor" value="nilaibuttonlapor">Buat Lapor!</button>
     </div>
 
 </div>
