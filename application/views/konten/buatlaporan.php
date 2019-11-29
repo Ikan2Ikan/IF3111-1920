@@ -27,11 +27,11 @@
     </div>
 
     <div class="lampiran">
-    <input type="file" src="file"name="namalampiran">
+    <input type="file" src="file"name="namalampiran" id="id-lampiran">
     </div>
 
     <div class="buttonlapor">
-    <button type="submit" name="namabuttonlapor" value="nilaibuttonlapor">Buat Lapor!</button>
+    <button type="submit" name="namabuttonlapor" value="nilaibuttonlapor" id="button-lapor">Buat LAPOR!</button>
     </div>
 
 </div>
