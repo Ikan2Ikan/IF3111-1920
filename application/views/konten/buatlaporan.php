@@ -26,6 +26,14 @@
         </select>
     </div>
 
+    <div class="lampiran">
+    <input type="file" src="file"name="namalampiran">
+    </div>
+
+    <div class="buttonlapor">
+    
+    </div>
+
 </div>
 </body>
 </html>
