@@ -22,8 +22,22 @@
 <br>
     <img src="assets/file/'.$file.'" width="500" height="500">
 <br>
-
 <br>
+<br>
+<br>
+<div class="waktu2">
+    <?php 
+    $date = new DateTime($hm['waktu']);
+    echo 'Waktu : ';
+    echo $date->format('d-m-Y H:i'); // 21-01-2017 05:13:03
+    ?>
+</div> 
+<div class="aspek">
+    <?php
+    echo 'Aspek : '; 
+    echo  $hm['aspek']; 
+    ?>
+</div>
 <hr >
     </div>
     
