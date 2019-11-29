@@ -71,22 +71,23 @@ h1{
 
 #kolom-laporan{
     
-    margin: auto; 
+    margin: 10; 
     padding: 10px;  
 }
 
 #dropdown-buat{
-    
+    margin-top: 20;
     width: 215px;
     height: 25px;
 }
 
 .lampiran{
-
+    margin-top:20;
 
 }
 
 #button-lapor{
+    margin-top:20;
     display: inline-block;
    float: right;
    background: white;
