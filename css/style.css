@@ -70,7 +70,9 @@ h1{
 }
 
 #kolom-laporan{
-    margin: auto;   
+    
+    margin: auto; 
+    padding: 10px;  
 }
 
 #dropdown-buat{

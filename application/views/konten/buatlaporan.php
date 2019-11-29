@@ -15,7 +15,7 @@
 
     
     <div class="buatlaporan">
-        <input type="text" name=" kolomlaporan" id="kolom-laporan">
+       <textarea name="kolomlaporan" id="kolom-laporan" cols="121" rows="10" placeholder="Laporan/Komentar"></textarea>
     </div>
 
     <div class="dropdownbuatlaporan">
