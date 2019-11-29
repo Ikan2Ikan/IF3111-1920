@@ -1,0 +1,68 @@
+/*id -> pagar
+class -> titik*/
+
+.header ul {
+	list-style: none;
+	float: left;
+	padding-left: 100px;
+
+}
+#pilih{
+	padding-left: 288px;
+}
+
+
+#cari input {
+
+	height: 50px;
+	width: 600px;
+
+}
+
+#cari button {
+
+	height: 50px;
+	width: 80px;
+
+}
+/*agar ul li nya menyamping*/
+.header ul li{
+	float: left;
+	padding: 10px;/* mengatur jarak antar menu*/
+
+}
+
+/*khusus button*/
+.header ul li button{
+	float: left;
+	padding: 8px;/* mengatur jarak antar menu*/
+
+}
+
+.header ul li a{
+	text-decoration: none;  /*menghilangkan garis bawah saat diberi link*/
+
+}
+
+#login{
+	padding-left: 1000px;
+}
+
+.clear{
+
+	clear: both;
+}
+textarea{
+	width: 700px;
+	height: 370px;
+}
+#tombol{
+    padding-left: 900px;
+}
+
+.content{
+	width: 800px;
+	height: auto;
+	background: yellow;
+	border: 2px solid;
+}
