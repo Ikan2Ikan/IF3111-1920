@@ -18,9 +18,9 @@
        
 
         <ul>
-        <li><a href="<?php echo base_url() ?>Mahasiswa/tentang_laporan">TENTANG LAPOR</a></li>
+        <li><a href="<?php echo base_url() ?>Halaman_utama/tentang_laporan">TENTANG LAPOR</a></li>
         <!-- controler Mahasiswa dan fungsi detail_laporan -->
-        <li><a href="<?php echo base_url() ?>Mahasiswa/detail_laporan">LAPORAN</a> </li>
+        <li><a href="<?php echo base_url() ?>Halaman_utama">HOME</a> </li>
        </ul>  
      
      <div id="login">
