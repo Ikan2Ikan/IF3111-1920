@@ -20,6 +20,6 @@
 		<span id="custom-text">No file chosen, yet.</span>
 		<br>
 
-		<!-- <button type="button" id="send-button">LAPOR!</button> -->
+		<button type="button" id="send-button">LAPOR!</button>
 	</div>
 </div>
