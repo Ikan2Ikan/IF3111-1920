@@ -194,3 +194,47 @@ textarea {
 }
 
 /*select box */
+/*file upload*/
+#custom-button {
+	padding: 10px;
+	color: grey;
+	background-color: white;
+	border: 1px solid lightgrey;
+	cursor: pointer;
+	font-size: 12px;
+	margin-left: -3vw;
+}
+
+#custom-button:hover {
+	background-color: rgb(255, 92, 146);
+	color: white;
+}
+
+#custom-text {
+	margin-left: 10px;
+	color: grey;
+	font-size: 13px;
+}
+
+/*file upload*/
+/*send button*/
+/* #send-button {
+	padding: 15px;
+	color: white;
+	background-color: rgb(255, 92, 146);
+	border: 0px solid lightgrey;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 12px;
+	margin-right: -3.3vw;
+	float: right;
+	font-weight: bolder;
+}
+
+#send-button:hover {
+	background-color: rgb(255, 42, 113);
+	box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+	color: white;
+} */
+
+/*send button*/
