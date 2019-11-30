@@ -24,7 +24,7 @@
         }
         
         .inputjudul {
-            margin-left: 225px;
+            margin-top: 30px;
             border: white;
             font-size: 15px;
         }
@@ -55,42 +55,47 @@
         }
         
         .opsi {
+            margin-top: -10px;
             font-size: 15px;
-            margin-left: 223px;
-            height: 35px;
-            width: 240px;
+            height: 40px;
+            width: 25%;
         }
         
         .komentar {
-            margin-top: 20px;
-            margin-left: 223px;
             font-size: 15px;
             name="komentar";
-            height: 300px;
-            width: 1455px;
+            height: 400px;
+            width: 100%;
         }
         
         .lampiran {
-            margin-left: 223px;
             color: #C0C0C0;
             font-size: 15px;
             width: 200px;
         }
         
         .submit {
-            margin-left: 1580px;
-            margin-top: 20px;
+            float: right;
             height: 55px;
             font-size: 15px;
+        }
+
+        .hr {
+            margin-top: 28px;
         }
     </style>
 
 <body>
-    <center>
-        <br><br>
-        <p class="judul"> SIMPLE LAPOR!</h1>
-        </p>
-    </center>
+    <table border="0" align="center" width="1000px">
+    <tr>
+        <td>
+        <center>
+            <br><br>
+            <p class="judul"> SIMPLE LAPOR!</h1>
+            </p>
+        </center>
+        </td>
+    </tr>
 </body>
 
 </head>

@@ -5,8 +5,12 @@
 <!DOCTYPE HTML>
 <HTML lang="en-US">
     <body>
-        <input class="inputjudul" [type="text" ]:focus placeholder="Buat Laporan/Komentar" />
-        <hr width="76.5%" color="gray" />
+        <tr>
+            <td>
+                <p> Buat Laporan/Komentar </p>
+                <hr width="100%" color="gray" />
+            </td>
+        </tr>
 
         <!-- <div class="loadkomentar">
             <tr>
@@ -17,27 +21,42 @@
             </tr>
         </div>
         -->
-
-        <p>
-            <textarea class="komentar" placeholder="Laporan/Komentar"></textarea>
-        </p>
-
-        <p>
-            <select class="opsi">
-                <option> Pilih Aspek Pelaporan/Komentar </option>
-                <option> Laporan </option>
-                <option> Komentar </option>
-            </select>
-        </p>
-
-        <p>
-            <input class="lampiran" type="file" name="upload" />
-        </p>
-
-        <p>
-            <input class="submit" type="submit" value="Buat LAPOR!" />
-        </p>
-        
-        <hr width="76.5%" color="gray" />
+        <tr>
+            <td>
+                <p>
+                <textarea class="komentar" placeholder="Laporan/Komentar"></textarea>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                <select class="opsi">
+                    <option> Pilih Aspek Pelaporan/Komentar </option>
+                    <option> Laporan </option>
+                    <option> Komentar </option>
+                </select>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                <input class="lampiran" type="file" name="upload" />
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                <input class="submit" type="submit" value="Buat LAPOR!" />
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <hr width="100%" color="gray" />
+            </td>
+        </tr>
     </body>
 </HTML>
