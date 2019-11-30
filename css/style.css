@@ -218,7 +218,7 @@ textarea {
 
 /*file upload*/
 /*send button*/
-/* #send-button {
+#send-button {
 	padding: 15px;
 	color: white;
 	background-color: rgb(255, 92, 146);
@@ -235,6 +235,6 @@ textarea {
 	background-color: rgb(255, 42, 113);
 	box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
 	color: white;
-} */
+}
 
 /*send button*/
