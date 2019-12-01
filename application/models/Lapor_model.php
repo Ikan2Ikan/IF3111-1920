@@ -3,6 +3,7 @@
 class Lapor_model extends CI_model{
 	//model segala seuatu berhubungan dengan query database
 
+	
 	public function InputContentLaporan(){
 		//data yang akan diinputkan, yang diambil dari post
 		
@@ -22,6 +23,5 @@ class Lapor_model extends CI_model{
 
 	}
 
-	
 }
  ?>

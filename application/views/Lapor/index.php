@@ -42,6 +42,13 @@
 <center>
 <div class="content">
 	<?php foreach ($lapor as $mhs): ?>
+
+	<?php if(!$this->session->userdata('email')==null):  ?>
+       <a href="<?php base_url(); ?>Halaman_utama/HapusData/<?php echo $mhs['komentar_id'] ?>" onclick="return confirm('Anda yakin');">Hapus Laporan</a> |
+
+      	 <a href="<?php base_url(); ?>Halaman_utama/HapusData/<?php echo $mhs['komentar_id'] ?>" onclick="return confirm('Anda yakin');">Ubah</a>  
+	<?php endif; ?>
+
     <ul>
       <li><?php echo $mhs['nama'] ?></li>
       <li><?php  echo "<p>".substr($mhs["komentar"],0,400)."</p>"; ?></li>
@@ -51,9 +58,13 @@
 
       	<a href="<?php echo base_url() ?>Halaman_utama/halaman_selengkapnya/<?php echo $mhs["komentar_id"]; ?>">selengkapnya</a>
 
+      	      
+
+
       </li>
 
     </ul>
+  <br>
 ------------------------------------------------------------------
 ------------------------------------------------------------------
 	<?php endforeach; ?>

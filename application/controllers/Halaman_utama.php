@@ -67,11 +67,24 @@
 	   	}else{
 
 	   		//input kedatabase
+	   		// cek email di database apakah sama dengan apa yang diinputkan
+	   		$cek = $this->db->query("SELECT * FROM user where email='".$this->input->post('email')."'")->num_rows();
+
+	   		if($cek==1){
+
+	   			$this->session->set_flashdata('email-ada',"daftar ulang");
+	    		redirect('Halaman_utama/DaftarAkunLaporan');
+
+	   		}else{
+
 	   		$this->Lapor_model->RegistrasiUser();//fungsi mahasiswa,fungsi berada pada controler, dan file Model_mahasiswa
 	   		$this->session->set_flashdata('flas',"daftar");
 	   		$this->session->set_flashdata('daftar sukses',"suskses daftar");
 	   		redirect('Halaman_utama/Login');//dialihkan lagi ke halaman mahasiswa
 	   	
+
+	   		}
+
 	   	}
 	
 	   	
@@ -123,12 +136,21 @@
 		$this->session->sess_destroy();
 		redirect('Halaman_utama/login');
 	}
-
+	// parameter $id buat nampung id dari url
 	public function halaman_selengkapnya($id){
+		$data['judul1']  = 'Detail Laporan';
 		$data['lapor'] = $this->Lapor_model->getDataId($id);
 		//folder = Lapor dan file = halaman_selengkapnya
+		$this->load->view('templates/header_daftar_login',$data);
 		$this->load->view('Lapor/halaman_selengkapnya',$data);
 		$this->load->view('templates/footer');
+	}
+	// parameter $id buat nampung id dari url
+	public function HapusData($id){
+
+		$this->Lapor_model->HapusDataLapor($id);
+		$this->session->set_flashdata('hapus berhasil','data hapus ok');
+		redirect('Halaman_utama');
 	}
  
 	}//class
