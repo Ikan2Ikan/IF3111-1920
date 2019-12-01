@@ -28,7 +28,13 @@ class Home extends CI_Controller
 		
 	}
 
-	public function detail(){
-		$this->load->view('detail/index');
+	public function detail($id){
+		$data['lapor'] = $this->Lapor_model->detail($id);
+		$this->load->view('detail/index',$data);
+	}
+
+	public function delete($id){
+		$this->Lapor_model->delete($id);
+		redirect('index.php/Home');
 	}
 }

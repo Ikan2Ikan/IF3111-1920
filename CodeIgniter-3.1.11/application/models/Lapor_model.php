@@ -13,30 +13,36 @@ class Lapor_model extends CI_model
 		$tanggal = date("Y-m-d H:i:s");
 
 		//mengolah file
-		$namafile = $_FILES['File']['name'];
-		$error = $_FILES['File']['error'];
-		$tempat = $_FILES['File']['tmp_name'];
-		$ekstensi=['jpg','jpeg','png','pdf','docx','doc'];
-		$ekstensifile = explode('.',$namafile); //fungsi untuk mecah string dengan pemecah . ,aldi.jpg = ['aldi','jpg']
-		$ekstensifile = strtolower(end($ekstensifile)); 
-		/*
-		strtolower = semua huruf kecil
-		end(array) = untuk ambil value terakhir array
-		*/
-		if(!in_array($ekstensifile, $ekstensi)){ //apakah $ekstensigambar ada di $ekstensi
+		$file = $_FILES['File'];
+		if($file = ''){}else{
+			$config['upload_path'] = './asset/file';
+			$config['allowed_types'] = 'jpg|png|gif|doc|docx|pdf';
 
+			$this->load->library('upload',$config);
+			if(!$this->upload->do_upload('File')){
+				$file = $this->upload->data('file_name');
+			}else{
+				$file = $this->upload->data('file_name');
+			}
 		}
 
-		//jika lolos cek
-		move_uploaded_file($tempat, '<?php echo base_url() ?>/asset/file' . $namafile);
 
 		$data = [
 			"isi" => $this->input->post('isi'),
 			"aspek" => $this->input->post('aspek'),
 			"tanggal" => $tanggal,
-			"file" => $namafile
+			"file" => $file
 		];
 
 		$this->db->insert('lapor', $data);
+	}
+
+	public function detail($id){
+		return $this->db->get_where('lapor', array('id'=>$id))->row_array();
 	}	
+
+	public function delete($id){
+		$this->db->where('id', $id);
+		$this->db->delete('lapor');
+	}
 }

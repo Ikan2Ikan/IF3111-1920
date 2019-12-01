@@ -13,13 +13,11 @@
     <h4>Buat Laporan/Komentar</h4>
    <hr />
    <?php 
-   date_default_timezone_set('Asia/Jakarta');
-   echo date("Y-m-d H:i:s");
    if(validation_errors()):
    echo validation_errors(); 
    endif;
 	?>
-   <form method="post" action="" enctype="multipart/form-data">
+   <?php echo form_open_multipart('index.php/Home/tambah'); ?>
 	    <textarea rows="16" cols="136"  name="isi"></textarea><br \>
 		<select name="aspek">
 			<option>- Pilih Aspek Pelaporan/Komentar -</option>
@@ -32,7 +30,7 @@
 		<input id="file" type="file" name="File"><br />
 		<input id="submit" value="Tambah" type="submit" name="submit">
 		<div style="clear: both;"></div>
-	</form>
+	<?php echo form_close(); ?>
 	<hr>
 	<footer>
 		&copyCopyright 2019 - itera.ac.id
