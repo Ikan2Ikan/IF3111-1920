@@ -125,34 +125,35 @@ hr{
     color: black;
 
 }
+
+.arsip{
+    text-align: justify;
+}
+.lampir{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 13px;
+    display: flex;
+    float: left;
+    color: black;
+}
 .waktu2{
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     font-size: 13px;
     display: flex;
     float: left;
-    margin-right: 15px;
+    margin-right: 20px;
     color: black;
-
-}
-.arsip{
-    text-align: justify;
-}
-.lampir{
-    /* font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;
-    font-size: 13px;
-    display: flex;
-    float: left;
-    color: black; */
 }
 .aspek{
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     font-size: 13px;
     display: flex;
-    margin-left: 13px;
+    float: left;
     color: black;
+    margin-left: 15px;
 }
  .gambar{
     padding: 20px; 
@@ -160,4 +161,9 @@ hr{
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+.gambar2{
+    width: 250px; 
+    height: 250px;
+    
 }
