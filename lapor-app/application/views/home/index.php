@@ -5,14 +5,21 @@
     <a href="<?= base_url('auth/register') ?>">Register</a>
   </div>
 
-  <h1>SIMPLE LAPOR!</h1>
+  <div class="heading-icon">
+    <img src=<?= base_url('assets/img/logoitera.png') ?> alt="ini foto.png">
+    <h1>LAPOR ITERA!</h1>
+  </div>
 
   <form action="" method="get">
     <input type="text" name="search" id="search" aria-describedby="helpId" placeholder="Masukkan Keyword">
     <button type="submit" name="cari">Cari</button>
   </form>
   <br>
-  <a href="<?= base_url('comment') ?>">Buat Laporan/Komentar &plus;</a>
+
+  <div class="com_link">
+    <a href="<?= base_url('comment') ?>">Buat Laporan/Komentar </a>
+    <i class="fa fa-plus-circle" aria-hidden="true"></i>
+  </div>
 
   <h3>Laporan/Komentar Terkini</h3>
   <hr>

@@ -18,6 +18,32 @@
 	border-radius: 5px;
 }
 
+.container .heading-icon {
+	display: flex;
+	justify-content: center;
+}
+
+.container .heading-icon img {
+	padding: 15px;
+	width: 40px;
+	height: 50px;
+}
+
+.container .com_link {
+	display: flex;
+	justify-content: center;
+}
+
+.container .com_link i {
+	padding: 2px;
+	color: green;
+}
+
+.container .com_link i {
+	padding: 2px;
+	color: green;
+}
+
 .container .log-reg a:hover {
 	background: greenyellow;
 	color: green;
