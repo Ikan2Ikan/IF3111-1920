@@ -18,7 +18,22 @@
 		<li>
 			<h4 style="margin-bottom: 20px;"><?php echo $lapor["isi"]; ?></h4>
 			<h4 class="lampiran">Lampiran : </h4><br \>
+
+			<?php 
+				$ekstensifile = explode('.',$lapor["file"]); //fungsi untuk mecah string dengan pemecah . ,aldi.jpg = ['aldi','jpg']
+				$ekstensifile = strtolower(end($ekstensifile));
+				/*
+				strtolower = semua huruf kecil
+				end(array) = untuk ambil value terakhir array
+				*/
+				//echo $ekstensifile;
+				if($ekstensifile == "pdf"){
+			?>
 			<embed src="<?php echo base_url() ?>/asset/file/<?php echo $lapor["file"]; ?>" />
+			<?php } else { ?>
+			<img id="filedetail" style="width: 500px;" src="<?php echo base_url() ?>/asset/file/<?php echo $lapor["file"]; ?>">
+			<?php } ?>
+
 			<div style="clear: both"></div>
 			<a href="<?php echo base_url() ?>index.php/Home/delete/<?php echo $lapor["id"]?>" onclick="return confirm('yakin ingin hapus?');"><h4 class="hapus">Hapus laporan / komentar</h4></a>
 			<h4 class="waktudetail" style="margin-right: 30px;">Waktu : <?php echo $lapor["tanggal"]; ?></h4>

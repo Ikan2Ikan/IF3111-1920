@@ -37,4 +37,9 @@ class Home extends CI_Controller
 		$this->Lapor_model->delete($id);
 		redirect('index.php/Home');
 	}
+
+	public function cari(){
+		$data['lapor'] = $this->Lapor_model->cari(); //getlapor() ada di model Model_lapor
+		$this->load->view('home/index',$data);
+	}
 }

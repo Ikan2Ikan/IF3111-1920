@@ -18,16 +18,17 @@
    endif;
 	?>
    <?php echo form_open_multipart('index.php/Home/tambah'); ?>
-	    <textarea rows="16" cols="136"  name="isi"></textarea><br \>
+	    <textarea rows="16" cols="136" style="width: 800px;" name="isi" ></textarea><br \>
 		<select name="aspek">
-			<option>- Pilih Aspek Pelaporan/Komentar -</option>
+			<option >- Pilih Aspek Pelaporan/Komentar -</option>
 			<option value="Dosen">Dosen</option>
 			<option value="Staff">Staff</option>
 			<option value="Mahasiswa">Mahasiswa</option>
 			<option value="Infrastruktur">Infrastruktur</option>
 			<option value="Pengajaran">Pengajaran</option>
 		</select><br />
-		<input id="file" type="file" name="File"><br />
+		<label>file dalam bentuk gambar / PDF</label><br \>
+		<input id="file" type="file" name="File" ><br />
 		<input id="submit" value="Tambah" type="submit" name="submit">
 		<div style="clear: both;"></div>
 	<?php echo form_close(); ?>

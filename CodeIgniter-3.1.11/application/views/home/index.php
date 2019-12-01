@@ -10,7 +10,7 @@
 
 <div class="container">
 	<h1>SIMPLE LAPOR !</h1>
-	<form action="" method="post">
+	<form action="<?php echo base_url() ?>index.php/Home/cari" method="post">
 		<input type="text" name="cari"> </input>
 		<button type="submit" name="submit"> CARI </button>
 	</form>

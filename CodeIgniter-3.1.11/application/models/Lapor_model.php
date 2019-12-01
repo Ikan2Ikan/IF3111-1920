@@ -16,11 +16,11 @@ class Lapor_model extends CI_model
 		$file = $_FILES['File'];
 		if($file = ''){}else{
 			$config['upload_path'] = './asset/file';
-			$config['allowed_types'] = 'jpg|png|gif|doc|docx|pdf';
+			$config['allowed_types'] = 'jpg|png|gif|pdf';
 
 			$this->load->library('upload',$config);
 			if(!$this->upload->do_upload('File')){
-				$file = $this->upload->data('file_name');
+				echo "gagal";
 			}else{
 				$file = $this->upload->data('file_name');
 			}
@@ -44,5 +44,14 @@ class Lapor_model extends CI_model
 	public function delete($id){
 		$this->db->where('id', $id);
 		$this->db->delete('lapor');
+	}
+
+	public function cari(){
+		$key = $this->input->post('cari');
+		$this->db->like('isi', $key);
+		$this->db->or_like('tanggal', $key);
+		$this->db->or_like('aspek', $key);
+
+		return $this->db->get('lapor')->result_array();
 	}
 }

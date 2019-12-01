@@ -81,6 +81,11 @@ footer {
 	height: 1000px;
 }
 
+#filedetail{ 
+	margin:20px;
+	height: 500px;
+}
+
 select{
 	margin-top: 30px;
 	margin-bottom: 30px;
