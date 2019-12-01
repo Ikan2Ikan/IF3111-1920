@@ -1,13 +1,13 @@
 <?php
 var_dump($this->session->userdata());
-if (!$this->session->has_userdata['login']) {
+if (!isset($this->session->userdata['logged_in'])) {
   echo "<script>
-        alert('you have not access to this page!')
+        alert('you have not access to this page!');
+        window.location.href= '" . base_url('auth') . "'
         </script>
   ";
-  redirect(base_url('auth'));
-} ?>
-
+}
+?>
 <h1>SIMPLE LAPOR!</h1>
 <h4>Selamat Datang, <?= $this->session->userdata('fullname'); ?></h4>
 <a href="<?= base_url('home/logOut') ?>">Logout</a>

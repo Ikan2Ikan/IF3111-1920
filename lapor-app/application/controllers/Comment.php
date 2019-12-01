@@ -16,13 +16,18 @@ class Comment extends CI_Controller
 
             if (isset($_POST['submit'])) {
                 $this->M_comment->addComment();
+                echo "<script>
+                    alert('Report / Comment added successfully!');
+                    window.location.href= '" . base_url('home/user_logged_in') . "'
+                    </script>
+                ";
             }
         } else {
             echo "<script>
                     alert('anda belum login!');
+                    window.location.href=('" . base_url('auth') . "');
                 </script>
             ";
-            redirect(base_url('auth'));
         }
     }
 }
