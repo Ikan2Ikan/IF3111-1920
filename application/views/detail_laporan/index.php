@@ -14,13 +14,15 @@
 <br>
 <div class="arsip">
     <?php foreach ($detail as $hm )  :?>
+        <?php $id = $hm['id_lapor']; ?>
         <p><?= $hm['laporan']; ?> </p>
     <?php endforeach; ?>
  </div>
 <br>
     <p class="">Lampiran:</p>
-<br>
-    <img src="assets/file/'.$file.'" width="500" height="500">
+    <!-- <img src="assets/file/'.$file.'" width="250" height="250"> -->
+    
+    <img src="<?php echo base_url(); ?>assets/icon/email.png" width="250" height="250">
 <br>
 <br>
 <br>
@@ -38,7 +40,16 @@
     echo  $hm['aspek']; 
     ?>
 </div>
-<hr >
+
+            <?php
+                echo "<tr>
+                <a class='more' href='hapus?hapus_id=$id'>Hapus Laporan/Komentar</a>		
+                </tr>";
+            ?>
+<br>
+<hr>
+<br>
+
     </div>
     
 </body>
