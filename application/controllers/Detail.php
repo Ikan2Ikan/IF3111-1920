@@ -4,7 +4,7 @@ class Detail extends CI_Controller{
     public function __construct()
 	{
 		parent::__construct();
-		$this->load->model('Detail_model');
+        $this->load->model('Detail_model');
 		
 	}
     
