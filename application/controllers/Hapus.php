@@ -12,7 +12,7 @@ class Hapus extends CI_Controller{
     public function index()
     {
         $this->Hapus_model->getHapusLaporan();
-        redirect('home');
+        // redirect('home');
      
     }
 }
