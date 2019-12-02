@@ -1,17 +1,20 @@
 <script language='javascript'>
     function validasi(form){
+
         // validasi field laporan/komentar
-        var mincar = 20;
-        if (form.laporan.value.length == 1 && form.laporan.value.length < mincar){
-            alert("Minimal jumlah kata dalam laporan / komentar adalah 20 kata.");
-            form.laporan.focus();
-            return (false);
-        }
+
         if (form.laporan.value == ''){
             alert("Laporan / komentar harus diisi!");
             form.laporan.focus();
             return (false);
         }
+        var mincar = 20;
+        if (form.laporan.value.length < mincar){
+            alert("Minimal jumlah kata dalam laporan / komentar adalah 20 kata.");
+            form.laporan.focus();
+            return (false);
+        }
+        
         // validasi field aspek pelaporan
         if (form.aspek.value =="pilih"){
             alert("Aspek pelaporan harus dipilih!");
