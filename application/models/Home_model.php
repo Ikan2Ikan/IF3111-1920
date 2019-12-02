@@ -34,6 +34,8 @@ class Home_model extends CI_model{
    
 
         $this->db->insert('simple_lapor', $data);
+        echo "<script>alert('Berhasil di buat');</script>";
+        echo "<script>location='home';</script>"; 
 
 
       
