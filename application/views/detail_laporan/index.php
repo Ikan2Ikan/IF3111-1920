@@ -1,3 +1,11 @@
+<script>
+function confirmDelete(delUrl) {
+  if (confirm("Apakah yakin dihapus?")) {
+    document.location = delUrl;
+  }
+}
+</script>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -20,9 +28,10 @@
  </div>
 <br>
     <p class="">Lampiran:</p>
-    <!-- <img src="assets/file/'.$file.'" width="250" height="250"> -->
+
     
     <img src="<?php echo base_url(); ?>assets/icon/email.png" width="250" height="250">
+    <!-- <a href="<?php echo base_url().'index.php/download/lakukan_download' ?>">Download file</a> -->
 <br>
 <br>
 <br>
@@ -43,7 +52,7 @@
 
             <?php
                 echo "<tr>
-                <a class='more' href='hapus?hapus_id=$id'>Hapus Laporan/Komentar</a>		
+                <a class='more' href= javascript:confirmDelete('hapus?hapus_id=$id')>Hapus Laporan/Komentar</a>		
                 </tr>";
             ?>
 <br>
