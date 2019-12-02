@@ -24,7 +24,7 @@ class Buat extends CI_Controller{
         }
         else{
             $this->Home_model->tambahLaporan();
-            redirect('home');
+
         }
     }
 
