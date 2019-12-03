@@ -55,13 +55,6 @@
     <p class="subjudul">Buat Laporan / Komentar</p>
     <hr>
 
-    <?php
-        if(!empty($success_msg)){
-            echo '<p class="statusMsg">'.$success_msg.'</p>';
-        }elseif(!empty($error_msg)){
-            echo '<p class="statusMsg">'.$error_msg.'</p>';
-        }
-    ?>
 
     
         <form action="" method="post" onSubmit="return validasi(this)" enctype="multipart/form-data">
@@ -80,10 +73,10 @@
             <br>
                 <input class="file" id="myFile" type="file" name="myFile"><br>
 
-                <?php echo form_error('myFile','<span class="help-block">','</span>'); ?></p>
+               
             <br>
                 <input class="submit submit1" name="uploadFile" type="submit" value="Buat LAPOR!">
-                <div id="valid_msg">
+              
             <br>
             <hr >
         </form>
