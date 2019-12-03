@@ -31,7 +31,7 @@ function confirmDelete(delUrl) {
 
     
     <img src="<?php echo base_url(); ?>assets/icon/email.png" width="250" height="250">
-    <!-- <a href="<?php echo base_url().'index.php/download/lakukan_download' ?>">Download file</a> -->
+ 
 <br>
 <br>
 <br>
@@ -51,9 +51,11 @@ function confirmDelete(delUrl) {
 </div>
 
             <?php
-                echo "<tr>
-                <a class='more' href= javascript:confirmDelete('hapus?hapus_id=$id')>Hapus Laporan/Komentar</a>		
-                </tr>";
+                echo "
+                <a class='more' href= javascript:confirmDelete('hapus?hapus_id=$id')>Hapus Laporan/Komentar</a>
+               
+                <a class='waktu' href='ubah?ubah_id=$id'>Ubah Laporan/Komentar</a>		
+                ";
             ?>
 <br>
 <hr>
