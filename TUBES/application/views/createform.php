@@ -5,6 +5,7 @@
 <!DOCTYPE HTML>
 <HTML lang="en-US">
     <body>
+    <form action="<?php echo base_url(). 'crud/aksi'; ?>"method="post">
         <tr>
             <td>
                 <p> Buat Laporan/Komentar </p>
@@ -24,14 +25,14 @@
         <tr>
             <td>
                 <p>
-                <textarea class="komentar" placeholder="Laporan/Komentar"></textarea>
+                <textarea name="isi_laporan" class="komentar" placeholder="Laporan/Komentar"></textarea>
                 </p>
             </td>
         </tr>
         <tr>
             <td>
                 <p>
-                <select class="opsi">
+                <select class="opsi" name="kategori">
                     <option> Pilih Aspek Pelaporan/Komentar </option>
                     <option> Laporan </option>
                     <option> Komentar </option>
