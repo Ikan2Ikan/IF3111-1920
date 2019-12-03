@@ -12,11 +12,17 @@
  <body> 
 <p class="judul">SIMPLE LAPOR!</p>
  <div class="lapor">
+
+
     <form class="pencarian">
-      <input class="search" type="text"  required>	
-      <button class="button cari" type="button"> Cari </button>	
-    
+    <?php echo form_open('home/search') ?>
+      <input class="search" type="text" name="keyword">	
+      <button class="button cari" type="submit"> Cari </button>	 
+      <?php echo form_close() ?>  
     </form>
+
+ 
+
     <a class="buat" href="<?php base_url(); ?>buat">Buat Laporan / Komentar </a>
     <p class="subjudul">Laporan/Komentar Terakhir</p>
     <hr>
@@ -24,9 +30,9 @@
     <br>
       
          <?php foreach ($home as $hm )  :?>
-         <?php $id = $hm['id_lapor']; ?>
-         <?php $now = date("Y-m-d H:i"); ?>
-          <!-- <p><?= $hm['id_lapor']; ?> </p> -->
+            <?php $id = $hm['id_lapor']; ?>
+            <?php $now = date("Y-m-d H:i"); ?>
+            
           <div class="arsip"> 
           <p><?php echo substr($hm['laporan'], 0, 450); ?></p>
           </div><br>
