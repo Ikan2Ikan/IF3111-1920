@@ -6,6 +6,7 @@ class Home extends CI_Controller {
 	{
 		parent::__construct();
 		$this->load->model('Home_model');
+		$this->load->helper('form');
 		
 	}
 
@@ -15,7 +16,13 @@ class Home extends CI_Controller {
 		$data ['home'] = $this->Home_model->getAllHome();
 		// $this->load->database();
 		$this->load->view('home/index',$data);
-		
-
+	
+	}
+	public function search()
+	{
+		$data ['judul'] = 'Hasil Pencarian';
+		$keyword = $this->input->post('keyword');
+		$data['cari']=$this->Home_model->get_keyword($keyword);
+		$this->load->view('pencarian/index',$data);
 	}
 }
