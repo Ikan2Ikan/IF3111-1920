@@ -37,10 +37,17 @@ class Home_model extends CI_model{
 
         $this->db->insert('simple_lapor', $data);
         echo "<script>alert('Berhasil di buat');</script>";
-        echo "<script>location='home';</script>"; 
-
-
+        echo "<script>location='home';</script>";
       
+    }
+
+    public function get_keyword($keyword){
+        $this->db->select('*');
+        $this->db->from('simple_lapor');
+        $this->db->like('laporan', $keyword);
+        $this->db->or_like('aspek', $keyword);
+        $this->db->or_like('lampiran', $keyword);
+        return $this->db->get()->result();
     }
 }
 
