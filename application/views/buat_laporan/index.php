@@ -1,6 +1,10 @@
 <script language='javascript'>
     function validasi(form){
+        var inputFile = document.getElementById('myFile');
+        var pathFile = inputFile.value;
+        var ekstensiOk = /(.doc|.docx|.xls|.xlsx|.ppt|.pptx|.pdf)$/i;
 
+     
         // validasi field laporan/komentar
 
         if (form.laporan.value == ''){
@@ -26,6 +30,12 @@
             form.myFile.focus();
             return (false);
         }
+        if(!ekstensiOk.exec(pathFile)){
+            alert('Silakan upload file yang memiliki ekstensi .doc/.docx/.xls/.xlsx/.ppt/.pptx/.pdf');
+            inputFile.value = '';
+            return (false);
+        }
+
         return (true);
     }
     
@@ -44,6 +54,16 @@
     <div class="lapor">
     <p class="subjudul">Buat Laporan / Komentar</p>
     <hr>
+
+    <?php
+        if(!empty($success_msg)){
+            echo '<p class="statusMsg">'.$success_msg.'</p>';
+        }elseif(!empty($error_msg)){
+            echo '<p class="statusMsg">'.$error_msg.'</p>';
+        }
+    ?>
+
+    
         <form action="" method="post" onSubmit="return validasi(this)" enctype="multipart/form-data">
             <br>
                 <textarea name="laporan" ></textarea><br>
@@ -58,9 +78,12 @@
                 </select><br>
             
             <br>
-                <input class="file" type="file" name="myFile"><br>
+                <input class="file" id="myFile" type="file" name="myFile"><br>
+
+                <?php echo form_error('myFile','<span class="help-block">','</span>'); ?></p>
             <br>
-                <input class="submit submit1" type="submit" value="Buat LAPOR!">
+                <input class="submit submit1" name="uploadFile" type="submit" value="Buat LAPOR!">
+                <div id="valid_msg">
             <br>
             <hr >
         </form>
