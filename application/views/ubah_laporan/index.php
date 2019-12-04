@@ -1,4 +1,5 @@
 <script language='javascript'>
+  
     function validasi(form){
         var inputFile = document.getElementById('myFile');
         var pathFile = inputFile.value;
@@ -111,7 +112,7 @@
             <br>
                 <input class="file" id="myFile" type="file" name="myFile" value="<?php echo $file ?>"><br>
             <br>
-                <input class="submit submit1" name="uploadFile" type="submit" value="Buat LAPOR!">
+                <input class="submit submit1"  name="uploadFile" type="submit" value="Buat LAPOR!">
                 <div id="valid_msg">
             <br>
             <hr >
