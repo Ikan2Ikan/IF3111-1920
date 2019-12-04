@@ -18,11 +18,5 @@ class Home extends CI_Controller {
 		$this->load->view('home/index',$data);
 	
 	}
-	public function search()
-	{
-		$data ['judul'] = 'Hasil Pencarian';
-		$keyword = $this->input->post('keyword');
-		$data['cari']=$this->Home_model->get_keyword($keyword);
-		$this->load->view('pencarian/index',$data);
-	}
+
 }
