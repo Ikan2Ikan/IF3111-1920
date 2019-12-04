@@ -46,7 +46,7 @@ class Home_model extends CI_model{
         $this->db->from('simple_lapor');
         $this->db->like('laporan', $keyword);
         $this->db->or_like('aspek', $keyword);
-        $this->db->or_like('lampiran', $keyword);
+        // $this->db->or_like('lampiran', $keyword);
         return $this->db->get()->result();
     }
 }
