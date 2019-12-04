@@ -38,3 +38,33 @@ h1 {
     background-position: center;
     background-size: 20px;
 }
+
+.selengkapnya {
+    float: inline-end;
+    font-size: 13px;
+    border: none;
+    background: none;
+}
+
+.waktu {
+    margin-left: 60%;
+    border: none;
+    background: none;
+    font-size: 13px;
+}
+
+.lampiran{
+    float: left;
+    font-size: 15px;
+}
+.enter{
+    color: white;
+}
+.dot{
+    margin-left: 50%;
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 5px;
+    background: black;
+}
