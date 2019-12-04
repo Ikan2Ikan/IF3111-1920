@@ -14,8 +14,10 @@
  <div class="lapor">
 
     <form class="pencarian">
-      <input class="search" type="text"  required>	
-      <button class="button cari" type="button"> Cari </button>	   
+  
+        <input class="search" type="text" name="keyword">	
+        <button class="button cari" type="submit" href='cari'> Cari </button>	 
+       
     </form>
  
 
@@ -26,40 +28,9 @@
     <br>
       
          <?php foreach ($cari as $hm )  :?>
-            <?php $id = $hm['id_lapor']; ?>
-            <?php $now = date("Y-m-d H:i"); ?>
-            
-          <div class="arsip"> 
-          <p><?php echo substr($hm['laporan']); ?></p>
-          </div><br>
-              <?php
-                echo "<tr>
-                
-                <a class='more' href='detail?detail_id=$id'>Lihat Selengkapnya</a>		
-              
-                
-                </tr>";
-              
-              ?>
-
-              <div class="waktu">
-                <?php 
-                $date = new DateTime($hm['waktu']);
-                echo 'Waktu : ';
-                echo $date->format('d-m-Y H:i'); // 21-01-2017 05:13:03
-                ?>
-              </div> 
-
-              <div class="lampir">
-                <?php
-                echo 'Lampiran:'; 
-                echo  $hm['lampiran']; 
-                ?>
-              </div>
-
-        <br>
-        <hr>
-        <br>
+          <tr>
+				    <td><?php echo $hm['laporan']; ?></td>
+				  </tr>
         <?php endforeach; ?>
         <img class="gambar" src="<?php echo base_url(); ?>assets/icon/menu.png">
         <img class="gambar" src="<?php echo base_url(); ?>assets/icon/menu.png">
