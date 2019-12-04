@@ -15,9 +15,9 @@
 
 
     <form class="pencarian">
-    <?php echo form_open('home/search') ?>
-      <input class="search" type="text" name="keyword">	
-      <button class="button cari" type="submit"> Cari </button>	 
+     <?php echo form_open('home/search') ?>
+        <input class="search" type="text" name="keyword">	
+        <button class="button cari" type="submit"> Cari </button>	 
       <?php echo form_close() ?>  
     </form>
 
