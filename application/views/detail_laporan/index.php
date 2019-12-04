@@ -27,7 +27,7 @@ function confirmDelete(delUrl) {
     <?php endforeach; ?>
  </div>
 <br>
-    <p class="">Lampiran:</p>
+    <p class="arsip">Lampiran:</p>
 
     
     <img src="<?php echo base_url(); ?>assets/icon/email.png" width="250" height="250">
