@@ -15,10 +15,10 @@
 
 
     <form class="pencarian">
-     <?php echo form_open('home/search') ?>
-        <input class="search" type="text" name="keyword">	
+    <?php echo form_open('cari/search') ?>
+        <input class="search" type="text" name="keyword" placeholder="search">	
         <button class="button cari" type="submit"> Cari </button>	 
-      <?php echo form_close() ?>  
+    <?php echo form_close() ?>
     </form>
 
  
