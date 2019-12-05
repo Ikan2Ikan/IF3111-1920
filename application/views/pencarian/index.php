@@ -16,7 +16,7 @@
     <form class="pencarian">
   
         <input class="search" type="text" name="keyword">	
-        <button class="button cari" type="submit" href='cari'> Cari </button>	 
+        <button class="button cari" type="submit" href="<?php base_url(); ?>cari"> Cari </button>	 
        
     </form>
  
@@ -29,7 +29,7 @@
       
          <?php foreach ($cari as $hm )  :?>
           <tr>
-				    <td><?php echo $hm['laporan']; ?></td>
+				    <td><?php echo $hm->laporan ?></td>
 				  </tr>
         <?php endforeach; ?>
         <img class="gambar" src="<?php echo base_url(); ?>assets/icon/menu.png">
