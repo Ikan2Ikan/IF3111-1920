@@ -1,5 +1,5 @@
 <?php
-class Home_model extends CI_model{
+class Cari_model extends CI_model{
     public function getAllHome(){
         // return $this->db->get('simple_lapor',)->result_array();
         
