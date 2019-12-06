@@ -59,7 +59,7 @@
     
         <form action="" method="post" onSubmit="return validasi(this)" enctype="multipart/form-data">
             <br>
-                <textarea name="laporan" ></textarea><br>
+                <textarea name="laporan" placeholder="Laporan/Komentar"></textarea><br>
             <br>
                 <select id="aspek" name="aspek">
                     <option value="pilih" selected>Pilih Aspek Pelaporan/Komentar</option>
