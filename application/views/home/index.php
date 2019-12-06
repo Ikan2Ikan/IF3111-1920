@@ -20,7 +20,7 @@
         <input class="button cari" type="submit" name="submit"  placeholder="cari" value="Cari">	 
     </form>
 
-    <a class="buat" href="<?php base_url(); ?>buat">Buat Laporan / Komentar </a>
+    <a class="buat" href="<?php base_url(); ?>buat">Buat Laporan / Komentar &nbsp<img src="<?php echo base_url(); ?>assets/icon/tambah.png" height="15px"></a>
     <p class="subjudul">Laporan/Komentar Terakhir</p>
     <hr>
     <br>
