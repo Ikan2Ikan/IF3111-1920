@@ -6,21 +6,28 @@ class Cari extends CI_Controller {
 	{
 		parent::__construct();
 		$this->load->model('Cari_model');
-		$this->load->helper(array('form', 'url'));
+		$this->load->helper("url");
+		$this->load->helper("form");
+
+		
+		
 		
 	}
 
-	public function index()
+	public function index() 
 	{
-		$data ['judul'] = 'Hasil Pencarian';
-		$keyword = $this->input->post('keyword');
-		$data['cari']=$this->Cari_model->get_keyword($keyword);
+		if($this->input->post('submit')){
+			$data ['keyword']= $this->input->post('keyword');
+		}
+		else{
+			$data['keyword']= null;
+		}
+		$data ['judul'] = 'Hasil';
+		$data ['cari'] = $this->Cari_model->cariData($data['keyword']);
+		// $this->load->database();
 		$this->load->view('pencarian/index',$data);
+
+
 	}
-	public function search(){
-		$data ['judul'] = 'Hasil Pencarian';
-		$keyword = $this->input->post('keyword');
-		$data['cari']=$this->product_m->get_keyword($keyword);
-		$this->load->view('pencarian/index',$data);
-	}
+ 
 }
