@@ -14,14 +14,11 @@
  <div class="lapor">
 
 
-    <form class="pencarian">
-    <?php echo form_open('cari/search') ?>
-        <input class="search" type="text" name="keyword" placeholder="search">	
-        <button class="button cari" type="submit"> Cari </button>	 
-    <?php echo form_close() ?>
-    </form>
+    <form class="pencarian" action="<?php echo base_url('cari')?>" method="post">
 
- 
+        <input class="search" type="text" name="keyword" placeholder="search" autocomplete="off" autofocus>	
+        <input class="button cari" type="submit" name="submit"  placeholder="cari" value="Cari">	 
+    </form>
 
     <a class="buat" href="<?php base_url(); ?>buat">Buat Laporan / Komentar </a>
     <p class="subjudul">Laporan/Komentar Terakhir</p>
