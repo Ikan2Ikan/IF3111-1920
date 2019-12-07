@@ -13,6 +13,5 @@
             $cari = $_POST["cari"];
             echo $cari;
         ?>
-    
     </body>
 </html>

@@ -11,10 +11,10 @@
         <br>
         <select name="aspek" style="width: 150px">
             Pilih Aspek Pelaporan/Komentar
-            <option value="A">A</option>
-            <option value="B">B</option>
-            <option value="C">C</option>
-            <option value="D">D</option>
+            <option value="1">A</option>
+            <option value="2">B</option>
+            <option value="3">C</option>
+            <option value="4">D</option>
         </select>
         <br>
 
