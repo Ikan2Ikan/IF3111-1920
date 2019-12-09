@@ -1,10 +1,4 @@
-<script>
-function confirmDelete(delUrl) {
-  if (confirm("Apakah yakin dihapus?")) {
-    document.location = delUrl;
-  }
-}
-</script>
+
 
 <html lang="en">
 <head>
@@ -13,6 +7,7 @@ function confirmDelete(delUrl) {
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title><?php echo $judul; ?></title>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css?v=1.1">
+    <script src="assets/js/validasi.js"></script>
 </head>
 <body>
 <p class="judul">SIMPLE LAPOR!</p>

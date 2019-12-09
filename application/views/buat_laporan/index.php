@@ -1,46 +1,20 @@
-<script language='javascript'>
-    function validasi(form){
-        var inputFile = document.getElementById('myFile');
-        var pathFile = inputFile.value;
-        var ekstensiOk = /(.doc|.docx|.xls|.xlsx|.ppt|.pptx|.pdf)$/i;
+<script>
+function tambahdata(){
+    var laporan=$("[name='laporan']").val();
+    var aspek=$("[name='aspek']").val();
+    var file=$("[name='myFile']").val();
 
-     
-        // validasi field laporan/komentar
-
-        if (form.laporan.value == ''){
-            alert("Laporan / komentar harus diisi!");
-            form.laporan.focus();
-            return (false);
+    $.ajax({
+        type:'POST',
+        data:'laporan='+laporan+'&aspek='+aspek+'&myFile='+file,
+        url:'<?php echo base_url().'index.php/buat/tambahdata' ?>',
+        dataType :'json',
+        success: function(hasil){
+            console.log(hasil);
         }
-        var mincar = 20;
-        if (form.laporan.value.length < mincar){
-            alert("Minimal jumlah kata dalam laporan / komentar adalah 20 kata.");
-            form.laporan.focus();
-            return (false);
-        }
-        
-        // validasi field aspek pelaporan
-        if (form.aspek.value =="pilih"){
-            alert("Aspek pelaporan harus dipilih!");
-            return (false);
-        }
-        // validasi field file
-        if (form.myFile.value == ''){    
-            alert ("File tidak boleh kosong!");
-            form.myFile.focus();
-            return (false);
-        }
-        if(!ekstensiOk.exec(pathFile)){
-            alert('Silakan upload file yang memiliki ekstensi .doc/.docx/.xls/.xlsx/.ppt/.pptx/.pdf');
-            inputFile.value = '';
-            return (false);
-        }
-
-        return (true);
-    }
-    
+    });
+}
 </script>
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -48,6 +22,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title><?php echo $judul; ?></title>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css?v=1.1">
+    <script src="assets/js/validasi.js"></script>
+   
 </head>
 <body>
 <p class="judul">SIMPLE LAPOR!</p>
@@ -71,12 +47,15 @@
                 </select><br>
             
             <br>
+         
                 <input class="file" id="myFile" type="file" name="myFile"><br>
-
+          
                
+                
+                  
             <br>
-                <input class="submit submit1" name="uploadFile" type="submit" value="Buat LAPOR!">
-              
+                <input class="submit submit1" name="uploadFile" type="submit" value="Buat LAPOR!"><br>
+                <button class="submit submit1" type="button" onclick="tambahdata()">Buat AJAX</button>
             <br>
             <hr >
         </form>

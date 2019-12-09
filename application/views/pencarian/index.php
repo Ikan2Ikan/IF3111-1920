@@ -7,6 +7,7 @@
        <title><?php echo $judul; ?> </title>
        
      <link rel="stylesheet" type="text/css" href="assets/css/style.css?v=1.1">
+     <script src="assets/js/validasi.js"></script>
      
     </head>
  <body> 
@@ -14,13 +15,13 @@
  <div class="lapor">
 
 
-    <form class="pencarian" action="<?php echo base_url('cari')?>" method="post">
+    <form class="pencarian" onSubmit="return pencarian(this)"  action="<?php echo base_url('cari')?>" method="post">
 
         <input class="search" type="text" name="keyword" placeholder="search" autocomplete="off" autofocus>	
         <input class="button cari" type="submit" name="submit"  placeholder="cari" value="Cari">	 
     </form>
 
-    <a class="buat" href="<?php base_url(); ?>buat">Buat Laporan / Komentar </a>
+    <a class="buat" href="<?php base_url(); ?>buat">Buat Laporan / Komentar &nbsp<img src="<?php echo base_url(); ?>assets/icon/tambah.png" height="15px"></a>
     <p class="subjudul">Laporan/Komentar Terakhir</p>
     <hr>
     <br>
