@@ -23,7 +23,7 @@
        
     </form>
 
-    <a class="buat" href="<?php base_url(); ?>buat">Buat Laporan / Komentar &nbsp<img src="<?php echo base_url(); ?>assets/icon/tambah.png" height="15px"></a>
+    <a class="buat" href="<?php base_url(); ?>buat">Buat Laporan / Komentar &nbsp<img src="assets/icon/tambah.png" height="13px"></a>
     <p class="subjudul">Laporan/Komentar Terakhir</p>
     <hr>
     <br>
@@ -39,7 +39,7 @@
               <?php
                 echo "<tr>
                 
-                <a class='more' href='detail?detail_id=$id'>Lihat Selengkapnya</a>		
+                <a class='more' href='detail?detail_id=$id'>Lihat Selengkapnya  &nbsp<img src='assets/icon/more.png' height=13px></a>		
               
                 
                 </tr>";
