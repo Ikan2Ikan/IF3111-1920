@@ -1,0 +1,32 @@
+body {
+	font-family: constantia;
+	margin: 50px;
+	text-align: center;
+}
+
+body h1{
+	text-align: center;
+}
+
+body form{
+	text-align: center;
+}
+
+body form input{
+	width: 800px;
+	height: 40px;
+	margin-top: 30px;
+	border: 2px solid;
+}
+
+body form button{
+	height: 45px;
+	background-color: white;
+	border: 2px solid;
+}
+
+div a{
+	text-decoration: none;
+	color: black;
+
+}
