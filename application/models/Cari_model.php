@@ -7,7 +7,9 @@ class Cari_model extends CI_model{
 			$this->db->like('laporan', $keyword);
 			$this->db->or_like('aspek',$keyword);
 		}
-		return $this->db->get('simple_lapor')->result_array();
+		$this->db->order_by("id_lapor", "desc");
+
+		return $this->db->get('simple_lapor',4)->result_array();
 		// $cari = $this->input->GET('cari', TRUE);
 		// $data = $this->db->query("SELECT * from simple_lapor where laporan like '%$cari%' ");
 		// return $data->result_array();
