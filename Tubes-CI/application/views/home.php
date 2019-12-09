@@ -9,13 +9,14 @@
         <h1>SIMPLE LAPOR</h1>
         
         <form>
-            <input class="search" type="text" placeholder="" required>	
+            <input class="search" type="text" placeholder="">	
             <input class="button" type="button" value="Cari">		
-        </form>
         
-        <p>Buat Laporan/Komentar</p>
         
+        <p>Buat Laporan/Komentar
+           <button class="button2">'</button>
+        </p>
 
     </body>
-
+</form>
 </html>

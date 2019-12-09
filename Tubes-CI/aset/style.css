@@ -35,3 +35,15 @@ form {
 .button:active {
     background:#9ACD32;
 }
+
+p{
+    text-align: center; 
+    font-size: 15px;
+
+}
+
+.button2{
+    background-image: url(button1.png);
+    width: 20;
+    height: 20;
+}
