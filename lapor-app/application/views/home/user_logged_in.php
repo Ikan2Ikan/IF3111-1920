@@ -8,8 +8,9 @@ if (!isset($this->session->userdata['logged_in'])) {
   ";
 }
 ?>
+
 <h1>SIMPLE LAPOR!</h1>
-<h4>Selamat Datang, <?= $this->session->userdata('fullname'); ?></h4>
+<h2>HAI! <?= $this->session->userdata("fullname"); ?></h2>
 <a href="<?= base_url('home/logOut') ?>">Logout</a>
 <form action="" method="get">
   <label for=""></label>
