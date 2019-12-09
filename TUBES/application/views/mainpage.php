@@ -42,7 +42,7 @@
         <tr>
             <td>
                 Lampiran :<a class="lampiran" ></a>
-                <button class="waktu">Waktu:20-11-2019 20:00</button>
+                <label class="waktu">Waktu:20-11-2019 20:00</label>
                 <input class="selengkapnya" type="submit" value="Lihat Selengkapnya >"/>
                 <hr>
             </td>
