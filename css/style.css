@@ -15,8 +15,8 @@ header h1 {
 
 #search-bar {
 	display: inline-block;
-	width: 80%;
-	height: 10%;
+	width: 50%;
+	height: 7%;
 	border-style: solid;
 	border-color: lightgrey;
 	border-top-left-radius: 5px;
@@ -27,8 +27,8 @@ header h1 {
 
 #search-button {
 	display: inline-block;
-	height: 10%;
-	width: 10%;
+	height: 7%;
+	width: 7%;
 	background-color: rgb(255, 42, 113);
 	color: whitesmoke;
 	border: none;
@@ -58,16 +58,22 @@ header h1 {
 	color: black;
 }
 
+.lapor a:hover {
+	color: rgb(255, 92, 146);
+}
+
 .laporan-terakhir {
-	margin-left: 4.7vw;
-	margin-right: 4.7vw;
+	margin-left: 10vw;
+	margin-right: 10vw;
 }
 
 .laporan-terakhir p {
 	font-size: 15px;
+	margin-bottom: 2vh;
 }
 
 .laporan-terakhir hr {
+	margin-top: -1vh;
 	border: 1px solid lightgrey;
 }
 
@@ -238,3 +244,28 @@ textarea {
 }
 
 /*send button*/
+/*postingan terakhir*/
+.laporan-terakhir p.isi {
+	font-size: 15px;
+}
+
+.laporan-terakhir p.waktu {
+	display: inline-block;
+	margin-left: 52.1vw;
+	margin-right: 1vw;
+	margin-top: -1vh;
+	font-size: 15px;
+}
+
+.laporan-terakhir a {
+	display: inline-block;
+	text-decoration: none;
+	color: black;
+	font-size: 15px;
+}
+
+.laporan-terakhir a:hover {
+	color: rgb(255, 42, 113);
+}
+
+/*postingan terakhir*/
