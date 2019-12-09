@@ -55,7 +55,7 @@ function tambahdata(){
                   
             <br>
                 <input class="submit submit1" name="uploadFile" type="submit" value="Buat LAPOR!"><br>
-                <button class="submit submit1" type="button" onclick="tambahdata()">Buat AJAX</button>
+                <!-- <button class="submit submit1" type="button" onclick="tambahdata()">Buat AJAX</button> -->
             <br>
             <hr >
         </form>
