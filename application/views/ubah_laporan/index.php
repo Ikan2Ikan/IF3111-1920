@@ -1,45 +1,4 @@
-<script language='javascript'>
-  
-    function validasi(form){
-        var inputFile = document.getElementById('myFile');
-        var pathFile = inputFile.value;
-        var ekstensiOk = /(.doc|.docx|.xls|.xlsx|.ppt|.pptx|.pdf)$/i;
 
-        // validasi field laporan/komentar
-
-        if (form.laporan.value == ''){
-            alert("Laporan / komentar harus diisi!");
-            form.laporan.focus();
-            return (false);
-        }
-        var mincar = 20;
-        if (form.laporan.value.length < mincar){
-            alert("Minimal jumlah kata dalam laporan / komentar adalah 20 kata.");
-            form.laporan.focus();
-            return (false);
-        }
-        
-        // validasi field aspek pelaporan
-        if (form.aspek.value =="pilih"){
-            alert("Aspek pelaporan harus dipilih!");
-            return (false);
-        }
-        // validasi field file
-        if (form.myFile.value == ''){    
-            alert ("File tidak boleh kosong!");
-            form.myFile.focus();
-            return (false);
-        }
-        if(!ekstensiOk.exec(pathFile)){
-            alert('Silakan upload file yang memiliki ekstensi .doc/.docx/.xls/.xlsx/.ppt/.pptx/.pdf');
-            inputFile.value = '';
-            return (false);
-        }
-
-        return (true);
-    }
-    
-</script>
 
 <html lang="en">
 <head>
@@ -48,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title><?php echo $judul; ?></title>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css?v=1.1">
+    <script src="assets/js/validasi.js"></script>
 </head>
 <body>
 <?php foreach ($ubah as $hm )  :?>
