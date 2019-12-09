@@ -22,12 +22,14 @@
     </form>
 
     <a class="buat" href="<?php base_url(); ?>buat">Buat Laporan / Komentar &nbsp<img src="<?php echo base_url(); ?>assets/icon/tambah.png" height="15px"></a>
-    <p class="subjudul">Laporan/Komentar Terakhir</p>
+    <p class="subjudul">Hasil Pencarian</p>
     <hr>
     <br>
     <br>
-      
-         <?php foreach ($cari as $hm )  :?>
+    <?php  
+    if($cari != null){
+    ?>
+    <?php foreach ($cari as $hm )  :?>
             <?php $id = $hm['id_lapor']; ?>
             <?php $now = date("Y-m-d H:i"); ?>
             
@@ -62,7 +64,17 @@
         <br>
         <hr>
         <br>
-        <?php endforeach; ?>
+        <?php endforeach; 
+        
+ }else{ ?>
+
+        <div class="data"> 
+        <p> Data Tidak di temukan </p>
+        </div><br>
+
+ <?php } ?>
+
+
         <img class="gambar" src="<?php echo base_url(); ?>assets/icon/menu.png">
         <img class="gambar" src="<?php echo base_url(); ?>assets/icon/menu.png">
         <br>
