@@ -123,3 +123,15 @@
 	justify-content: space-between;
 
 }
+
+.container2 h4 {
+	color: green;
+}
+
+.container2 .laporan a {
+	color: green;
+}
+
+.container2 .laporan a:hover {
+	color: greenyellow;
+}

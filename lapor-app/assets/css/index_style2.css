@@ -91,6 +91,10 @@
 	color: green;
 }
 
+.container .laporan small {
+	font-weight: bold;
+}
+
 .container a:hover {
 	color: greenyellow;
 }

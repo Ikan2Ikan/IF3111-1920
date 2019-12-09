@@ -26,8 +26,8 @@
     ?>
     <div class="laporan">
       <a>
-        <h4><?= $d['comm_title'] ?></h4>
-        <small><?= $d['fullname'] ?></small>
+        <a href="#"><?= $d['comm_title'] ?></a>
+        <small>Pelapor : <?= $d['fullname'] ?></small>
       </a>
 
       <p><?= $d['comm'] ?></p>
