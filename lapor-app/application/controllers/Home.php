@@ -26,6 +26,6 @@ class Home extends CI_Controller
   public function logOut()
   {
     $this->session->sess_destroy();
-    redirect(base_url('auth'));
+    redirect(base_url('home'));
   }
 }

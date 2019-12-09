@@ -14,8 +14,16 @@
     <img src=<?= base_url('assets/img/logoitera.png') ?> alt="ini foto.png">
     <h1>LAPOR ITERA!</h1>
   </div>
-  <h2>HAI! <?= $this->session->userdata("fullname"); ?></h2>
-  <a href="<?= base_url('home/logOut') ?>">Logout</a>
+
+  <div class="nav-bar">
+    <span>
+      <p>HAI! <?= $this->session->userdata("fullname"); ?></p>
+    </span>
+    <span>
+      <a href="<?= base_url('home/logOut') ?>">Logout</a>
+    </span>
+  </div>
+
   <form action="" method="get">
     <label for=""></label>
     <input type="text" name="search" id="search" aria-describedby="helpId" placeholder="Masukkan keyword . . .">

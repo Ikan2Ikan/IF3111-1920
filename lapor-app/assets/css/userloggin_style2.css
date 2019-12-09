@@ -29,19 +29,34 @@
 	height: 50px;
 }
 
-.container .com_link {
+.container .nav-bar {
 	display: flex;
 	justify-content: center;
+	align-items: center;
+	background: green;
+	height: 30px;
+	margin-bottom: 5px;
+	color: whitesmoke;
+	border: 2px solid yellowgreen;
+	justify-content: space-between;
 }
 
-.container .com_link i {
+.container .nav-bar span {
 	padding: 2px;
-	color: green;
 }
 
-.container .com_link i {
-	padding: 2px;
-	color: green;
+.container .nav-bar span p {
+	margin-left: 10px;
+	color: whitesmoke;
+}
+
+.container .nav-bar span a {
+	margin-right: 10px;
+	color: whitesmoke;
+}
+
+.container .nav-bar span a:hover {
+	color: yellowgreen;
 }
 
 .container .log-reg a:hover {
