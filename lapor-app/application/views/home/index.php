@@ -61,11 +61,11 @@
     xhr.onreadystatechange = function() {
       if (xhr.readyState == 4 && xhr.status == 200) {
         console.log('ajax ashiyap!');
-        container.innerHTML = "Ajax Ashiyaap!";
+        // container.innerHTML = "Ajax Ashiyaap!";
       }
     }
     //eksekusi ajax
-    xhr.open('GET', '<?= base_url('home') ?>' + xhr.value, true);
+    xhr.open('GET', '<?= base_url('home'); ?>', true);
     xhr.send();
   })
 </script>
