@@ -11,7 +11,9 @@
 	<p class="footer">
 		<div class="container my-auto">
 		<div class="waktu text-left my-auto">
-		<span>Waktu : <?php echo Date('D-M-Y') ?> &nbsp; Aspek: Infrastruktur Hapus Laporan/Komentar</span>
+		<span>Waktu : <?php date_default_timezone_set('Asia/Jakarta');
+		echo date("d-m-Y H:i") ?> &nbsp; 
+		Aspek: Infrastruktur Hapus Laporan/Komentar</span>
 		</div>
 		</div>
 	</footer>
