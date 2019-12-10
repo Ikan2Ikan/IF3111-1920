@@ -100,8 +100,29 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	   	   	}
 	   		
 	   }
-	  
+	   //Ubah Data Laporan
 
+	   public function UbahDataLaporan($id){
+
+		$data['judul1']  = 'Ubah Laporan';
+		$data['lapor'] = $this->Lapor_model->getDataId($id);
+
+	   		$this->load->view('templates/header',$data);
+			$this->load->view('Lapor/halaman_Ubah_Laporan');//folder dan file
+			$this->load->view('templates/footer');
+
+	   	   	if(isset($_POST['submit'])){
+				//ubah kedatabase
+		   	   	$this->Lapor_model->UbahContentLaporan();//fungsi mahasiswa,fungsi berada pada controler, dan file Model_mahasiswa
+		   		$this->session->set_flashdata('input_laporan',"lapor berhasil");
+		   		redirect('Halaman_utama');//dialihkan lagi ke halaman mahasiswa
+
+	   	   	}
+	   		
+	   	
+	   }
+
+	   
 	   
 	public function logout(){
 		$this->session->sess_destroy();
