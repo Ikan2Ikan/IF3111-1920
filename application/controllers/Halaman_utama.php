@@ -107,7 +107,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		$this->session->sess_destroy();
 		redirect('Halaman_utama/login');
 	}
-	
+	// parameter $id buat nampung id dari url
+	public function halaman_selengkapnya($id){
+		$data['judul1']  = 'Detail Laporan';
+		$data['lapor'] = $this->Lapor_model->getDataId($id);
+		//folder = Lapor dan file = halaman_selengkapnya
+		$this->load->view('templates/header_daftar_login',$data);
+		$this->load->view('Lapor/halaman_selengkapnya',$data);
+		$this->load->view('templates/footer');
+	}
+	// parameter $id buat nampung id dari url
 	public function HapusData($id){
 
 		$this->Lapor_model->HapusDataLapor($id);
