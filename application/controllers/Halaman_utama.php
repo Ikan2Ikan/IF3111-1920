@@ -102,7 +102,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	   }
 	  
 
-	  
+	   
+	public function logout(){
+		$this->session->sess_destroy();
+		redirect('Halaman_utama/login');
+	}
+	
+ 
 	}//class
 
 
