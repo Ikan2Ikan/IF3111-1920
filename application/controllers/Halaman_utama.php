@@ -108,6 +108,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		redirect('Halaman_utama/login');
 	}
 	
+	public function HapusData($id){
+
+		$this->Lapor_model->HapusDataLapor($id);
+		$this->session->set_flashdata('hapus berhasil','data hapus ok');
+		redirect('Halaman_utama');
+	}
  
 	}//class
 
