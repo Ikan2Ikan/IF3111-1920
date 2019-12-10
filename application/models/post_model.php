@@ -4,14 +4,14 @@
             $this->load->database();
         }
 
-        public function get_posts($isi = FALSE){
-            if($isi === FALSE){
+        public function get_posts($id = FALSE){
+            if($id === FALSE){
                 $query = $this->db->get('posts');
                 return $query->result_array();
             }
 
-            $query = $this->db->get_where('posts', array('isi' => $isi));
-            return $query->row_array;
+            $query = $this->db->get_where('posts', array('id' => $id));
+            return $query->row_array();
         }
     }
 ?>

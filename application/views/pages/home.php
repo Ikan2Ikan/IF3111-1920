@@ -12,7 +12,7 @@
         <p class="isi"><?php echo $post['isi']; ?></p>
         <br>
         <p class="waktu">Waktu: <?php echo $post['waktu']; ?></p>
-        <a href="">Lihat Selengkapnya ></a>
+        <a href="<?php echo base_url().'index.php/laporan/'.$post['id'];?>">Lihat Selengkapnya ></a>
         <hr>
     <?php endforeach;?>
 </div>
