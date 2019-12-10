@@ -67,9 +67,9 @@
           </li>
 
           <li>
-<!--           untuk menghiLangkan tombol logut saat user telah login -->
+<!--           untuk menghiLangkan tombol logut saat user telah log out -->
         <?php if(!$this->session->userdata('email')==null):  ?>
-        <a href="<?php echo base_url() ?>Halaman_utama/logout">Logout</a>
+        <a href="<?php echo base_url() ?>Halaman_utama/logout" onclick="return confirm('Anda Yakin Akan keluar');">Logout</a>
         <?php endif; ?>
           </li>
         </ul>
