@@ -8,6 +8,7 @@
                 <?= $laporan_item['laporan']; ?> <br>
                 Lampiran :<?= $laporan_item['lampiran']; ?>
                 <?=  $laporan_item['tanggal']; ?>
+                <a href="<?= site_url('detail/'.$laporan_item['id']); ?>"> Lihat Selengkapnya</a>
                 <hr>
         <?php } ?>
         
