@@ -103,9 +103,9 @@ Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/
 - open folder CodeIgniter dengan code editor ex.Visual Studio Code, Sublime dll.
 - done.
 ##### Koneksi Database
-- download file simple_lapor.sql pada folder database
+- download file **simple_lapor.sql** pada folder database
 - buat database dengan nama **lapor**
-- kemudian import file simple_lapor.sql yang telah didownload
+- kemudian import file **simple_lapor.sql** yang telah didownload
 ##### Validasi Client Side
 
 
