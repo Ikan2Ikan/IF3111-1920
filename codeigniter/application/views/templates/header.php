@@ -10,3 +10,4 @@
 <div>
     <h1>Simple Lapor !</h1>
 </div>
+<hr>
