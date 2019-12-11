@@ -10,7 +10,7 @@
     <h1>LAPOR ITERA!</h1>
   </div>
 
-  <input type="text" name="search" id="search" aria-describedby="helpId" placeholder="Masukkan Keyword">
+  <input type="text" name="keyword" id="keyword" aria-describedby="helpId" placeholder="Masukkan Keyword">
   <button type="submit" name="cari">Cari</button>
   <br>
 
@@ -49,23 +49,4 @@
   ?>
 
 </div>
-
-<script>
-  var search = document.getElementById('search');
-  //jalankan fungsi ketika keyword diketik
-  search.addEventListener('keyup', function() {
-    //buat objek ajax
-    var xhr = new XMLHttpRequest();
-
-    //cek apakah ajax siap dieksekusi
-    xhr.onreadystatechange = function() {
-      if (xhr.readyState == 4 && xhr.status == 200) {
-        console.log('ajax ashiyap!');
-        // container.innerHTML = "Ajax Ashiyaap!";
-      }
-    }
-    //eksekusi ajax
-    xhr.open('GET', '<?= base_url('home'); ?>', true);
-    xhr.send();
-  })
-</script>
+<script src="<?= base_url('assets/js/liveSearch.js') ?>"></script>

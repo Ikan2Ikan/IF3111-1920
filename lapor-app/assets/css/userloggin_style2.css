@@ -135,3 +135,13 @@
 .container2 .laporan a:hover {
 	color: greenyellow;
 }
+
+.container2 .laporan {
+	max-height: 200px;
+}
+
+.container2 .laporan p {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
