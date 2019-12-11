@@ -3,7 +3,7 @@ class -> titik
 css buat index
 */
 body{
-	background: url('background_body.jpg');
+	background: url('background/background_body.jpg');
 	margin: 0px;
 }
 .header{
@@ -81,8 +81,15 @@ textarea{
 	background: #90EE90;
 	border: 1px solid;
 }
+.content a{
+	text-decoration: none;
+}
 #tambah_laporan{
-	padding-top: 100px;
+	padding-top: 60px;
+
+}
+#tambah_laporan img{
+	width: 150px;
 
 }
 #nama{
@@ -106,4 +113,11 @@ textarea{
 	margin-left: 90px;
 	margin-right: 20px;
 	text-align: center;
+}
+h2{
+	color: red;
+}
+
+h3{
+	color: green;
 }
