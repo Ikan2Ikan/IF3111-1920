@@ -97,6 +97,13 @@ Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/
 
 ### Penjelasan Teknis
 `Silakan isi bagian ini dengan penjelasan anda, sesuai Petunjuk Pengerjaan di atas.`
+INSTALASI FRAMEWORK
+- download file CodeIgniter pada halaman https://codeigniter.com/
+- ekstrak dan install / paste  file CodeIgniter Framework ke direktori C:/xampp/htdocs
+- open folder CodeIgniter dengan code editor ex.Visual Studio Code, Sublime dll.
+- done.
+
+
 
 ### Knowledge
 Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaikan tugas ini.
