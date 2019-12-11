@@ -51,25 +51,45 @@
 		<?php endif; ?>
 
     <ul>
-      <li><?php echo $mhs['nama'] ?></li>
-      <li><?php  echo "<p>".substr($mhs["komentar"],0,400)."</p>"; ?></li>
+    <div id="nama">
+    	<b><p>
+    	Kiriman Oleh :
+    	 <?php echo $mhs['nama'] ?>
+     	</p></b>
+    </div> <!-- end nama -->
+
+    <div id="waktu">
+    	 <b><p>
+    	 	<?php echo $mhs['waktu'] ?>
+    	 </p></b>
+    </div> <!-- end waktu -->
+   
+    <br><br>
+
+    <div id="lampiran">
+
       <!-- agar yang bukan png atau gambar tidak tampil -->
-      <?php if($data = substr($mhs['lampiran'],-3) == 'png' || $data = substr($mhs['lampiran'],-3) == 'jpg' ) : ?><br><br>
-    <li><img src="<?php echo base_url().'lampiran/'.$mhs['lampiran'] ?>" height="60px" widht="60px"></li>
+    <?php if($data = substr($mhs['lampiran'],-3) == 'png' || $data = substr($mhs['lampiran'],-3) == 'jpg' ) : ?><br><br>
+     	 <img src="<?php echo base_url().'lampiran/'.$mhs['lampiran'] ?>" height="80px" widht="80px">
 	<?php elseif($data = substr($mhs['lampiran'],-3) == 'pdf'): ?>
-		<a href="<?php echo base_url().'lampiran/'.$mhs['lampiran'] ?>" target="blank"> view</a> 
+		Lihat File PDF :
+		<a href="<?php echo base_url().'lampiran/'.$mhs['lampiran'] ?>" target="blank"> view</a>
+	<?php elseif($data = substr($mhs['lampiran'],-4) == 'docx'): ?>
+		File Docx :
+		<a download="#" href="<?php echo base_url().'lampiran/'.$mhs['lampiran'] ?>" target="blank"> Download</a>
+	<?php elseif($mhs['lampiran'] == ''): ?>
+		Tidak Ada File Terlampir!
 	<?php endif; ?>
+		
 
-
-      <li><?php echo $mhs['waktu'] ?></li>
-      <li>
-
-      	<a href="<?php echo base_url() ?>Halaman_utama/halaman_selengkapnya/<?php echo $mhs["komentar_id"]; ?>">selengkapnya</a>
-
-      	      
-
-
-      </li>
+    </div> <!-- end lampiran -->
+    <br>
+ 	<div id="komentar">  
+ 	<p>  
+      <?php  echo "<p>".substr($mhs["komentar"],0,400)."</p>"; ?>
+    </p>
+      <a href="<?php echo base_url() ?>Halaman_utama/halaman_selengkapnya/<?php echo $mhs["komentar_id"]; ?>">selengkapnya......</a>
+    </div> <!-- end komentar -->
 
     </ul>
   <br>

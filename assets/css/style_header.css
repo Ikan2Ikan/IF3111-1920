@@ -85,4 +85,25 @@ textarea{
 	padding-top: 100px;
 
 }
-
+#nama{
+	float: left;
+	font-weight: 10px;
+	font-size: 16px;
+}
+#lampiran{
+	position: absolute;
+}
+#waktu{
+	float: right;
+	font-weight: 10px;
+	font-size: 16px;
+	padding-right: 40px;
+}
+#komentar a{
+	text-decoration: none;
+}
+#komentar p{
+	margin-left: 90px;
+	margin-right: 20px;
+	text-align: center;
+}
