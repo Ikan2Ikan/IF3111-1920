@@ -123,7 +123,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	   }
 
 	   
-	    
 
 	public function logout(){
 		$this->session->sess_destroy();
@@ -134,7 +133,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		$data['judul1']  = 'Detail Laporan';
 		$data['lapor'] = $this->Lapor_model->getDataId($id);
 		//folder = Lapor dan file = halaman_selengkapnya
-		$this->load->view('templates/header_daftar_login',$data);
+		//$this->load->view('templates/header_daftar_login',$data);
 		$this->load->view('Lapor/halaman_selengkapnya',$data);
 		$this->load->view('templates/footer');
 	}

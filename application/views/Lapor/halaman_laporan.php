@@ -17,12 +17,12 @@
 }
 
 ?>
-
+<br><br><br>
 <center >
 <?php echo form_open_multipart('Halaman_utama/ProsesDataLapor'); ?>
 <textarea type="text" name="komentar" size = "100px" autofocus autocomplete="off" cols="30" rows="7" id="texts"  placeholder="ketik laporan anda......."  required ></textarea>
 </center>
-
+<br>
 <div id="pilih">
 
 <select name="kategori">

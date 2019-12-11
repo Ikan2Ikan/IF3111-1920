@@ -1,4 +1,4 @@
-
+<br><br><br>
 <center >
 <form method="post" action="">
 <input type="hidden" name="id" value="<?php echo $lapor['komentar_id'] ?>">

@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <title><?php echo $judul1; ?></title><!-- variabel judul berasal dari key yang otomatis menjadi variabel yg  berada di controller/home.php -->
-    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/style_header.css">
-    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/style_detail.css">
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/style_header_daftar_login.css">
 
 
