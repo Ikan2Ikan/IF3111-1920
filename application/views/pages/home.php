@@ -15,4 +15,4 @@
         <a href="<?php echo base_url().'laporan/'.$post['id'];?>">Lihat Selengkapnya ></a>
         <hr>
     <?php endforeach;?>
-</div>
+</div>ss
