@@ -25,17 +25,18 @@
 }
 
 ?>
-
-
-
-<div id="cari">
 <center>
+<div id="cari">
 <input type="text" name="keyword" size = "15" autofocus placeholder="masukan keyword pencarian" autocomplete="off" >
  <button type="submit" name="cari">cari</button><br><br>
  <!-- controler yaitu Mahasiswa dan fungsi InputDataLapor -->
-<a href="<?php echo base_url() ?>Halaman_utama/InputDataLapor"> <b>+</b> tambah laporan</a>
- </center>
+</div><!--  end cari -->
+<!-- end  -->
 
+ <div id="tambah_laporan">
+	<a href="<?php echo base_url() ?>Halaman_utama/InputDataLapor"> <b>+</b> tambah laporan</a>
+</div><!-- tambah_laporan -->
+</center>
 </script>
 <br><br>
 

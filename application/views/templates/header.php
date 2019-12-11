@@ -73,7 +73,9 @@
         <?php endif; ?>
           </li>
         </ul>
-    </div>
+    </div> <!-- end login -->
+
+</div> <!-- end header -->
 <!-- 
 alasan knp dibuat seperti itu
 agar menghemat resoucer tidak memangil

@@ -1,5 +1,17 @@
 /*id -> pagar
-class -> titik*/
+class -> titik
+css buat index
+*/
+body{
+	background: url('background_body.jpg');
+	margin: 0px;
+}
+.header{
+	background: #90EE90;
+	height: 100px;
+	width: 100%;
+	position: fixed;
+}
 
 .header ul {
 	list-style: none;
@@ -10,7 +22,10 @@ class -> titik*/
 #pilih{
 	padding-left: 288px;
 }
-
+#cari{
+	position: fixed;
+	padding-left: 300px;
+}
 
 #cari input {
 
@@ -61,8 +76,13 @@ textarea{
 }
 
 .content{
-	width: 800px;
+	width: 900px;
 	height: auto;
-	background: yellow;
-	border: 2px solid;
+	background: #90EE90;
+	border: 1px solid;
 }
+#tambah_laporan{
+	padding-top: 100px;
+
+}
+
