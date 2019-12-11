@@ -2,6 +2,8 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 $route['detail/(:any)'] = 'detail/vdetail/$1';
+$route['tambah'] = 'tambah/buat';
+
 
 
 $route['default_controller'] = 'utama';
