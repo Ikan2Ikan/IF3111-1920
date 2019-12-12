@@ -26,4 +26,9 @@ class M_comment extends CI_Model
     $data = $this->db->query("select * from user natural join comment natural join user_role")->result_array();
     return $data;
   }
+  public function showCommDetail($comm_id)
+  {
+    $data = $this->db->query("select * from user natural join comment natural join user_role where comm_id=$comm_id")->result_array()[0];
+    return $data;
+  }
 }

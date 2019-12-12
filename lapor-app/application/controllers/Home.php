@@ -23,6 +23,14 @@ class Home extends CI_Controller
     $this->load->view('home/user_logged_in', $data);
     $this->load->view('templates/footer');
   }
+
+  public function commentDetail()
+  {
+    $this->load->model('M_comment');
+    $data['comm_id'] = $this->uri->segment(3);
+    $data['result'] = $this->M_comment->showCommDetail($data['comm_id']);
+    $this->load->view('home/comm_detail', $data);
+  }
   public function logOut()
   {
     $this->session->sess_destroy();

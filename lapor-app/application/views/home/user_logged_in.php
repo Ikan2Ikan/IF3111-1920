@@ -1,6 +1,7 @@
 <div class="container">
   <?php
   var_dump($this->session->userdata());
+  // var_dump($result);
   if (!isset($this->session->userdata['logged_in'])) {
     echo "<script>
         alert('you have not access to this page!');
@@ -40,14 +41,25 @@
     <?php foreach ($result as $d) :
       ?>
       <div class="laporan">
-        <b>
-          <a href="#"><?= $d['fullname'] ?></a>
-        </b>
+        <a>
+          <a href="#"><?= $d['comm_title'] ?></a>
+          <small>Pelapor : <?= $d['fullname'] ?></small>
+        </a>
+
         <p><?= $d['comm'] ?></p>
-        <span><span id="lampiran"><?= $d['lampiran'] ?> </span> <span id="timestamp"><?= $d['timestamp'] ?> WIB</span></span>
+
+        <div class="details">
+          <span>
+            <span id="lampiran"><?= $d['lampiran'] ?> </span>
+            <span id="timestamp"><?= $d['timestamp'] ?> WIB</span>
+          </span>
+
+          <span>
+            <a href="<?= base_url('home/commentDetail/') . $d['comm_id'] ?>">Selengkapnya</a>
+          </span>
+        </div>
         <hr>
       </div>
     <?php endforeach;
     ?>
   </div>
-</div>
