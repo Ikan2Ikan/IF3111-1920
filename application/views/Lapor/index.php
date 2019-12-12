@@ -91,7 +91,7 @@
 		
 
     </div> <!-- end lampiran -->
-    <br>
+    <br><br>
  	<div id="komentar">  
  	<p>  
       <?php  echo "<p>".substr($mhs["komentar"],0,300)."</p>"; ?>

@@ -44,10 +44,39 @@
 
         <ul>
         <li><a href="#" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">TENTANG LAPORAN</a></li>
-
         <!-- controler Mahasiswa dan fungsi detail_laporan -->
         <li><a href="<?php echo base_url() ?>Halaman_utama">HOME</a> </li>
-       </ul> 
+       </ul>  
+     
+     <div id="login">
+        <ul>
+          <li>
+        
+<!--       untuk menghiLangkan tombol daftar saat user telah login -->
+          <?php if($this->session->userdata('email')==null):  ?>
+         <a href="<?php echo base_url() ?>Halaman_utama/DaftarAkunLaporan">Daftar</a>
+          <?php endif; ?>
+         </li>
+
+
+         <li>
+<!--           untuk menghiLangkan tombol login saat user telah login -->
+          <?php if($this->session->userdata('email')==null):  ?>
+         <a href="<?php echo base_url() ?>Halaman_utama/login">Login</a>
+          <?php endif; ?>
+                  
+          </li>
+
+          <li>
+<!--           untuk menghiLangkan tombol logut saat user telah log out -->
+        <?php if(!$this->session->userdata('email')==null):  ?>
+        <a href="<?php echo base_url() ?>Halaman_utama/logout" onclick="return confirm('Anda Yakin Akan keluar');">Logout</a>
+        <?php endif; ?>
+          </li>
+        </ul>
+    </div> <!-- end login -->
+
+</div> <!-- end header -->
 
     </ul> 
 </div>

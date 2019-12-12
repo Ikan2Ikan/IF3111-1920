@@ -19,7 +19,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			
 			$this->load->view('templates/header',$data);
 			$this->load->view('Lapor/index',$data);
-			$this->load->view('templates/footer');
+			
 		}
 
 		//menambahkan data ke database
@@ -123,6 +123,88 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	   }
 
 	   
+	    public function DaftarAkunLaporan(){
+
+	   	$data['judul1']  = 'Daftar Laporan';
+
+	   	$this->form_validation->set_rules('nama','Nama','required');
+	   	$this->form_validation->set_rules('email','Email','required|valid_email');
+	   	$this->form_validation->set_rules('password','password','required');
+
+	   	if($this->form_validation->run() == FALSE){
+	   		//jika gagal
+	   		//header diganti menajadi header_daftar/login
+	   		$this->load->view('templates/header_daftar_login',$data);
+			$this->load->view('Lapor/halaman_registrasi');//folder dan file
+			$this->load->view('templates/footer');
+	   	}else{
+
+	   		//input kedatabase
+	   		// cek email di database apakah sama dengan apa yang diinputkan
+	   		$cek = $this->db->query("SELECT * FROM user where email='".$this->input->post('email')."'")->num_rows();
+
+	   		if($cek==1){
+
+	   			$this->session->set_flashdata('email-ada',"daftar ulang");
+	    		redirect('Halaman_utama/DaftarAkunLaporan');
+
+	   		}else{
+
+	   		$this->Lapor_model->RegistrasiUser();//fungsi mahasiswa,fungsi berada pada controler, dan file Model_mahasiswa
+	   		$this->session->set_flashdata('flas',"daftar");
+	   		$this->session->set_flashdata('daftar sukses',"suskses daftar");
+	   		redirect('Halaman_utama/Login');//dialihkan lagi ke halaman mahasiswa
+	   	
+
+	   		}
+
+	   	}
+	
+	   	
+	   }
+
+	    public function Login(){
+
+	 		$data['judul1']  = 'Login';
+	   		//jika gagal
+	   		//header diganti menajadi header_daftar/login
+	   		$this->load->view('templates/header_daftar_login',$data);
+			$this->load->view('Lapor/halaman_login');//folder dan file
+			$this->load->view('templates/footer');
+
+	    	$email = $this->input->post('email');
+	    	$password = $this->input->post('password');
+
+	    	$user = $this->db->get_where('user',['email' => $email])->row_array();
+
+	    	if(isset($_POST['submit'])){
+	    		
+	    	if($user==null){
+	    		$this->session->set_flashdata('email_tida_ada',"email_salah");
+	    		redirect('Halaman_utama/Login');
+	    	}
+	    	else{
+
+	    		if($password == $user['password'] ){
+	    			
+	    			
+
+	    			$this->session->set_userdata('email',$email);//menyimpan email untuk dilempar lempar
+	    			
+	    			$this->session->set_flashdata('login_berhasil',"password benar");
+	    			redirect('Halaman_utama/InputDataLapor');
+
+	    		}else{
+	    			$this->session->set_flashdata('login_gagal',"password salah");
+	    			redirect('Halaman_utama/Login');
+	    		}
+
+
+	    	}//if user ==null
+	    		
+	    }
+	   	
+	   }//fungsi
 
 	public function logout(){
 		$this->session->sess_destroy();
@@ -133,7 +215,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		$data['judul1']  = 'Detail Laporan';
 		$data['lapor'] = $this->Lapor_model->getDataId($id);
 		//folder = Lapor dan file = halaman_selengkapnya
-		//$this->load->view('templates/header_daftar_login',$data);
+		$this->load->view('templates/header_daftar_login',$data);
 		$this->load->view('Lapor/halaman_selengkapnya',$data);
 		$this->load->view('templates/footer');
 	}
