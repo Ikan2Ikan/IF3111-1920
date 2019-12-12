@@ -1,0 +1,316 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+    margin : 0 ;
+    padding : 0;
+    font-size: 15px;
+    font-family: sans-serif;
+    background-color: #999;
+    background-image: url(IMG-20191212-WA0049.jpg);
+
+}
+
+.login {
+	width: 500px;
+	background: #CCC;
+	/*meletakkan form ke tengah*/
+	margin: 80px auto;
+	padding: 30px 20px;
+	
+}
+
+
+.login h1 {
+  font-size: 28pt;
+  color: #F5032E;
+  width: auto;
+  text-align: center;
+}
+.container {
+    width: 80%;
+    margin : auto;
+    overflow: hidden;
+}
+ 
+.container-1 input#search{
+  width: 300px;
+  height: 35px;
+  background: #FFF;
+  border: none;
+  font-size: 10pt;
+  float: left;
+  color: #262626;
+  padding-left: 45px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+ 
+   
+    -webkit-transition: background .55s ease;
+  -moz-transition: background .55s ease;
+  -ms-transition: background .55s ease;
+  -o-transition: background .55s ease;
+  transition: background .55s ease;
+}
+
+header {
+    background : #ED032D;
+    padding-top: 30px;
+    min-height: 50px;
+    border-bottom: #FC0732;
+}
+
+header #bagiankiri {
+    float : left;
+}
+
+header #bagiankanan {
+    float : right;
+}
+
+header li {
+    float : left;
+    display: inline;
+
+    padding : 0 20px 0 20px;
+}
+
+header a {
+    color : white ;
+    text-decoration:  none ;
+    text-transform: uppercase;
+    font-size: 18px ;
+}
+
+ul {
+    margin : 0;
+    padding : 0 ;
+}
+
+header #bagiankiri, header #bagiankanan, .active a {
+    color : #fff;
+    font-weight: bold;
+}
+
+header a:hover {
+    color : #960083;
+    font-weight: bold;
+
+}
+body #komen {
+    background:white;
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    position: relative;
+    max-width: 600px ;
+    padding: 30px 20px;
+    
+}
+
+body #komen #kateg {
+    padding : 5px;
+    position: static;
+
+}
+
+body #sidebar {
+    float : right;
+    color: blue;
+    display : inline;
+}
+
+#spons {
+    margin-top : 20px;
+
+}
+
+#spons .box {
+    float : left;
+    text-align: center;
+    width: 30% ;
+    padding: 10px ;
+}
+
+footer  {
+  background : #555;
+    padding-top: 20px;
+    min-height: 30px;
+    border-bottom: 5px black solid;
+}
+
+footer #p {
+    text-align: center;
+}
+
+.lapor{
+    margin:0px 200px auto 200px;
+}
+.pencarian {
+    
+    /* margin:20px auto; */
+    display: flex;
+    justify-content: center;
+}
+.search {
+ 
+    margin:10px auto;
+    padding:20px;
+    width: 100%;
+    background: white;
+    border:1px solid black;
+}
+.button {
+    margin:10px auto;
+    /* position:relative; */
+    padding:10px 55px;
+    border:1px solid black;
+    background-color:white;
+    color:black;
+    
+}
+.button:hover  {
+    background-color:#fafafa;
+    color:#207cca;
+}
+h1{
+    margin:50px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+}
+h4{
+    margin:50px auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+textarea{
+    width: 100%;
+    height: 40%;
+    border: 1px solid black;
+}
+select{
+    padding: 5px 5px ;
+    border: 1px solid black;
+    font-size: 13px;
+}
+.submit{
+  
+  background-color: white; /* Green */
+  border: 1px solid black;
+  color: black;
+  padding: 8px 35px;
+  text-align: center;
+  text-decoration: none;
+  /* display: block; */
+  font-size: 16px;
+  margin-left: 100%;
+}
+.submit1{
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 13px;
+    padding: 15px 15px;
+    float: right;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+.subjudul{
+    font-size: 13px;
+    margin-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.judul{
+    margin:50px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+}
+.buat{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+}
+hr{
+    color: black;
+    border: 0.8px solid black;
+}
+.detail{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 13px;
+    display: flex;
+    float: right;
+    margin-right: 10px;
+    color: black;
+}
+.more{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 13px;
+    display: flex;
+    float: right;
+    color: black;
+}
+.waktu{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 13px;
+    display: flex;
+    float: right;
+    margin-right: 15px;
+    color: black;
+}
+.arsip{
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+.lampir{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 13px;
+    display: flex;
+    float: left;
+    color: black;
+}
+.waktu2{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 13px;
+    display: flex;
+    float: left;
+    margin-right: 20px;
+    color: black;
+}
+.aspek{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 13px;
+    display: flex;
+    float: left;
+    color: black;
+    margin-left: 15px;
+}
+ .gambar{
+    padding: 20px; 
+    width: 20px; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.gambar2{
+    width: 250px; 
+    height: 250px;
+
+}
+
+.data{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+/* CSS Choose File */
