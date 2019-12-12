@@ -19,4 +19,11 @@ class Laporan extends CI_Controller {
         $this->load->view('pages/laporan', $data);
         $this->load->view('template/footer');
     }
+
+    public function add(){
+        $this->load->helper('form');
+        $this->load->view('template/header');
+        $this->load->view('pages/add');
+        $this->load->view('template/footer');
+    }
 }
