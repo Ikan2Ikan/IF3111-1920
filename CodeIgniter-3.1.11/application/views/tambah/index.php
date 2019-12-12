@@ -9,7 +9,7 @@
 <body>
 
 <div class="container">
-	<h1>SIMPLE LAPOR !</h1>
+	<h1>SIMPLE LAPOR!</h1>
     <h4>Buat Laporan/Komentar</h4>
    <hr />
    <?php 
@@ -27,7 +27,7 @@
 			<option value="Infrastruktur">Infrastruktur</option>
 			<option value="Pengajaran">Pengajaran</option>
 		</select><br />
-		<label>file dalam bentuk gambar / PDF</label><br \>
+		<label>File Diwajibkan Dalam Bentuk Gambar / PDF</label><br \>
 		<input id="file" type="file" name="File" ><br />
 		<input id="submit" value="Tambah" type="submit" name="submit">
 		<div style="clear: both;"></div>

@@ -9,9 +9,9 @@
 <body>
 
 <div class="container">
-	<h1>SIMPLE LAPOR !</h1>
+	<h1>SIMPLE LAPOR!</h1>
 
-	<h4>Detail laporan / Komentar</h4>
+	<h4>Detail Laporan / Komentar</h4>
 	<hr />
 	
 	<ul>
