@@ -6,51 +6,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <html lang="en">
 <head>
 	<title>Buat Laporan!</title>
-	<link rel="stylesheet" href="assets/css/lapor.css"></link>
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/v_lapor.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-
-	<style type="text/css"> /**Dibuat embedded css karena ketika dibuat external, css tidak mau jalan. entah karena versi ataupun permasalahan komputer yang saya miliki**/
-	body {
-	font-family: constantia;
-	margin: 80px;
-	}
-
-	body h1{
-		text-align: center;
-	}
-	label{
-		text-align: left;
-	}
-	hr{
-		border: 1px solid;
-		color: black;
-	}
-	.area{
-		height: 300px;
-		border: 2px solid;
-		width: 100%;
-		padding-top: 10px;
-	}
-
-	a{
-		text-decoration: none;
-		color: black;
-	}
-
-	select{
-		border: 2px solid;
-	}
-	.but{
-		position: relative;
-		left: 1050px;
-		height: 50px; 
-		width: 110px; 
-		border: 2px solid; 
-		background-color: white;
-	}
-
-	</style>
-
 </head>
 
 <body>
@@ -75,9 +32,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<option>Yang lain</option>
 		</select>
 		<br><br>
-		Pilih file: <input type="file" name="file" placeholder="File"  name="kirim" accept="image, .doc, .docx, .xls, .xlsx, .ppt, .pptx, .pdf">
+		Pilih file: <input type="file" name="file" placeholder="File"  name="kirim" accept=".img, .png, .jpeg, .jpg, .doc, .docx, .xls, .xlsx, .ppt, .pptx, .pdf">
 		<?php
-		date_default_timezone_set('Asia/Jakarta');
+		date_default_timezone_set('Asia/Jakarta'); //memanggil fungsi waktu dan membuat format waktu Jakarta 
 		?>
 		<input type="text" name="waktu" value="<?php echo date('d-m-Y H:i:s')?>" hidden>
 		<br><br>

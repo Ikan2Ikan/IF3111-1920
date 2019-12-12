@@ -11,7 +11,7 @@ class Home extends CI_Controller {
 
 	public function index()
 	{
-		$data['user'] = $this->m_data->tampil_data()->result();
+		$data['lapor'] = $this->m_data->tampil_data()->result();
 		$this->load->view('v_home.php', $data);
 	}
 
@@ -35,6 +35,18 @@ class Home extends CI_Controller {
 			);
 		$this->m_data->input_data($data,'lapor');
 		redirect('home/index');
+	}
+
+	public function detail()
+	{
+		$data['user'] = $this->m_data->tampil_data()->result();
+		$this->load->view('v_detail', $data);
+	}
+	public function search(){
+		$cari = $this->input->post('cari');
+
+		$datac['lapor']=$this->m_data->get_product_keyword($cari, 'lapor');
+		$this->load->view('v_home',$datac);
 	}
 
 }
