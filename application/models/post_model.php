@@ -1,5 +1,5 @@
 <?php
-    class post_model extends CI_Model{
+    class Post_model extends CI_Model{
         public function __construct(){
             $this->load->database();
         }
@@ -12,6 +12,10 @@
 
             $query = $this->db->get_where('posts', array('id' => $id));
             return $query->row_array();
+        }
+
+        public function input_laporan($table, $data){
+            $this->db->insert($table, $data);
         }
     }
 ?>

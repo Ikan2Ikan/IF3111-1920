@@ -26,4 +26,16 @@ class Laporan extends CI_Controller {
         $this->load->view('pages/add');
         $this->load->view('template/footer');
     }
+
+    public function input(){
+        $isi = $this->input->post('isi-laporan');
+        $aspek = $this->input->post('aspek');
+
+        $data = array(
+            'isi'   => $isi,
+            'aspek' => $aspek
+        );
+        $this->post_model->input_laporan('posts', $data);
+        redirect('');
+    }
 }

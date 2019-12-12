@@ -269,3 +269,9 @@ textarea {
 }
 
 /*postingan terakhir*/
+
+
+/* Lampiran */
+.comtainer .lampiran img{
+	width: 400px;
+}

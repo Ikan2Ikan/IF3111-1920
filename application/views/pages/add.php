@@ -2,7 +2,7 @@
 	<div class="buat-laporan">
 		<!-- <p>Buat Laporan/Komentar</p>
 		<hr> -->
-		<?php echo form_open('add'); ?>
+		<form action="<?php echo base_url('laporan/input'); ?>" method="post">
 			<textarea placeholder="Ketik Laporan Anda..." name="isi-laporan"></textarea>
 
 			<div class="custom-select">
@@ -21,7 +21,7 @@
 			<span id="custom-text">No file chosen, yet.</span>
 			<br>
 
-			<button type="button" id="send-button">LAPOR!</button>
-		<?php echo form_close(); ?>
+			<input type="submit" name="send" id="send-button" value="LAPOR">
+		</form>
 	</div>
 </div>

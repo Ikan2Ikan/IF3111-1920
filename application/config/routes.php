@@ -2,7 +2,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 $route['default_controller'] = 'page';
-$route['laporan'] = 'laporan';
+$route['laporan/input'] = 'laporan/input';
 $route['laporan/(:any)'] = 'laporan/view/$1';
 $route['add'] = 'laporan/add';
 $route['(:any)'] = 'page/index/$1';
