@@ -1,5 +1,5 @@
 <?php
-
+error_reporting(0);
 
 class Home extends CI_Controller
 {
@@ -17,7 +17,7 @@ class Home extends CI_Controller
 	public function tambah(){
 		
 		//validasi form
-		$this->form_validation->set_rules('isi', 'Isi', 'required');
+		$this->form_validation->set_rules('isi', 'Isi', 'required|min_length[100]');
 		//$this->form_validation->set_rules('File', 'File', 'required');
 		if($this->form_validation->run() == FALSE){
 			$this->load->view('tambah/index');
@@ -38,8 +38,9 @@ class Home extends CI_Controller
 		redirect('index.php/Home');
 	}
 
-	public function cari(){
-		$data['lapor'] = $this->Lapor_model->cari(); //getlapor() ada di model Model_lapor
-		$this->load->view('home/index',$data);
+	public function cari($cari){
+		$data['lapor'] = $this->Lapor_model->cari($cari); //getlapor() ada di model Model_lapor
+		$data['coba'] = $cari;
+		$this->load->view('home/cari',$data);
 	}
 }

@@ -46,11 +46,10 @@ class Lapor_model extends CI_model
 		$this->db->delete('lapor');
 	}
 
-	public function cari(){
-		$key = $this->input->post('cari');
-		$this->db->like('isi', $key);
-		$this->db->or_like('tanggal', $key);
-		$this->db->or_like('aspek', $key);
+	public function cari($cari){
+		$this->db->like('isi', $cari);
+		$this->db->or_like('tanggal', $cari);
+		$this->db->or_like('aspek', $cari);
 
 		return $this->db->get('lapor')->result_array();
 	}
