@@ -10,7 +10,7 @@
   			<img src="assets/img/logolapor.png" alt="logo_lapor" width="70"/>
   		</div>
 		<a href="home">Home</a>
-	  	<a href="about">About</a>
+	  	<a href="posts">Post</a>
 	  	<a style="float:right" href="#">Sign - In</a>
 	  	<a style="float:right" href="#">Sign - Up</a>
 	</div>
