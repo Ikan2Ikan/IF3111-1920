@@ -6,57 +6,191 @@ body {
     padding : 0;
     font-size: 15px;
     font-family: sans-serif;
-    background-color: white;
+    background-color: #999;
     background-image: url(bTovEQ.jpg);
 
 }
-
-
-h1{
-	text-align: center;
-	/*ketebalan font*/
-	font-weight: 300;
+.container {
+    width: 80%;
+    margin : auto;
+    overflow: hidden;
+}
+ 
+.container-1 input#search{
+  width: 300px;
+  height: 35px;
+  background: #FFF;
+  border: none;
+  font-size: 10pt;
+  float: left;
+  color: #262626;
+  padding-left: 45px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+ 
+   
+    -webkit-transition: background .55s ease;
+  -moz-transition: background .55s ease;
+  -ms-transition: background .55s ease;
+  -o-transition: background .55s ease;
+  transition: background .55s ease;
 }
 
-.tulisan_daftar{
-	text-align: center;
-	/*membuat semua huruf menjadi kapital*/
-	text-transform: uppercase;
+header {
+    background : #ED032D;
+    padding-top: 30px;
+    min-height: 50px;
+    border-bottom: #FC0732;
 }
 
-.kotak_daftar{
+header #bagiankiri {
+    float : left;
+}
+
+header #bagiankanan {
+    float : right;
+}
+
+header li {
+    float : left;
+    display: inline;
+
+    padding : 0 20px 0 20px;
+}
+
+header a {
+    color : white ;
+    text-decoration:  none ;
+    text-transform: uppercase;
+    font-size: 18px ;
+}
+
+ul {
+    margin : 0;
+    padding : 0 ;
+}
+
+header #bagiankiri, header #bagiankanan, .active a {
+    color : #fff;
+    font-weight: bold;
+}
+
+header a:hover {
+    color : #960083;
+    font-weight: bold;
+
+}
+body #komen {
+    background:white;
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    position: relative;
+    max-width: 600px ;
+    padding: 30px 20px;
+    
+}
+
+body #komen #kateg {
+    padding : 5px;
+    position: static;
+
+}
+
+body #sidebar {
+    float : right;
+    color: blue;
+    display : inline;
+}
+
+#spons {
+    margin-top : 20px;
+
+}
+
+#spons .box {
+    float : left;
+    text-align: center;
+    width: 30% ;
+    padding: 10px ;
+}
+
+footer  {
+  background : #555;
+    padding-top: 20px;
+    min-height: 30px;
+    border-bottom: 5px black solid;
+}
+
+footer #p {
+    text-align: center;
+}
+
+/*daftar*/
+
+.daftar {
 	width: 500px;
-	background: white;
+	background: #CCC;
 	/*meletakkan form ke tengah*/
-	margin: 80px auto;
+	margin: 30px auto;
 	padding: 30px 20px;
+	
 }
 
-label{
-	font-size: 11pt;
+h1 {
+  font-size: 28pt;
+  color: #F5032E;
+  width: auto;
+  text-align: center;
 }
 
-.form_daftar{
-	/*membuat lebar form penuh*/
-	box-sizing : border-box;
-	width: 100%;
-	padding: 10px;
-	font-size: 11pt;
-	margin-bottom: 20px;
+.form-daftar{
+  padding-top: 0.5em;
+  background-color: #DFDFDF;
+  text-align:center;
+}
+
+ .inputdaftar {
+  display: block;
+  margin: 1em auto;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 5px 5px 5px 12px;
+  height: 50px;
+  width: 50%;
+  outline: none;
+  font-family: "Quicksand", sans-serif;
+  font-size: 16pt;
+  font-weight: bold;
+  background-color:#cccccc;
+  color: black;
 }
 
 .tombol_daftar{
-	background: #46de4b;
-	color: white;
-	font-size: 11pt;
-	width: 100%;
-	border: none;
-	border-radius: 3px;
-	padding: 10px 20px;
+  display: block;
+  margin: 2em auto 0em;
+  border-radius: 5px;
+  padding: 5px 5px 5px 12px;
+  height: 30px;
+  width: 26.5%;
+  outline: none;
+  font-family: "Quicksand", sans-serif;
+  font-size: 10pt;
+  font-weight: bold;
+  background-color:#F5032E;
+  color: white;
 }
 
-.link{
-	color: #232323;
-	text-decoration: none;
-	font-size: 10pt;
+.tombol_daftar:hover{
+  background-color:#F4C111;
+}
+
+.form-daftar a{
+  display: block;
+  margin: auto;
+  border-radius: 5px;
+  padding: 9px 158px 5px 5px;
+  font-weight: 400;
+  outline: none;
+  text-align: center;
+  color: rgb(255, 128, 0);
 }
