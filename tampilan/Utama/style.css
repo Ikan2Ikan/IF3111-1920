@@ -7,19 +7,11 @@ body {
     font-size: 15px;
     font-family: sans-serif;
     background-color: #999;
-<<<<<<< HEAD
     background-image: url(bTovEQ.jpg);
 
 }
 
-.kotak {
-=======
-    background-image: url(IMG-20191212-WA0049.jpg);
-
-}
-
 .login {
->>>>>>> 214634aa8835ca394435ebc084f2fc63ebf17a1b
 	width: 500px;
 	background: #CCC;
 	/*meletakkan form ke tengah*/
@@ -29,11 +21,7 @@ body {
 }
 
 
-<<<<<<< HEAD
-.kotak h1 {
-=======
 .login h1 {
->>>>>>> 214634aa8835ca394435ebc084f2fc63ebf17a1b
   font-size: 28pt;
   color: #F5032E;
   width: auto;
@@ -44,9 +32,6 @@ body {
     margin : auto;
     overflow: hidden;
 }
-<<<<<<< HEAD
-
-=======
  
 .container-1 input#search{
   width: 300px;
@@ -68,7 +53,6 @@ body {
   -o-transition: background .55s ease;
   transition: background .55s ease;
 }
->>>>>>> 214634aa8835ca394435ebc084f2fc63ebf17a1b
 
 header {
     background : #ED032D;
