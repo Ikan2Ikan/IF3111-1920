@@ -98,18 +98,21 @@ Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/
 ### Penjelasan Teknis
 `Silakan isi bagian ini dengan penjelasan anda, sesuai Petunjuk Pengerjaan di atas.`
 ##### Instalasi Framework
-- download file CodeIgniter pada halaman https://codeigniter.com/
-- ekstrak dan install / paste  file CodeIgniter Framework ke direktori C:/xampp/htdocs
-- open folder CodeIgniter dengan code editor ex.Visual Studio Code, Sublime dll.
-- done.
+- Download file CodeIgniter pada halaman https://codeigniter.com/
+- Ekstrak dan install / paste  file CodeIgniter Framework ke direktori C:/xampp/htdocs
+- Open folder CodeIgniter dengan code editor ex.Visual Studio Code, Sublime dll.
+- Done.
 ##### Koneksi Database
-- download file **simple_lapor.sql** pada folder database
-- buat database dengan nama **lapor**
-- kemudian import file **simple_lapor.sql** yang telah didownload
+- Download file **simple_lapor.sql** pada folder database
+- Buat database dengan nama **lapor**
+- Kemudian import file **simple_lapor.sql** yang telah didownload
 ##### Validasi Client Side
-
-
-
+- Pada folder 'assets', buat folder 'js' pada CodeIgniter
+- Buat file javascript, 'validasi.js' pada folder js
+- Isikan soure code menggunakan bahasa javascript untuk menampilkan pesan validasi pada form laporkan/komentar
+- Dilakukan pengecekan ketika client mengisikan field komentar, apakah sudah diisikan atau belum. Jika belum akan muncul pesan, "Laporan / Komentar harus diisi!". Lalu jika kata yang dimasukkan dibawa 20 kata, maka akan muncul pesan, "Minimal jumlah kata dalam laporan / komentar adalah 20 kata."
+- Selanjutnya pengecekan pada field aspek pelaporan, apakah client sudah memilih aspek atau belum. Jika belum akan muncul pesan, "Aspek pelaporan harus dipilih!"
+- Pada pengecekan form upload file, apakah client sudah melakukan upload atau belum. jika belum akan muncul pesan "File tidak boleh kosong!". Lalu jika format tidak sesuai akan muncul pesan, "Silakan upload file yang memiliki ekstensi .doc/.docx/.xls/.xlsx/.ppt/.pptx/.pdf"
 ### Knowledge
 Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaikan tugas ini.
 - CSS: margin, padding, header tag, font-size, text-align, float, clear, border, color, div, span, placeholder, 
