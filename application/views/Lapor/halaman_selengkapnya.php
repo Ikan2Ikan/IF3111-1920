@@ -4,7 +4,13 @@
 <center>
 <div class="content2">
 	<div id="waktu">
-	<b><?php echo $lapor['nama'] ?></b><br>
+	<b><?php if($this->session->userdata('email') == $lapor['email']) :?>
+    	Anda
+    	<?php else : ?>
+    	<?php echo $lapor['nama'] ?>
+    	<?php endif; ?>
+    </b><br>
+
 	<b><?php echo $lapor['waktu'] ?></b>
 	</div> <!-- end waktu -->
 
@@ -13,9 +19,9 @@
     <?php if($data = substr($lapor['lampiran'],-3) == 'png' || $data = substr($lapor['lampiran'],-3) == 'jpg' ) : ?><br><br>
     <li><img src="<?php echo base_url().'lampiran/'.$lapor['lampiran'] ?>" height="300px" widht="300px"></li>
 	<?php elseif($data = substr($lapor['lampiran'],-3) == 'pdf'): ?>
-		<a href="<?php echo base_url().'lampiran/'.$lapor['lampiran'] ?>" target="blank"> view</a> 
+		<a href="<?php echo base_url().'lampiran/'.$lapor['lampiran'] ?>" target="blank"> View Lampiran</a> 
 	<?php elseif($data = substr($lapor['lampiran'],-4) == 'docx') : ?>
-		<a download="" href="<?php echo base_url().'lampiran/'.$lapor['lampiran'] ?>" target="blank"> download</a> 
+		<a download="" href="<?php echo base_url().'lampiran/'.$lapor['lampiran'] ?>" target="blank"> Download Lampiran</a> 
 	<?php endif; ?>
 	</div>
 <br><br><br><br>

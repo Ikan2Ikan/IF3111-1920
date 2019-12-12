@@ -186,10 +186,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	    	else{
 
 	    		if($password == $user['password'] ){
-	    			
-	    			
 
-	    			$this->session->set_userdata('email',$email);//menyimpan email untuk dilempar lempar
+	    			$this->session->set_userdata('email',$email);//menyimpan email di session untuk dilempar lempar
 	    			
 	    			$this->session->set_flashdata('login_berhasil',"password benar");
 	    			redirect('Halaman_utama/InputDataLapor');
