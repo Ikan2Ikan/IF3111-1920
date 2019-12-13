@@ -4,7 +4,7 @@
  <html lang="en">
     <head> 
        <meta charset="utf-8">
-       <title><?php echo $judul; ?> </title>
+       <title>Lapor!</title>
        
      <link rel="stylesheet" type="text/css" href="assets/css/style.css?v=1.1">
      <script src="assets/js/validasi.js"></script>
