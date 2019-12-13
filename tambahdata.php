@@ -1,11 +1,12 @@
 <?php 
+
 include "koneksi.php";
 
 $kom = $_POST['komentar'];
 $jenis = $_POST['aspek_komentar'];
 
-
-$tgl=date("Y-m-d H:i:s",strtotime($tgl));
+date_default_timezone_set('Asia/Jakarta');
+$tgl= date ("Y-m-d H:i:s");
 $berkas = $_FILES['file']['name'];
 $ekstensi_diperbolehkan = array('png','jpg');
 $x = explode('.', $berkas);
@@ -23,6 +24,7 @@ $query = mysqli_query($koneksi, $sql) or die (mysqli_error($koneksi));
 
 if($query){
  echo "Data berhasil ditambahkan";
+
 }else {
  echo "Error: ".$sql."<br>".mysqli_error($koneksi);
 } 
@@ -33,3 +35,4 @@ if($query){
 }
 
  ?>
+ <meta http-equiv="refresh" content="0;URL=index.php" />

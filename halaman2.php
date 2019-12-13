@@ -18,7 +18,7 @@
   <a > Buat Lapor/Komentar </a>
   <hr>
   <form action="tambahdata.php" method="POST" enctype="multipart/form-data">
-   <textarea  name="komentar" id="message" rows="20" cols="131"></textarea> 
+   <textarea  name="komentar" id="message" rows="20" cols="130"></textarea> 
    <br><br>
    <select   name="aspek_komentar">
                 <option >Pilih Aspek Komentar</option>
