@@ -26,6 +26,7 @@ body {
     width: 800px;
     margin:auto;
     height: auto;
+  
 
 }
 
@@ -47,7 +48,7 @@ body {
  
 }
 
-.search_button{
+.search_button {
 
     border: 0;
     background: none;
@@ -62,7 +63,7 @@ body {
     font-size: 16px;
 }
 
-.samping{
+.samping {
     
     float: right;
 
