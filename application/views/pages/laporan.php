@@ -11,4 +11,5 @@
     <span>Dibuat pada : <?php echo $post_item['waktu']; ?> </span>
     <?php $id = $post_item['id'];?>
     <a href="<?php echo base_url('laporan/delete/').$id; ?>">Hapus</a>
+    <a href="<?php echo base_url('laporan/edit/').$id; ?>">Edit</a>
 </div>

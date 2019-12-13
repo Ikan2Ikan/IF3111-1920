@@ -57,10 +57,30 @@ class Laporan extends CI_Controller {
         }
     }
 
-    public function delete($id)
-    {
+    public function delete($id){
         $deleted_row = array('id'=>$id);
         $this->post_model->hapus_data($deleted_row, 'posts');
         redirect('');
+    }
+
+    public function edit($id){
+        $searchkey = array('id' => $id);
+        $data['laporan'] = $this->post_model->get_posts($id);
+        $this->load->helper('form');
+        $this->load->view('template/header');
+        $this->load->view('pages/edit', $data);
+        $this->load->view('template/footer');
+    }
+
+    public function update($id){
+        $isi = $this->input->post('isi-laporan');
+        $aspek = $this->input->post('aspek');
+        $data = array(
+            'isi'   => $isi,
+            'aspek' => $aspek
+        );
+        $searchkey = array('id' => $id);
+        $this->post_model->update_data($searchkey, $data, 'posts');
+        redirect('laporan/view/'.$id);
     }
 }
