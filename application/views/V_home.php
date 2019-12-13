@@ -27,6 +27,7 @@
 </div>
 </nav>
 
+<div class="container">
 <div class = "kepala">
 <h1>Layanan Aspirasi Online Masyarakat ITERA</h1>
 <h3>Sampaikan laporan Anda langsung kepada instansi kampus berwenang</h3>
@@ -39,6 +40,6 @@
 <div class= "kolom-lapor1">
 <input class="button" type="button" value="Lapor!">
 </div>
-
+</div>
 </body>
 </html>
