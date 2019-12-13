@@ -1,16 +1,19 @@
-<br><br><br>
+<br><br><br><br><br><br><br>
 <center >
-<form method="post" action="">
+<form method="post" onSubmit="return validasi()">
 <input type="hidden" name="id" value="<?php echo $lapor['komentar_id'] ?>">
-<textarea type="text" name="komentar" size = "100px" autofocus autocomplete="off" cols="30" rows="7" id="texts"  required ><?php echo $lapor['komentar'] ?></textarea>
+<textarea type="text" name="komentar" size = "100px" autofocus autocomplete="off" cols="30" rows="7" id="texts"  ><?php echo $lapor['komentar'] ?></textarea>
 </center>
 
 <div id="pilih">
 
 <select name="kategori">
-    <option value="pemerintah">Pilih Kategori</option>
-    <option value="administrasi">Amdinistrasi</option>
-    <option value="iuran">Iuran</option>
+    <option value="Kampus">Pilih Aspek Komentar</option>
+    <option value="Dosen">Dosen</option>
+    <option value="Infrastruktu">Infrastruktur</option>
+    <option value="Mahasiswa">Mahasiswa</option>
+    <option value="Staff">Staffr</option>
+    <option value="Pengajaran">Pengajaranr</option>
 </select>
 <br><br>
 <input type="file" name="file">
@@ -22,3 +25,17 @@
 </form>
 </center>
 
+
+<script>
+   function validasi() {
+    var text = document.getElementById("texts").value;
+    if (text != ""){
+      return true;
+    }
+    else{
+      alert('Kolom Text Harus diisi!');
+      return false;
+    }
+  }
+
+</script>
