@@ -2,11 +2,7 @@
 <html>
 <head>
 	<title>tampilan</title>
-<<<<<<< HEAD:tampilan/home.html
-	<link rel="stylesheet" type="text/css" href="home.css">
-=======
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url().'assets/css/home.css'?>">
->>>>>>> 0cec242d1293b74d4616f34ef5dc8521dec39f53:Lapor/application/views/home.php
 </head>
 <body>
 <header>
@@ -16,9 +12,9 @@
           <nav>
 			<ul>
             <li class="active"><a href="#" > Tentang Lapor! </a></li>
-            
-<!-ini yos yg gua hapus->
-          
+             <li> <a href="#"> Laporan </a></li>
+             <li> <a href="#"> Cari Aduan </a></li>
+             <div class="box">
           </ul>
       </nav>
      <div id="bagiankanan">
@@ -34,7 +30,7 @@
      </div>
   </header>
  
-<h1>SIMPLE LAPOR!</h1>
+<p class="judul">SIMPLE LAPOR!</p>
 <div class="login">
  <div class="lapor">
     <form class="pencarian" onSubmit="return pencarian(this)" action="<?php echo base_url('cari')?>" method="post">
@@ -46,51 +42,11 @@
 
    
     <a class="buat" href="<?php site_url('lapor/buat'); ?>buat">Buat Laporan / Komentar &nbsp<img src="<?php echo base_url().'assets/img/tambah.png'?>" height="13px"></a>
-<<<<<<< HEAD:tampilan/home.html
-        <br><hr>
-        <img class="gambar" src="<?php echo base_url(); ?>assets/icon/menu.png">
-        <img class="gambar" src="<?php echo base_url(); ?>assets/icon/menu.png">
-  
-  <!-ini yos yg gua tambahin->
-        
-            <p class="subjudul">Laporan/Komentar Terakhir</p>
-    <hr>
-    <br><br>     
-         	<?php foreach ($home as $hm )  :?>
-            <?php $id = $hm['id_lapor']; ?>
-            <?php $now = date("Y-m-d H:i"); ?>
-          <div class="arsip"> 
-          	<p><?php echo substr($hm['laporan'], 0, 450); ?></p>
-       </div><br>
-     <?php
-    	echo "<tr>
-        	<a class='more' href='detail?detail_id=$id'>Lihat Selengkapnya  &nbsp<img src="more.png" height=13px></a>		
-          </tr>";
-          	?>
-     <div class="waktu">
-       <?php 
-          $date = new DateTime($hm['waktu']);
-          	echo 'Waktu : ';
-            echo $date->format('d-m-Y H:i'); // 21-01-2017 05:13:03
-          	?>
-        </div> 
-  <div class="lampir">
-      <?php
-            echo 'Lampiran:'; 
-            echo  $hm['lampiran']; 
-            ?>
- </div>
-=======
->>>>>>> 0cec242d1293b74d4616f34ef5dc8521dec39f53:Lapor/application/views/home.php
         <br><hr><br>
         <img class="gambar" src="<?php echo base_url(); ?>assets/icon/menu.png">
         <img class="gambar" src="<?php echo base_url(); ?>assets/icon/menu.png">
         <br>
-      
  </div>
- </div>
- 
- 
  <footer>
             <section id="spons">
                 <div class="container">
