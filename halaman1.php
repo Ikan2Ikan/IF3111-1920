@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>TUGAS BESAR pabw </title>
+    <title>Utama</title>
     <link rel="stylesheet" type="text/css" href="css/1css.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,7 +9,7 @@
 <body>
   
   <div id="header">
-    <h1 align="center">LAPOR !!!</h1> 
+    <h1 align="center">SIMPLE LAPOR !!!</h1> 
       <form action="" method="POST">
         <input type="text" name="text" placeholder="Cari.." class="cari">
         <button class="button"><img src="gambar/loupe_78956.png" width="13px">Search</button>

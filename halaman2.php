@@ -1,7 +1,7 @@
  <!DOCTYPE html>
 <html lang="en">
 <head>
-<title> TUGAS BESAR PABW </title>
+<title>Buat</title>
 <link rel="stylesheet" type="text/css" href="css/2css.css">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,7 +10,7 @@
 	<div id="box">
 	<header>
 	<div class="header">
-  <h1>LAPOR !!!</h1>
+  <h1>SIMPLE LAPOR !!!</h1>
 	</div>
 	<br><br>
 	</header>
