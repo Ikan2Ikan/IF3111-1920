@@ -2,11 +2,17 @@
 <html>
 <head>
 	<title>SIMPLE LAPOR!</title>
+	<link rel="stylesheet" type="text/css" href="utama.css">
 </head>
 <body>
 
 	<br>
+	
 		<center><h1>SIMPLE LAPOR!</h1></center>
+			<form class="pencarian" onSubmit="return pencarian(this)" action="<?php echo base-url('cari')?>" method="post">
+				<input class ="search" type="text" name="keyword" placeholder="search" autocomplete="off" autofocus>
+				<input class="button" type="submit" name="submit" placeholder="cari" value="Cari">
+			</form>
 		<center>Buat Laporan/Komentar</center>
         </br>
 
