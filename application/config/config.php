@@ -1,5 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASE_URL') OR define('BASE_URL', (is_https('localhost:8080/IF3111-1920') ? 'https://localhost:8080/IF3111-1920' : 'http://localhost:8080/IF3111-1920') . $_SERVER['HTTP_HOST'] . dirname($_SERVER['SCRIPT_NAME']) . '/');
+$config['base_url'] = BASE_URL;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,7 +25,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'localhost:8080/IF3111-1920/';
+$config['base_url'] = 'http://localhost:8080/IF3111-1920';
 
 /*
 |--------------------------------------------------------------------------

@@ -20,8 +20,14 @@ class Control extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->helper('url');
+		$this->load->helper('url_helper');
 		$this->load->view('home');
 	
 	}
+	public function buat(){
+		$this->load->view('buatlapor');	
+	}
+	public function detail(){
+		$this->load->view('detail');
+	}    
 }
