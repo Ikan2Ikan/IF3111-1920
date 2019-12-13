@@ -10,6 +10,6 @@
 </head>
 <body>
 <div class="container_header">
-    <h1>Simple Lapor !</h1>
+    <h1> Simple Lapor !</h1>
+
 </div>
-<hr>

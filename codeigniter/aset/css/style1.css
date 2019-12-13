@@ -4,8 +4,7 @@ body {
     padding: 0px;
     font-size: 14px;
     font-family: verdana;
-    background-color: #B0C4DE;
-
+    background-color:#B0E0E6;
 }
 
 
@@ -31,7 +30,7 @@ body {
 
 
 
-.search_text{
+input.search_text{
     margin: auto;
     border: 0;
     background: none;
@@ -42,12 +41,10 @@ body {
     width: 700px;
     outline: none;
     color: white;
-
    
 }
 
-
-.search_button{
+input.search_button{
 
     border: 0;
     background: none;
@@ -59,7 +56,12 @@ body {
     color: white;
 }
 
-
+.samping{
+    float: right;
+}
+.buat_laporan{
+    float: 50%;
+}
 
 /*#heading{
     float: left;

@@ -6,7 +6,7 @@
         <br>
       
 
-        <a class="buat_laporan" href="<?= site_url('tambah'); ?>"> Buat Laporan/Komentar</a>
+        <a class="buat_laporan" href="<?= site_url('tambah'); ?>"> Buat Laporan/Komentar +</a>
         <br/>
         <h4> Laporan/Komentar Terakhir </h4>
         <hr>
@@ -15,8 +15,7 @@
         <?php foreach ($laporan as $laporan_item ) {?>
                 <?= $laporan_item['laporan']; ?> <br>
                 Lampiran :<?= $laporan_item['lampiran']; ?>
-
-                <div  class="kepinggir">
+                <div class="samping">
                    <?=  $laporan_item['tanggal']; ?>
                     <a href="<?= site_url('detail/'.$laporan_item['id']); ?>"> Lihat Selengkapnya ></a>
                 </div>
