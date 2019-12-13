@@ -14,9 +14,35 @@
         <input class="button" type="button" value="Cari"></center><br>
       </form>
     </div>
-    <div class="ketiklapor">
-        <a href="NAMA KETIK LAPOR"><center>Buat Laporan/Komentar</center></a>
-    </div>
+
+    <a onclick="document.getElementById('id01').style.display='block'"><center>Buat Laporan/Komentar</center></a>
+      <div id="id01" class="ketiklapor">
+        <form class="ketiklapor-content animate" action="<?php echo base_url('Form/db') ?>" method="post">
+            <div class="tampilan">
+              <fieldset>
+                  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Tutup">&times;</span>
+                  <input type="text" name="judul" placeholder="judul">
+                  <textarea name="komen" placeholder="Laporan"></textarea>
+                  <input type="file" name="img">
+                  <label>Pilih Aspek Pelaporan/Komentar:</label>
+                  <select name="pilihan">
+                    <option value="mahasiswa">mahasiswa</option>
+                    <option value="dosen">dosen</option>
+                  </select>
+              </fieldset>
+            <input type="submit" value="Tambah" />
+            </div>
+        </form>
+      </div>
+    <script>
+      var ketiklapor = document.getElementById('id01');
+      window.onclick = function(event){
+        if (event.target == ketiklapor) {
+          ketiklapor.style.display = "none";
+        }
+      }
+    </script>
+
     <div class="recentlaporan">
     <h3>Laporan/Komentar Terakhir</h3>
     <hr>
@@ -24,8 +50,9 @@
         <?php foreach ($laporan as $recent): ?>
           <p><?php echo $recent['kolom_komentar']; ?></p>
           <br>
-          <div align="left">Lampiran : <?php echo $recent['lampiran']; ?></div>
-          <div align="right">Waktu : <?php echo $recent['waktu']; ?></div>
+          <div class="lampiran">Lampiran : <?php echo $recent['lampiran']; ?></div>
+          <div class="waktu">Waktu : <?php echo $recent['waktu']; ?></div>
+          <br>
           <hr>
         <?php endforeach; ?>
       </ul>
