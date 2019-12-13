@@ -7,7 +7,7 @@
     <title>Halaman Home</title>
 </head>
 <body>
-    <h1>SIMPLE LAPOR!/home</h1>
+    <h1>SIMPLE LAPOR!</h1>
     
 </body>
 </html>
