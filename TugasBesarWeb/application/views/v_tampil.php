@@ -32,7 +32,7 @@
 		echo "<div class='aspek'>Lampiran : $key->lampiran</div>";
 		
 		echo "<div class='tombol'>Waktu : $key->waktu ";?>
-		<a href="<?php echo base_url() ?>home/ubah/<?php echo $key->id; ?>">Lihat Selengkapnya ></a></div>
+		<a href="<?php echo base_url() ?>home/detail/<?php echo $key->id; ?>">Lihat Selengkapnya ></a></div>
 
 	<?php	echo "<hr><br>";
 	} ?>
