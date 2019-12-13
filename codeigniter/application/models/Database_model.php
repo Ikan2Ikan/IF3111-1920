@@ -13,4 +13,10 @@ class database_model extends CI_Model {
         return $query->row_array();
     }
 
+    // public function cari ($data){
+    //     $this->db->like('laporan', $data)
+    //     $query = $this->db->get('laporan');
+    //     return $query->result_array();
+    // }
+
 }
