@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="<?= base_url('assets/style_comm.css') ?>">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-  <title><?= $title; ?></title>
+  <title><?= $udul; ?></title>
 </head>
 
 <body>
