@@ -1,13 +1,13 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" type="text/css" href="buat.css">
 <title>Buat Laporan</title>
 </head>
 <body>
-<<<<<<< HEAD
 <header>
+<div class="container">
     <div id="bagiankiri">
       </div>
           <nav>
@@ -15,6 +15,12 @@
             <li class="active"><a href="#" > Tentang Lapor! </a></li>
              <li> <a href="#"> Laporan </a></li>
              <li> <a href="#"> Cari Aduan </a></li>
+             <div class="box">
+  		<div class="container-1">
+      		<span class="icon"><i class="fa fa-search"></i></span>
+      			<input type="search" id="search" placeholder="Search..." />
+  			</div>
+		</div>
           </ul>
       </nav>
      <div id="bagiankanan">
@@ -29,21 +35,17 @@
         </div>
      </div>
   </header>
-  
-  
-=======
+ 
 
->>>>>>> dac2b26977ac69a533afcf9598f4093862f6d35e
 <center><h1>SIMPLE LAPOR!</h1></center>
-
-	<div class="kotak_daftar">
-		<p>Buat Laporan/Komentar</p>
+<div class="kotak_laporan">
+    <nav id="komen">
+    		<p>Buat Laporan/Komentar</p>
 		<hr>
 		<form action="buat.php" method="POST">
-	<!–buat laporan–> 
-		<textarea name="komen" cols="60" rows="20" ></textarea>
-
-		<br><br>
+	<!–buat laporan–>
+	<textarea name="komen" cols="70" rows="10" ></textarea>
+<br><br>
 	<!-AspekLaporan-> 
 		<select name="My Lab">
 			<option value="Indo" >Pilih Aspek Pelaporan/Komentar </option>
@@ -55,7 +57,39 @@
 
 <br /><br />
 	<!-submit laporan->
-		<input type="submit" name="submit" value="BUAT LAPOR!" />
-	</form>
+		<input type="submit" class="submit" value="BUAT LAPOR!" />
+</form>
+</div class="login">
+ <footer>
+            <section id="spons">
+                <div class="container">
+                    <div class="box">
+                        <p>Download Aplikasi Mobile LAPOR!</p>
+                        <a href="https://play.google.com/store/apps/developer?id=affandiStudio">
+                        <img src="google.png" width="150"></a>
+
+                    </div>
+                    <div class="box">
+                            <p>Dikembangkan Oleh : </p>
+                            <a href="http://itera.ac.id">
+                            <img src="logo itera oke.png" width="90" ></a>
+
+
+                     </div>
+                    <div class="box">
+                            <p>Lebih Dekat dengan Kami!</p>
+                            <a href="https://www.instagram.com/iteraofficial/">
+                            <img src="Instagram_icon.png" width="49" ></a>
+                            <a href="https://www.facebook.com/itera.official/">
+                            <img src="facebook.png" width="52"></a>
+
+                        </div>
+
+                </div>
+            </section>
+            <p id="copyright" > Copyright  @2019</p>
+
+        </footer> 
+  
 </body>
 </html>

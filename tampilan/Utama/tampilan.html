@@ -14,7 +14,7 @@
             <li class="active"><a href="#" > Tentang Lapor! </a></li>
              <li> <a href="#"> Laporan </a></li>
              <li> <a href="#"> Cari Aduan </a></li>
-             
+             <div class="box">
           </ul>
       </nav>
      <div id="bagiankanan">
@@ -31,6 +31,7 @@
   </header>
  
 <p class="judul">SIMPLE LAPOR!</p>
+<div class="login">
  <div class="lapor">
     <form class="pencarian" onSubmit="return pencarian(this)" action="<?php echo base_url('cari')?>" method="post">
         <input class="search" type="text" name="keyword" placeholder="search" autocomplete="off" autofocus>	
@@ -52,7 +53,7 @@
        </div><br>
      <?php
     	echo "<tr>
-        	<a class='more' href='detail?detail_id=$id'>Lihat Selengkapnya  &nbsp<img src='more.png' height=13px></a>		
+        	<a class='more' href='detail?detail_id=$id'>Lihat Selengkapnya  &nbsp<img src="more.png" height=13px></a>		
           </tr>";
           	?>
      <div class="waktu">
@@ -74,7 +75,7 @@
         <img class="gambar" src="<?php echo base_url(); ?>assets/icon/menu.png">
         <br>
  </div>
-  <footer>
+ <footer>
             <section id="spons">
                 <div class="container">
                     <div class="box">
