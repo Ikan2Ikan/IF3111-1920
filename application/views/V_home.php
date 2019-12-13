@@ -7,6 +7,7 @@
     <title>Halaman Home</title>
 </head>
 <body>
-    <h1>Ini adalah Home/index</h1>
+    <h1>SIMPLE LAPOR!/home</h1>
+    
 </body>
 </html>
