@@ -54,18 +54,18 @@
 	color: green;
 }
 
-.container form {
+.container .form {
 	text-align: center;
 }
 
-.container form input {
+.container .form input {
 	width: 300px;
 	padding: 5px;
 	border: 1px solid green;
 	border-radius: 10px;
 }
 
-.container form button {
+.container .form button {
 	background: transparent;
 	width: 50px;
 	padding: 5px;
@@ -73,7 +73,7 @@
 	border-radius: 10px;
 }
 
-.container form button:hover {
+.container .form button:hover {
 	background: greenyellow;
 }
 
