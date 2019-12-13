@@ -8,6 +8,9 @@
 <body>
 	<div class="navbar">
 <ul class="navbar">
-  <li class="navbar"><a class="navbar"class="active" href="<?= base_url();?>">Home</a></li>
+  <li class="navbar"><a class="navbar" class="active" href="<?= base_url();?>">HOME</a></li>
+  
+  <li class="logo"><img src="asset/css/logo.png" alt="simbol" style="height:60px; width:60px;"></li>
+</div>
 </ul>
 </div>

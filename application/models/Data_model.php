@@ -65,9 +65,4 @@ class Data_model extends CI_model{
 		$this->db->where('id',$id);
 		$this->db->update('keluhan',$data);
 	}
-
-	public function limitKata($string,$word_limit){
-		$words=explode(" ", $string);
-		return implode(" ", array_splice($words, 0,$word_limit));
-	}
 }
