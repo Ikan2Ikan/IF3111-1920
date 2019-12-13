@@ -5,12 +5,10 @@
 <html>
     <head>
         <title>Halaman utama</title>
-        <link rel="stylesheet" href="aset/style.css">
+        <link rel="stylesheet" href="HomeDesign.php">
     </head>
 
     <body>
-        <h1>SIMPLE LAPOR</h1>
-        
         <form>
             <input class="search" type="text" placeholder="">   
             <input class="button" type="button" value="Cari">       
