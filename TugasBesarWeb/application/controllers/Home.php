@@ -46,4 +46,49 @@ class Home extends CI_Controller
 		}
 		redirect('home/index');
 	}
+
+	function index(){
+        $data['laporan'] = $this->m_data->tampil_data()->result();
+        $this->load->view('v_tampil',$data);
+    }
+
+    function edit($id) {
+		$data['laporan'] = $this->m_data->tampil_sebagian($id)->result();
+		$this->load->view('v_edit',$data);
+	}
+
+	public function hapus($id) {
+		$where = array('id' => $id);
+		$this->m_data->hapus_data($where,'laporan');
+		redirect('home/index');
+	}
+
+	public function ubah() {
+		date_default_timezone_set("Asia/Jakarta");
+
+		$ft = $_FILES['foto']['name'];
+		$tmp = $_FILES['foto']['tmp_name'];
+
+		$path = "lampiran/".$ft;
+
+		date_default_timezone_set("Asia/Jakarta");
+
+		if(move_uploaded_file($tmp, $path)) {
+			$id = $this->input->post('id');
+			$isi = $this->input->post('laporan');
+			$aspek = $this->input->post('aspek');
+			$waktu = date("Y-m-d H:i:s");
+
+			$data = array(
+				'isi' => $isi,
+				'aspek' => $aspek,
+				'lampiran' => $ft,
+				'waktu' => $waktu);
+			$where = array('id' => $id);
+			$this->m_data->edit_data($where,$data,'laporan');
+		} else {
+			echo "Maaf, Gambar gagal untuk diupload.";
+		}
+		redirect('home/index');
+	}
 }
