@@ -8,7 +8,7 @@
 <div class="laporan-terakhir">
     <p>Laporan/Komentar Terakhir</p>
     <hr>
-    <?php foreach ($posts as $post) : ?>
+    <?php foreach (array_reverse($posts) as $post) : ?>
         <?php if(strlen($post['isi']) <= 400){?>
             <p class="isi"><?php echo $post['isi']; ?></p>
         <?php } else {?>
