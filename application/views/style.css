@@ -95,3 +95,16 @@ hr{
     border-radius: 100%;
     margin-left: 450px;
 }
+
+
+.lampiran1 h4{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 0px;
+}
+
+.lampiran1 pre {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 0px;
+}
