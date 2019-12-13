@@ -18,7 +18,8 @@
 
             <nav>
                 <ul>
-                    <li class="current"><a href="index.html">Home</a></li>
+                    <li class="current"><a href="<?php echo base_url()?>">Home</a></li>
+                    <li class="current"><a href="<?php echo base_url('create')?>">Create</a></li>
                 </ul>
             </nav>
         </div>

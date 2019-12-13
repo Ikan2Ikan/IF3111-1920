@@ -33,7 +33,12 @@
                     quidem facere harum sed suscipit voluptatem soluta voluptas, quo nobis dicta molestias quas tempora,
                     et alias dignissimos beatae totam. Rerum asperiores voluptas delectus illum tempore debitis, esse
                     voluptatum pariatur accusantium aperiam aut inventore maxime, unde nostrum qui sed!</p>
-            </div>
+                    <p>Cobaaa</p>
+                    <?php foreach ( $lapor as $lpr ) :?>
+                        <p> <?= $lpr['nama']; ?></p> 
+                    <?php endforeach;?> 
+            
+                </div>
 
             <div class="box">
                 <img src="./img/log_html.jpg" alt="" srcset="">
