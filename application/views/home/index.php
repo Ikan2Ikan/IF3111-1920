@@ -1,10 +1,16 @@
 <fieldset>
 <div class="judul">
+	<br>
+	<div class="wrapper">
 	<h1>LAPOR ITERA!</h1>
+	</div>
+	<br>
 </div>
 
 <form action="" method="post">
 <div class="search">
+	<br>
+	<br>
 <input type="text" name="keyword" id="keyword" placeholder="Cari..." >
 <button type="submit" value="Cari" >Cari</button>
 </form>

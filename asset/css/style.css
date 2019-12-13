@@ -3,11 +3,14 @@ ul.navbar {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #6d7995;
+  background-image: url('bck.jpg');
+  width: 100%;  
 }
+
 
 li.navbar {
   float: left;
+  
 }
 
 li.logo{
@@ -39,12 +42,22 @@ p{
 	color:red;
 }
 
+.wrapper {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  background: url('color.jpeg') 0 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}    
+
 h1{
   text-align: center;
-  font-family:Gotham;
+  font-family:'MS Gothic';
   padding: 8px 8px;
   font-size: 50px;
-  color:black;
+
+
 }
 
 h2{
