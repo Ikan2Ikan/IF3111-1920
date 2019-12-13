@@ -1,5 +1,5 @@
 <?php
-    class laporan_model extends CI_Model{
+    class Laporan_model extends CI_Model{
         public function __construct(){
             $this->load->database();
         }
@@ -8,6 +8,9 @@
                 $query = $this->db->get('laporan');
                 return $query->result_array();
         }
+    
+        public function input_laporan($table, $data){
+            $this->db->insert($table, $data);
+        }
     }
-
 ?>

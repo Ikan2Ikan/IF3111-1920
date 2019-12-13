@@ -13,27 +13,29 @@
     <hr>
     </div>
 
+    <form action="<?php echo base_url('index.php/laporan/input'); ?>" method="post">
+        <div class="buatlaporan">
+        <textarea name="kolomlaporan" id="kolom-laporan" cols="121" rows="10" placeholder="Laporan/Komentar"></textarea>
+        </div>
+
+        <div class="dropdownbuatlaporan">
+            <select name="dropdownbuat" id="dropdown-buat">
+            <option value="pilihaspek"selected>Pilih Aspek Laporan/Komentar</option>
+            <option value="laporan">Laporan</option>
+            <option value="komentar">Komentar</option>
+            </select>
+        </div>
+
+        <div class="lampiran">
+        <input type="file" src="file"name="namalampiran" id="id-lampiran">
+        </div>
+
+        <div class="buttonlapor">
+        <button type="submit" name="namabuttonlapor" value="nilaibuttonlapor" id="button-lapor">Buat LAPOR!</button>
+        </div>
+
+    </form>
     
-    <div class="buatlaporan">
-       <textarea name="kolomlaporan" id="kolom-laporan" cols="121" rows="10" placeholder="Laporan/Komentar"></textarea>
-    </div>
-
-    <div class="dropdownbuatlaporan">
-        <select name="dropdownbuat" id="dropdown-buat">
-        <option value="pilihaspek"selected>Pilih Aspek Laporan/Komentar</option>
-        <option value="laporan">Laporan</option>
-        <option value="komentar">Komentar</option>
-        </select>
-    </div>
-
-    <div class="lampiran">
-    <input type="file" src="file"name="namalampiran" id="id-lampiran">
-    </div>
-
-    <div class="buttonlapor">
-    <button type="submit" name="namabuttonlapor" value="nilaibuttonlapor" id="button-lapor">Buat LAPOR!</button>
-    </div>
-
 </div>
 </body>
 </html>
