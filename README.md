@@ -19,3 +19,30 @@ Step 4: Selesai
 Setelah semua sudah dilakukan sesuai dengan instruksi diatas silahkan buka browser dan ketikan url http://localhost/, (menyesuaikan dengan nama) jika berhasil akan keluar tampilan wecome codeigniter
 
 
+#koneksi basis data
+step 1 : untuk melakukan koneksi basis data, silahkan buka folder application dan buka file database.php
+step 2: setelah itu akan tampil kode seperti dibawah ini :
+
+
+$db['default'] = array(
+	'dsn'	=> '',
+	'hostname' => 'localhost',
+	'username' => 'root',
+	'password' => '',
+	'database' => 'tubes_web',
+	'dbdriver' => 'mysqli',
+	'dbprefix' => '',
+	'pconnect' => FALSE,
+	'db_debug' => (ENVIRONMENT !== 'production'),
+	'cache_on' => FALSE,
+	'cachedir' => '',
+	'char_set' => 'utf8',
+	'dbcollat' => 'utf8_general_ci',
+	'swap_pre' => '',
+	'encrypt' => FALSE,
+	'compress' => FALSE,
+	'stricton' => FALSE,
+	'failover' => array(),
+	'save_queries' => TRUE
+);
+step 3: kemudian isi 'hostname','username','database' ( database disini sesuaikan dengan nama databse anda) selesai, silahkan jalankan database anda
