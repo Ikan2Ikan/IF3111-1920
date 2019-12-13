@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+
+}
+header {
+  text-align: center;
+  margin: 40px auto 20px auto;
+  width: 950px;
+}
+
+   	.konten {
+   	position: relative;
+    overflow: hidden;
+    text-align: left;
+    margin: 20px auto 20px auto;
+    width: 950px;
+
+  }
+
+  select {
+  	height: 30px;
+  }
+
+  .ratakiri {
+    float: left;
+  }
+
+  .ratakanan {
+    float: right;
+  }
+
+  footer {
+
+  	text-align : right;
+  	margin: 20px auto 20px auto;
+    width: 940px;
+  }
+  footer input{
+  	width: 150px;
+  	padding: 15px;
+  	border: 1px solid black;
+  	float: right;
+  	cursor: pointer;
+  	background-color: white;
+
+  }
+  
+
+
