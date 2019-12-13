@@ -19,9 +19,18 @@ class Home extends CI_Controller
     $this->load->model('M_comment');
     $data['result'] = $this->M_comment->showAllComments();
     $data['title'] = "Halaman Utama";
+    // var_dump($data);
     $this->load->view('templates/userloggin_header', $data);
     $this->load->view('home/user_logged_in', $data);
     $this->load->view('templates/footer');
+  }
+
+  public function commentDetail()
+  {
+    $this->load->model('M_comment');
+    $data['comm_id'] = $this->uri->segment(3);
+    $data['result'] = $this->M_comment->showCommDetail($data['comm_id']);
+    $this->load->view('home/comm_detail', $data);
   }
   public function logOut()
   {

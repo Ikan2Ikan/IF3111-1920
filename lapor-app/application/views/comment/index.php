@@ -8,7 +8,7 @@
     <i class="fa fa-leaf" aria-hidden="true"></i>
     <hr>
 
-    <form method="post" action="#">
+    <form method="post" action="#" enctype="multipart/form-data">
 
 
         <div class="main">

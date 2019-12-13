@@ -116,9 +116,3 @@
 /* .container .laporan {
 	max-height: 200px;
 } */
-
-.container .laporan p {
-	text-overflow: ellipsis;
-	white-space: nowrap;
-	overflow: hidden;
-}
