@@ -13,6 +13,7 @@ class Komentar extends CI_Controller{
         $this->load->view('templates/footer');
 
         if(isset($_POST['submit'])){
+            $this->load->model('Md_komentar'); # <- add this
             $this->Md_komentar->tambahKomentar();
             echo "<script>alert('Report / Komentar berhasil ditambahkan!');</script>";
         }   
