@@ -30,4 +30,9 @@ class Control extends CI_Controller {
 	public function detail(){
 		$this->load->view('detail');
 	}    
+/*
+	public function home(){
+		$this->load->view('home');
+	}
+	*/
 }

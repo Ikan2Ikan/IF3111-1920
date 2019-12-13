@@ -10,10 +10,10 @@
 	</div>
 	<div class="navbar">
 		<ul>
-		  <li><a class="active" href="#home">Beranda</a></li>
+		  <li><a class="active" href="<?php echo base_url().'';?>">Beranda</a></li>
 		  <span><li><a href="">Masuk</a></li>
 		  <li><a href="#">Daftar</a></li></span>
-		  <li><a href="<?php echo base_url().'index.php/create'; ?>">Buat Laporan/Komentar</a></li>
+		  <li><a href="<?php echo base_url().'create'; ?>">Buat Laporan/Komentar</a></li>
 		</ul>
 	</div>
 	<div id="box">	

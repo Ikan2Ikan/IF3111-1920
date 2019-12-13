@@ -10,7 +10,7 @@
 </div>
 <div class="navbar">
 	<ul>
-		 <li><a class="active" href="#home">Beranda</a></li>
+		 <li><a class="active" href="<?php echo base_url().'';?>">Beranda</a></li>
 		 <span><li><a href="">Masuk</a></li>
 		 <li><a href="#contact">Daftar</a></li></span>
 		 <li><a href="<?php echo base_url().'create'; ?>">Buat Laporan/Komentar</a></li>
