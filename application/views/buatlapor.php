@@ -3,6 +3,7 @@
 <head>
 	<title>LAPOR!</title>
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('tampilan/css/style.css'); ?>">
+	<link rel="stylesheet" type="text/css" href="tampilan/css/style.css">
 </head>
 <body>
 	<div id="boxlapor">
