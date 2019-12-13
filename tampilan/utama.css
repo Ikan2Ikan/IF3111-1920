@@ -34,3 +34,46 @@ form {
 	background-color: white;
 	color:black;
 }
+.body1 p{
+	font-size: 15px;
+	text-align: justify;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+.body2 p{
+	font-size: 15px;
+	text-align: justify;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+.body2 span{
+	float:right;
+}
+.body3 p{
+	font-size: 15px;
+	text-align: justify;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+.body3 span{
+	float:right;
+}
+.body4 p{
+	font-size: 15px;
+	text-align: justify;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+.body4 span{
+	float:right;
+}
+.space1{
+	width: 25px;
+	height: 25px;
+	background: black;
+	border-radius: 100%;
+	margin-left: 650px;
+}
