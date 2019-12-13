@@ -146,7 +146,7 @@
 	overflow: hidden;
 }
 
-.right-menu {
+.nav-bar .right-menu {
 	display: flex;
 	justify-content: space-between;
 }

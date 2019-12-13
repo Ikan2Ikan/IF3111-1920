@@ -57,4 +57,10 @@ class M_comment extends CI_Model
     $data = $this->db->query("select * from comment natural join user where user_id=$id")->result_array();
     return $data;
   }
+
+  public function deleteComment($comm_id)
+  {
+    $this->db->query("delete from comment where comm_id='$comm_id'");
+    return $this->db->affected_rows();
+  }
 }

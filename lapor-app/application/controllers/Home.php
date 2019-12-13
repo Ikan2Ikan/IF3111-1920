@@ -43,4 +43,12 @@ class Home extends CI_Controller
     $data['result'] = $this->M_comment->myLapor();
     $this->load->view('home/myLapor', $data);
   }
+
+  public function deleteComm()
+  {
+    $comm_id = $this->uri->segment(3);
+    $this->load->model('M_comment');
+    $this->M_comment->deleteComment($comm_id);
+    redirect('home');
+  }
 }
