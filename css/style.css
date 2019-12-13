@@ -12,6 +12,14 @@ body {
     overflow: hidden;
 }
 
+.subcontainer{
+    width: 60%;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+
 .button_1 {
     height: 38px;
     background: #e8491d;
@@ -143,7 +151,7 @@ footer{
 
 /*Form Buat Laporan*/
 input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
-    font-size: 0.75em;
+    font-size: 1em;
     color: #e8491d;
     top: -2.25rem;
     -webkit-transition: all 0.125s ease;
@@ -156,6 +164,10 @@ input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid
      margin: 2rem 0 1rem;
      position: relative;
    }
+
+   .styled-input-button{
+    float: right;
+  }
    
    .styled-input label {
      color: #999;
@@ -204,8 +216,4 @@ input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid
    textarea {
      width: 100%;
      min-height: 15em;
-   }
-
-   .create-laporan h1 {
-       text-align: center;
    }
