@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Login</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url().'assets/css/login.css'?>">
 </head>
 <body>
 <header>
@@ -53,19 +53,19 @@
                 <div class="container">
                     <div class="box">
                         <p>Download Aplikasi Mobile LAPOR!</p>
-                        <img src="google.png" width="150">
+                        <img src="<?php echo base_url().'assets/img/google.png'?>" width="150">
 
                     </div>
                     <div class="box">
                             <p>Dikembangkan Oleh : </p>
-                            <img src="logo itera oke.png" width="90" >
+                            <img src="<?php echo base_url().'assets/img/logo itera oke.png'?>" width="90" >
 
 
                      </div>
                     <div class="box">
                             <p>Lebih Dekat dengan Kami!</p>
-                            <img src="Instagram_icon.png" width="49" >
-                            <img src="facebook.png" width="52">
+                            <img src="<?php echo base_url().'assets/img/Instagram_icon.png'?>" width="49" >
+                            <img src="<?php echo base_url().'assets/img/facebook.png'?>" width="52">
 
                         </div>
 

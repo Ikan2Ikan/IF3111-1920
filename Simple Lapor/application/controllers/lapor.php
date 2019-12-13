@@ -5,11 +5,11 @@ class lapor extends CI_Controller{
         $this->load->model('m_lapor');
     }
 
-    funtion index(){
+    function index(){
         $this->load->view('home');
     }
 
-    
+
 }
 
 

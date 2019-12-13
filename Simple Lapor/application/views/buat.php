@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="stylesheet" type="text/css" href="buat.css">
+<link rel="stylesheet" type="text/css" href="<?php echo base_url().'assets/css/buat.css'?>">
 <title>Buat Laporan</title>
 </head>
 <body>
@@ -66,22 +66,22 @@
                     <div class="box">
                         <p>Download Aplikasi Mobile LAPOR!</p>
                         <a href="https://play.google.com/store/apps/developer?id=affandiStudio">
-                        <img src="google.png" width="150"></a>
+                        <img src="<?php echo base_url().'assets/img/google.png'?>" width="150"></a>
 
                     </div>
                     <div class="box">
                             <p>Dikembangkan Oleh : </p>
                             <a href="http://itera.ac.id">
-                            <img src="logo itera oke.png" width="90" ></a>
+                            <img src="<?php echo base_url().'assets/img/logo itera oke.png'?>" width="90" ></a>
 
 
                      </div>
                     <div class="box">
                             <p>Lebih Dekat dengan Kami!</p>
                             <a href="https://www.instagram.com/iteraofficial/">
-                            <img src="Instagram_icon.png" width="49" ></a>
+                            <img src="<?php echo base_url().'assets/img/Instagram_icon.png'?>" width="49" ></a>
                             <a href="https://www.facebook.com/itera.official/">
-                            <img src="facebook.png" width="52"></a>
+                            <img src="<?php echo base_url().'assets/img/facebook.png'?>" width="52"></a>
 
                         </div>
 
