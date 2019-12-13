@@ -42,7 +42,7 @@
       ?>
       <div class="laporan">
         <a>
-          <a href="#"><?= $d['comm_title'] ?></a>
+          <a href="<?= base_url('home/commentDetail/') . $d['comm_id'] ?>"><?= $d['comm_title'] ?></a>
           <small>Pelapor : <?= $d['fullname'] ?></small>
         </a>
 
