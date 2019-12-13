@@ -96,7 +96,9 @@ Validasi **wajib** dilakukan pada *client-side*, dengan menggunakan **javascript
 Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/komentar`.
 
 ### Penjelasan Teknis
-`Silakan isi bagian ini dengan penjelasan anda, sesuai Petunjuk Pengerjaan di atas.`
+1. Instalasi Framework, Koneksi Basis Data
+2. Melakukan Validasi pada client side
+3. Melakukan AJAX ( mulai dari pengguna melakukan klik pada tombol LAPOR! sampai laporan/komentar terkirim).
 
 ### Knowledge
 Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaikan tugas ini.
