@@ -27,5 +27,12 @@
             $this->db->where($updated_row);
             $this->db->update($table, $data);
         }
+
+        public function search_data($keyword, $table){
+            $this->db->like('isi', $keyword);
+            $query = $this->db->get($table);
+
+            return $query->result_array();
+        }
     }
 ?>
