@@ -96,6 +96,18 @@ hr{
     margin-left: 450px;
 }
 
+
+.lampiran1 h4{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 0px;
+}
+
+.lampiran1 pre {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 0px;
+}
 #boxlapor{
     width:80%;          
     height:100%; 
@@ -106,7 +118,39 @@ hr{
 }
 .lapor p{
     text-align: left;
-    margin-left: 50px;
+    margin-left: 140px;
     margin-right: 50px;
     margin-bottom: 0px;
+}
+.lapor hr{
+    width: 75%;
+    margin-bottom: 0px;
+}
+
+textarea{
+    margin-left: 150px;
+    margin-top: 0px;
+    height: 70%;
+}
+.buat{
+    float: right;
+    margin-right: 100px;
+    position:relative;
+    padding:12px 20px;
+    left:-8px;
+    border:1px solid black;
+    color:black
+}
+select{
+    border:solid 1px black;
+    width: 250px;
+    height: 40px;
+    margin-left: 150px;
+}
+.upload{
+    border:none;
+    width: 250px;
+    height: 20px;
+    margin-left: 150px;
+    font-size: 13px;
 }
