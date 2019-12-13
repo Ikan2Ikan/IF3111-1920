@@ -1,14 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Simple LAPOR!</title>
-    <link rel="stylesheet" type="text/css" href="<?php echo base_url('css/style.css'); ?>">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Home | Lapor</title>
 </head>
+
 <body>
     <header>
-        <h1>SIMPLE LAPOR!</h1>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Simple </span>Lapor!</h1>
+            </div>
+
+            <nav>
+                <ul>
+                    <li class="current"><a href="index.html">Home</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>

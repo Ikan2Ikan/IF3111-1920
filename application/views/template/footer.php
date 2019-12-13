@@ -1,5 +1,7 @@
-    <footer>
-        <p>Copyright &copy; SIMPLE LAPOR 2019</p>
+<footer>
+        <p>Simple Lapor Web Design, Copyright &copy; 2019</p>
     </footer>
+
 </body>
+
 </html>
