@@ -60,6 +60,12 @@ h1{
     text-decoration: none;
 }
 
+.laporanterakhir{
+    text-align: justice;
+    font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    
+}
+
 .more {
     float: right;
 }
