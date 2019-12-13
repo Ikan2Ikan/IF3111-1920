@@ -1,7 +1,6 @@
 <div class="container">
     <div class="content">
-        <div class="heading-icon">
-            <img src=<?= base_url('') ?> alt="">
+        <div class="heading">
             <h1>ITERA LAPOR !</h1>
         </div>
 
@@ -15,7 +14,7 @@
 
 
             <div class="keterangan">
-                <input type="text" placeholder="Judul Laporan/Komentar" name="comm_title">
+                <input type="text" placeholder="Buat Laporan/Komentar" name="comm_title">
                 <br>
                 <textarea name="comment" placeholder="Laporan/Komentar"></textarea>
             </div>
