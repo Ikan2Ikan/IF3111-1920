@@ -1,29 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<style>
-
-.kolom-lapor {
-      align: center; 
-      width: 700px;
-      height: 200px;
-      padding: 10px;
-      border: 1px black;
-      margin-left: 300px;   
-      background-color: pink;
-    }
-
-.kolom-lapor1{
-      width: 700px;
-      height: 50px;
-      padding: 10px;
-      border: 1px black;
-      margin-left: 300px;   
-      background-color: pink;
-    }
-
-</style>
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
