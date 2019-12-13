@@ -46,3 +46,9 @@ h1{
   font-size: 14px;
   cursor: pointer;
 }
+
+.laporan{
+  padding-top: 30px;
+  text-align: left;
+  border-bottom: 2px solid black;
+}
