@@ -16,12 +16,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<h1>SIMPLE LAPOR!</h1></a>
 
 		<form action="<?php echo site_url('home/search')?>" method="POST">
-	      <input type="text" name="cari" placeholder=" Cari berdasarkan ID atau Aspek">
+	      <input type="text" name="cari" placeholder=" Cari berdasarkan: ID / Nama/ Judul / Aspek">
 	      <button type="submit"><i class="fa fa-search"> CARI</i></button>
 	    </form>
 	    <br>
 	    <a style="text-align: center;" href="<?php echo site_url('home/lapor') ?>">Buat Laporan/Komentar
-	    	<i class="fa fa-plus"></i>
+	    	<i class="fa fa-plus-square"></i>
 	    </a><br><br><br>
 	    <label class="lampiran">Lampiran/Komentar Terakhir</label>
 	<hr>
@@ -30,6 +30,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		$no = 1;
 		foreach($lapor as $u){ 
 		?>
+
+		<p align="left"> <i class="fa fa-user-circle"></i> Nama: <?php echo $u->nama ?> &nbsp &nbsp
+		<i class="fa fa-pencil"></i> Judul: <?php echo $u->judul ?></p>
 		 
 		<p align="justify">
 		<?php $string = $u->laporan; //Membuat limit hanya 300 char yang dapat ditampilkan.
