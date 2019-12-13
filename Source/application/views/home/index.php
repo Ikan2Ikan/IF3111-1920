@@ -1,3 +1,4 @@
+
 <!doctype html> 
  
  <html lang="en">
@@ -6,7 +7,7 @@
        <title><?php echo $judul; ?> </title>
        
      <link rel="stylesheet" type="text/css" href="assets/css/style.css?v=1.1">
-     <script src="assets/js/validasi.js"></script>       
+     <script src="assets/js/validasi.js"></script>
      
     </head>
  <body> 
@@ -16,9 +17,9 @@
 
     <form class="pencarian" onSubmit="return pencarian(this)" action="<?php echo base_url('cari')?>" method="post">
 
-        <input class="search" type="text" name="keyword" placeholder="search" autocomplete="off" autofocus>	
+        <input class="search" type="text" name="keyword" placeholder="search" autocomplete="off" autofocus> 
        
-        <input class="button" type="submit" name="submit"  placeholder="cari" value="Cari">	 
+        <input class="button" type="submit" name="submit"  placeholder="cari" value="Cari">  
        
     </form>
 
@@ -27,7 +28,14 @@
     <hr>
     <br>
     <br>
-          
+      
+         <?php foreach ($home as $hm )  :?>
+            <?php $id = $hm['id_lapor']; ?>
+            <?php $now = date("Y-m-d H:i"); ?>
+            
+          <div class="arsip"> 
+          <p><?php echo substr($hm['laporan'], 0, 450); ?></p>
+          </div><br>
 
 
               <div class="waktu">
@@ -45,15 +53,15 @@
                 ?>
               </div>
 
-
+        <br>
+        <hr>
+        <br>
+        <?php endforeach; ?>
+        <img class="gambar" src="<?php echo base_url(); ?>assets/icon/menu.png">
+        <img class="gambar" src="<?php echo base_url(); ?>assets/icon/menu.png">
+        <br>
      
   </div>
   
 </body>
 </html>
-
-
-
-
-
-
