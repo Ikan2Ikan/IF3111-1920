@@ -13,7 +13,13 @@
         <div class="laporan_terakhir">
             Laporan/Komentar Terakhir<br>
             <hr>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aut quasi voluptatibus magnam beatae nisi ea, nulla autem ut ipsa odit tempora saepe error culpa ratione asperiores, accusamus harum eum.<br><br>
+            <?php foreach($laporan as $item_laporan):?>
+                <p class="isi"><?php echo $item_laporan["isi_laporan"]; ?></p>
+                <p class="waktu"><?php echo $item_laporan["waktu_laporan"];?></p>
+                <a href>Lihat selengkapnya</a>
+            <?php endforeach;?>
+
+            <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aut quasi voluptatibus magnam beatae nisi ea, nulla autem ut ipsa odit tempora saepe error culpa ratione asperiores, accusamus harum eum.<br><br>
             Lampiran: Gambar.jpg  <div class="more">Waktu :20-11-2019 20:00 <a href>Lihat selengkapnya</a></div> 
             <hr><br>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aut quasi voluptatibus magnam beatae nisi ea, nulla autem ut ipsa odit tempora saepe error culpa ratione asperiores, accusamus harum eum.<br><br>
@@ -21,7 +27,7 @@
             <hr><br>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aut quasi voluptatibus magnam beatae nisi ea, nulla autem ut ipsa odit tempora saepe error culpa ratione asperiores, accusamus harum eum.<br><br>
             Lampiran: Gambar.jpg  <div class="more">Waktu :20-11-2019 20:00 <a href>Lihat selengkapnya</a></div> 
-            <hr><br>
+            <hr><br> -->
         </div>
     </div>
     
