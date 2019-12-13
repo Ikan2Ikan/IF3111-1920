@@ -1,3 +1,4 @@
+<div class></div>
 <?php if($this->session->flashdata('login_gagal')) {
 	echo "
 		<script>
@@ -26,6 +27,7 @@
 }
 
 ?>
+<div class="backgroundlogin">
 <h3>Login Akun Laporan</h3>
 
 
@@ -37,7 +39,6 @@
 		<input type="text" name="email" placeholder="masukan email" autocomplete="none">
 	</li>
 
-	
 
 	<li>
 		<label>Password  </label>
@@ -49,3 +50,4 @@
 </ul>
 
 </form>
+</div>
