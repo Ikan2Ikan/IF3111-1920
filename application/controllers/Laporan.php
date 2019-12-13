@@ -55,6 +55,14 @@ class Laporan extends CI_Controller {
     }
 
     public function update($id){
-        
+        $isi = $this->input->post('isi-laporan');
+        $aspek = $this->input->post('aspek');
+        $data = array(
+            'isi'   => $isi,
+            'aspek' => $aspek
+        );
+        $searchkey = array('id' => $id);
+        $this->post_model->update_data($searchkey, $data, 'posts');
+        redirect('laporan/view/'.$id);
     }
 }

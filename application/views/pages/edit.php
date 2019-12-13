@@ -2,7 +2,7 @@
 	<div class="buat-laporan">
 		<!-- <p>Buat Laporan/Komentar</p>
 		<hr> -->
-		<form action="<?php echo base_url('laporan/update').$laporan['id']; ?>" method="post">
+		<form action="<?php echo base_url('laporan/update/').$laporan['id']; ?>" method="post">
 			<textarea placeholder="Ketik Laporan Anda..." name="isi-laporan"><?php echo $laporan['isi']; ?></textarea>
 
 			<div class="custom-select">

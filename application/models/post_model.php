@@ -22,5 +22,10 @@
             $this->db->where($deleted_row);
             $this->db->delete($table);
         }
+
+        public function update_data($updated_row, $data, $table){
+            $this->db->where($updated_row);
+            $this->db->update($table, $data);
+        }
     }
 ?>
