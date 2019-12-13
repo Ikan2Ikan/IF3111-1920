@@ -6,16 +6,42 @@ body {
     padding : 0;
     font-size: 15px;
     font-family: sans-serif;
-    background-color: white;
+    background-color: #999;
     background-image: url(bTovEQ.jpg);
 
 }
-<<<<<<< HEAD
+.container {
+    width: 80%;
+    margin : auto;
+    overflow: hidden;
+}
+ 
+.container-1 input#search{
+  width: 300px;
+  height: 35px;
+  background: #FFF;
+  border: none;
+  font-size: 10pt;
+  float: left;
+  color: #262626;
+  padding-left: 45px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+ 
+   
+    -webkit-transition: background .55s ease;
+  -moz-transition: background .55s ease;
+  -ms-transition: background .55s ease;
+  -o-transition: background .55s ease;
+  transition: background .55s ease;
+}
+
 header {
-    background : #ec1063;
+    background : #ED032D;
     padding-top: 30px;
     min-height: 50px;
-    border-bottom: 5px hotpink solid;
+    border-bottom: #FC0732;
 }
 
 header #bagiankiri {
@@ -37,7 +63,7 @@ header a {
     color : white ;
     text-decoration:  none ;
     text-transform: uppercase;
-    font-size: 15px ;
+    font-size: 18px ;
 }
 
 ul {
@@ -45,7 +71,7 @@ ul {
     padding : 0 ;
 }
 
-header #menukiri, header #menukanan, .active a {
+header #bagiankiri, header #bagiankanan, .active a {
     color : #fff;
     font-weight: bold;
 }
@@ -55,22 +81,17 @@ header a:hover {
     font-weight: bold;
 
 }
-
 body #komen {
     background:white;
     box-shadow: 0 5px 15px rgba(0,0,0,.5);
-    font-variant-position: super;
-    font-display: inherit;
-    font-display: flex;
-    font-size: 25pt;
     position: relative;
-    max-width: 550px ;
-    padding: 50px;
-
+    max-width: 600px ;
+    padding: 30px 20px;
+    
 }
+
 body #komen #kateg {
     padding : 5px;
-
     position: static;
 
 }
@@ -79,23 +100,6 @@ body #sidebar {
     float : right;
     color: blue;
     display : inline;
-}
-
-.container .wrap .sidebar .instansi {
-    float : right;
-    margin-top: 0;
-    box-shadow: 10px 5px 15px rgba(0,0,0,.5);
-    font-display: inherit;
-    font-display: flex;
-    font-size: 10pt;
-
-} 
-.container .wrap .sidebar .kisah {
-    float : right-bottom;
-    margin-top: 5px;
-    box-shadow: 10px 5px 15px rgba(0,0,0,.5);
-    font-size: 10pt;
-
 }
 
 #spons {
@@ -111,63 +115,51 @@ body #sidebar {
 }
 
 footer  {
-    background: linear-gradient(to-right,grey,white);
-    background-color: grey;
-    margin: 2px 3px 0 3px;
-
+  background : #555;
+    padding-top: 20px;
+    min-height: 30px;
+    border-bottom: 5px black solid;
 }
 
 footer #p {
     text-align: center;
 }
-=======
->>>>>>> dac2b26977ac69a533afcf9598f4093862f6d35e
 
-h1{
-	text-align: center;
-	/*ketebalan font*/
-	font-weight: 300;
-}
+/*login*/
 
-.tulisan_daftar{
-	text-align: center;
-	/*membuat semua huruf menjadi kapital*/
-	text-transform: uppercase;
-}
-
-.kotak_daftar{
-	width: 500px;
-	background: white;
+.kotak_laporan {
+	width: 650px;
+	background: #CCC;
 	/*meletakkan form ke tengah*/
-	margin: 80px auto;
-	padding: 30px 20px;
+	margin: 40px auto;
+	padding: 50px 30px;
+	
 }
 
-label{
-	font-size: 11pt;
+h1 {
+  font-size: 28pt;
+  color: #F5032E;
+  width: auto;
+  text-align: center;
+  font-family:Verdana, Geneva, sans-serif;
 }
 
-.form_lapor{
-	/*membuat lebar form penuh*/
-	box-sizing : border-box;
-	width: 100%;
-	padding: 10px;
-	font-size: 11pt;
-	margin-bottom: 20px;
+.submit{
+  display: block;
+  margin: 2em auto 0em;
+  border-radius: 5px;
+  padding: 5px 5px 5px 12px;
+  height: 40px;
+  width: 26.5%;
+  outline: none;
+  font-family: "Quicksand", sans-serif;
+  font-size: 10pt;
+  font-weight: bold;
+  background-color:#F5032E;
+  color: white;
 }
 
-.tombol_lapor{
-	background: #46de4b;
-	color: white;
-	font-size: 11pt;
-	width: 100%;
-	border: none;
-	border-radius: 3px;
-	padding: 10px 20px;
+.submit:hover{
+  background-color:#F4C111;
 }
 
-.link{
-	color: #232323;
-	text-decoration: none;
-	font-size: 10pt;
-}
