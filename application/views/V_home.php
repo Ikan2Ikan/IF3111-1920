@@ -15,14 +15,16 @@
 <body>
 
 <nav>
-<div class = "nav-kiri">
+<div>
    <label>LAPOR! ITERA</label>
     <a href="/home/">Tentang LAPOR!</a>
     <a href="/gallery/">Laporan</a>
-</div>
-<div class = "nav-kanan">
     <a href="/contact/">Masuk</a>
     <button>Daftar</button>
+    <form>
+	<input class="search" type="text" placeholder="Cari..." required>	
+	<input class="button" type="button" value="Cari">		
+    </form>
 </div>
 </nav>
 
