@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Pendaftaran</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Login</title>
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url().'assets/css/login.css'?>">
 </head>
 <body>
 <header>
@@ -35,43 +35,37 @@
      </div>
   </header>
  
-<h1>Silahkan Daftar Terlebih dahulu Untuk Bisa Melakukan Laporan<br/></h1>
+<div class="login">
+    <nav id="komen">
+		<h1>Silahkan Login</h1>
+        <form class="form-login" method="POST">
+		<input class="inputLogin" type="email" placeholder="Email"> </input>
 
-<div class="daftar">
-	<nav id="komen">
-    <form class="form-daftar" method="POST">
-    <input class="inputdaftar" type="nama" placeholder="Nama lengkap"> </input>
-	<input class="inputdaftar" type="email" placeholder="Email"> </input>
-	<input class="inputdaftar" type="password" placeholder="Password"> </input>
-	<label>Gender :</label>
-        <label><input type="radio" name="jenis_kelamin" value="Man" /> Man</label>
-        <label><input type="radio" name="jenis_kelamin" value="Woman" /> Woman</label>
-<br><br>        
-		<input type="submit" class="tombol_daftar" value="DAFTAR"><br/><br/>
+		<input class="inputLogin" type="password" placeholder="Password"> </input>
+
+		<input type="submit" class="submitButton" value="LOGIN"><br/><br/>
+		<a href=""> Tidak Punya Akun? <b>Register</b> </a><br>
 		</form>
-    </nav>
-    </div class="daftar">
-        	
-	</div>
-    
+	</div class="login">
+
 <footer>
             <section id="spons">
                 <div class="container">
                     <div class="box">
                         <p>Download Aplikasi Mobile LAPOR!</p>
-                        <img src="google.png" width="150">
+                        <img src="<?php echo base_url().'assets/img/google.png'?>" width="150">
 
                     </div>
                     <div class="box">
                             <p>Dikembangkan Oleh : </p>
-                            <img src="logo itera oke.png" width="90" >
+                            <img src="<?php echo base_url().'assets/img/logo itera oke.png'?>" width="90" >
 
 
                      </div>
                     <div class="box">
                             <p>Lebih Dekat dengan Kami!</p>
-                            <img src="Instagram_icon.png" width="49" >
-                            <img src="facebook.png" width="52">
+                            <img src="<?php echo base_url().'assets/img/Instagram_icon.png'?>" width="49" >
+                            <img src="<?php echo base_url().'assets/img/facebook.png'?>" width="52">
 
                         </div>
 
@@ -80,5 +74,5 @@
             <p id="copyright" > Copyright  @2019</p>
 
         </footer> 
-</body>
+      </body>
 </html>

@@ -11,7 +11,7 @@ body {
 
 }
 
-.login {
+.kotak {
 	width: 500px;
 	background: #CCC;
 	/*meletakkan form ke tengah*/
@@ -21,7 +21,7 @@ body {
 }
 
 
-.login h1 {
+.kotak h1 {
   font-size: 28pt;
   color: #F5032E;
   width: auto;
@@ -32,27 +32,7 @@ body {
     margin : auto;
     overflow: hidden;
 }
- 
-.container-1 input#search{
-  width: 300px;
-  height: 35px;
-  background: #FFF;
-  border: none;
-  font-size: 10pt;
-  float: left;
-  color: #262626;
-  padding-left: 45px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
- 
-   
-    -webkit-transition: background .55s ease;
-  -moz-transition: background .55s ease;
-  -ms-transition: background .55s ease;
-  -o-transition: background .55s ease;
-  transition: background .55s ease;
-}
+
 
 header {
     background : #ED032D;
