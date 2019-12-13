@@ -33,12 +33,14 @@
 			</div>
 			<form>
 				<label>Waktu: <?php echo $post['waktu']; ?>  ||</label>	
-				<label> Aspek: <?php echo $post['kategori']; ?></label>		
-				<br><br>
-				<a href="" class="next">Hapus Laporan/Komentar <i class="fa fa-times"></i></a>
-				<br>
-				<a href="" class="next">Ubah Laporan/Komentar <i class="fa fa-pencil"></i></a>
+				<label> Aspek: <?php echo $post['kategori']; ?></label>	<br>
+				<a href="edit/<?php echo $post['id']; ?>" class="next">Ubah Laporan/Komentar <i class="fa fa-pencil"></i></a>
 			</form>
+
+			<?php echo form_open('../../../../posts/delete/'.$post['id']); ?>
+					<input type="submit" value="Delete">
+			</form>
+			<br><br><br>
 			<hr>
 		</div>
 	</div>

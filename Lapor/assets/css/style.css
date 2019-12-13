@@ -152,6 +152,8 @@ form {
 }
  
 .konten {
+  text-align: justify;
+  text-justify: inter-word;
   width:600px;
   padding:25px;
   margin:25px auto;
@@ -183,6 +185,8 @@ hr {
 }
  
 .konten p:last-child {
+  text-align: justify;
+  text-justify: inter-word;
   margin: 0;
 }
  

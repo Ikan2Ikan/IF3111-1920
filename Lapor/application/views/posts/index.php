@@ -19,7 +19,7 @@
 	<!-- Isi -->
 	<div class="wrap"> 
 		<div class="konten">
-			<h1> Laporan <?php echo $post['id']; ?></h1>
+			<h1> Laporan Tentang <?php echo $post['kategori']; ?></h1>
 			<hr>
 			<p>
 				<?php echo $post['deskripsi']; ?>

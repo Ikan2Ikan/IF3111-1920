@@ -1,16 +1,16 @@
 <html>
 <head>
 	<title>Lapor</title>
-	<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="../../assets/css/style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 	<div class="topnav">
 		<div class="logo">
-  			<img src="../assets/img/logolapor.png" alt="logo_lapor" width="70"/>
+  			<img src="../../assets/img/logolapor.png" alt="logo_lapor" width="70"/>
   		</div>
-		<a href="../posts">Home</a>
-	  	<a href="../posts">Post</a>
+		<a href="../../posts">Home</a>
+	  	<a href="../../posts">Post</a>
 	</div>
 
 
@@ -28,13 +28,14 @@
 		<div class="konten">
 			<h2>Buat Laporan/Komentar</h2>
 			<hr>
-			<?php echo form_open('../../../../posts/create'); ?>
+			<?php echo form_open('../../../../../posts/update'); ?>
+				<input type="hidden" name="id" value="<?php echo $post['id']; ?>">
   				<div>
- 				 	 <textarea name="deskripsi" rows="10" placeholder="Komentar"></textarea>
+ 				 	 <textarea name="deskripsi" rows="10" placeholder="Komentar"><?php echo $post['deskripsi']; ?></textarea>
  			 	</div>
 
  			 	Pilih Aspek Pelaporan/Komentar :  
- 			 	<select name="kategori">
+ 			 	<select name="kategori" value="<?php echo $post['kategori']; ?>">
  			 		<option value="Dosen">Dosen</option>
 					<option value="Staff">Staff</option>
 					<option value="Mahasiswa">Mahasiswa</option>
@@ -44,7 +45,7 @@
 
 				<br><br>
 				<div>
-					<input name="lampiran" type="file" value="Choose File"/>
+					<input name="lampiran" type="file" value="<?php echo $post['lampiran']; ?>"/>
 				</div>
  			 	<div class="sbmt">
  			 		<button type="submit">Buat LAPOR!</button>
@@ -62,4 +63,3 @@
 	</div>
 </body>
 </html>
-
