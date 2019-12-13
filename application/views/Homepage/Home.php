@@ -37,7 +37,7 @@
                         <p>Lampiran: <a href="#">image</a></p>
                     </div>
                     <div class="rightFloat">
-                        <p><a href="#">Lihat selengkapnya ></a></p>
+                        <p><a href="<?php echo base_url('Laporan'); ?>">Lihat selengkapnya ></a></p>
                         <p>Waktu: 2222&nbsp;&nbsp;</p>
                     </div>
                 </div>
@@ -48,4 +48,5 @@
     </div>
 
 </body>
+
 </html>
