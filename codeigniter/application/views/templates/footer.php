@@ -1,5 +1,5 @@
 <hr>
-<div class="footer">
+<div class="container_footer">
     <h3>rahhis</h3>
 </div>
 </body>

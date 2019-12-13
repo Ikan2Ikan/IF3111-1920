@@ -4,9 +4,59 @@ body {
     padding: 0px;
     font-size: 14px;
     font-family: verdana;
-    background-color: red;
+    background-color: #B0C4DE;
 
 }
+.container {
+    width: 800px;
+    margin:auto;
+    height: auto;
+}
+.container_header {
+    text-align: center;
+    width: 800px;
+    margin:auto;
+    height: auto;
+}
+.container_footer {
+    text-align: center;
+    width: 800px;
+    margin:auto;
+    height: auto;
+}
+
+
+
+.search_text{
+    margin: auto;
+    border: 0;
+    background: none;
+    margin:0;
+    text-align: center;
+    border: 2px solid black;
+    padding: 14px 10px;
+
+    width: 600px;
+    outline: none;
+    color: white;
+
+   
+}
+
+
+.search_button{
+
+    border: 0;
+    background: none;
+    text-align: center;
+    border: 2px solid black;
+    width: 70px;
+    height: 47px;
+    outline: none;
+    color: white;
+}
+
+
 #heading{
     float: left;
     width: 640px;
@@ -68,28 +118,6 @@ body {
     height: 60px;
     line-height: 60px;
 }
-#menu ul ul li a:hover {
-    color:#fff;
-}
 
 
-.menu_utama{
-    background-color: lightblue;
-}
 
-.kisah_sukses{
-background-color: lightgreen;
-}
-
-.jumlah_laporan{
-    background-color: orange;
-}
-.instansi_terhubung{
-    background-color: green;
-}
-.laporan_terhangat{
-    background-color: violet;
-}
-.footer{
-    background-color: black;
-}

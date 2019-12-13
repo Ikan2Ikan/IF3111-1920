@@ -1,7 +1,7 @@
 <div>
     Buat Laporan <hr>
     <form action="">
-        <textarea name="lapor" id="" cols="150" rows="30" placeholder='Tambah Laporan/Komentar' ></textarea><br>
+        <textarea name="lapor" id="" cols="120" rows="30" placeholder='Tambah Laporan/Komentar' ></textarea><br>
         <select name="aspek" id="">
             <option value=""> Pilih Aspek Pelaporan/Komentar</option>
             <option value="Dosen"> Dosen</option>
