@@ -6,14 +6,20 @@
 </head>
 
 <body>
-  <h1>Simple Laporan </h1>
+ 
+<div id="header">
+  <h1>SIMPLE Laporan</h1>
+</div>
 
-  <legend>Buat Laporan/Komentar</legend>
+<div id="content">
+
+  <h3 style="margin-top: 20px;">Ubah Laporan/Komentar</h3>
   <hr>
 
+<center>
   <form action="<?php echo base_url('ubah/update/'.$berita->id_laporan) ?>" method="POST" enctype="multipart/form-data">
     <div class="row">
-      <textarea name="isi" placeholder="Laporan/komentar" required><?php echo $berita->isi ?></textarea>
+      <textarea name="isi" placeholder="Laporan/Komentar" required><?php echo $berita->isi ?></textarea>
     </div>
 
     <div class="row">
@@ -28,16 +34,25 @@
       </select>
     </div>
 
-    <div class="row">
+    <div class="row" style="margin-left: -260px">
       <input type="file" name="file">
     </div>
 
-    <div class="row">
+    <div class="row" style="margin-left: 410px; margin-top: 30px;">
       <input type="submit" value="Ubah Lapor!" name="submit">
     </div>
 
   </form>
+
+  </center> 
   <br>
   <hr>
+
+</div>
+
+<div id="footer">
+  <p class="teksputer">Copyright &copy 2019 - Nayaka Pitra Raditya dan Reki Selianta</p>
+</div>
+
 </body>
 </html>
