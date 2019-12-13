@@ -19,4 +19,5 @@ class M_data extends CI_Model{
 		return $this->db->get()->result();
 	}
 
+	
 }

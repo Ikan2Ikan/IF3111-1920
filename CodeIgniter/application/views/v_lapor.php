@@ -26,15 +26,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<br><br>
 		<select style="height: 40px;" name="aspek">
 			<option>Pilih Aspek Pelaporan/Komentar:</option>
+			<option>Dosen</option>
 			<option>Infrastruktur</option>
-			<option>Pendidikan</option>
-			<option>Sistem Informasi</option>
-			<option>Ekonomi</option>
-			<option>Teknologi</option>
-			<option>Keamanan</option>
-			<option>Sosial & Budaya</option>
-			<option>Hiburan</option>
-			<option>Yang lain</option>
+			<option>Staff</option>
+			<option>Mahasiswa</option>
+			<option>Pengajaran</option>
 		</select>
 		<br><br>
 		Pilih file: <input type="file" name="file" placeholder="File"  name="kirim" accept=".img, .png, .jpeg, .jpg, .doc, .docx, .xls, .xlsx, .ppt, .pptx, .pdf">

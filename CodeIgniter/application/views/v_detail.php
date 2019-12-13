@@ -16,18 +16,22 @@
 	<label>Detail Laporan/Komentar</label>
 	<hr><br>
 
-
+		<?php 
+		$no = 1;
+		foreach($detail as $d){ 
+		?>
 		 
 		<p align="justify">
-		<?/**panggil komentar**/?>
+		<?php echo $d->laporan?>
 		</p>
 
-		<p align="left"> Lampiran: 
+		<p align="left"> Lampiran:
+
 		<br>
 		<img src="">
 		<br><br>
 		
-		Waktu: <?php /**Panggil waktu**/?> &nbsp &nbsp
+		Waktu: <?php echo $d->waktu?> &nbsp &nbsp
 		Aspek: <?php /**Panggil aspek**/?>
 
 		<span><a href="#"><i class="fa fa-edit"></i> 
@@ -37,5 +41,7 @@
 			</a>
 		</span>
 		<hr>
+
+		<?php } ?>
 </body>
 </html>

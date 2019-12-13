@@ -7,6 +7,7 @@ class Home extends CI_Controller {
 		parent::__construct();		
 		$this->load->model('m_data');
 		$this->load->helper('url');
+		$this->load->helper('form');
  	}
 
 	public function index()
@@ -39,12 +40,6 @@ class Home extends CI_Controller {
 			);
 		$this->m_data->input_data($data,'lapor');
 		redirect('home/index');
-	}
-
-	public function detail()
-	{
-		$data['user'] = $this->m_data->tampil_data()->result();
-		$this->load->view('v_detail', $data);
 	}
 	public function search(){
 		$cari = $this->input->post('cari');

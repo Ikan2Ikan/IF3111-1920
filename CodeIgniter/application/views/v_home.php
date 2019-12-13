@@ -37,7 +37,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<p align="justify">
 		<?php $string = $u->laporan; //Membuat limit hanya 300 char yang dapat ditampilkan.
 		if (strlen($string) > 300) {
-		$trimstring = substr($string, 0, 300). '.....';
+		$trimstring = substr($string, 0, 300). '...';
 		} else {
 		$trimstring = $string;
 		}
@@ -48,10 +48,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<p align="left">
 			<i class="fa fa-folder"></i> Lampiran: <?php echo $u->file?>
 			<span>
-				<i class="fa fa-info"></i> ID: <?php echo $u->id ?> ||
+				
 				<i class="fa fa-calendar"></i> Waktu: <?php echo $u->waktu?> ||  
 				
-				<a href="<?php echo site_url('home/detail')?>">Lihat selengkapnya <i class="fa fa-caret-square-o-right"></i>
+				<a class='more' href='detail?detail_id=$id'>Lihat Selengkapnya  &nbsp <i class="fa fa-caret-square-o-right"></i>
 				</a>
 			</span>
 
