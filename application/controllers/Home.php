@@ -16,4 +16,14 @@ class Home extends CI_Controller {
         $this->load->view('home/index',$data);
         $this->load->view('templates/footer');
     }
+
+    public function create(){
+        // $data['judul'] = 'Create';
+        // $this->load->view('templates/header',$data);
+        // $this->load->view('create/index');
+        // $this->load->view('templates/footer');
+
+        $this->Lapor_model->createLaporan();
+        redirect('home');
+    }
 }
