@@ -33,15 +33,15 @@ class Comment extends CI_Model{
             'typefile' => "jpg|png|doc|gif|jpeg|pdf",
             'overwrite' => TRUE,
             'size' => "2048000",
-            'height' => "768";
+            'height' => "768",
             'width' => "1024",
             'filename' => $this->session->userdata('id') .  "-" . data(dmY-His)
         ];
 
-        $this->load->library('upload', $file);
-        $this->upload->do_upload('lampiran');
-        print_r($this->upload->display_errors());
-        return $this->upload->data('filename');
+                    $this->load->library('upload', $file);
+                    $this->upload->do_upload('lampiran');
+                    print_r($this->upload->display_errors());
+                    return $this->upload->data('filename');
     }
 }
 
