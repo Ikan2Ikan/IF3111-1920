@@ -1,0 +1,242 @@
+body{
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.div1{
+	width: 920px;
+	padding: 3px 0 50px 0;
+	margin: 5px auto;
+}
+
+.div2{
+	width: 920px;
+	margin: 5px auto;
+	padding: 3px;
+}
+.div2 input{
+	border: 1px solid black;
+	margin-top: 20px;
+	width: 400px;
+	height: 30px;
+}
+.div2 button{
+	border: 1px solid black;
+	margin-left: -4px;
+	height: 33px;
+}
+.div21{
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.div21 button:hover{
+	background-color: white;
+	cursor: pointer;
+}
+
+.div3{
+	width: 920px;
+	height: auto;
+	margin: 5px auto;
+	padding: 3px;
+}
+.div31{
+	margin: 5px 10px 50px 10px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	background-color: whitesmoke;
+}
+.div311{
+	height: 100px;
+	width: auto;
+	padding: 10px 0px 0 20px; 
+	font-size: 15px;
+	word-wrap: break-word;
+}
+
+.div312{
+	width: 40%;
+	height: 30px;
+	font-size: 15px;
+	float: left;
+	background-color: whitesmoke;
+}
+.div312 a{
+	margin: 0 0 0 20px;
+}
+.div313 {
+	width: 60%;
+	height: 30px;
+	font-size: 15px;
+	float: right;
+	background-color: whitesmoke;
+}
+.div313 a{
+	margin: 0 0 0 20px;
+	text-decoration: none;
+	text-align: right;
+}
+
+.divrev{
+	width: 920px;
+	height: auto;
+	margin: 5px auto;
+	padding: 3px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.kusus{
+	font-size: 12px;
+}
+.kusus a:hover{
+	cursor: pointer;
+}
+
+.divrev1{
+	height: auto;
+	padding: 10px 0 30px 10px; 
+/*	margin: 7px 0 7px 7px;*/
+	width: 100%;
+	font-size: 13px;
+	background-color: whitesmoke;
+	float: left;
+	word-wrap: break-word;
+}
+
+.divrev1 a{
+	white-space: pre-line;
+}
+
+.divrev2{
+	height: auto;
+	padding: 10px 0 30px 10px; 
+	width: 100%;
+	font-size: 13px;
+	float: left;
+}
+
+.divrev3{
+	width: 100%;
+	padding: 10px 0 10px 10px; 
+	height: auto;
+	font-size: 13px;
+	background-color: whitesmoke;
+	float: left;
+	text-align: left;
+}
+
+.divact{
+	width: 100%;
+	height: auto;
+	margin: 5px auto;
+	padding: 10px 0 10px 10px; 
+	float: left;
+}
+.divact a{
+	padding: 5px 10px 5px 10px;
+	text-decoration: none;
+	color: black;
+}
+.divact a:hover{
+	cursor: pointer;
+	color: white;
+	background-color: black;
+}
+
+.divform {
+	display: none; /* Hidden by default */
+  	position: fixed; /* Stay in place */
+  	z-index: 1; /* Sit on top */
+  	left: 0;
+  	top: 0;
+  	width: 100%; /* Full width */
+  	height: 100%; /* Full height */
+  	overflow: auto; /* Enable scroll if needed */
+  	background-color: rgb(0,0,0); /* Fallback color */
+  	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  	padding-top: 0px;
+}
+.form-isi {
+  	background-color: #fefefe;
+  	height: 80%;
+  	margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  	width: 90%; /* Could be more or less, depending on screen size */
+}
+
+.transisi {
+  	-webkit-animation: animatezoom 0.6s;
+  	animation: animatezoom 0.6s;
+}
+@keyframes animatezoom {
+  	from {transform: scale(0)} 
+  	to {transform: scale(1)}
+}
+
+.divclose {
+  margin: 12px 0 12px 0;
+  position: relative;
+  padding-bottom: 25px;
+}
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+.container {
+  padding: 16px;
+}
+.container2 {
+	padding-bottom: 20px;
+}
+.container2 textarea{
+	resize: none;
+	width: 850px;
+	height: 100px;
+}
+.container3 button{
+	float: right;
+	bottom: 10px;
+}
+
+.pagination { 
+
+text-align: center;
+padding: 20px 0 5px 0;
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 12px;
+
+}
+
+.pagination a {
+margin: 0 5px 0 px;
+padding: 5px 5px;
+text-decoration: none;
+
+}
+
+.pagination a.number {
+
+border: 1px solid #ddd;
+
+}
+
+.pagination a.current {
+
+background: #469400 url(‘../images/bg-button-green.gif’) top left repeat-x !important;
+border-color: #459300 !important;
+
+color: #fff !important;
+
+}
+
+.pagination a.current:hover {
+cursor: pointer;
+}
