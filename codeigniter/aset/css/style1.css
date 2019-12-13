@@ -7,11 +7,15 @@ body {
     background-color: #B0C4DE;
 
 }
+
+
 .container {
     width: 800px;
     margin:auto;
     height: auto;
+
 }
+
 .container_header {
     text-align: center;
     width: 800px;
@@ -35,8 +39,7 @@ body {
     text-align: center;
     border: 2px solid black;
     padding: 14px 10px;
-
-    width: 600px;
+    width: 700px;
     outline: none;
     color: white;
 
@@ -57,7 +60,8 @@ body {
 }
 
 
-#heading{
+
+/*#heading{
     float: left;
     width: 640px;
 }
@@ -121,3 +125,4 @@ body {
 
 
 
+*/
