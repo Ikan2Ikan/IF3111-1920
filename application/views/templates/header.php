@@ -20,12 +20,10 @@
   <form class="modal-content animate" action="">
     <div class="imgcontainer">
       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+     <!--  <img src="img_avatar2.png" alt="Avatar" class="avatar"> -->
     </div>
     <div class="container">
-      Aplikasi ini merupakan salah satu apliakasi
-      buatan kami,kami ingins sekalai berkontribusi
-      untuk negri
+      Pengelolaan pengaduan pelayanan publik di setiap organisasi penyelenggara di Indonesia belum terkelola secara efektif dan terintegrasi. Masing-masing organisasi penyelenggara mengelola pengaduan secara parsial dan tidak terkoordinir dengan baik. Akibatnya terjadi duplikasi penanganan pengaduan, atau bahkan bisa terjadi suatu pengaduan tidak ditangani oleh satupun organisasi penyelenggara, dengan alasan pengaduan bukan kewenangannya. Oleh karena itu, untuk mencapai visi dalam good governance maka perlu untuk mengintegrasikan sistem pengelolaan pengaduan pelayanan publik dalam satu pintu. Tujuannya, masyarakat memiliki satu saluran pengaduan secara Nasional.
 
     </div>
     <div class="container" style="background-color:#f1f1f1">

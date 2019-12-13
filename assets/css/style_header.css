@@ -3,18 +3,18 @@ class -> titik
 css buat index
 */
 body{
-	background: url('background/background_body.jpg');
+	background: url('background/background_body.jpg'); /*untuk background pada body semua halaman*/
 	margin: 0px;
 }
 .header{
 	background: #90EE90;
 	height: 100px;
 	width: 100%;
-	position: fixed;
+	position: fixed; /*agar posisi heder tidak dapat bergerak ketika disekelor*/
 }
 
 .header ul {
-	list-style: none;
+	list-style: none; /*agar list dihilangkan ul li*/
 	float: left;
 	padding-left: 100px;
 
@@ -26,19 +26,17 @@ body{
 }
 
 #cari{
-	position: fixed;
+	position: fixed; /*agar posisi cari tidak dapat bergerak ketika diskelor*/
 	padding-left: 300px;
 }
 
 #cari input {
-
 	height: 50px;
 	width: 600px;
 
 }
 
 #cari button {
-
 	height: 50px;
 	width: 80px;
 
@@ -93,6 +91,10 @@ textarea{
 .content a{
 	text-decoration: none;
 }
+#laporan h4{
+	float: left;
+	padding-left: 30px;
+}
 #tambah_laporan{
 	padding-top: 60px;
 
@@ -106,7 +108,7 @@ textarea{
 	font-weight: 10px;
 	font-size: 16px;
 }
-#lampiran{
+#lampiran1{
 	position: absolute;
 }
 #waktu{
@@ -130,6 +132,7 @@ h2{
 h3{
 	color: green;
 }
+
 .bungkus{
 	width: 700px;
 	height: 600px;

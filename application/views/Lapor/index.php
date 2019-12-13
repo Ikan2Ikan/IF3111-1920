@@ -47,6 +47,10 @@
 
 <center>
 <div class="content">
+	<div id="laporan">
+	<h4>Laporan/Komentar Terakhir</h4>
+	</div>
+	<br><br><br><br>
 	<?php foreach ($lapor as $mhs): ?>
 	<?php if(!$this->session->userdata('email')==null && $this->session->userdata('email')== $mhs['email']) :  ?>
        <a href="<?php base_url(); ?>Halaman_utama/HapusData/<?php echo $mhs['komentar_id'] ?>" onclick="return confirm('Anda yakin');">Hapus Laporan</a> |
@@ -74,7 +78,7 @@
    
     <br><br>
 
-    <div id="lampiran">
+    <div id="lampiran1">
 
       <!-- agar yang bukan png atau gambar tidak tampil -->
     <?php if($data = substr($mhs['lampiran'],-3) == 'png' || $data = substr($mhs['lampiran'],-3) == 'jpg' ) : ?><br><br>
@@ -105,5 +109,5 @@
 <hr width="800">
 	<?php endforeach; ?>
     
-</div>
+</div> <!-- end contend -->
 </center>

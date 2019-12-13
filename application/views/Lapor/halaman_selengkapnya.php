@@ -1,6 +1,6 @@
 
 
-<br><br>
+<br><br><br><br>
 <center>
 <div class="content2">
 	<div id="waktu">
@@ -8,9 +8,9 @@
     	Anda
     	<?php else : ?>
     	<?php echo $lapor['nama'] ?>
-    	<?php endif; ?>
-    </b><br>
-
+    	<?php endif; ?><hr>
+    	Aspek : <?php echo $lapor['kategori'] ?>
+    </b>
 	<b><?php echo $lapor['waktu'] ?></b>
 	</div> <!-- end waktu -->
 
@@ -23,6 +23,7 @@
 	<?php elseif($data = substr($lapor['lampiran'],-4) == 'docx') : ?>
 		<a download="" href="<?php echo base_url().'lampiran/'.$lapor['lampiran'] ?>" target="blank"> Download Lampiran</a> 
 	<?php endif; ?>
+
 	</div>
 <br><br><br><br>
 <?php echo  $lapor['komentar'] ?><br><br>

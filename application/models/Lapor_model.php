@@ -11,7 +11,7 @@ class Lapor_model extends CI_model{
 		// return $query->result_array();
 
 		//untuk mengambil data dari database dengan get('nama table')
-		return $this->db->query('SELECT * from user NATURAL JOIN tabel_komentar')->result_array();
+		return $this->db->query('SELECT * from user NATURAL JOIN tabel_komentar ORDER bY komentar_id DESC')->result_array();
 		
 	}
 
@@ -72,7 +72,7 @@ class Lapor_model extends CI_model{
 
 		// return $this->db->get_where('tabel_komentar',['komentar_id' => $id])->row_array();
 
-		return $this->db->query('SELECT email,komentar_id,nama,komentar,lampiran,waktu FROM user NATURAL JOIN tabel_komentar WHERE komentar_id = '.$id)->row_array();
+		return $this->db->query('SELECT kategori,email,komentar_id,nama,komentar,lampiran,waktu FROM user NATURAL JOIN tabel_komentar WHERE komentar_id = '.$id)->row_array();
 	}
 
 	public function HapusDataLapor($id){
