@@ -8,11 +8,11 @@ class Md_komentar extends CI_Model{
     public function tambahKomentar(){
         $data = [
             'id' => '',
-            'waktuPengiriman' => date('d M Y | H:i:s'),
+            'waktuPengiriman' => date('Y-m-d H:i:s'),
             'judul_komentar' => $this->input->post('judul_komentar'),
-            'komen' => $this->input->post('komentar'),
+            'komentar' => $this->input->post('komentar'),
             'kategori' => $this->input->post('kategori'),
-            'file' => $this->fileUpload()
+            'lampiran' => $this->fileUpload()
         ];
         $this->db->insert('komentar', $data);
     }
