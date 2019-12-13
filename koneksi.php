@@ -1,18 +1,8 @@
-<?php 
-// isi nama host, username mysql, dan password mysql anda
-$host = mysql_connect("localhost","root","xxx");
+ <?php
+$dbhost="localhost";
+$dbuser="root";
+$dbpass="";
+$dbname="lapor_if";
 
-if($host){
-	echo "koneksi host berhasil.<br/>";
-}else{
-	echo "koneksi gagal.<br/>";
-}
-// isikan dengan nama database yang akan di hubungkan
-$db = mysql_select_db("lapor_if");
-
-if($db){
-	echo "koneksi database berhasil.";
-}else{
-	echo "koneksi database gagal.";
-}
+$koneksi = mysqli_connect($dbhost,$dbuser,$dbpass,$dbname);
 ?>
