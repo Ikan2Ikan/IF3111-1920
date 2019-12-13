@@ -38,4 +38,11 @@ class Laporan extends CI_Controller {
         $this->post_model->input_laporan('posts', $data);
         redirect('');
     }
+
+    public function delete($id)
+    {
+        $deleted_row = array('id'=>$id);
+        $this->post_model->hapus_data($deleted_row, 'posts');
+        redirect('');
+    }
 }

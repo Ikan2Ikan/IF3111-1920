@@ -17,5 +17,11 @@
         public function input_laporan($table, $data){
             $this->db->insert($table, $data);
         }
+
+        public function hapus_data($deleted_row, $table)
+        {
+            $this->db->where($deleted_row);
+            $this->db->delete($table);
+        }
     }
 ?>

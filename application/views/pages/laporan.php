@@ -1,10 +1,14 @@
-<div class="container">
-    <h1>Laporan #<?php echo $post_item['id']; ?></h1>
+<div class="content-wrapper">
+    <h3>Detail Laporan/Komentar</h3>
+    <hr>
     <p><?php echo $post_item['isi']; ?></p>
     <div class="lampiran">
+        <span>Lampiran:</span>
         <img src="<?php echo base_url().'lampiran/'.$post_item['lampiran']; ?>" alt="Lampiran">
     </div>
 
     <span>Aspek : <?php echo $post_item['aspek']; ?></span><br>
     <span>Dibuat pada : <?php echo $post_item['waktu']; ?> </span>
+    <?php $id = $post_item['id'];?>
+    <a href="<?php echo base_url('laporan/delete/').$id; ?>">Hapus</a>
 </div>

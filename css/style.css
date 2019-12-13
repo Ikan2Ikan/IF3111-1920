@@ -271,7 +271,21 @@ textarea {
 /*postingan terakhir*/
 
 
-/* Lampiran */
-.comtainer .lampiran img{
-	width: 400px;
+/* Detail laporan */
+
+.content-wrapper{
+	width: 70%;
+	margin: auto;
 }
+
+.content-wrapper p{
+	text-align: justify;
+}
+
+.lampiran img{
+	display: block;
+	width: 100%;
+	margin: auto;
+}
+
+/* Detail laporan */
