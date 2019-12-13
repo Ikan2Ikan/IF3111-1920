@@ -23,7 +23,7 @@
        
     </form>
 
-    <a class="buat" href="<?php base_url(); ?>buat">Buat Laporan / Komentar &nbsp<img src="assets/icon/tambah.png" height="13px"></a>
+    <a class="buat" href="<?php echo site_url('home/lapor')?>" >Buat Laporan / Komentar &nbsp<img src="assets/icon/tambah.png" height="13px"></a>
     <p class="subjudul">Laporan/Komentar Terakhir</p>
     <hr>
     <br>

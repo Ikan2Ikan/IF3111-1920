@@ -9,4 +9,10 @@ class Home extends CI_Controller {
 	
 	}
 
+	public function lapor()
+	{
+		
+		$this->load->view('v_buat.php');
+	}
+
 }
