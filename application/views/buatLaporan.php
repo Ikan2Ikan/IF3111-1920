@@ -8,10 +8,7 @@
     <form action="<?php echo base_url('index.php/laporan/create')?>" method="POST" enctype="multipart/form-data">
         <textarea id="laporan" name="laporan" rows="20" cols="80">Laporan/Komentar</textarea>
         
-        <input type="file" name="fileLapor" id="fileLapor">
         <br>
-        <br>
-        
         <select name="aspek" style="width: 150px">
         <?php
             foreach($aspek as $value){?>
@@ -19,6 +16,12 @@
             <?php }
         ?>
         </select>
+        <br>
+        <br>
+
+        <input type="file" name="fileLapor" id="fileLapor">
+        <br>
+        <br>
         <button type="submit" name="buatLapor" class="btn btn-primary">Buat LAPOR!</button>
 
     </form>

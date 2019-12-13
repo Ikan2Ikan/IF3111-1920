@@ -29,6 +29,24 @@ class Laporan extends CI_Controller {
 
     public function create(){
         $laporan = $this->input->post('laporan');
+
+	}
+	
+	public function view(){
+		$this->load->model('Laporan_model');
+
+        $laporan=$this->Laporan_model->getIndex();
+        $data['laporan']=$laporan;
+		
+		$this->load->model('Aspek_model');
+
+        $aspek=$this->Aspek_model->getIndex();
+		$data['aspek']=$aspek->result();
+		
+		$this->load->view('tampilLaporan',$data);
+
+		
         
-    }
+		
+	}
 }
