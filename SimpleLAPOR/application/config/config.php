@@ -37,7 +37,7 @@ $config['base_url'] = 'http://localhost:8080/IF3111-1920/SimpleLAPOR';
 | variable so that it is blank.
 |
 */
-$config['index_page'] = 'index.php';
+$config['index_page'] = '';
 
 /*
 |--------------------------------------------------------------------------

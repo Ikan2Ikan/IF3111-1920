@@ -13,7 +13,7 @@
 		  <li><a class="active" href="#home">Beranda</a></li>
 		  <span><li><a href="">Masuk</a></li>
 		  <li><a href="#contact">Daftar</a></li></span>
-		  <li><a href="<?php echo base_url().'index.php/create'; ?>">Buat Laporan/Komentar</a></li>
+		  <li><a href="<?php echo base_url().'create'; ?>">Buat Laporan/Komentar</a></li>
 		</ul>
 	</div>	
 	<div id="boxlapor">
