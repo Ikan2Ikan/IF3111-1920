@@ -7,7 +7,8 @@ class -> titik*/
 	padding-left: 100px;
 
 }
-#pilih{
+
+#pilih {
 	padding-left: 288px;
 }
 
@@ -25,42 +26,48 @@ class -> titik*/
 	width: 80px;
 
 }
+
 /*agar ul li nya menyamping*/
-.header ul li{
+.header ul li {
 	float: left;
-	padding: 10px;/* mengatur jarak antar menu*/
+	padding: 10px;
+	/* mengatur jarak antar menu*/
 
 }
 
 /*khusus button*/
-.header ul li button{
+.header ul li button {
 	float: left;
-	padding: 8px;/* mengatur jarak antar menu*/
+	padding: 8px;
+	/* mengatur jarak antar menu*/
 
 }
 
-.header ul li a{
-	text-decoration: none;  /*menghilangkan garis bawah saat diberi link*/
+.header ul li a {
+	text-decoration: none;
+	/*menghilangkan garis bawah saat diberi link*/
 
 }
 
-#login{
+#login {
 	padding-left: 1000px;
 }
 
-.clear{
+.clear {
 
 	clear: both;
 }
-textarea{
+
+textarea {
 	width: 700px;
 	height: 370px;
 }
-#tombol{
-    padding-left: 900px;
+
+#tombol {
+	padding-left: 900px;
 }
 
-.content{
+.content {
 	width: 800px;
 	height: auto;
 	background: yellow;

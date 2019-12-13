@@ -19,7 +19,7 @@
 ?>
 
 <center >
-<form method="post" action="">
+<?php echo form_open_multipart('Halaman_utama/ProsesDataLapor'); ?>
 <textarea type="text" name="komentar" size = "100px" autofocus autocomplete="off" cols="30" rows="7" id="texts"  placeholder="ketik laporan anda......."  required ></textarea>
 </center>
 
@@ -31,12 +31,22 @@
     <option value="iuran">Iuran</option>
 </select>
 <br><br>
-<input type="file" name="file">
+<input type="file" name="file_file">
 </div>
 
 <div id="tombol">
-<button type="submit" name="submit">Buat Laporan</button>
+<button type="submit" name="submit" onclick="validasi()">Buat Laporan</button>
 </div>
-</form>
 </center>
+</form>
 
+<script>
+   function validasi() {
+    var nama = document.getElementById("texts").value;
+    if (nama != ""){
+      return true;
+    }else{
+      alert('Anda harus mengisi data dengan lengkap !');
+    }
+  }
+</script>
