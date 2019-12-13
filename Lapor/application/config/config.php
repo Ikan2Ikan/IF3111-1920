@@ -36,7 +36,6 @@ $config['base_url'] = 'localhost/IF3111-1920/Lapor';
 |
 */
 $config['index_page'] = '';
-
 /*
 |--------------------------------------------------------------------------
 | URI PROTOCOL

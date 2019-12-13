@@ -4,12 +4,12 @@
 			$this->load->database();
 		}
 
-		public function get_posts($lampiran = FALSE){
-			if ($lampiran == FALSE) {
+		public function get_posts($id = FALSE){
+			if ($id == FALSE) {
 				$query = $this->db->get('simple_lapor');
 				return $query->result_array();
 			}
-			$query = $this->db->get_where('simple_lapor', array('lampiran' => $lampiran));
+			$query = $this->db->get_where('simple_lapor', array('id' => $id));
 			return $query->row_array();
 		}
 	}
