@@ -6,7 +6,7 @@ class Laporan extends CI_Controller {
     public function __construct(){
         parent::__construct();
         $this->load->model('post_model');
-        $this->load->helper('url_helper');
+        $this->load->helper(array('form', 'url'));
     }
 
 	public function index($id){
@@ -23,20 +23,38 @@ class Laporan extends CI_Controller {
     public function add(){
         $this->load->helper('form');
         $this->load->view('template/header');
-        $this->load->view('pages/add');
+        $this->load->view('pages/add', array('error' => ' '));
         $this->load->view('template/footer');
     }
 
     public function input(){
         $isi = $this->input->post('isi-laporan');
         $aspek = $this->input->post('aspek');
+        $lampiran = $_FILES['lampiran']['name'];
+        
+		if ($lampiran = ''){
+        
+        }else{
+            $config['upload_path']   = './lampiran/';
+            $config['allowed_types'] = 'gif|jpg|png';
+            $config['file_name']    = date('Y-m-d H-i-s', time());
+            $this->load->library('upload', $config);
 
-        $data = array(
-            'isi'   => $isi,
-            'aspek' => $aspek
-        );
-        $this->post_model->input_laporan('posts', $data);
-        redirect('');
+            if (!$this->upload->do_upload('lampiran')) {
+                echo "upload gagal"; die();
+            }else{
+                $lampiran = $this->upload->data('file_name');
+            }
+
+            $data = array(
+                'isi'   => $isi,
+                'aspek' => $aspek,
+                'lampiran' => $lampiran
+            );
+
+            $this->post_model->input_laporan('posts', $data);
+            redirect('');
+        }
     }
 
     public function delete($id)
