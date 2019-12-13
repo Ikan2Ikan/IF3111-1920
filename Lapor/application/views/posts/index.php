@@ -1,12 +1,35 @@
-<h2>Latest Posts</h2>
-<?php foreach($posts as $post) : ?>
-	<?php echo $post['deskripsi']; ?>
-	<br>
-	<br>
-	Lampiran : <?php echo $post['lampiran']; ?>
-	<br>
-	Waktu : <?php echo $post['waktu']; ?>
-	<br>
-	<p><a href="posts/<?php echo $post['id']; ?>">Lihat Selengkapnya<i class="fa fa-arrow-right"></i></a></p>
-	<br><br>
-<?php endforeach; ?>
+<!-- Header -->
+	<header>
+		<h1 class="judul">SIMPLE LAPOR!</h1>
+	</header>
+
+	<!-- Pencarian -->
+	<form>
+  		<input class="search" type="text" placeholder="Cari..." required>	
+  		<input class="button" type="button" value="Cari">	
+	</form>
+	<!-- Akhir Pencarian -->
+
+	<form>
+		<a href="posts/create" class="next">Buat Laporan/Komentar <i class="fa fa-plus"></i></a>
+	</form>
+	<!-- Akhir Header -->
+	
+	<?php foreach($posts as $post) : ?>
+	<!-- Isi -->
+	<div class="wrap"> 
+		<div class="konten">
+			<h1> Laporan <?php echo $post['id']; ?></h1>
+			<hr>
+			<p>
+				<?php echo $post['deskripsi']; ?>
+			</p>
+			<img src="<?php echo $post['lampiran']; ?>">
+			<form>
+				<label>Waktu: <?php echo $post['waktu']; ?></label>		
+				<a href="posts/<?php echo $post['id']; ?>" class="next">Selengkapnya →</a>
+			</form>
+		</div>
+	</div>
+	<!-- Akhir Isi -->
+	<?php endforeach; ?>

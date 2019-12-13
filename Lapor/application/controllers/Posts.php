@@ -22,5 +22,11 @@
 
 			$this->load->view('posts/view', $data);
 		}
+
+		public function create(){
+			$data['title'] = 'Create Post';
+	
+			$this->load->view('posts/create', $data);
+		}
 	}
  ?>

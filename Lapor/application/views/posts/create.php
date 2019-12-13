@@ -13,6 +13,7 @@
 	  	<a href="../posts">Post</a>
 	</div>
 
+
 	<!-- Header -->
 	<header>
 		<h1 class="judul">SIMPLE LAPOR!</h1>
@@ -22,30 +23,38 @@
 	<!-- Isi -->
 	<div class="wrap"> 
 		<div class="konten">
-			<h2>Detail Laporan/Komentar</h2>
+			<h2>Buat Laporan/Komentar</h2>
 			<hr>
-			<p>
-				<?php echo $post['deskripsi']; ?>
-			</p>
-			<p>Lampiran:</p>
-			<div>
-				<img src="<?php echo $post['lampiran']; ?>">
-			</div>
-			<form>
-				<label>Waktu: <?php echo $post['waktu']; ?>  ||</label>	
-				<label> Aspek: <?php echo $post['kategori']; ?></label>		
+  				<div>
+ 				 	 <textarea name="komentar" rows="10" placeholder="Komentar"></textarea>
+ 			 	</div>
+
+ 			 	Pilih Aspek Pelaporan/Komentar :  
+ 			 	<select name="aspek">
+ 			 		<option value="Infrastruktur">Infrastruktur</option>
+					<option value="Pendidikan">Pendidikan</option>
+					<option value="Energi dan Sumber Daya Alam">Energi dan Sumber Daya Alam</option>
+					<option value="Kesehatan">Kesehatan</option>
+					<option value="Pelayanan Publik">Pelayanan Publik</option>
+ 			 	</select>
+
 				<br><br>
-				<a href="" class="next">Hapus Laporan/Komentar <i class="fa fa-times"></i></a>
-				<br>
-				<a href="" class="next">Ubah Laporan/Komentar <i class="fa fa-pencil"></i></a>
-			</form>
-			<hr>
+				<div>
+					<input type="file" value="Choose File"/>
+				</div>
+ 			 	<div class="sbmt">
+ 			 	  <input type="submit" value="Buat LAPOR!"/>
+ 			 	</div>
+ 			 	<br><br><br>
+ 			 <hr>
 		</div>
 	</div>
 	<!-- Akhir Isi -->
+
 	
 	<div class="footer">
   		<p>Created by Laurensius Joshua Anrico Agustinus and Krisdiyansyah</p>
 	</div>
 </body>
 </html>
+
