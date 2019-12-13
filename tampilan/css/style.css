@@ -1,0 +1,112 @@
+form {
+    width:100%;
+    margin:50px auto;
+/*    padding-top: 20px;
+    padding-bottom: 0px;*/
+    position: relative;
+}
+.search {
+    padding:20px 15px;
+    background-color: white;
+    border:1px solid black;
+    margin-left: 120px;
+    width: 700px;
+}
+.button {
+    position:relative;
+    padding:20px 15px;
+    left:-8px;
+    border:1px solid black;
+    color:black
+}
+.button:hover  {
+    background-color:white;
+    color:black;
+}
+p{
+    text-align: center;
+}   
+
+hr{
+    width: 90%;
+}
+#box{
+    width:80%;          
+    height:100%; 
+    margin-top: 100px;
+    margin-left: 150px;
+    position: relative;
+    border: solid 1px black;
+}
+
+.konten1 p{
+    font-size: 13px;
+    text-align: justify;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.konten1 h4{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 0px;
+}
+.konten2 h4{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 0px;
+}
+.konten2 p{
+     font-size: 13px;
+    text-align: justify;
+    margin-left: 50px;
+    margin-right: 50px;   
+}
+.konten2 span{
+    float: right;
+}
+
+.konten3 h4{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 0px;
+}
+.konten3 p{
+     font-size: 13px;
+    text-align: justify;
+    margin-left: 50px;
+    margin-right: 50px;   
+}
+.konten3 span{
+    float: right;
+}
+.konten4 h4{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 0px;
+}
+.konten4 span{
+    float: right;
+}
+.space1{
+    width: 25px;
+    height: 25px;
+    background: black;
+    border-radius: 100%;
+    margin-left: 450px;
+}
+
+#boxlapor{
+    width:80%;          
+    height:100%; 
+    margin-top: 100px;
+    margin-left: 150px;
+    position: relative;
+    border: solid 1px black;
+}
+.lapor p{
+    text-align: left;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 0px;
+}
