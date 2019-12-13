@@ -19,18 +19,15 @@ header {
     padding-top: 30px;
     padding-bottom: 30px;
     min-height: 70px;
-    border-bottom: 3px solid #e8491d;
 }
 
 /* bagian search */
 #searchlaporan {
     padding: 15px;
     color: white;
-    background: #35424a;
 }
 
 #searchlaporan form {
-    float: left;
     margin-top: 15px;
     margin-bottom: 15px;
 }
@@ -38,7 +35,7 @@ header {
 #searchlaporan input[type="text"] {
     padding: 4px;
     height: 30px;
-    width: 500px;
+    width: 85%;
 }
 
 .button-1 {
