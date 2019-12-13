@@ -12,8 +12,7 @@
 		<textarea name="lapor" id="lapor" placeholder="Masukkan keluhan anda disini..." rows="4" cols="50"></textarea>
 		
 			<br><br>
-
-			<br>
+			
 		<select id="aspek" name="aspek">
 			<option>Dosen</option>
 			<option>Staff</option>

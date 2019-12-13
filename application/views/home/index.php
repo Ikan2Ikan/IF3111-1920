@@ -22,7 +22,7 @@
 </div>
 
 <div class="tulisan">
-	<p>laporan/komentar</p>
+	<p>Laporan/Komentar</p>
 	<hr />
 </div>
 
