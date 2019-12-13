@@ -10,8 +10,11 @@
     <h1>LAPOR ITERA!</h1>
   </div>
 
-  <input type="text" name="search" id="search" aria-describedby="helpId" placeholder="Masukkan Keyword">
-  <button type="submit" name="cari">Cari</button>
+  <div class="form">
+    <input type="text" name="search" id="search" aria-describedby="helpId" placeholder="Masukkan Keyword">
+    <button type="submit" name="cari">Cari</button>
+  </div>
+
   <br>
 
   <div class="com_link">
@@ -35,7 +38,7 @@
       <div class="details">
         <span>
           <span id="lampiran"><?= $d['lampiran'] ?> </span>
-          <span id="timestamp"><?= $d['timestamp'] ?> WIB</span>
+          <span id="timestamp">| <?= $d['timestamp'] ?> WIB</span>
         </span>
 
         <span>
