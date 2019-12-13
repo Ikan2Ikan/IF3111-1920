@@ -50,4 +50,11 @@ class M_comment extends CI_Model
 
     return $this->upload->data('file_name');
   }
+
+  public function myLapor()
+  {
+    $id = $this->session->userdata('id');
+    $data = $this->db->query("select * from comment natural join user where user_id=$id")->result_array();
+    return $data;
+  }
 }

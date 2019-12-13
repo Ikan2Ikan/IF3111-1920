@@ -37,4 +37,10 @@ class Home extends CI_Controller
     $this->session->sess_destroy();
     redirect(base_url('home'));
   }
+  public function myLapor()
+  {
+    $this->load->model('M_comment');
+    $data['result'] = $this->M_comment->myLapor();
+    $this->load->view('home/myLapor', $data);
+  }
 }

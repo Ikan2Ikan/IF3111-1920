@@ -33,6 +33,7 @@ class User_model extends CI_model
     $keyword = $this->input->post('keyword');
     var_dump($keyword);
     die;
-    $this->db->query("select * from user where fullname like %'$keyword'%");
+    $data = $this->db->query("select * from user where fullname like %'$keyword'%")->result_array();
+    return $data;
   }
 }

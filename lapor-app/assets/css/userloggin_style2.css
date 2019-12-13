@@ -145,3 +145,8 @@
 	white-space: nowrap;
 	overflow: hidden;
 }
+
+.right-menu {
+	display: flex;
+	justify-content: space-between;
+}

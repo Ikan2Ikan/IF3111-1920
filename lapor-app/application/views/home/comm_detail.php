@@ -34,7 +34,8 @@
         );
 
         // echo file_get_contents("www.google.com", false, $context);
-        echo file_get_contents(base_url('assets/doc/$result["lampiran"]'), false, $context); ?>
+        // echo file_get_contents(base_url('assets/doc/$result["lampiran"]'), false, $context); 
+        ?>
       </div>
     </div>
   </div>

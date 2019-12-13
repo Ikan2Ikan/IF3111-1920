@@ -20,9 +20,12 @@
     <span>
       <p>HAI! <?= $this->session->userdata("fullname"); ?></p>
     </span>
-    <span>
-      <a href="<?= base_url('home/logOut') ?>">Logout</a>
-    </span>
+    <div class="right-menu">
+      <span><a href="<?= base_url('home/myLapor') ?>">My Lapor</a></span>
+      <span>
+        <a href="<?= base_url('home/logOut') ?>">Logout</a>
+      </span>
+    </div>
   </div>
 
   <form action="" method="get">

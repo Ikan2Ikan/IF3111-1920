@@ -1,3 +1,7 @@
+<?php
+$_POST['keyword'] = $this->uri->segment(3);
+var_dump($_POST['keyword']);
+?>
 <div class="container">
 
   <div class="log-reg">
@@ -11,7 +15,7 @@
   </div>
 
   <div class="form">
-    <input type="text" name="search" id="search" aria-describedby="helpId" placeholder="Masukkan Keyword">
+    <input type="text" name="keyword" id="keyword" aria-describedby="helpId" placeholder="Masukkan Keyword">
     <button type="submit" name="cari">Cari</button>
   </div>
 
