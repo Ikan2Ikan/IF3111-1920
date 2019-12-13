@@ -21,8 +21,8 @@
 	      <nav>
             <ul>
              <li>
-	        <li> <a href="#"> Masuk </a></li> 
-		       <li> <a href="#"> Daftar </a></li>
+	        <li> <a href="<?php echo site_url('lapor/login')?>"> Masuk </a></li> 
+		       <li> <a href="<?php echo site_url('lapor/daftar')?>"> Daftar </a></li>
               </li>
              </ul>
          </nav>
@@ -41,35 +41,8 @@
     </form>
 
    
-    <a class="buat" href="<?php base_url(); ?>buat">Buat Laporan / Komentar &nbsp<img src="<?php echo base_url().'assets/img/tambah.png'?>" height="13px"></a>
-    <p class="subjudul">Laporan/Komentar Terakhir</p>
-    <hr>
-    <br><br>     
-         	<?php foreach ($home as $hm )  :?>
-            <?php $id = $hm['id_lapor']; ?>
-            <?php $now = date("Y-m-d H:i"); ?>
-          <div class="arsip"> 
-          	<p><?php echo substr($hm['laporan'], 0, 450); ?></p>
-       </div><br>
-        <tr>
-        	<a class='more' href='detail?detail_id=<?php $id ?>'>Lihat Selengkapnya  <img src="<?php echo base_url().'assets/img/more.png'?>" height=13px></a>		
-          </tr>";
-
-     <div class="waktu">
-       <?php 
-          $date = new DateTime($hm['waktu']);
-          	echo 'Waktu : ';
-            echo $date->format('d-m-Y H:i'); // 21-01-2017 05:13:03
-          	?>
-        </div> 
-  <div class="lampir">
-      <?php
-            echo 'Lampiran:'; 
-            echo  $hm['lampiran']; 
-            ?>
- </div>
+    <a class="buat" href="<?php site_url('lapor/buat'); ?>buat">Buat Laporan / Komentar &nbsp<img src="<?php echo base_url().'assets/img/tambah.png'?>" height="13px"></a>
         <br><hr><br>
-        <?php endforeach; ?>
         <img class="gambar" src="<?php echo base_url(); ?>assets/icon/menu.png">
         <img class="gambar" src="<?php echo base_url(); ?>assets/icon/menu.png">
         <br>

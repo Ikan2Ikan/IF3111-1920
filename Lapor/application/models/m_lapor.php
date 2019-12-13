@@ -1,5 +1,5 @@
 <?php
-class model extends CI_Model{
+class m_lapor extends CI_Model{
 
     function list_lapor(){
         $hasil=$this->db->query("select * from lapor");
