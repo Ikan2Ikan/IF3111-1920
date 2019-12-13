@@ -4,32 +4,26 @@
 	<title>Lapor.Itera</title>
   <link rel="stylesheet" type="text/css" href="<?php echo base_url('asset/style.css') ?>">
 </head>
-
 <body>
+  <h1> SIMPLE Laporan </h1>
 
-<div id="header">
-  <h1>SIMPLE Laporan</h1>
-</div>
-
-<div id="content">
-
-  <center>
-    <form >
-        <div class="cari" style="margin-top: 50px;">
-          <input type="search" name="search" placeholder="Cari...">
-          <input type="submit" value="cari" name="cari">
-        </div>
-    </form>
-  </center>
+  <form>
+      <div class="col-75">
+        <input type="search" name="search" placeholder="Cari...">
+      </div>
+      <div class="col-25">
+        <input type="submit" value="cari" name="cari">
+      </div>
+  </form>
 
 <br>
 
-  <a href="<?php echo base_url('buat') ?>"><h3>Buat Laporan/Komentar</h3></a>
+  <a href="<?php echo base_url('buat') ?>"><h3>Buat laporan/ komentar</h3></a>
 
 <br>
 <br>
 
-  <legend>Laporan/Komentar Terakhir</legend>
+  <legend>laporan/komentar terakhir</legend>
   <hr>
   
   <?php foreach ($berita as $berita) {?>
@@ -54,12 +48,6 @@
                $page;
         }?>
         </div>
-
-</div>
-
-<div id="footer">
-  <p class="teksputer">Copyright &copy 2019 - Nayaka Pitra Raditya dan Reki Selianta</p>
-</div>
 
 </body>
 </html>
