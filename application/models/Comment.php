@@ -10,7 +10,7 @@ class Comment extends CI_Model{
         $data = [
             'id' => '',
             'timestamp' => date('d m Y |H:i:s'),
-            'judul_comm' => $this->input->post('judul_comm'),
+            'title_comm' => $this->input->post('title_comm'),
             'isi_comm' => $this->input->post('comment'),
             'lampiran' => $this->uploadfile()
         ];

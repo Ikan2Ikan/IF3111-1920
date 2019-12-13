@@ -17,7 +17,7 @@
             <div class="keterangan">
                 <input type="text" placeholder="Judul Laporan/Komentar" name="comm_title">
                 <br>
-                <textarea name="comment" placeholder="Laporan/Komentar Terakhir"></textarea>
+                <textarea name="comment" placeholder="Laporan/Komentar"></textarea>
             </div>
 
             <br>
