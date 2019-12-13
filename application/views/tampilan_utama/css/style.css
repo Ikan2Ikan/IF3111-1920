@@ -49,3 +49,17 @@ header {
     padding-right: 20px;
     color: white;
 }
+
+/* box-h */
+#boxes .container .box-h {
+    float: left;
+    width: 32.5%;
+}
+
+#boxes .container .box-h .waktu {
+    text-align: center;
+}
+
+#boxes .container .box-h .lihat {
+    text-align: right;
+}
