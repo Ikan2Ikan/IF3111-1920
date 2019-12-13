@@ -1,16 +1,23 @@
-<div>
-    Buat Laporan <hr>
+<div class="container">
+    Buat Laporan 
+    <hr>
     <form action="">
-        <textarea name="lapor" id="" cols="120" rows="30" placeholder='Tambah Laporan/Komentar' ></textarea><br>
-        <select name="aspek" id="">
+        <textarea name="lapor" id="" cols="110" rows="30" placeholder='Tambah Laporan/Komentar' ></textarea> 
+        <br>
+        <br>
+        <select name="aspek" class="aspek_pelapor">
             <option value=""> Pilih Aspek Pelaporan/Komentar</option>
             <option value="Dosen"> Dosen</option>
             <option value="Staff"> Staff</option>
             <option value="Mahasiswa"> Mahasiswa</option>
             <option value="Infrastruktur"> Infrastruktur</option>
             <option value="Pengajaran"> Pengajaran</option>
-        </select><br>
-        <input type="file" name="lampiran" > 
-        <button > Buat LAPOR!</button>
+        </select>
+        <br>
+        <br>
+        <input class="lampiran" type="file" name="lampiran" > 
+        <br>
+        <br>
+        <button class="button_tambah" > Buat LAPOR!</button>
     </form>
 </div>

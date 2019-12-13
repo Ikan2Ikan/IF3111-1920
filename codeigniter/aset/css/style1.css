@@ -2,9 +2,9 @@
 body {
     margin: 0px;
     padding: 0px;
-    font-size: 14px;
+    font-size: 18px;
     font-family: verdana;
-    background-color:#B0E0E6;
+    background-color:#92d3ed;
 }
 
 
@@ -26,25 +26,28 @@ body {
     width: 800px;
     margin:auto;
     height: auto;
+
 }
 
+.buat_laporan {
+    text-decoration: none;
+}
 
-
-input.search_text{
+.search_text{
     margin: auto;
     border: 0;
-    background: none;
     margin:0;
     text-align: center;
-    border: 2px solid black;
     padding: 14px 10px;
     width: 700px;
     outline: none;
     color: white;
-   
+    background-color: #98FB98 ;
+    font-size : 16px;
+ 
 }
 
-input.search_button{
+.search_button{
 
     border: 0;
     background: none;
@@ -54,15 +57,49 @@ input.search_button{
     height: 47px;
     outline: none;
     color: white;
+    background-color: #4CAF50; 
+    border: none;
+    font-size: 16px;
 }
 
 .samping{
+    
     float: right;
+
 }
-.buat_laporan{
-    float: 50%;
+.cendol{
+    text-decoration: none;
 }
 
+
+.button_tambah {
+    float: right;
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.aspek_pelapor{
+   
+    width: 250px;
+    height: 40px;
+    background-color: #4CAF50; 
+    font-size: 16px;
+    color: white;
+
+}
+
+.lampiran {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    font-size: 16px;
+}
 /*#heading{
     float: left;
     width: 640px;

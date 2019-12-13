@@ -4,7 +4,7 @@
         <input class="search_text" type="text" name='cariLaporan'>
         <input  class="search_button" type="button" name="cari" id="cari" value= "cari">
         <br>
-      
+        <br>
 
         <a class="buat_laporan" href="<?= site_url('tambah'); ?>"> Buat Laporan/Komentar +</a>
         <br/>
