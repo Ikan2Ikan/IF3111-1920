@@ -5,6 +5,8 @@
        <meta charset="utf-8">
        <title><?php echo $judul; ?> </title>
        
+     <link rel="stylesheet" type="text/css" href="assets/css/style.css?v=1.1">
+     <script src="assets/js/validasi.js"></script>       
      
     </head>
  <body> 
@@ -26,7 +28,7 @@
     <br>
     <br>
           
-          
+
 
               <div class="waktu">
                 <?php 
