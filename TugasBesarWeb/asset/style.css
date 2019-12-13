@@ -1,0 +1,26 @@
+p{
+	padding-left: 250px;
+}
+
+hr{
+	width: 840px;
+}
+
+.aspek{
+	padding-left: 250px;
+	display: inline-block;
+}
+
+.tombol{
+	float: right;
+	padding-right: 250px;
+}
+
+a{
+	color: black;
+	text-decoration: none;
+}
+
+.tambah{
+	display: inline-block;
+}
