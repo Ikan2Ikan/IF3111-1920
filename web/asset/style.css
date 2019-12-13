@@ -1,0 +1,42 @@
+
+
+h3 {
+	text-align: center;
+}
+
+h1{
+	text-align: center;
+}
+
+ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+li{
+	display: block;
+	float: left;
+	padding: 5px;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	color: red;
+}
+
+p.home{
+  white-space: nowrap; 
+  width: 200px; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+p.lapor{
+  width: 250px;
+  word-break: keep-all;
+}
