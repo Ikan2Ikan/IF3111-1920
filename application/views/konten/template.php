@@ -10,7 +10,7 @@
             Buat Laporan/Komentar
         </a>
         </div>
-        <div class="laporan_terakhir">
+        <div class="laporanterakhir">
             Laporan/Komentar Terakhir<br>
             <hr>
             <?php foreach($laporan as $item_laporan):?>
@@ -22,10 +22,10 @@
             <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aut quasi voluptatibus magnam beatae nisi ea, nulla autem ut ipsa odit tempora saepe error culpa ratione asperiores, accusamus harum eum.<br><br>
             Lampiran: Gambar.jpg  <div class="more">Waktu :20-11-2019 20:00 <a href>Lihat selengkapnya</a></div> 
             <hr><br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aut quasi voluptatibus magnam beatae nisi ea, nulla autem ut ipsa odit tempora saepe error culpa ratione asperiores, accusamus harum eum.<br><br>
+            lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem felis nec erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem felis nec erat. Lorem felis nec erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem felis nec erat<br><br>
             Lampiran: Gambar.jpg  <div class="more">Waktu :20-11-2019 20:00 <a href>Lihat selengkapnya</a></div> 
             <hr><br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aut quasi voluptatibus magnam beatae nisi ea, nulla autem ut ipsa odit tempora saepe error culpa ratione asperiores, accusamus harum eum.<br><br>
+            lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem felis nec erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem felis nec erat. Lorem felis nec erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem felis nec erat<br><br>
             Lampiran: Gambar.jpg  <div class="more">Waktu :20-11-2019 20:00 <a href>Lihat selengkapnya</a></div> 
             <hr><br> -->
         </div>
