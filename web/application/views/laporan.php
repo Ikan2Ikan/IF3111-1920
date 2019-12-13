@@ -5,9 +5,15 @@
   <link rel="stylesheet" type="text/css" href="<?php echo base_url('asset/style.css') ?>">
 </head>
 <body>
-  <h1>Simple Laporan</h1>
 
-  <legend>Detail Laporan</legend>
+
+<div id="header">
+  <h1>SIMPLE Laporan</h1>
+</div>
+
+<div id="content">
+  
+  <h3 style="margin-top: 20px;">Detail Laporan</h3>
   <hr>
 
   <div class="artikel">
@@ -17,9 +23,11 @@
 
   <div class="Lampiran">
     <label>Lampiran : </label>
+    <br> <br>
     <a href=""><img src="<?php echo base_url('asset/file/'.$berita->file) ?>"></a>
   </div>
   
+  <br>
   <ul>
     <li>Waktu: <?php echo $berita->waktu ?></li>
     <li>Aspek: <?php echo $berita->aspek ?></li>
@@ -29,6 +37,12 @@
   <br>
   <br>
   <hr>
+
+</div>
+
+<div id="footer">
+  <p class="teksputer">Copyright &copy 2019 - Nayaka Pitra Raditya dan Reki Selianta</p>
+</div>
 
 </body>
 </html>
