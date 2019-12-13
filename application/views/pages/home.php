@@ -9,7 +9,7 @@
     <p>Laporan/Komentar Terakhir</p>
     <hr>
     <?php foreach ($posts as $post) : ?>
-        <p class="isi"><?php echo $post['isi']; ?></p>
+        <p class="isi"><?php echo substr($post['isi'], 0, 600).'...'; ?></p>
         <br>
         <p class="waktu">Waktu: <?php echo $post['waktu']; ?></p>
         <a href="<?php echo base_url().'laporan/view/'.$post['id'];?>">Lihat Selengkapnya ></a>
