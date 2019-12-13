@@ -13,6 +13,8 @@
     </form>
     
     <?php
+    echo "laporan atau komentar terakhir<br>";
+    
     foreach($laporan as $data){
         echo "anonim<br>";
         echo $data->laporan."<br>";
@@ -21,12 +23,11 @@
         if($data->id_aspek == $dataAspek->id){
             echo $dataAspek->nama."<br><br>";
         }
-        ?><a href="https://www.w3schools.com">Lihat Selengkapnya</a>
+        ?><a href="./view">Lihat Selengkapnya</a>
         <br>
         <br>
     <?php
     }
-    
     ?>
 
     </body>

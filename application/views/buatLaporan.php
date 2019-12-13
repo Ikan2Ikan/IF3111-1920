@@ -9,7 +9,7 @@
         <textarea id="laporan" name="laporan" rows="20" cols="80">Laporan/Komentar</textarea>
         
         <br>
-        <select name="aspek" style="width: 150px">
+        <select name="id_aspek" style="width: 150px">
         <?php
             foreach($aspek as $value){?>
                 <option value="<?php echo $value->id?>"><?php echo $value->nama ?></option>
