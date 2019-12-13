@@ -17,13 +17,17 @@ class Home extends CI_Controller
 	public function tambah(){
 		
 		//validasi form
-		$this->form_validation->set_rules('isi', 'Isi', 'required|min_length[100]');
-		//$this->form_validation->set_rules('File', 'File', 'required');
+		$this->form_validation->set_rules('isi', 'Isi', 'required|min_length[250]');
 		if($this->form_validation->run() == FALSE){
 			$this->load->view('tambah/index');
 		}else{
 			$this->Lapor_model->tambah();
-			redirect('index.php/Home');	
+			echo "
+				<script>
+					alert('berhasil menambah data');
+					document.location.href='../';
+				</script>
+				";
 		}
 		
 	}

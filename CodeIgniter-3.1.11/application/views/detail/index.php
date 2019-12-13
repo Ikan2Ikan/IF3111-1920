@@ -22,11 +22,6 @@
 			<?php 
 				$ekstensifile = explode('.',$lapor["file"]); //fungsi untuk mecah string dengan pemecah . ,aldi.jpg = ['aldi','jpg']
 				$ekstensifile = strtolower(end($ekstensifile));
-				/*
-				strtolower = semua huruf kecil
-				end(array) = untuk ambil value terakhir array
-				*/
-				//echo $ekstensifile;
 				if($ekstensifile == "pdf"){
 			?>
 			<embed src="<?php echo base_url() ?>/asset/file/<?php echo $lapor["file"]; ?>" />

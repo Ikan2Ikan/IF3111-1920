@@ -16,7 +16,7 @@ class Lapor_model extends CI_model
 		$file = $_FILES['File'];
 		if($file = ''){}else{
 			$config['upload_path'] = './asset/file';
-			$config['allowed_types'] = 'jpg|png|gif|pdf';
+			$config['allowed_types'] = 'jpeg|jpg|png|gif|pdf';
 
 			$this->load->library('upload',$config);
 			if(!$this->upload->do_upload('File')){
