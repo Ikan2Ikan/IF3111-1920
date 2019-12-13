@@ -1,0 +1,14 @@
+body{
+  padding-left: 10%;
+  width: 80%;
+}
+
+.boxcari{
+  width: 50%;
+  height: 30px;
+  border-radius: 3px;
+}
+
+.h1{
+  font-size: 100;
+}
