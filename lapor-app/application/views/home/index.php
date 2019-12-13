@@ -10,8 +10,11 @@
     <h1>LAPOR ITERA!</h1>
   </div>
 
-  <input type="text" name="keyword" id="keyword" aria-describedby="helpId" placeholder="Masukkan Keyword">
-  <button type="submit" name="cari">Cari</button>
+  <div class="form">
+    <input type="text" name="search" id="search" aria-describedby="helpId" placeholder="Masukkan Keyword">
+    <button type="submit" name="cari">Cari</button>
+  </div>
+
   <br>
 
   <div class="com_link">
@@ -26,7 +29,7 @@
     ?>
     <div class="laporan">
       <a>
-        <a href="#"><?= $d['comm_title'] ?></a>
+        <a href="<?= base_url('home/commentDetail/') . $d['comm_id'] ?>"><?= $d['comm_title'] ?></a>
         <small>Pelapor : <?= $d['fullname'] ?></small>
       </a>
 
@@ -35,11 +38,11 @@
       <div class="details">
         <span>
           <span id="lampiran"><?= $d['lampiran'] ?> </span>
-          <span id="timestamp"><?= $d['timestamp'] ?> WIB</span>
+          <span id="timestamp">| <?= $d['timestamp'] ?> WIB</span>
         </span>
 
         <span>
-          <a href="#">Selengkapnya</a>
+          <a href="<?= base_url('home/commentDetail/') . $d['comm_id'] ?>">Selengkapnya</a>
         </span>
       </div>
 
