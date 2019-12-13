@@ -10,7 +10,7 @@ class Md_komentar extends CI_Model{
             'id' => '',
             'waktuPengiriman' => date('d M Y | H:i:s'),
             'judul_komentar' => $this->input->post('judul_komentar'),
-            'komentar' => $this->input->post('komentar'),
+            'komen' => $this->input->post('komentar'),
             'kategori' => $this->input->post('kategori'),
             'file' => $this->fileUpload()
         ];
@@ -30,7 +30,7 @@ class Md_komentar extends CI_Model{
     public function fileUpload(){
         $config = [
             'upload_path' => './Dokumen/file_upload',
-            'allowed_types' => "gif|jpg|jpeg|png|pdf",
+            'allowed_types' => "gif|jpg|jpeg|png|pdf|doc|docx|xls|xlsx|ppt|pptx",
             'overwrite' => TRUE,
             'max_size' => "2048000",
             'max_height' => "768",
