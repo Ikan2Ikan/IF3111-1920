@@ -17,6 +17,9 @@
           <a href="<?= base_url(); ?>Buatform">Buat Laporan/Komentar <button class="button2">'</button> </a>
          </p>
      </form>
+     <div class="tampil">
+      Laporan/Komentar Terakhir
 
+     </div>
     </body>
 </html>

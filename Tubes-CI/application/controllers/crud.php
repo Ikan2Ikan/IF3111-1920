@@ -29,4 +29,4 @@ class Crud extends CI_Controller{
     $this->m_data->input_data($data,'laporan');
     redirect('crud/index');
  }
-}
+ }
