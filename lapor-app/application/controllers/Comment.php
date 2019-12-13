@@ -31,21 +31,21 @@ class Comment extends CI_Controller
         }
     }
 
-    // public function _uploadFile()
-    // {
-    //     $config['upload_path']          = base_url('assets/doc');
-    //     $config['allowed_types']        = 'gif|jpg|png}pdf|doc|docx|xls|xcls';
-    //     $config['max_size']             = 5000;
+    public function _uploadFile()
+    {
+        $config['upload_path']          = base_url('assets/doc');
+        $config['allowed_types']        = 'gif|jpg|png}pdf|doc|docx|xls|xcls';
+        $config['max_size']             = 5000;
 
-    //     $this->load->library('upload', $config);
-    //     if ($this->upload->do_upload('lampiran')) {
-    //         echo " <script>
-    //         alert('berhasil');
-    //         </script>";
-    //     } else {
-    //         echo " <script>
-    //         alert('gagal');
-    //         </script>";
-    //     }
-    // }
+        $this->load->library('upload', $config);
+        if ($this->upload->do_upload('lampiran')) {
+            echo " <script>
+            alert('berhasil');
+            </script>";
+        } else {
+            echo " <script>
+            alert('gagal');
+            </script>";
+        }
+    }
 }
