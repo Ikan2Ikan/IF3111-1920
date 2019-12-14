@@ -43,9 +43,9 @@ class Lapor_model extends CI_model {
         return $this->db->get('laporan')->result_array();        
     }
 
-    public function getbyid(){
-        $this->db->where('id','$id');
-        return $this->db->get('laporan')->row();
+    public function getDataById($id){
+        $this->db->where('id',$id);
+        return $this->db->get('laporan')->result_array();
     }
-        
+      
 }
