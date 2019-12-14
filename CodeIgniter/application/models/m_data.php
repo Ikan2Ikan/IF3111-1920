@@ -3,7 +3,7 @@
 class M_data extends CI_Model{
 	function tampil_data(){
 		$this->db->order_by("id", "desc");
-        return $this->db->get('lapor',4)->result_array();
+        return $this->db->get('lapor')->result_array();
 	}
 
 	function input_data($data,$table){
@@ -19,15 +19,19 @@ class M_data extends CI_Model{
 		$this->db->or_like('aspek', $cari);
 		return $this->db->get()->result();
 	}
-	public function getDetailLaporan(){
-        // return $this->db->get('simple_lapor')->result_array();
+	public function detailLaporan(){
         $id = $_GET["detail_id"];
-        // return "SELECT * FROM simple_lapor WHERE id_lapor= '$id'";
-        // return $this->db->get('simple_lapor')->result_array();
         $query = $this->db->get_where('lapor', array('id' => $id));
         return $query->result_array();
     }
-   
+
+   	public function hapusLaporan(){
+        $id = $_GET["hapus_id"];
+        $this->db->delete('lapor', array('id' => $id));
+        echo "<script>alert('Data berhasil dihapus');</script>";
+        echo "<script>location='home';</script>"; 
+     
+    }
 
 	
 }

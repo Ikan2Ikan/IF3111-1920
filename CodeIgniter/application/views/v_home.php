@@ -50,7 +50,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 $l['waktu'];
                 ?>
 
-                || <a href="<?php echo site_url('detail?detail_id=$id')?>"></a>
+                || 
                 
                 <?php
                 echo "<tr>

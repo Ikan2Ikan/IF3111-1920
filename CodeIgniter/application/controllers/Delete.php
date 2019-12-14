@@ -1,17 +1,18 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-class Detail extends CI_Controller{
+class Delete extends CI_Controller{
+    
     public function __construct()
 	{
-		parent::__construct();
+        parent::__construct();
+        
         $this->load->model('m_data');
-		
+        $this->load->helper(array('form', 'url'));
 	}
     
     public function index()
     {
-        $data ['detail'] = $this->m_data->detailLaporan();
-        $this->load->view('v_detail',$data);
+        $this->m_data->hapusLaporan();
      
     }
 }
