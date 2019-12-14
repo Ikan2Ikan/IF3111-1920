@@ -22,6 +22,6 @@
             $this->db->where($where);
             $this->db->delete($table);
         }
-
+        
     }
 ?>

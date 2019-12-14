@@ -12,14 +12,31 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         public function input(){
             $isi = $this->input->post('kolomlaporan');
             $aspek = $this->input->post('dropdownbuat');
+            $lampiran =$_FILES['namalampiran']['name'];
 
-            $data = array(
-                'isi_laporan' => $isi,
-                'aspek' => $aspek
-            );
-            $this->laporan_model->input_laporan('laporan',$data);
+            if($lampiran = ''){
+
+            } else {
+                $config['upload_path']      = './lampiran/';
+                $config['allowed_types']    = 'jpg|png|gif';
+                $config['file_name']        = date('Y-m-d H-i-s', time());
+                $this->load->library('upload', $config);
+
+                if (!$this->upload->do_upload('lampiran')) {
+                    echo "upload gagal"; die();
+                } else {
+                    $lampiran = $this->upload->data('file_name');
+                }
+                $data = array(
+                    'isi'       => $isi,
+                    'aspek'     => $aspek,
+                    'lampiran' => $lampiran
+                );
+            
+                $this->laporan_model->input_laporan($this->table_name,$data);
             redirect('template');
         }
+    }
 
         public function delete($id){
             $where = array('id_laporan' => $id);
@@ -32,6 +49,5 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             $this->load->view('default/header');
             $this->load->view('konten/detail_laporan', $data);
         }
- 
         
     }

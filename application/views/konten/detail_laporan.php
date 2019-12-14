@@ -4,7 +4,7 @@
         <p><?php echo $laporan['isi_laporan']; ?></p>
         <div class="lampiran">
             <span>lampiran</span>
-            <img src = "<?php echo base_url().'lampiran/'.$laporan['lampiran'];?>" alt="lampiran">
+            <img src = "<?php echo base_url().'upload/'.$laporan['lampiran'];?>" alt="">
         </div>
 
     <span>Aspek : <?php echo $laporan['aspek'];?></span><br>
