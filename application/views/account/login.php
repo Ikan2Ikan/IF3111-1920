@@ -18,7 +18,7 @@
                     <div id="card-title">
                         <h2>LOGIN</h2>
                         <div class="underline-title"></div>
-                        <form method="post" class="form">
+                        <form method="post" class="form" action="<?= base_url('account/login') ?>">
                             <label for="email">Email</label>
                             <input id="email" class="form-content" type="email" name="email" autocomplete="on" required />
                             <div class="form-border"></div>

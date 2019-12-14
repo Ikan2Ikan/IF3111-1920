@@ -10,7 +10,7 @@
 </head>
 
 <body>
-
+    <a href="<?= base_url('account/logout') ?>">LOGOUT</a>
     <h1 id="judul">SIMPLE LAPOR!</h1>
     <div class="containerAtas">
         <form action="search.php" method="GET">
