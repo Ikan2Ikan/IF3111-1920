@@ -18,7 +18,7 @@
                     <div id="card-title">
                         <h2>LOGIN</h2>
                         <div class="underline-title"></div>
-                        <form method="post" class="form">
+                        <form method="post" class="form" action="<?= base_url('account/login') ?>">
                             <label for="email">Email</label>
                             <input id="email" class="form-content" type="email" name="email" autocomplete="on" required />
                             <div class="form-border"></div>
@@ -29,7 +29,7 @@
                                 <legend id="forgot-pass">Forgot password?</legend>
                             </a>
                             <input id="submit-btn" type="submit" name="submit" value="LOGIN" />
-                            <a href="#" id="sign">Tidak Punya Akun?</a>
+                            <a href="<?= base_url('account/daftar') ?>" id="sign">Tidak Punya Akun?</a>
 
                     </div>
                 </div>
