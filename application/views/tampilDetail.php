@@ -19,8 +19,14 @@
 
     <br>
     <br>
+
+    <?php $new_datetime = DateTime::createFromFormat ( "Y-m-d H:i:s", $laporan->updated_at );?>
+    Waktu: <?php echo $new_datetime->format('d-m-Y H:i'); ?> 
+    <br>
+    <br>
+
     <a href="<?php echo base_url('index.php/laporan/edit/'.$laporan->id) ?>"><button type="" name="update" class="btn btn-primary">update</button></a>
-    <a href="<?php echo base_url('index.php/laporan/delete') ?>" onclick="myFunction()" >delete</button></a>
+    <a href="<?php echo base_url('index.php/laporan/delete') ?>"><button onclick="myFunction()" >delete</button></a>
     
     <script>
         function myFunction() {
