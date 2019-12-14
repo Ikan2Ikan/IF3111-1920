@@ -97,14 +97,16 @@ Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/
 
 ### Penjelasan Teknis
 `Silakan isi bagian ini dengan penjelasan anda, sesuai Petunjuk Pengerjaan di atas.`
-   - Instalasi Framework, Koneksi basis data 
+   - Instalasi Framework, Koneksi basis data.
+
         Framework yang digunakan adalah CodeIgniter. Pertama-tama, download CodeIgniter di situs resminya yaitu :
         codeigniter.com. Kemudian, install atau unzip CodeIgniter pada thdocs di xampp. Selanjutnya, merubah
         konfigurasi database sesuai dengan database yang digunakan di CodeIgniter-3.1.11\application\config\database.php.
         Agar CodeIgniter dapat menyambung dengan database yang digunakan. Lalu merubah $autoload['libraries'] = ; menjadi
         $autoload['libraries'] = array('database'); di CodeIgniter-3.1.11\application\config\autoload.php. Agar database
         dapat digunakan.
-   - Melakukan validasi pada client-side
+   - Melakukan validasi pada client-side.
+   
         Untuk melakukan validasi, digunakan kode javascript. Validasi digunakan pada file buat laporan.php. Dan validasi
         yang dilakukan adalah, memastikan pengguna telah menginputkan form yang telah ditentukan.
    - Melakukan AJAX (mulai dari pengguna melakukan klik pada tombol LAPOR! sampai laporan/komentar terkirim).
