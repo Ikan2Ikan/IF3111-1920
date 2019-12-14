@@ -12,9 +12,9 @@
             <p><?= $lpr['laporan']; ?></p>
             <p><?php
                 if($lpr['tipe']=="image/png" || $lpr['tipe']=="image/jpg" || $lpr['tipe']=="image/jpeg" ){
-                    echo "<img src='" . base_url("asset/filess/" . $lpr['lampiran']) . "' width='300' height='300'>";
+                    echo "<center><img src='" . base_url("asset/filess/" . $lpr['lampiran']) . "' width='300' height='300'></center>";
                 }else{
-                    echo "<img src='" . base_url("asset/filess/" . "default.png") . "' width='500' height='500'>";
+                    echo "<center><img src='" . base_url("asset/filess/" . "default.png") . "' width='300' height='300'></center>";
                 }
             ?></p>
             
