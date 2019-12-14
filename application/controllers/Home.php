@@ -13,7 +13,7 @@ class Home extends CI_Controller {
         $data['judul'] = 'Home';
         $data['lapor'] = $this->Lapor_model->getAllLaporan();
         $this->load->view('templates/header',$data);
-        $this->load->view('home/index',$data);
+        $this->load->view('pages/home',$data);
         $this->load->view('templates/footer');
     }
       
@@ -35,7 +35,7 @@ class Home extends CI_Controller {
         }
         
         $this->load->view('templates/header',$data);
-        $this->load->view('home/index',$data);
+        $this->load->view('pages/home',$data);
         $this->load->view('templates/footer');
       }
     
