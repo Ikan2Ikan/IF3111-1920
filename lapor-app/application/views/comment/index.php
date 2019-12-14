@@ -32,15 +32,11 @@
                     <option value="Pengajaran">Pengajaran</option>
                 </select>
             </div>
-
             <br>
-
             <div class="file">
                 <input class="file_in" type="file" name="lampiran" required>
             </div>
-
             <br>
-
             <div class="btn_submit">
                 <button type="submit" name="submit">Buat LAPOR!</button>
             </div>

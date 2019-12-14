@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="<?= base_url('assets/css/myLapor.css') ?>">
   <title>My Lapor</title>
+  <link rel="stylesheet" href="<?= base_url('assets/css/mylapor_style.css') ?>">
 </head>
 
 <body>
