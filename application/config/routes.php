@@ -49,6 +49,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | Examples:	my-controller/index	-> my_controller/index
 |		my-controller/my-method	-> my_controller/my_method
 */
+$route['search']='laporan/search';
 $route['default_controller'] = 'control';
 $route['laporan/input'] = 'laporan/input';
 $route['laporan/view/(:any)'] = 'laporan/view/$1';

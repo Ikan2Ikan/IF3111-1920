@@ -50,4 +50,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             $this->load->view('konten/detail_laporan', $data);
         }
         
+        public function search(){
+            $keyword =$this->input->get('keyword');
+            $data['result']=$this->laporan_model->search_data($keyword,'laporan');
+            $this->load->view('default/header');
+            $this->load->view('search_result',$data);
+        }
     }

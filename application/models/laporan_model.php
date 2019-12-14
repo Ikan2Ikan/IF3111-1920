@@ -22,6 +22,12 @@
             $this->db->where($where);
             $this->db->delete($table);
         }
+
+        public function search_data($keyword,$table){
+            $this->db->like('isi_laporan',$keyword);
+            $query=$this->db->get($table);
+            return $query->result_array();
+        }
         
     }
 ?>
