@@ -1,11 +1,11 @@
   <div class="container">
     <form action="<?= base_url(); ?>auth" method="post">
       <h2> LOGIN KUY! </h2>
-      <input type="text" name="email" id="email" placeholder="Email">
+      <input type="email" name="email" id="email" placeholder="Email" required>
       <br>
 
       <br>
-      <input type="password" name="password" id="password" placeholder="Password">
+      <input type="password" name="password" id="password" placeholder="Password" required>
       <br>
       <br>
 

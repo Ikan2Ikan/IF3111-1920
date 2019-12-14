@@ -17,7 +17,7 @@
             <div class="main">
                 <input type="text" placeholder="Judul Laporan/Komentar" name="comm_title" required>
                 <br>
-                <textarea minlength="100" name="comment" placeholder="Laporan/Komentar" required></textarea>
+                <textarea minlength="100" name="comment" placeholder="Laporan/Komentar (Minimal 100 Karakter)" required></textarea>
             </div>
 
             <br>
