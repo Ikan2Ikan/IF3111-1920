@@ -96,7 +96,21 @@ Validasi **wajib** dilakukan pada *client-side*, dengan menggunakan **javascript
 Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/komentar`.
 
 ### Penjelasan Teknis
-`Silakan isi bagian ini dengan penjelasan anda, sesuai Petunjuk Pengerjaan di atas.`
+Pada Tubes kali ini kami menggunakan Framework CodeIgniter versi 3.1.11 dan Database MySQL
+
+1. Instalasi Framework
+    -Download framework CodeIgniter dan ekstrak hasil download ke folder "IF3111-1920"
+    -Copy paste ke xampp/htdocs
+2. Koneksi Database
+    -Buka file xampp/htdocs/tubes/application/config/autoload.php
+    -Cari $autoload['libraries'] lalu tambahkan library database (seperti dibawah ini) :
+    $autoload['libraries'] = array('database');
+    -Buka file xampp/htdocs/tubes/application/config/database.php
+    -Isi 'localhost' pada hostname, 'root' pada username, dan 'lapor' pada database
+    (Database yang kami gunakan bernama 'lapor')
+3. Validasi di client-side
+    -Kami menggunakan fungsi minlength="20" untuk validasi isi laporan memiliki 20 kata atau lebih.
+    Kami juga menggunakan fungsi required sebagai validasi bahwa kolom tersebut tidak kosong.
 
 ### Knowledge
 Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaikan tugas ini.
