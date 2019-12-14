@@ -7,5 +7,5 @@
 	</button>
 </div><br>
 
-<a href="buatlaporan" type="buatlaporan" class="lapor">Buat Laporan/Komentar <i class="fa fa-plus"></i></a>
+<a href="buatlaporan" type="buatlaporan" class="lapor">Buat Laporan/Komentar <i class="fa fa-plus-square"></i></a>
 <br><br>

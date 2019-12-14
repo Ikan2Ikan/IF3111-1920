@@ -8,9 +8,7 @@
 </head>
 
 <body>
-	<div class="judul">
-		<h2>SIMPLE LAPOR!</h2>
-	</div>
+	<h2>SIMPLE LAPOR!</h2>
 	<div class="subjudul">
 		<p>Buat laporan/komentar</p>
 		<hr>
@@ -32,7 +30,6 @@
 			</div>
 		</form>
 	</div>
-
 </body>
 
 </html>

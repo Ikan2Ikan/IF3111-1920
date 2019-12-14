@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-$route['pusatlapor/(:any)'] = 'pusatlapor/menu/$1';
+$route['pusatlapor/(:any)'] = 'pusatlapor/laporan/$1';
 $route['pusatlapor'] = 'pusatlapor/index';
 $route['default_controller'] = 'home/view';
 $route['(:any)'] = 'home/view/$1';
