@@ -5,17 +5,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
     <title><?php echo $judul1; ?></title><!-- variabel judul berasal dari key yang otomatis menjadi variabel yg  berada di controller/home.php -->
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/style_header_daftar_login.css">
 
-    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/style_detail.css">
-  
+
+       
   </head>
   <body>
 
+    
 <div id="id01" class="modal">
   <form class="modal-content animate" action="">
     <div class="imgcontainer">
@@ -34,8 +32,8 @@
 </div>
 
 
-<div class="header">
-    <ul>
+    <div class="header">
+        <ul>
           <li> LAPOR-DAN  </li>
         </ul>
        
@@ -75,7 +73,20 @@
     </div> <!-- end login -->
 
 </div> <!-- end header -->
+<!-- 
+alasan knp dibuat seperti itu
+agar menghemat resoucer tidak memangil
+halaman terlalu banyak -->
 
-    </ul> 
-</div>
-<br><br><br>
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+

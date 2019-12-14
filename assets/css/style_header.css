@@ -1,26 +1,42 @@
 /*id -> pagar
-class -> titik*/
+class -> titik
+css buat index
+*/
+body{
+	background: url('background/background_body.jpg'); /*untuk background pada body semua halaman*/
+	margin: 0px;
+}
+.header{
+	background: #90EE90;
+	height: 100px;
+	width: 100%;
+	position: fixed; /*agar posisi heder tidak dapat bergerak ketika disekelor*/
+}
 
 .header ul {
-	list-style: none;
+	list-style: none; /*agar list dihilangkan ul li*/
 	float: left;
 	padding-left: 100px;
 
 }
 #pilih{
 	padding-left: 288px;
+	width: 100%;
+	background-color: #90EE90;
 }
 
+#cari{
+	position: fixed; /*agar posisi cari tidak dapat bergerak ketika diskelor*/
+	padding-left: 300px;
+}
 
 #cari input {
-
 	height: 50px;
 	width: 600px;
 
 }
 
 #cari button {
-
 	height: 50px;
 	width: 80px;
 
@@ -58,11 +74,68 @@ textarea{
 }
 #tombol{
     padding-left: 900px;
+    background-color: #90EE90;
+    height: 60px;
+}
+
+#tombol button{
+    height: 40px;
 }
 
 .content{
-	width: 800px;
+	width: 900px;
 	height: auto;
-	background: yellow;
-	border: 2px solid;
+	background: #90EE90;
+	border: 1px solid;
+}
+.content a{
+	text-decoration: none;
+}
+#laporan h4{
+	float: left;
+	padding-left: 30px;
+}
+#tambah_laporan{
+	padding-top: 60px;
+
+}
+#tambah_laporan img{
+	width: 150px;
+
+}
+#nama{
+	float: left;
+	font-weight: 10px;
+	font-size: 16px;
+}
+#lampiran1{
+	position: absolute;
+}
+#waktu{
+	float: right;
+	font-weight: 10px;
+	font-size: 16px;
+	padding-right: 40px;
+}
+#komentar a{
+	text-decoration: none;
+}
+#komentar p{
+	margin-left: 90px;
+	margin-right: 20px;
+	text-align: center;
+}
+h2{
+	color: red;
+}
+
+h3{
+	color: green;
+}
+
+.bungkus{
+	width: 700px;
+	height: 600px;
+	background-color: red;
+
 }
