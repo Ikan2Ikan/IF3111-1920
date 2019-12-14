@@ -19,4 +19,14 @@ class Tambah extends CI_Controller {
 		$this->load->view('templates/footer');
         
     }
+
+    public function buat_tambah(){
+        $laporan=$this->input->post('laporan');
+        $aspek=$this->input->post('aspek');
+        $lampiran=$this->input->post('lampiran');
+
+        $data = array('nama'=>$nama, 'alamat'=>$alamat, 'pekerjaan'=>$pekerjaan);
+        $this->database_model->input_data($data, 'lapor');
+        redirect(pages/tambah/buat);
+    }
 }

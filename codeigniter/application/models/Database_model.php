@@ -19,4 +19,8 @@ class database_model extends CI_Model {
         return $query->result_array();
     }
 
+    public function input_data($data,$table){
+        $this->db->insert($table,$data);
+    }
+
 }

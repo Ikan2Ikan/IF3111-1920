@@ -10,7 +10,7 @@
         <br/>
         <h4> Laporan/Komentar Terakhir </h4>
         <hr>
-
+        <?php echo base_url(); ?>
         <div>
         <?php foreach ($laporan as $laporan_item ) {?>
                 <?= $laporan_item['laporan']; ?> <br>

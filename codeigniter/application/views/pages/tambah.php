@@ -1,7 +1,7 @@
 <div class="container">
     Buat Laporan 
     <hr>
-    <form action="">
+    <form action="<?php echo base_url() . 'tambah/buat_tambah'; ?>" method= 'POST' >
         <textarea name="lapor" id="" cols="110" rows="30" placeholder='Tambah Laporan/Komentar' ></textarea> 
         <br>
         <br>

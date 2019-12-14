@@ -11,6 +11,6 @@
 </head>
 <body>
 <div class="container_header">
-    <h1> BIANG KICAT !</h1>
+    <h1> LAPOR SIMPLE !</h1>
 
 </div>
