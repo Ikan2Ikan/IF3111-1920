@@ -20,6 +20,7 @@
       $('#submit-button').attr('disabled', 'disabled');
     }
   }
+
 	</script>
 </head>
 <body>
