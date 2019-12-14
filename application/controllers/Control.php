@@ -14,9 +14,17 @@ class Control extends CI_Controller
     // menampilkan semua data ================================================
     public function index()
     {
-
         $data['laporan'] = $this->control_model->read();
+        $this->load->view("pages/tampilan_utama", $data);
+    }
 
+    public function search()
+    {
+        $keyword = $this->input->post('keyword');
+        $listlaporan = $this->control_model->search_laporan($keyword);
+        $data = array(
+            "listlaporan" => $listlaporan
+        );
         $this->load->view("pages/tampilan_utama", $data);
     }
 
@@ -32,21 +40,21 @@ class Control extends CI_Controller
     {
         $upload = $this->control_model->upload();
         $this->control_model->create($upload);
-
         redirect('control');
     }
 
     // mengubah data ========================================================
-    public function ubah($id)
+    public function lihat2($id)
     {
         $data['laporan'] = $this->control_model->view_by($id);
         $this->load->view('pages/tampilan_ubah', $data);
+    }
 
-        if ($this->input->post('submit')) {
-            $upload = $this->control_model->upload();
-            $this->control_model->update($upload, $id);
-            redirect('control');
-        }
+    public function ubah($id)
+    {
+        $upload = $this->control_model->upload();
+        $this->control_model->update($upload, $id);
+        redirect('control');
     }
 
     // menghapus data yang dipilih ==========================================
@@ -77,15 +85,5 @@ class Control extends CI_Controller
     public function tampilan_ubah()
     {
         $this->load->view("pages/tampilan_ubah");
-    }
-
-    public function search()
-    {
-        $keyword = $this->input->post('keyword');
-        $listlaporan = $this->control_model->search_laporan($keyword);
-        $data = array(
-            "listlaporan" => $listlaporan
-        );
-        $this->load->view("pages/tampilan_utama", $data);
     }
 }

@@ -21,14 +21,14 @@
 		</header>
 
 		<div class="container">
-			<h4>Detail Laporan/Komentar</h4>
+			<h3>Detail Laporan/Komentar</h3>
+			<hr>
 		</div>
 
 		<div class="container">
 			<?php
 
 			echo form_open("control/lihat/" . $laporan->id);
-			echo $laporan->id;
 			echo "<p>" . $laporan->laporan . "</p>";
 
 			echo "<h4>Lampiran</h4>";
@@ -46,33 +46,33 @@
 
 				echo form_open("control/lihat/" . $laporan->id);
 				$link = base_url('control/hapus/' . $laporan->id);
-				$link1 = base_url('control/ubah/' . $laporan->id);
+				$link1 = base_url('control/lihat2/' . $laporan->id);
 
 				echo "<div class='box-h'>",
 					"<div class='waktu'>",
-					"<h4>Waktu :" . $laporan->waktu . "</h4>",
+					"<p>Waktu :" . $laporan->waktu . "</p>",
 					"</div>",
 					"</div>";
 
 				echo "<div class='box-h'>",
 					"<div class='aspek'>",
-					"<h4>Aspek : " . $laporan->aspek . "</h4>",
+					"<p>Aspek : " . $laporan->aspek . "</p>",
 					"</div>",
 					"</div>";
 
 				echo "<div class='box-h'>",
 					"<div class='lihat'>",
-					"<h4><a href=" . $link1 . ">Ubah</a></h4>",
+					"<p><a href=" . $link1 . ">Ubah</a></p>",
 					"</div>",
 					"</div>";
 
 				echo "<div class='box-h'>",
 					"<div class='lihat'>",
-					"<h4><a href=" . $link . ">Hapus</a></h4>",
+					"<p><a href=" . $link . ">Hapus</a></p>",
 					"</div>",
 					"</div>";
 				?>
-
+				<hr><br>
 			</div>
 		</section>
 	</fieldset>

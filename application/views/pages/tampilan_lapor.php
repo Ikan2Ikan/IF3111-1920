@@ -45,11 +45,12 @@
 					<br>
 					<input type="file" name="lampiran" id="" required>
 					<br><br>
+					<hr>
+					<br>
 					<button type="submit" class="button-1" name="submit" value="simpan">Buat LAPOR!</button>
-
+					<br>
 				</form>
 				<br>
-				<hr>
 			</div>
 		</section>
 	</fieldset>

@@ -31,3 +31,7 @@ header {
 #boxes .container .box-h .hapus {
 	text-align: right;
 }
+
+a {
+	text-decoration: none;
+}

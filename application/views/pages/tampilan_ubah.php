@@ -20,7 +20,7 @@
 		</header>
 		<section id="buatlaporan">
 			<div class="container">
-				<h3>Buat Laporan/Komentar</h3>
+				<h3>Ubah Laporan/Komentar</h3>
 				<hr>
 				<br>
 			</div>

@@ -47,18 +47,18 @@ class control_model extends CI_Model
     }
 
     // proses UPDATE ==========================================================
-    public function update($upload, $id)
+    public function update($reload, $id)
     {
         $object = array(
             'laporan' => $this->input->post('laporan'),
             'aspek' => $this->input->post('aspek'),
-            'lampiran' => $upload['file']['file_name'],
-            'ukuran_file' => $upload['file']['file_size'],
-            'tipe_file' => $upload['file']['file_type']
+            'lampiran' => $reload['file']['file_name'],
+            'ukuran_file' => $reload['file']['file_size'],
+            'tipe_file' => $reload['file']['file_type']
         );
 
         $this->db->where('id', $id);
-        return $this->db->update('laporan', $object);
+        $this->db->update('laporan', $object);
     }
 
     // proses DELETE ==========================================================
@@ -67,6 +67,8 @@ class control_model extends CI_Model
         $this->db->where('id', $id);
         return $this->db->delete('laporan');
     }
+
+    // proses SEARCH ==========================================================
     public function search_laporan($keyword)
     {
         $this->db->like("laporan", $keyword);

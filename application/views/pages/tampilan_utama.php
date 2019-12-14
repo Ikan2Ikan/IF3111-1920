@@ -34,14 +34,13 @@
 			<div class="container">
 				<center>
 					<a href="<?php echo base_url() . 'control/tampilan_lapor' ?>">Buat Laporan/Komentar</a> <span style="text-style:bold;padding: 1px 2px;background-color: #000; color: #fff;">+</span>
-					<!-- belum ditambah icon+(plus) -->
 				</center>
 			</div>
 		</section>
 
 		<section id="laporan/komentarterakhir">
 			<div class="container">
-				<h4>Laporan/Komentar Terakhir</h4>
+				<h3>Laporan/Komentar Terakhir</h3>
 			</div>
 		</section>
 
@@ -51,44 +50,40 @@
 				<div class="box-v">
 
 					<?php
+
 					foreach ($laporan as $data) {
 						$link = base_url('control/lihat/' . $data->id);
 
 						echo "<p>" . $data->laporan . "</p>",
 							"<div class='box-h'>",
 							"<div class='lampiran'>",
-							"<h4>Lampiran : " . $data->lampiran . "</h4>",
+							"<p>Lampiran : " . $data->lampiran . "</p>",
 							"</div>",
 							"</div>";
 
 						echo "<div class='box-h'>",
 							"<div class='waktu'>",
-							"<h4>Waktu :" . $data->waktu . "</h4>",
+							"<p>Waktu :" . $data->waktu . "</p>",
 							"</div>",
 							"</div>";
 
 						echo "<div class='box-h'>",
 							"<div class='lihat'>",
-							"<h4><a href=" . $link . ">Lihat Selengkapnya></a></h4>",
+							"<p><a href=" . $link . ">Lihat Selengkapnya></a></p>",
 							"</div>",
 							"</div>";
 
 						echo "<br>",
 							"<br>",
 							"<br>",
-							"<br>",
 							"<hr>";
 					}
 					?>
 
-
+					<br>
 
 				</div>
 			</div>
-			<div class="container">
-				<hr>
-			</div>
-
 		</section>
 	</fieldset>
 </body>
