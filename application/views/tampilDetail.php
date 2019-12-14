@@ -20,6 +20,18 @@
     <br>
     <br>
     <a href="<?php echo base_url('index.php/laporan/edit/'.$laporan->id) ?>"><button type="" name="update" class="btn btn-primary">update</button></a>
-    <a href="<?php echo base_url('index.php/laporan/delete') ?>"><button type="" name="delete" class="btn btn-primary">delete</button></a>
-    </body>
+    <a href="<?php echo base_url('index.php/laporan/delete') ?>" onclick="myFunction()" >delete</button></a>
+    
+    <script>
+        function myFunction() {
+            var alert = confirm("Apakah anda yakin ingin menghapus Laporan?\nMenekan tombol OK akan menghapus laporan");
+            if (alert == true) {
+                
+            } else {
+                
+            }
+            document.getElementById("demo").innerHTML = txt;
+        }
+    </script>
+</body>
 </html>

@@ -12,6 +12,8 @@ class Aspek_model extends CI_Model {
         $query=$this->db->get('aspek');
         return $query->row()->nama;
     }
+
+    
 }
 
 ?>

@@ -133,15 +133,19 @@ class Laporan extends CI_Controller {
 		redirect('/laporan/detail/'.$id, 'refresh');
 	}
 
-	function editprojectimage($projectID)  //edit project page
-
-	{    
-
-	//get project by id number
-	$data['indiv_project'] = $this->project->single_project($projectID);
-
-	$this->load->view('templates/header');
-	
-	$this->load->view('templates/footer');
+	public function delete(){
+		$del = $this->db->delete('laporan', array('id' => $id));
 	}
+
+	public function editprojectimage($projectID){    
+
+		//get project by id number
+		$data['indiv_project'] = $this->project->single_project($projectID);
+
+		$this->load->view('templates/header');
+		
+		$this->load->view('templates/footer');
+	}
+
+	
 }

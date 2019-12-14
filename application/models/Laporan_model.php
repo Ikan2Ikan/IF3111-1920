@@ -17,6 +17,11 @@ class Laporan_model extends CI_Model {
         $this->db->where('id',$id);
         $this->db->update('laporan',$data);
     }
+
+    public function delete($id){
+        $this->db->where('id',$id);
+        $this->db->update('laporan');
+    }
 }
 
 ?>
