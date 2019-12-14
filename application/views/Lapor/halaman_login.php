@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="<?php echo base_url() ?>assets/css/style_login.css"/>
 <div class></div>
 <?php if($this->session->flashdata('login_gagal')) {
 	echo "
@@ -26,10 +27,11 @@
 	";
 }
 
-?>
-<div class="backgroundlogin">
-<h3>Login Akun Laporan</h3>
 
+?>
+
+<div class="background">
+<h3>Login Akun Laporan</h3>
 
 <form method="post" action="">
 
@@ -38,16 +40,17 @@
 		<label>Email  </label>
 		<input type="text" name="email" placeholder="masukan email" autocomplete="none">
 	</li>
-
+	
 
 	<li>
 		<label>Password  </label>
 		<input type="password" name="password" placeholder="masukan password">
 	</li>
-
 	
-	<button type="submit" name="submit">Masuk</button>
+	<button type="submit" name="submit" class="tombol">Masuk</button>
 </ul>
 
 </form>
+</div>
+<div>
 </div>
