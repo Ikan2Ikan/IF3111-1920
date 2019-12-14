@@ -4,7 +4,7 @@
 </div>
 <form action="" method="post">
 <form>
-    <input class="search" type="text" name="keyword" id="keyword"  placeholder="Cari..." required>
+    <input class="search" type="text" name="keyword" id="keyword"  placeholder="search" required>
     <a href="<?=base_url()?>"><i class="fas fa-search" style=" padding:0px; height: 20px; font-size:30px; width: 50px;"></i></a>	
 </form>
 </form>

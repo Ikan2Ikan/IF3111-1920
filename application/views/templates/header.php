@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-
 	<title>Halaman <?=$judul;?></title>
   <link rel="stylesheet" type="text/css" href="<?=base_url();?>asset/css/style.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
