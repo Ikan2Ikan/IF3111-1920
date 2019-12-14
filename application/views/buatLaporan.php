@@ -1,12 +1,13 @@
 <html>
     <head>
         <title>SIMPLE LAPOR</title>
+        <link rel="stylesheet" href="<?php echo base_url('assets/css/style.css') ?>">
     </head>
     <body>
     <h1>SIMPLE LAPOR!</h1>
     
     <form action="<?php echo base_url('index.php/laporan/create')?>" method="POST" enctype="multipart/form-data">
-        <textarea id="laporan" name="laporan" rows="20" cols="80">Laporan/Komentar</textarea>
+        <textarea id="laporan" name="laporan" rows="20" cols="80" placeholder="Laporan/Komentar"></textarea>
         
         <br>
         <select name="id_aspek" style="width: 150px">

@@ -1,9 +1,11 @@
 <html>
     <head>
         <title>SIMPLE LAPOR</title>
+        <link rel="stylesheet" href="<?php echo base_url('assets/css/style.css') ?>">
     </head>
     <body>
     <h1>SIMPLE LAPOR!</h1>
+    
     
     <form action="<?php echo base_url('index.php/laporan/cari')?>" method="POST" enctype="multipart/form-data">
         <input type="text" name="cari">
