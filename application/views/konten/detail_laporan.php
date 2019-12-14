@@ -2,9 +2,10 @@
     <h3> Detail Laporan/Komentar</h3>
         <hr>
         <p><?php echo $laporan['isi_laporan']; ?></p>
+        <p>Lampiran :</p>
         <div class="lampiran">
-            <span>lampiran</span>
-            <img src = "<?php echo base_url().'upload/'.$laporan['lampiran'];?>" alt="">
+            
+            <img src = "<?php echo base_url().'lampiran/'.$laporan['lampiran'];?>" alt="">
         </div>
 
     <span>Aspek : <?php echo $laporan['aspek'];?></span><br>
