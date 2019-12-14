@@ -2,8 +2,8 @@
     <h3>Laporan</h3>
     <hr><br>
 
-    <form method="POST" action="upload_laporan" name="myForm" onsubmit="return validateForm()">
-        <textarea class="area" id="card" name="laporan" placeholder=" Laporan/Komentar"></textarea> <span></span>
+    <form method="POST" action="upload_laporan" name="form">
+        <textarea name="laporan" placeholder=" Laporan/Komentar"></textarea> <span></span>
         <br><br>
         <select style="height: 40px;" name="aspek">
             <option>Pilih Aspek Pelaporan/Komentar:</option>
