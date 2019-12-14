@@ -13,34 +13,22 @@
 <body>
     <div class="row-flex">
         <div class="bag-kiri">
-            <div class="col-sm-6">
-                <div class="col-sm-10 col-sm-push-1 col-8">
-                    <div class="header">
-                        <h1 class="text-center">Daftar</h1>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-10 col-sm-push-1 col-8">
-                        <h5 class="pesan">
-                            <span>Gunakan Akun Media Sosial</span>
-                        </h5>
-                        <div class="row">
-                            <div class="col-sm-10 set">
-                                <div class="col-6 face ">
-                                    <img src="<?= base_url() ?>assets/img/facebook.png" alt="facebook">
-                                </div>
-                                <div class="col-6 twit">
-                                    <img src="<?= base_url() ?>assets/img/twitter.png" alt="twitter">
-                                </div>
-                            </div>
-                        </div>
-                        <h5 class="pesan"><span>Atau</span></h5>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-10 col-sm-push-1 col-8">
-                        <form action="" method="post">
-                            <input type="text" name="nama_lengkap" placeholder="Nama Lengkap">
+            <div id="card">
+                <div id="card-content">
+                    <div id="card-title">
+                        <h2>LOGIN</h2>
+                        <div class="underline-title"></div>
+                        <form method="post" class="form">
+                            <label for="email">Email</label>
+                            <input id="email" class="form-content" type="email" name="email" autocomplete="on" required />
+                            <div class="form-border"></div>
+                            <label for="password">Password</label>
+                            <input id="password" class="form-content" type="password" name="password" required />
+                            <div class="form-border"></div>
+                            <a href="#">
+                                <legend id="forgot-pass">Forgot password?</legend>
+                            </a>
+                            <input id="submit-btn" type="submit" name="submit" value="LOGIN" /><a href="#" id="sign">Don't have account yet?</a>
                         </form>
                     </div>
                 </div>
