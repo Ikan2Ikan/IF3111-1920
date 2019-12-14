@@ -22,14 +22,27 @@ class Auth extends CI_Controller
         $this->load->view('auth/home', $data);
     }
 
+    public function getData() {
+        $data['user'] = $this->Auth_model->tampilLapor()->result();
+        return $data;
+    }
+
+    public function login()
+    {
+        $this->load->view('auth/header');
+        $this->load->view('auth/login');
+        
+    }
+
     public function Buat_Laporan()
     {
-        $this->load->view('auth/BuatLaporan');   
+        $this->load->view('auth/BuatLaporan');
+        
     }
 
     public function insertLaporan()
     {
-        date_default_timezone_set('Asia/Jakarta'); //agar waktu jadi GMT +7
+        date_default_timezone_set('Asia/Jakarta');
         $komentar = $this->input->post('komentar');
         $tipe = $this->input->post('kategori');
         $file = $this->input->post('file');
@@ -61,7 +74,6 @@ class Auth extends CI_Controller
 	    redirect('auth/');
     }
 
-    
     function edit($id) {
         $data = array(
             'id' => $id
@@ -69,6 +81,7 @@ class Auth extends CI_Controller
         $hasil['komentar'] = $this->Auth_model->Baca($data)->result();
         $this->load->view('auth/edit', $hasil);
     }
+
 
     function update($id){
         date_default_timezone_set('Asia/Jakarta');
@@ -93,5 +106,4 @@ class Auth extends CI_Controller
         $data['user'] = $this->Auth_model->tampilLapor()->result();
         redirect('auth/');
     }
-
 }
