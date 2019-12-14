@@ -107,6 +107,8 @@ Setelah menyelesaikan tampilan kami membuat file php di model, dimana di folder 
 fungsi-fungsi yang akan digunakan nantinya.
 Setelah view dan model telah selesai, kami mencoba mengaksesnya lewat controller.
 
+Pada website yang kami buat kami dapat menampilkan tampilan home lalu jika diklik tambah komentar maka akan tampil tampilan tambah komentar dan klik tombol Buat Lapor! untuk submit laporannya yang kemudian akan disimpan pada database. JIka sudah masuk ke database maka akan muncul di home daftar komentarnya. Namun jika klik Lihat Selangkapnya masih error dan belum bisa menampilkan tampilan detail laporannya. Oleh karena itu, disini kami juga belum menambahkan fitur edit dan juga hapus.
+
 ### Knowledge
 Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaikan tugas ini.
 - CSS: margin, padding, header tag, font-size, text-align, float, clear, border, color, div, span, placeholder, 
