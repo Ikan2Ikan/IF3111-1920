@@ -1,6 +1,8 @@
 <div class= "container">
+    <div class="header">
+        <h1 class="judulapp">LAPOR ITERA!</h1>
+    </div>
     <div class="content">
-        <h1>LAPOR ITERA!</h1>
         <div class="head">
             Buat Laporan/Komentar
         </div>
