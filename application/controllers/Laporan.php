@@ -50,7 +50,7 @@ class Laporan extends CI_Controller {
 		$image=$this->upload_file();
 		if($image['error']){
 			//display error
-			
+
 		}
 
 		$data = array (
@@ -82,19 +82,30 @@ class Laporan extends CI_Controller {
 		$this->load->view('tampilLaporan',$data);
 	}
 
-	public function read($id){
+	public function detail($id){
 		$this->load->model('Laporan_model');
 
         $laporan=$this->Laporan_model->getIndex();
         $data['laporan']=$laporan;
 		
-		$this->load->view('tampilLaporan',$data);
+		$this->load->model('Aspek_model');
+
+        $aspek=$this->Aspek_model->getIndex();
+		$data['aspek']=$aspek->result();
+		
+		$this->load->view('tampilDetail',$data);
+
+
+		// $this->uri->segment(3);
+		// $data['data']=$this->Laporan_model->per_id($id);
+		// $this->load->view(‘selanjutnya’,$data);
+
+		// $this->load->model('Laporan_model');
+
+        // $laporan=$this->Laporan_model->getIndex();
+        // $data['laporan']=$laporan;
+		
+		// $this->load->view('tampilLaporan',$data);
 	}
-	
-	
-
-	// public function view($id){
-
-	// }
 
 }
