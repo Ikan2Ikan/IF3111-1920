@@ -61,4 +61,37 @@ class Auth extends CI_Controller
 	    redirect('auth/');
     }
 
+    
+    function edit($id) {
+        $data = array(
+            'id' => $id
+        );
+        $hasil['komentar'] = $this->Auth_model->Baca($data)->result();
+        $this->load->view('auth/edit', $hasil);
+    }
+
+    function update($id){
+        date_default_timezone_set('Asia/Jakarta');
+        $komentar = $this->input->post('komentar');
+        $tipe = $this->input->post('kategori');
+        $file = $this->input->post('file');
+        $waktu = date("Y/m/d H:i");
+
+        $data = array(
+            'isi' => $komentar,
+            'type' => $tipe,
+            'file' => $file,
+            'tanggal' => $waktu
+        );
+     
+        $index = array(
+            'id' => $id
+        );
+     
+        $this->Auth_model->update_data($index,$data,'komentar');
+        $this->load->view('auth/header');
+        $data['user'] = $this->Auth_model->tampilLapor()->result();
+        redirect('auth/');
+    }
+
 }
