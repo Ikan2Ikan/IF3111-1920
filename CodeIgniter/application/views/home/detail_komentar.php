@@ -48,7 +48,7 @@
                                     <i class="fa fa-trash" aria-hidden="true"></i>
                                    <small>Edit</small>
                                 </a>
-                                <a class="delete" onclick="return confirm('are you sure for deleting this lapor message?') " href="<?=base-url('home/delete_komentar/') . $result['id'] ?>">
+                                <a class="delete" onclick="return confirm('are you sure for deleting this lapor message?') " href="<?=base-url('home/hapus_komentar/') . $result['id'] ?>">
                                     <i class="fa fa-trash" aria-hidden="true"></i>
                                    <small>Delete</small>
                                 </a>
