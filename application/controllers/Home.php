@@ -16,7 +16,7 @@ class Home extends CI_Controller {
 
 
     public function fileUpload(){
-        $file['fileup'] = base_url('assets/');
+        $file['fileup'] = base_url('assets/file');
         $file['typefile']  = 'jpg|png|doc|gif|jpeg|pdf';
         $file['size'] = 5000;
 
