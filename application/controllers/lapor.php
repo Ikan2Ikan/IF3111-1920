@@ -9,7 +9,7 @@ class lapor extends CI_Controller {
 	
   		}
 		public function tambah_lapor(){
-			$komentar
+			
 
 		}
 	}
