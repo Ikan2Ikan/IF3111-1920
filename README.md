@@ -97,6 +97,13 @@ Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/
 
 ### Penjelasan Teknis
 `Silakan isi bagian ini dengan penjelasan anda, sesuai Petunjuk Pengerjaan di atas.`
+1. Pertama hidupkan XAMPP dan start Apache dan Mysql
+2. Import file database lapor.mysql yang terlampir pada diatas, nama database = lapor
+3. Diharuskan menggunakan web browser FIREFOX
+4. Untuk mengakses file lapor. Gunakan url = localhost/Lapor
+5. Koneksi basis data dilakukan pada folder application/model
+6. File yang pertama kali dijalankan adalah controller/auth
+7. Validasi dilakukan pada file tambah dan edit laporan, menggunakan javascript
 
 ### Knowledge
 Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaikan tugas ini.
