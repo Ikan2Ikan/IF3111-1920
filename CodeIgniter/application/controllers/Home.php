@@ -85,6 +85,15 @@ class Home extends CI_controller {
 		$this->ambil_data->update_data($where,$data,'laporan');
 		redirect('home/index');
 	}
+
+	public function cari_laporan(){
+		$data['title'] = 'Halaman Utama';
+		$this->load->view('templates/header', $data);
+		$cari = $this->input->post('cari');
+		$data['data']=$this->ambil_data->coba_cari($cari, 'laporan');
+		$this->load->view('home/index',$data);
+		$this->load->view('templates/footer');
+	}
 }
 
  ?>
