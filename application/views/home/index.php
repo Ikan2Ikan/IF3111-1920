@@ -18,44 +18,31 @@
                 <input type="text" placeholder="Enter Search Key">
                 <button type="submit" class="button_1">Search</button>
             </form>
+            <form action="<?php echo base_url('create')?>">
                 <p>Tidak Menemukan yang dicari? <button type="submit" class="button_2">Buat Laporan + </button></p>
-        </div>
+            </form>
+            </div>
         
     </section>
 
-
+    
+    
     <section id="boxes">
+    <?php foreach ( $lapor as $lpr ) :?>
         <div class="container">
+           <p><?=  substr($lpr['laporan'],0,250); ?></p>
             <div class="box">
-                <img src="./img/log_html.jpg" alt="" srcset="">
-                <h3>Ex1</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, deleniti expedita consectetur
-                    quidem facere harum sed suscipit voluptatem soluta voluptas, quo nobis dicta molestias quas tempora,
-                    et alias dignissimos beatae totam. Rerum asperiores voluptas delectus illum tempore debitis, esse
-                    voluptatum pariatur accusantium aperiam aut inventore maxime, unde nostrum qui sed!</p>
-                    <p>Cobaaa</p>
-                    <?php foreach ( $lapor as $lpr ) :?>
-                        <p> <?= $lpr['nama']; ?></p> 
-                    <?php endforeach;?> 
-            
-                </div>
-
-            <div class="box">
-                <img src="./img/log_html.jpg" alt="" srcset="">
-                <h3>Ex2</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, deleniti expedita consectetur
-                    quidem facere harum sed suscipit voluptatem soluta voluptas, quo nobis dicta molestias quas tempora,
-                    et alias dignissimos beatae totam. Rerum asperiores voluptas delectus illum tempore debitis, esse
-                    voluptatum pariatur accusantium aperiam aut inventore maxime, unde nostrum qui sed!</p>
+                <p>Lampiran : <?= $lpr['file']; ?> </p>
             </div>
 
             <div class="box">
-                <img src="./img/log_html.jpg" alt="" srcset="">
-                <h3>Ex3</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, deleniti expedita consectetur
-                    quidem facere harum sed suscipit voluptatem soluta voluptas, quo nobis dicta molestias quas tempora,
-                    et alias dignissimos beatae totam. Rerum asperiores voluptas delectus illum tempore debitis, esse
-                    voluptatum pariatur accusantium aperiam aut inventore maxime, unde nostrum qui sed!</p>
+                <p>Waktu : <?= $lpr['waktu']; ?> </p>
+            </div>
+
+            <div class="box">
+                <p>Baca Selengkapnya</p>
             </div>
         </div>
+        <hr>
+    <?php endforeach;?> 
     </section>
