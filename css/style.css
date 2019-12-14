@@ -806,3 +806,8 @@ section {
 
 /* lain-lain */
 /* FRONT END */
+
+
+.hidden {
+	display: none;
+}

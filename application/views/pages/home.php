@@ -34,8 +34,9 @@
             </div>
         </section>
         <section class="about" id="laporan-akhir">
-            <form class="searchbar">
-                <input type="search" name="search" id="search" placeholder="Kata kunci atau tracking ID...">
+            <form class="searchbar" action="<?php echo base_url('laporan/search') ?>" method="GET">
+                <input type="search" name="keyword" id="search" placeholder="Kata kunci atau tracking ID...">
+                <input type="submit" class="hidden">
             </form>
             <h1 class="text-cari display-4">CARI ADUAN</h1>
             <div class="container">
@@ -45,7 +46,8 @@
                             <h3>Laporan/Komentar</h3>
                             <h1 class="display-4">Terakhir</h1>
                             <hr>
-                            <?php foreach ($posts as $post) : ?>
+                            <?php $sort = array_reverse((array) $posts) ?>
+                            <?php foreach ($sort as $post) : ?>
                                 <?php if(strlen($post['isi']) <= 400){?>
                                     <p class="isi"><?php echo $post['isi']; ?></p>
                                 <?php } else {?>
