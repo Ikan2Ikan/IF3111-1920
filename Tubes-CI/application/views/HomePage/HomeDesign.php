@@ -40,7 +40,6 @@ form {
     background-size: 20px;
     color:#000000;
     font-weight:bold;
-    width: 10%;
 }
 .button:hover {
     background: #ecee5d;
@@ -59,7 +58,20 @@ form {
     border: none;
     background-position: center;
     background-size: 20px;
-    bac
+}
+.baca{
+    float: right;
+}
+.button3{
+    left: -8px;
+    position: relative;
+    background-color: transparent;
+    font-weight: bold;
+    border: 0px;
+    color: black;
+}
+.tgl{
+    position: relative;
 }
 a{
     text-decoration:none;
@@ -70,12 +82,6 @@ a{
     width: 300px;
     height: 150px;
 }
-.kotak{
-    width: 40%;
-    height: 25%;
-    background-color:lightgreen;
-    float: left;
-}
 .komentar{
     width: 1000px;
     height: 300px;
@@ -85,6 +91,7 @@ a{
     background-color: transparent;
     color: black;
     padding: 10px 20px;
+    float: right;
 }
 </style>
  </head>

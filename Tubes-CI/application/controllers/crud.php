@@ -3,7 +3,7 @@ class Crud extends CI_Controller{
  
  function __construct(){
      parent::__construct();		
-     $this->load->model('m_data');
+     $this->load->model('M_data');
              $this->load->helper('url');
  }
  function index(){
@@ -23,7 +23,7 @@ class Crud extends CI_Controller{
         'tgl_laporan' => $tgl_laporan
         );
         
-    $this->m_data->input_data($data,'laporan');
+    $this->M_data->input_data($data,'laporan');
     redirect('Home');
  }
  }
