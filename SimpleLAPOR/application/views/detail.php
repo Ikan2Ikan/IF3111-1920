@@ -17,11 +17,11 @@
 	</ul>
 </div>	
 <div id="box">
-<h1 align="center">SIMPLE LAPOR!</h1>
+<h1 align="center">DETAIL</h1>
 
 
 	
-		<h4>Detail Laporan / Komentar</h4>
+
 		<hr>
 		<p><?php echo $laporan_item['komentar'];?></p>
 		<!-- <script type="text/javascript"> -->
@@ -31,14 +31,13 @@
 			<!-- } -->
 
 			
-		<?php echo '<img src="data:image/;base64,'.base64_encode( $laporan_item['lampiran'] ).'"/>' ?>
-			<span>Aspek : <?php echo $laporan_item['aspek_pelaporan']; ?> </span>
-			<span>Dibuat pada : <?php echo $laporan_item['tanggal']; ?> </span>
+		<?php echo '<img src="data:image/;base64,'.base64_encode( $laporan_item['lampiran'] ).'"/>' ?><br>
+			<span>Aspek : <?php echo $laporan_item['aspek_pelaporan']; ?> </span><br>	
+			<span>Dibuat pada : <?php echo $laporan_item['tanggal']; ?> </span><br>
 			
 			<?php $id = $laporan_item['no']; ?>
 
 			<a  href="<?php echo base_url().'hapus/'.$id;?>">Hapus/delete x</a>
-			<br>
 			<a  href="<?php echo base_url().'update/'.$id;?>">Update data</a>
 
 			

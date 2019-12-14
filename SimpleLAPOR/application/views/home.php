@@ -24,7 +24,7 @@
 		<div class="konten1">
 		<h4>Laporan/Komentar Terakhir</h4>
 		<hr>
-
+		<div class="output">
 		<?php foreach($laporan as $laporan_item){?>
 		<?php if(strlen($laporan_item['komentar']) <= 400){?>
 			<p> <?php echo $laporan_item['komentar'];?></p>
@@ -32,11 +32,14 @@
 		<p> <?php echo substr ($laporan_item['komentar'] ,0, 400).'...';?></p>
 		<?php		}  ?>
 		 <?php echo '<img src="data:image/;base64,'.base64_encode( $laporan_item['lampiran'] ).'"/>' ?>
-		<p> <?php echo $laporan_item['tanggal'];?> </p>
-		 <h4>Lampiran: Gambar.jpg <span>(WAKTU)  </span></h4> 
-		<a href="<?php echo base_url().'detail/'.$laporan_item['no']; ?>"> Lihat Selengkapnya ></a>>
+		 <div class="tgl">
+		<p> <?php echo $laporan_item['tanggal'];?>
+		 <!-- <h4>Lampiran: Gambar.jpg <span>(WAKTU)  </span></h4>  -->
+		<a href="<?php echo base_url().'detail/'.$laporan_item['no']; ?>"> Lihat Selengkapnya ></a>></p>
+	</div>
+	<hr>
 		<?php } ?>
-
+	</div>
 
 		</div>
 		

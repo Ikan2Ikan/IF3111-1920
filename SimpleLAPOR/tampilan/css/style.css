@@ -80,7 +80,7 @@ p{
 }   
 
 hr{
-    width: 90%;
+    width: 100%;
 }
 #box{
     width:80%;          
@@ -219,4 +219,10 @@ select{
     height: 20px;
     margin-left: 150px;
     font-size: 13px;
+}
+.output{
+    margin-left: 0px;
+}
+.tgl{
+    float: right;
 }
