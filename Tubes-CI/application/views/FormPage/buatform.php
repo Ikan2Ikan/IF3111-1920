@@ -40,6 +40,7 @@
         <tr>
             <td>
                 <hr width="100%" color="gray" />
+                <a href="<?= base_url(); ?>Home"><button class="button3"><</button>Back </a>
             </td>
         </tr>
     </body>

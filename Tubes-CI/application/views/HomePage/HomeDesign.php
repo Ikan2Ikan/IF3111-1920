@@ -16,7 +16,7 @@ h1{
 }
 .ketengah{
     margin: 10px auto;
-    width: 1150px;
+    width: 1000px;
 }
 form {
     width:1000px;
@@ -26,7 +26,7 @@ form {
     padding:15px 15px; 
     background: transparent;
     border:2px solid #000000;
-    width: 800px;
+    width: 832px;
 }
 .button {
     position:relative;
@@ -63,10 +63,12 @@ form {
     float: right;
 }
 .button3{
-    left: -8px;
+    font-weight: bold;
+    font-size: 17px;
+    padding: 2px;
+    left: 2px;
     position: relative;
     background-color: transparent;
-    font-weight: bold;
     border: 0px;
     color: black;
 }
@@ -83,6 +85,8 @@ a{
     height: 150px;
 }
 .komentar{
+    margin: 10px auto;
+    align: center;
     width: 1000px;
     height: 300px;
 }

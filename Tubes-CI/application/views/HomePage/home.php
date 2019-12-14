@@ -7,10 +7,9 @@
         </div>
     </form>
 
-    <p> Laporan/Komentar Terakhir </p>
-    <hr width="100%" color="gray" />
-
-    <div class="jarak">
+    <div class="komentar">
+        <p> Laporan/Komentar Terakhir </p>
+        <hr width="100%" color="grey" />
             <?php foreach($laporan as $lap):?>
                 <?php if (strlen($lap["isi_laporan"])<=450){?>
                         <p class="isi"><?php echo $lap["isi_laporan"];?></p>
@@ -19,12 +18,11 @@
                 <?php }?>
                 <div class="baca">
                     <p class="tgl"><?php echo $lap["tgl_laporan"];?>
-
-                    <a href = "<?php echo base_url().'index.php/crud/view/'.$lap['id_laporan'];?>">Lihat selengkapnya</a>
+                    <a href = "<?php echo base_url().'crud/view/'.$lap['id_laporan'];?>">Lihat selengkapnya<button class="button3"> ></button></a>
                     </p>
                 </div>
-                <hr width="100%" color="gray" />
-            <?php endforeach;?>
+            <hr width="100%" color="grey" />
+        <?php endforeach;?>
     </div>
         
     

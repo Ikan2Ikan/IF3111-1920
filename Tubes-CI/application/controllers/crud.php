@@ -33,5 +33,11 @@ class Crud extends CI_Controller{
         $this->load->view('LaporanDetail/detail', $data);
     }
 
+     public function delete($id){
+            $where = array('id_laporan' => $id);
+            $this->M_data->hapus_data($where, 'laporan');
+            redirect('Home');
+        }
+
 
  }

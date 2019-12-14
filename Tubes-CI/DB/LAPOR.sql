@@ -1,15 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.2
--- https://www.phpmyadmin.net/
+-- version 4.5.1
+-- http://www.phpmyadmin.net
 --
--- Host: localhost
--- Generation Time: Dec 14, 2019 at 12:45 PM
--- Server version: 10.4.10-MariaDB
--- PHP Version: 7.1.33
+-- Host: 127.0.0.1
+-- Generation Time: 14 Des 2019 pada 15.12
+-- Versi Server: 10.1.9-MariaDB
+-- PHP Version: 7.0.0
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
-START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -19,13 +17,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `LAPOR`
+-- Database: `lapor`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `laporan`
+-- Struktur dari tabel `laporan`
 --
 
 CREATE TABLE `laporan` (
@@ -37,18 +35,12 @@ CREATE TABLE `laporan` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `laporan`
+-- Dumping data untuk tabel `laporan`
 --
 
 INSERT INTO `laporan` (`id_laporan`, `isi_laporan`, `kategori`, `tgl_laporan`, `lampiran`) VALUES
-(34, 'vvv', 'Komentar', '2019-12-14 09:45:47', '0'),
-(35, '', 'Pilih Aspek Pel', '2019-12-14 11:34:37', ''),
-(36, '', 'Pilih Aspek Pel', '2019-12-14 11:34:59', ''),
-(37, '', 'Pilih Aspek Pel', '2019-12-14 12:13:57', ''),
-(38, '', 'Pilih Aspek Pel', '2019-12-14 12:23:11', ''),
-(39, 'KETIKA AKU MASIH KECIL ANJING', 'Laporan', '2019-12-14 12:24:42', ''),
-(40, 'hahaha', 'Laporan', '2019-12-14 12:26:34', 'white-plus'),
-(41, '', 'Pilih Aspek Pel', '2019-12-14 12:34:36', 'white-plus');
+(42, 'Dalam tradisi pengobatan, relasi dokter-pasien mesti memungkinkan terjadinya komunikasi manusiawi yang memberikan kesempatan kepada pasien agar lebih merdeka dan leluasa mengungkapkan perjalanan penyakitnya. Hal ini sangat dibutuhkan oleh seorang dokter agar dapat mendiagnosa penyakit yangdiderita pasiennya. Komunikasi pasien-dokter hanya dapat berlangsung positif jika kondisi psiologis pasien benar-benar merasa “nyaman”. Nah, kenyamanan ketika masuk RS inilah yang menjadi permasalahan saat ini.\r\n\r\nPada sisi lain, bagi sebagian orang, masuk RS itu menjadi pilihan terakhir jika penyakit yang diderita sudah tidak bisa ditahan lagi. Mereka beranggapan akan sangat beresiko cepat-cepat masuk RS. Selain karena biaya yang cukup mahal, juga rentan dengan resiko terjadinya infeksi nosokomial (penularan penyakit dari RS terhadap orang-orang yang beraktivitas di dalamnya).', 'Laporan', '2019-12-14 21:10:51', ''),
+(43, 'Berbagai peraturan yang menjelaskan hubungan pengobatan, hak-hak pasien dan hak-hak dokter/paramedik relatif cukup jelas dan mudah dimengerti. Hanya saja, pasien atau keluarga pasien yang masuk di RS cenderung tidak memperhatikan hal ini atau memang tidak tahu sama sekali.\r\n\r\nUntuk menyikapi hal ini, maka pihak RS melalui dokter/paramedik yang merawat pasien mestinya memberikan penjelasan dan penyadaran kepada pasien-pasiennya, terutama menyangkut hak mereka atas informasi pra pengobatan dari dokter (informed concent) dan kerahasiaan penyakit yang mereka derita.\r\n\r\nKenyataannya, meskipun UU Praktik Kedokteran telah diterapkan, berbagai indikasi pelanggaran atas hak pasien masih juga mencuat ke permukaan. Artinya, pihak RS, termasuk dokter dan perawat yang bekerja di dalamnya, harus menyadari bahwa saat ini masyarakat kita perlahan semakin sadar atas hak mereka mendapatkan “pengobatan yang benar”. Karenanya, otoritas RS mesti giat memperbaiki pelayanan dan “keramahan”-nya terhadap pasien-pasien mereka.', 'Komentar', '2019-12-14 21:11:58', '');
 
 --
 -- Indexes for dumped tables
@@ -68,9 +60,7 @@ ALTER TABLE `laporan`
 -- AUTO_INCREMENT for table `laporan`
 --
 ALTER TABLE `laporan`
-  MODIFY `id_laporan` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
-COMMIT;
-
+  MODIFY `id_laporan` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

@@ -19,7 +19,7 @@ class M_data extends CI_Model{
 
     public function hapus_data($where, $table){
         $this->db->where($where);
-        $this->db->delete($delete);
+        $this->db->delete($table);
     }
 
 }
