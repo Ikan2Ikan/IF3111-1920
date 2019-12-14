@@ -107,39 +107,51 @@ menggunakan framework CODEIGNITER atau yang sering di sebut CI. codeigniter meru
     Maka selanjutkan melakukan konfigurasi base url yang terdapat di folder application/config/config.php lalu buka dengan teks editor kami menggunakan Visual Studio Code lalu ubah $config ['base_url'] = 'http://localhost/codeigniter' ; pada repository ini kami menggunakan http://localhost/IF3111-1920/untuk base url nya 
     2. Cek dengan membuka http://localhost/codeigniter jika keluar tampilan welcome to CodeIgniter maka sudah terkoneksi dengan database. 
 
-
+<br>
                        B. Melakukan validasi pada client-side
     --Langkah langkah dalam memvalidasi client-side--
     1. langkah pertama yaitu dengan melakukan penambahan folder pada application/controller/ lalu buat file Laporan.php lalu isi file dengan menambahkan fungsi yang bertujuan untuk mengendalikan atau memanggil di folder view.<br>
-    2. langkah kedua membuat file pada application/vies/erorrs  dengan nama file buatLaporan.php pada file ini terdapat 4 inputan yaitu,
-     1)kolom laporan/komentar harus mempunyai nilai minimal 20 karakter yang berarti laporan atau komentar harus melebihi 20 karakter hal ini merupakan VALIDASI CLIENT-SIDE
-    (isi gambar disini1 ja)
-     2)memilih kategori yang diinginkan melapor atau memberi komentar.
-     (isi gambar disini2)
-     3)menambahkan/upload file berkas pengaduan atau komentar. 
-     (isi gambar disini3)
-     4) dan tombol button untuk mengirimkan laporan
-     (isi gambar button buatLapor) 
+    2. langkah kedua membuat file pada application/vies/erorrs  dengan nama file buatLaporan.php pada file ini terdapat 4 inputan yaitu,<br>
+    <br>
+    kolom laporan/komentar harus mempunyai nilai minimal 20 karakter yang berarti laporan atau komentar harus melebihi 20 karakter hal ini merupakan VALIDASI CLIENT-SIDE 
+    
+    ![](tampilan/gambar1.png)
+    
+    
+kemudian user memilih kategori yang diinginkan melapor atau memberi komentar.
+<br>
+user juga harus menambahkan/upload file berkas pengaduan atau komentar.<br>
+jika tidak maka tombol **Buat LAPOR!** tidak akan bisa di klik seperti gambar dibawah<br>
 
-     kempatan inputan ini wajib diisi jika tidak sistem akan meminta user untuk mengisikan yang kosong. disinila ada proses Validsasi antara client - side
+    ![](tampilan/gambar2.png)
 
-                    C. Melakukan AJAX (mulai dari pengguna melakukan 
-                klik pada tombol LAPOR! sampai laporan/komentar terkirim).
-    1. Dapat melakukan AJAX pada home terdapat beberapa fitur salah satunya Fitur CARI pada fitur ini lah AJAX diimplementasikan dimana Pencarian dilakukan secara AJAX yaitu, Search dapat langsung mencari kata yang inputkan tanpa h merefresh halaman dimana setiap tindakan (inputan kata) dari user langsung ditampilkan atau langsung ada kembalian tidak perlu reload halaman    
-     ( tambah gambar fitur cari dan ss pencarian bisa secara ajax )
-    2. terdapat fitur buat Laporan/komentar
-        1) klik button buat Lapor/komentar
-            (isi gambar )
-        2) halaman akan ke redirect ke halaman buatLaporan
-        3)  isi kolom laporan/komentar sesuai dengan yang ingin di laporkan atau dikomentari 
-        (isi gambar disini)
-        4)memilih kategori yang diinginkan melapor atau memberi komentar.
-        (isi gambar disini)
-        5)menambahkan/upload file berkas pengaduan atau komentar. 
-        (isi gambar disini)
-        6) dan tombol button untuk mengirimkan laporan
-        (isi gambar button buatLapor) 
-    3. fitur fitur lainnya
+ kempatan inputan ini wajib diisi jika tidak sistem akan meminta user untuk mengisikan yang kosong. disinila ada proses Validsasi antara client - side
+
+                C. Melakukan AJAX (mulai dari pengguna melakukan 
+            klik pada tombol LAPOR! sampai laporan/komentar terkirim).
+1. Dapat melakukan AJAX pada home terdapat beberapa fitur salah satunya Fitur **CARI** pada fitur ini lah AJAX diimplementasikan dimana Pencarian dilakukan secara AJAX yaitu, Search dapat langsung mencari kata yang inputkan tanpa h merefresh halaman dimana setiap tindakan (inputan kata) dari user langsung ditampilkan atau langsung ada kembalian tidak perlu reload halaman    
+    ![](tampilan/gambar3.png)
+    ( tambah gambar fitur cari dan ss pencarian bisa secara ajax )
+2. terdapat fitur buat Laporan/komentar
+    1) klik button buat Lapor/komentar<br>
+    ![](tampilan/gambar4.png)<br>
+    2) halaman akan ke redirect ke halaman buatLaporan<br>
+    3)  isi kolom laporan/komentar sesuai dengan yang ingin di laporkan atau dikomentari <br>
+    4)memilih kategori yang diinginkan melapor atau memberi komentar.<br>
+    5)menambahkan/upload file berkas pengaduan atau komentar.<br>
+    6) dan tombol button untuk mengirimkan laporan
+    ![](tampilan/gambar5.png) <br>
+3. fitur fitur lainnya
+    1) terdapat fitur lihat selengkapnya pada menu home <br>
+    ![](tampilan/gambar6.png)<br>
+    2) fitur selengkapnya akan mengarah ke halaman detail<br>
+    3)  Pada halaman detail dapat melakukan update, dan delete<br>
+    ![](tampilan/gambar7.png)
+    4)Menu update akan menampilkan iputan sebelumnya agar dapat di edit.<br>
+    ![](tampilan/gambar8.png)
+    5)Menu delete dapat penghapus file dan mengirimkan alert kepada pengguna untuk meyakinkan pengguna bahwa benar ingin menghapus data tersebut.<br>
+    ![](tampilan/gambar9.png) <br>
+
 ### List laporan/komentar
 Halaman utama berisi daftar judul pertanyaan, siapa yang bertanya, dan isi pertanyaan. 
     (tambah gambar list )

@@ -158,5 +158,13 @@ class Laporan extends CI_Controller {
 		$this->load->view('templates/footer');
 	}
 
+	public function search($search){
+		$search = urldecode($search);
+		$this->load->model('Laporan_model');
+		$result = $this->Laporan_model->search($search);
+		$res = json_encode($result);
+		// $res = json_decode($res);
+		echo $res;
+	}
 	
 }

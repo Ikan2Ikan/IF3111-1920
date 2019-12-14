@@ -28,8 +28,15 @@ class Laporan_model extends CI_Model {
 	}
  
 	public function jumlah_data(){
+        $this->db->order_by('updated_at', 'DESC');
 		return $this->db->get('laporan')->num_rows();
-	}
+    }
+    
+    public function search($search){
+        $this->db->like('laporan', $search);
+        $laporan = $this->db->get('laporan');
+        return $laporan->result();
+    }
 }
 
 ?>

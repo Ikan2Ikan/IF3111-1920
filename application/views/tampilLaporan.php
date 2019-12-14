@@ -8,17 +8,17 @@
             <div class = "header">
                 <br>
                 <h1> SIMPLE LAPOR!</h1>
-                <form action="<?php echo base_url('index.php/laporan/cari')?>" method="POST" enctype="multipart/form-data">
-                    <input type="text" name="cari">
+                <form onsubmit="return search()" method="POST" enctype="multipart/form-data">
+                    <input type="text" id="stringcari" name="cari">
 
-                    <button type="submit" name="cari laporan" class="btn btn-primary">Cari</button>
+                    <button type="submit" id="buttoncari" name="" class="btn btn-primary">Cari</button>
                 </form>
 
                 <a href="<?php echo base_url('index.php/laporan/buatLaporan/') ?>"><button type="" name="create" class="btn btn-primary">Buat Laporan/Komentar</button></a>
                 <br>
                 <br>
             </div>
-            <div class = "konten">
+            <div class = "konten"  id="konten">
                 <br>
                 laporan/komentar terakhir
                 <br>
@@ -56,5 +56,33 @@
                 Raras Franita . 14117063
             </div>
         </div>
+        <script>
+            function search() {
+                var str = document.getElementById('stringcari').value
+                console.log(str)
+                
+                if(str.length<=0){
+                    return true
+            }
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function() {
+            
+                if (this.readyState == 4 && this.status == 200) {
+                    let data = (JSON.parse(this.response))
+                    console.log(data)
+                    let isi=' <br>laporan/komentar terakhir<br><hr>'
+                    data.forEach(value =>{
+                        isi+='<?php echo "anonim<br>"; ?>\n'
+                        isi+=value.laporan.substr(0,30)+'\n'
+                        isi+=`<p>${value.updated_at} <a href='index.php/laporan/detail/${value.id}'>Lihat Selengkapnya</a></p>`
+                        isi+='<hr>'
+                    })
+                        document.getElementById('konten').innerHTML=isi}
+                };
+                xmlhttp.open("GET", "index.php/laporan/search/" + str, true);
+                xmlhttp.send();
+                return false
+                }
+        </script>
     </body>
 </html>
