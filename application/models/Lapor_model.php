@@ -47,5 +47,11 @@ class Lapor_model extends CI_model {
         $this->db->where('id',$id);
         return $this->db->get('laporan')->result_array();
     }
+
+    public function deleteDataById($id){
+      $this->db->where('id',$id);
+      return $this->db->delete('laporan');
+    }
+    
       
 }

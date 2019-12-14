@@ -42,6 +42,12 @@ class Home extends CI_Controller {
       $this->Lapor_model->create($upload);
       redirect('home');
     }
+
+    //Menghapus Laporan/komentar
+    public function hapus($id){
+      $this->Lapor_model->deleteDataById($id);
+      redirect("home");
+    }
     
 
 }
