@@ -18,12 +18,12 @@ class Comment extends CI_Model{
     } 
 
     public function  sComm(){
-        $data = $this->db->query("SELECT * FROM comment")->result_array();
+        $data = $this->db->query("SELECT * FROM komentar")->result_array();
         return $data;
     }
 
     public function detComm(){
-        $data = $this->db->query("SELECT * FROM comment WHERE id=$id")->result_array()[0];
+        $data = $this->db->query("SELECT * FROM komentar WHERE id=$id")->result_array()[0];
         return $data;
     }
 
