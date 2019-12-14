@@ -31,7 +31,6 @@
         </div>
 
         <hr>
-        </hr>
         <?php foreach ($result as $data) : ?>
             <div class="itm-title">
                 <p><?= $data['nama'] ?></p>
@@ -46,7 +45,6 @@
                     </td>
                 </tr>
                 <hr>
-                </hr>
             </div>
         <?php endforeach; ?>
     </div>
