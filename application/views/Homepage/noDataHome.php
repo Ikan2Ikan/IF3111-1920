@@ -87,32 +87,14 @@
         <h4>Laporan/Komentar Terakhir</h4>
         <hr>
 
-        <?php
-        foreach ($dataLaporan as $data) {
-            ?>
-            <div class="komentar">
-                <!-- <h3>Angelo</h3> -->
-                <h3 id="empty"><?php echo $data->namaUser ?></h3>
-                <p><?php echo $data->pesan ?></p>
-                <div class="rightFloat">
-                    <tr>
-                        <td>Lampiran: <?php echo $data->lampiran ?></td>
-                    </tr>
-                    <div style="float: right;">
-                        Waktu : <?php echo $data->waktu ?> &nbsp;
-                        <a href="<?php echo site_url('Laporan/detail/') . $data->IdKomentar ?>">Lihat Selengkapnya ></a>
-                    </div>
-                </div>
-                <hr>
-            </div>
-        <?php
-        }
-        ?>
-
-
+        <div class="nf">
+            <p class="notFound">! DATA NOT FOUND !</p>
+            <hr>
+        </div>
 
     </div>
 
 </body>
+
 
 </html>
