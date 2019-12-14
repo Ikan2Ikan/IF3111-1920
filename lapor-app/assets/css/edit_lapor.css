@@ -1,0 +1,68 @@
+.container {
+	border: 1px solid rgb(70, 130, 180);
+	padding: 10px;
+	margin-left: 200px;
+	margin-right: 200px;
+	background-image: url('../img/background.jpg');
+	background-size: cover;
+}
+
+.container .heading-icon {
+	display: flex;
+	justify-content: center;
+}
+
+.container .heading-icon img {
+	padding: 15px;
+	width: 50px;
+	height: 50px;
+}
+
+hr {
+	border: 1px solid rgb(70, 130, 180);
+}
+
+.content {
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+.content .head {
+	color: whitesmoke;
+}
+
+.content h1 {
+	text-align: center;
+	color: whitesmoke;
+}
+
+.content .main input {
+	border: 0.5px solid rgb(70, 130, 180);
+	padding: 4px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	margin-bottom: 10px;
+	width: 200px;
+}
+
+.content .main textarea {
+	width: 100%;
+	height: 250px;
+	padding: 6px;
+	border: 0.5px solid rgb(70, 130, 180);
+}
+
+.content .aspect select {
+	padding: 6px;
+	border: 0.5px solid rgb(70, 130, 180);
+}
+
+.content .btn_submit {
+	float: right;
+}
+
+.content .btn_submit button {
+	background: transparent;
+	padding: 6px;
+	color: whitesmoke;
+	border: 1px solid whitesmoke;
+}
