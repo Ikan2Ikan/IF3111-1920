@@ -14,7 +14,7 @@
             Laporan/Komentar Terakhir<br>
             <hr>
             <?php foreach($laporan as $item_laporan):?>
-                <p class="isi"><?php echo $item_laporan["isi_laporan"]; ?></p>
+                <p class="isi"><?php echo substr ($item_laporan["isi_laporan"],0,300); ?>...</p>
                 <p class="waktu"><?php echo $item_laporan["waktu_laporan"];?></p>
                 <a href = "<?php echo base_url().'index.php/laporan/view/'.$item_laporan['id_laporan'];?>">Lihat selengkapnya</a>
             <?php endforeach;?>
