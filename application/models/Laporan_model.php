@@ -10,9 +10,26 @@ class Laporan_model extends CI_Model {
     public function read($id){
         $this->db->where('id',$id);
         $query=$this->db->get('laporan');
-        return $query->result();
+        return $query->row();
     }
     
+    public function update($id,$data){
+        $this->db->where('id',$id);
+        $this->db->update('laporan',$data);
+    }
+
+    public function delete($id){
+        $this->db->where('id',$id);
+        $this->db->update('laporan');
+    }
+
+    public function data($number,$offset){
+		return $query = $this->db->get('laporan',$number,$offset)->result();		
+	}
+ 
+	public function jumlah_data(){
+		return $this->db->get('laporan')->num_rows();
+	}
 }
 
 ?>

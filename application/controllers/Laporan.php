@@ -18,7 +18,7 @@ class Laporan extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
-	public function index()
+	public function buatLaporan()
 	{	
         $this->load->model('Aspek_model');
 
@@ -30,7 +30,7 @@ class Laporan extends CI_Controller {
 	private function upload_file()
 	{
 		$config['upload_path']          = './uploads/';
-		$config['allowed_types']        = 'gif|jpg|png';
+		$config['allowed_types']        = 'jpeg|jpg|png';
 		$config['max_size']				= '1024';
 		// $config['max_height']				= '225';
 		// $config['max_width']				= '225';
@@ -48,10 +48,7 @@ class Laporan extends CI_Controller {
     public function create(){
 		$laporan = $this->input->post('laporan');
 		$image=$this->upload_file();
-		if($image['error']){
-			//display error
 
-		}
 
 		$data = array (
 			'laporan' => $this->input->post('laporan'),
@@ -63,19 +60,30 @@ class Laporan extends CI_Controller {
 		// echo $sql;
 		if($sql==1){
 			//view bener
+			return redirect('/', 'refresh');
 		}else{
 			//else
 		}
 	}
 	
-	public function view(){
+	public function index(){
 		$this->load->model('Laporan_model');
 
-        $laporan=$this->Laporan_model->getIndex();
-        $data['laporan']=$laporan;
+        // $laporan=$this->Laporan_model->getIndex();
 		
+		$jumlah_data = $this->Laporan_model->jumlah_data();
+		$this->load->library('pagination');
+		$config['base_url'] = base_url().'index.php/laporan/index/';
+		$config['total_rows'] = $jumlah_data;
+		$config['per_page'] = 3;
+		$from = $this->uri->segment(3);
+		$this->pagination->initialize($config);		
+		$laporan = $this->Laporan_model->data($config['per_page'],$from);
+		
+		
+        $data['laporan']=$laporan;
 		$this->load->model('Aspek_model');
-
+		
         $aspek=$this->Aspek_model->getIndex();
 		$data['aspek']=$aspek->result();
 		
@@ -85,27 +93,70 @@ class Laporan extends CI_Controller {
 	public function detail($id){
 		$this->load->model('Laporan_model');
 
-        $laporan=$this->Laporan_model->getIndex();
-        $data['laporan']=$laporan;
+        $laporan=$this->Laporan_model->read($id);
+		$data['laporan']=$laporan;
 		
-		$this->load->model('Aspek_model');
 
-        $aspek=$this->Aspek_model->getIndex();
-		$data['aspek']=$aspek->result();
+		$this->load->model('Aspek_model');
+        $aspek=$this->Aspek_model->read($laporan->id_aspek);
+		$data['aspek']=$aspek;
 		
 		$this->load->view('tampilDetail',$data);
-
-
-		// $this->uri->segment(3);
-		// $data['data']=$this->Laporan_model->per_id($id);
-		// $this->load->view(‘selanjutnya’,$data);
-
-		// $this->load->model('Laporan_model');
-
-        // $laporan=$this->Laporan_model->getIndex();
-        // $data['laporan']=$laporan;
-		
-		// $this->load->view('tampilLaporan',$data);
 	}
 
+	public function edit($id){
+		$this->load->model('Laporan_model');
+
+        $laporan=$this->Laporan_model->read($id);
+		$data['laporan']=$laporan;
+
+		// $this->load->view('edit-project-image', $data);
+		
+		$this->load->model('Aspek_model');
+        $aspek=$this->Aspek_model->getIndex();
+		$data['aspek']=$aspek->result();
+
+		$this->load->view('updateLaporan',$data);
+	}
+
+	public function update($id){
+		
+		
+		$data = array (
+			'laporan' => $this->input->post('laporan'),
+			'id_aspek' => $this->input->post('id_aspek'),
+		);
+		
+		if(strlen($_FILES['fileLapor']['name'])>0){
+			$file = $this->upload_file();
+			$data['file'] = $file['file_name'];
+		}
+		$this->load->model('Laporan_model');
+		
+		$res = $this->Laporan_model->update($id,$data);
+		echo $res;
+		// echo $sql;
+		if($res==1){
+			//view bener
+		}else{
+			//else
+		}
+		redirect('/laporan/detail/'.$id, 'refresh');
+	}
+
+	public function delete(){
+		$del = $this->db->delete('laporan', array('id' => $id));
+	}
+
+	public function editprojectimage($projectID){    
+
+		//get project by id number
+		$data['indiv_project'] = $this->project->single_project($projectID);
+
+		$this->load->view('templates/header');
+		
+		$this->load->view('templates/footer');
+	}
+
+	
 }
