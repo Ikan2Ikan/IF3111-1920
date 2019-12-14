@@ -96,17 +96,68 @@ Validasi **wajib** dilakukan pada *client-side*, dengan menggunakan **javascript
 Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/komentar`.
 
 ### Penjelasan Teknis
-`Silakan isi bagian ini dengan penjelasan anda, sesuai Petunjuk Pengerjaan di atas.`
+                        A.Instalasi Framework dan Koneksi basis data 
+1. instalasi framework
+Instalasi Framework menggunakan framework CODEIGNITER atau yang sering di sebut CI, codeigniter merupakan sebuah framework php yang sangat sederhana, ringan, dan mudah untuk dipelajari, codeigniter sendiri telah mengadopsi pola MVC yaitu Model-View-Controller dimana kita dapat memisahkan logika dan tampilan sebuah website yang ingin dibangun dengan framework berbasis MVC ini.
+-Cara Install Codeigniter
+    1. download file Codeigniter pada web server dengan mengakses https://codeigniter.com/ kami mendownload versi 3.1.3
+    2. Setelah Terdownload EKSTRAK dan Install Codeigniter Framework file Code-3.1.3.zip lalu rename menjadi codeigniter lalu salin folder tersebut ke folder root anda, yaitu di htdocs di file IF3111-1920 setelah selesai melakukan instalasi framework
+2. Koneksi basis data
+    1. Konfigurasi Base URL CodeIgniter
+    Maka selanjutkan melakukan konfigurasi base url yang terdapat di folder application/config/config.php lalu buka dengan teks editor kami menggunakan Visual Studio Code lalu ubah $config ['base_url'] = 'http://localhost/codeigniter' ;
+    2. Cek dengan membuka http://localhost/codeigniter jika keluar tampilan welcome to CodeIgniter maka sudah terkoneksi dengan database. 
 
-### Knowledge
-Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaikan tugas ini.
-- CSS: margin, padding, header tag, font-size, text-align, float, clear, border, color, div, span, placeholder, 
-anchor tag.
-- Javascript : XMLHTTPRequest.
-- PHP Framework : [Codeigniter](https://codeigniter.com/en/docs), [Laravel](https://laravel.com/docs/6.x) dll.
-- SQL query: SELECT, INSERT, UPDATE, DELETE, WHERE, operator LIKE.
+                        B. Melakukan validasi pada client-side
+    --Langkah langkah dalam memvalidasi client-side--
+    1. langkah pertama yaitu dengan melakukan penambahan folder pada application/controller/ lalu buat file Laporan.php lalu isi file dengan menambahkan fungsi yang bertujuan untuk mengendalikan atau memanggil di folder view.
+    2. langkah kedua membuat file pada application/vies/erorrs  dengan nama file buatLaporan.php pada file ini terdapat 4 inputan yaitu,
+     1)kolom laporan/komentar harus mempunyai nilai minimal 20 karakter yang berarti laporan atau komentar harus melebihi 20 karakter hal ini merupakan VALIDASI CLIENT-SIDE
+    (isi gambar disini1 ja)
+     2)memilih kategori yang diinginkan melapor atau memberi komentar.
+     (isi gambar disini2)
+     3)menambahkan/upload file berkas pengaduan atau komentar. 
+     (isi gambar disini3)
+     4) dan tombol button untuk mengirimkan laporan
+     (isi gambar button buatLapor) 
 
-:telephone: Jika ada pertanyaan silakan tanyakan lewat `Asisten`.
+     kempatan inputan ini wajib diisi jika tidak sistem akan meminta user untuk mengisikan yang kosong. disinila ada proses Validsasi antara client - side
+
+                    C. Melakukan AJAX (mulai dari pengguna melakukan 
+                klik pada tombol LAPOR! sampai laporan/komentar terkirim).
+    1. Dapat melakukan AJAX pada home terdapat beberapa fitur salah satunya Fitur CARI pada fitur ini lah AJAX diimplementasikan dimana Pencarian dilakukan secara AJAX yaitu, Search dapat langsung mencari kata yang inputkan tanpa h merefresh halaman dimana setiap tindakan (inputan kata) dari user langsung ditampilkan atau langsung ada kembalian tidak perlu reload halaman    
+     ( tambah gambar fitur cari dan ss pencarian bisa secara ajax )
+    2. terdapat fitur buat Laporan/komentar
+        1) klik button buat Lapor/komentar
+            (isi gambar )
+        2) halaman akan ke redirect ke halaman buatLaporan
+        3)  isi kolom laporan/komentar sesuai dengan yang ingin di laporkan atau dikomentari 
+        (isi gambar disini)
+        4)memilih kategori yang diinginkan melapor atau memberi komentar.
+        (isi gambar disini)
+        5)menambahkan/upload file berkas pengaduan atau komentar. 
+        (isi gambar disini)
+        6) dan tombol button untuk mengirimkan laporan
+        (isi gambar button buatLapor) 
+    3. fitur fitur lainnya
+### List laporan/komentar
+Halaman utama berisi daftar judul pertanyaan, siapa yang bertanya, dan isi pertanyaan. 
+    (tambah gambar list )
+### Kirim laporan/komentar `LAPOR!`
+Pengguna dapat mengajukan laporan/komentar. Form yang digunakan memiliki komentar (textarea), data lapiran berupa gambar dan file berekstention `doc, docx, xls, xlsx, ppt, pptx, pdf`
+    (tambah gambar )
+
+### Ubah Laporan/komentar
+Pengguna dapat mengubah laporan/komentar yang sudah dibuat. Form yang digunakan memiliki tampilan yang sama dengan form untuk bertanya, namun field-field yang ada sudah terisi.
+    (tambah gambar update)
+
+### Hapus Laporan/komentar
+Pengguna dapat menghapus laporan/komentar yang sudah dibuat.
+    (tambah gambar)
+### Lihat Laporan/komentar
+Pengguna dapat melihat laporan/komentar. Pada halaman ini terdapat informasi aspek yang dilaporkan.
+(Dosen, Staff, Mahasiswa, Infrastruktur dan Pengajaran ), isi laporan/komentar, waktu pengiriman komentar `datetime` 
+dan file lapiran. 
+ (tambah gambar )
 
 ### About :honeybee:
 
