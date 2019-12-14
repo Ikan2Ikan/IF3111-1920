@@ -29,9 +29,7 @@
 		<section id="formbuatlaporan">
 			<div class="container">
 
-				<?php echo form_open("control/ubah/" . $laporan->id); ?>
-				<form action="tambah" method="POST" enctype="multipart/form-data">
-
+				<form action="<?= base_url('control/ubah/' . $laporan->id); ?>" method="POST" enctype="multipart/form-data">
 
 					<textarea name="laporan" id="laporan" cols="77" rows="20" placeholder="Laporan/Komentar" required><?php echo set_value('laporan', $laporan->laporan) ?></textarea>
 					<br><br>
@@ -54,6 +52,7 @@
 				</form>
 				<br>
 				<hr>
+
 			</div>
 		</section>
 	</fieldset>
