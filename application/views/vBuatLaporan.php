@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/pageBuat.css" media="screen">
 
     <title>Document</title>
+  
 </head>
 
 <body>
@@ -19,15 +20,13 @@
             <form action="<?= base_url('Laporan/input_laporan'); ?>" method="POST" enctype="multipart/form-data">
                 <textarea name="comment" placeholder="Laporan/Komentar" aria-valuemax="500"></textarea>
                 <select style="border: 1px solid black;color: black;" name="pilih">
-                    <option value="Mahasiswa">Mahasiswa</option>
-                    <option value="Dosen">Dosen</option>
-                    <option value="Staff">Staff</option>
-                    <option value="Satpam">Satpam</option>
-                    <option value="OB">OB</option>
-                    <option value="Asisten">Asisten</option>
+                    <option value="volvo">REbbbbbbbbbbb</option>
+                    <option value="volvo">Volvo</option>
+                    <option value="volvo">Volvo</option>
+                    <option value="volvo">Volvo</option>
                 </select><br><br>
                 <input type="file" name="myFile" class="input-file">
-                <button type="submit" style=" border: 1px solid black;color: black;  height: 40px;width: 100px;">Buat LAPOR!</button>
+                <button type="submit">Buat LAPOR!</button>
             </form>
             <br><br><br>
             <hr>
