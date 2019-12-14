@@ -30,7 +30,7 @@
         <div class="container">
            <p><?=  substr($lpr['laporan'],0,250); ?></p>
             <div class="box">
-                <p>Lampiran : <?= $lpr['file']; ?> </p>
+                <p>Lampiran : <?= $lpr['lampiran']; ?> </p>
             </div>
 
             <div class="box">

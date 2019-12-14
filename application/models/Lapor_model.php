@@ -39,7 +39,13 @@ class Lapor_model extends CI_model {
     }
     
     public function getAllLaporan(){
-        
+        $this->db->order_by('waktu','desc');
+        return $this->db->get('laporan')->result_array();        
+    }
+
+    public function getbyid(){
+        $this->db->where('id','$id');
+        return $this->db->get('laporan')->row();
     }
         
 }

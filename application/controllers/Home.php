@@ -26,6 +26,10 @@ class Home extends CI_Controller {
       redirect('home');
     }
 
+    public function details(){
+      $data['lapor'] = $this->Lapor_model->getbyid($id);
+    }
+
     public function loadlapor(){
       $this->load->view('templates/header');
       $this->load->view('pages/create');
