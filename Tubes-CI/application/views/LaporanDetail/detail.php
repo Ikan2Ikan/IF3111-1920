@@ -9,8 +9,10 @@
         </div>
 
     <br>
-    <span>Dibuat pada : <?php echo $laporan ['tgl_laporan']; ?></span>
-    <span>Aspek : <?php echo $laporan['kategori'];?></span>
+    <div class="baca1">
+    <span class="tgl">Waktu: <?php echo $laporan ['tgl_laporan']; ?></span>
+    <span class="tgl">Aspek: <?php echo $laporan['kategori'];?></span>
+    </div>
     <?php $id = $laporan['id_laporan'];?>
     <a class="baca" href = "<?php echo base_url().'crud/delete/'.$id;?>">Hapus Laporan/Komentar<button class="button3">x</button></a></a>
     

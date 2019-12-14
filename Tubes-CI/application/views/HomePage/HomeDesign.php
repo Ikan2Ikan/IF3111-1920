@@ -26,7 +26,7 @@ form {
     padding:15px 15px; 
     background: transparent;
     border:2px solid #000000;
-    width: 832px;
+    width: 830px;
 }
 .button {
     position:relative;
@@ -62,6 +62,9 @@ form {
 .baca{
     float: right;
 }
+.baca1{
+    float: left;
+}
 .button3{
     font-weight: bold;
     font-size: 17px;
@@ -74,6 +77,8 @@ form {
 }
 .tgl{
     position: relative;
+    padding: 5px;
+    right: 3px;
 }
 a{
     text-decoration:none;

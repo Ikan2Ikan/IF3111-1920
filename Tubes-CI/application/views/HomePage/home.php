@@ -16,6 +16,7 @@
                 <?php }else {?>          
                         <p class="isi"><?php echo substr ($lap["isi_laporan"],0,450); ?>...</p>
                 <?php }?>
+                <p class="baca1"><?php echo $lap["lampiran"];?>
                 <div class="baca">
                     <p class="tgl"><?php echo $lap["tgl_laporan"];?>
                     <a href = "<?php echo base_url().'crud/view/'.$lap['id_laporan'];?>">Lihat selengkapnya<button class="button3"> ></button></a>
