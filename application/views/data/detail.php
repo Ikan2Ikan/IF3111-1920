@@ -1,5 +1,9 @@
 <fieldset>
+    <div class="wrapper">
+        <br>
+        <br>
 <h1>LAPOR ITERA!</h1>
+</div>
 <h2 align="center">Detail laporan/Komentar</h2>
     <h3>Dari  <?= $keluhan['aspek'];?></h3>
     <h3>Pada : <?= $keluhan['waktu'];?></h3>

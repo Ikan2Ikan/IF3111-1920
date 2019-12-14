@@ -1,5 +1,9 @@
 <fieldset>
+<div class="wrapper">
+	<br>
+	<br>
 <h1>LAPOR ITERA!</h1>
+</div>
 
 <?= validation_errors();?>
 <div class="tambah">

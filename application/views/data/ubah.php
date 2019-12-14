@@ -1,5 +1,8 @@
-<h1>LAPOR!</h1>
-
+<div class="wrapper">
+	<br>
+	<br>
+<h1>LAPOR ITERA!</h1>
+</div>
 <?= validation_errors();?>
 
 <form action="" method="post" enctype="multipart/form-data">

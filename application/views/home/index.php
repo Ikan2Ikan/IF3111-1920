@@ -2,6 +2,8 @@
 <div class="judul">
 	<br>
 	<div class="wrapper">
+		<br>
+		<br>
 	<h1>LAPOR ITERA!</h1>
 	</div>
 	<br>
@@ -9,7 +11,6 @@
 
 <form action="" method="post">
 <div class="search">
-	<br>
 	<br>
 <input type="text" name="keyword" id="keyword" placeholder="Cari..." >
 <button type="submit" value="Cari" >Cari</button>
