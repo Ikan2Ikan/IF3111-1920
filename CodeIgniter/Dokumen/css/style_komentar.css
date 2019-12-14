@@ -62,3 +62,61 @@ table {
     padding: 5px;
     margin-bottom: 60px;
 }
+
+.container .content{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.container .content .head{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+.container hr{
+    border: 1px solid darkblue;
+}
+
+.container .content .main input{
+    width: 50%;
+    height: 20px;
+    border: 1px solid blue;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.container .content .main textarea{
+    width: 98%;
+    height: 300px;
+    border: 1px solid blue;
+    padding: 6px;
+    margin-bottom: 5px;
+}
+
+.container .content .kategori select{
+    width: 36%;
+    height: 30px;
+    padding: 5px;
+    border: 1px solid blue;
+}
+
+.container .content .file input{
+    width: 35%;
+    height: 25px;
+    padding: 2px;
+    border: 1px solid blue;
+}
+
+.container .content .tombol_submit button{
+    float: right;
+    padding: 7px;
+    background-color: rgb(0, 94, 255);
+    border-radius: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+.container .content .tombol_submit button:hover{
+    background: red;
+}
