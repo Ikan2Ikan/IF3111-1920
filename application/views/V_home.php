@@ -1,59 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<style>
-
-</style>
-
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" type="text/css" href="assets/home.css">
-	<title>LAPOR! ITERA</title>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="<?= base_url('assets/style_comm.css') ?>">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+  <title><?= $judul; ?></title>
 </head>
 
 <body>
 	<div class="container">
-		<div class="kepala">
-			<div>
-				<h1 class="judul">LAPOR! ITERA</h1>
-			</div>
+    <div class="content">
+        <div class="heading">
+            <h1>ITERA LAPOR!</h1>
+        </div>
 
-<<<<<<< HEAD
-			<div class="head">
-				<p>Buat Laporan/Komentar</p>
-=======
-			<div>
-				<p class="laporan">Buat Laporan/Komentar</p>
->>>>>>> 1664431ae23a77d09221da79ad4ab0e666f2fd1b
-			</div>
-			<hr>
-			</hr>
-			<form action="post">
-				<div class="nm">
-					<input type="text" name="nama" placeholder="nama pelapor">
-				</div>
-<<<<<<< HEAD
-				<br><br>
-				<div class="keterangan">
-					<textarea type="text" name="laporan" rows="13" cols="97" placeholder="Ketik laporan Anda..."></textarea>
-=======
-				<div class="kolom-lapor">
-					<textarea type="text" name="laporan" rows="19" cols="111" placeholder="Ketik laporan Anda..."></textarea>
->>>>>>> 1664431ae23a77d09221da79ad4ab0e666f2fd1b
-				</div>
-				<div class="choose">
-					<input type="file">
-				</div>
-			</form>
-			<div class="kolom-lapor1">
-				<input class="button" type="submit" value="Buat LAPOR!">
-			</div>
-			<hr>
-			</hr>
-		</div>
+        <div class="head">
+           <p> Buat Laporan/Komentar</p>
+        </div>
+        <form method="post">
+            <div class="keterangan">
+                <input type="text" placeholder="Nama Pelapor">
+                <br>
+                <textarea name="comment" placeholder="Tulis Laporan/Komentar"></textarea>
+            </div>
+            <br>
+            <div class="aspek">
+                <select name="aspek">
+                    <option default>Pilih Aspek Pelaporan/Komentar</option>
+                    <option value="Dosen">Dosen</option>
+                    <option value="Staff">Staff</option>
+                    <option value="Mahasiswa">Mahasiswa</option>
+                    <option value="Infrastruktur">Infrastruktur</option>
+                </select>
+            </div>
+            <br>
+            <div class="file">
+                <input type="file" name="lampiran">
+            </div>
+            <br>
+            <div class="lapor">
+                <button type="submit" name="submit">Buat LAPOR!</button>
+            </div>
+        </form>
+    </div>
+</div>
 </body>
 
 </html>
