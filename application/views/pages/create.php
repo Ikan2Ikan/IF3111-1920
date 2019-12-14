@@ -2,7 +2,7 @@
         <center>
             <h2>BUAT LAPORAN</h2>
         </center>
-        <?php echo form_open("home/create", array('enctype'=>'multipart/form-data')); ?>
+        <form action="tambah" method="POST" enctype="multipart/form-data">
         
         <div class="container">
             <div class="styled-input wide">
@@ -28,6 +28,6 @@
                 <button type="submit" class="button_1" name="submit">Buat Laporan</button>
             <span></span> </div>
 
-        <?php echo form_close(); ?>
+        </form>
         </div>
     </section>

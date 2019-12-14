@@ -1,18 +1,12 @@
-<?php
+<?php defined('BASEPATH') or exit('No direct script access allowed');
 
 class Lapor_model extends CI_model {
-    public function getAllLaporan()
-    {
-        return $this->db->get('laporan')->result_array();
-    }
+    public function index()
+    { }
 
-    public function viewlampiran()
-    {
-        return $this->db->get('file')->result();
-    }
-
+    //CREATE DATA
     public function upload(){
-        $config['upload_path'] = './asset/images/';
+        $config['upload_path'] = './asset/filess/';
         $config['allowed_types'] = 'jpg|png|jpeg';
         $config['max_size']  = '2048';
         $config['remove_space'] = TRUE;
@@ -29,7 +23,7 @@ class Lapor_model extends CI_model {
         }
       }
     
-    public function createLaporan($upload) 
+    public function create($upload) 
     {
         date_default_timezone_set('Asia/Jakarta');
         $data = array(
@@ -37,11 +31,15 @@ class Lapor_model extends CI_model {
             'laporan' => $this->input->post('komentar'),
             "tanggal" => mdate('%Y-%m-%d'),
             "waktu" => mdate('%H:%i:%s'),
-            'file' => $upload['file']['file_name'],
+            'lampiran' => $upload['file']['file_name'],
             "aspek" => $this->input->post('aspek')
           );
-          $this->db->insert('laporan', $data);
-    }
 
+          return $this->db->insert('laporan', $data);
+    }
+    
+    public function getAllLaporan(){
+        
+    }
         
 }
