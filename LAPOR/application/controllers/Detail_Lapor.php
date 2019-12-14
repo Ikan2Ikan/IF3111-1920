@@ -6,11 +6,16 @@ class Detail_Lapor extends CI_Controller {
 	{
 		parent:: __construct();
 		$this->load->model('Detail_Model');
+		$this->load->helper('url');
 
 	}
 	public function index()
 	{
-		$data['laporan'] = $this->Detail_Model->getAllDetail_Lapor();
+		$data['laporan'] = $this->Detail_Model->getAllLapor();
 		$this->load->view('detail_laporan',$data);
+	}
+	public function view($id) {
+		$data['laporan'] = $this->Detail_Model->getAllLapor($id);
+		$this->load->view('detail_laporan', $data);
 	}
 }
