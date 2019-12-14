@@ -97,6 +97,10 @@ Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/
 
 ### Penjelasan Teknis
 `Silakan isi bagian ini dengan penjelasan anda, sesuai Petunjuk Pengerjaan di atas.`
+1. Pertama hidupkan XAMPP dan start Apache dan Mysql
+2. Import file database lapor.mysql yang terlampir pada diatas
+3. Diharuskan menggunakan web browser FIREFOX
+
 
 ### Knowledge
 Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaikan tugas ini.
