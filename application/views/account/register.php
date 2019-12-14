@@ -44,6 +44,7 @@
                 </div>
             </div>
         </div>
+
         <div class="bag-kanan block-akun-showcase">
             <img src="<?= base_url(); ?>assets/img/register-bg.png" alt="">
         </div>

@@ -30,7 +30,7 @@
                             </a>
                             <input id="submit-btn" type="submit" name="submit" value="LOGIN" />
                             <a href="#" id="sign">Tidak Punya Akun?</a>
-                        </form>
+
                     </div>
                 </div>
             </div>
@@ -38,7 +38,6 @@
         <div class="bag-kanan block-akun-showcase">
             <img src="<?= base_url(); ?>assets/img/register-bg.png" alt="">
         </div>
-    </div>
 </body>
 
 </html>
