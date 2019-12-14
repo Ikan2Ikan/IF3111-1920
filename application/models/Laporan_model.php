@@ -22,6 +22,14 @@ class Laporan_model extends CI_Model {
         $this->db->where('id',$id);
         $this->db->update('laporan');
     }
+
+    public function data($number,$offset){
+		return $query = $this->db->get('laporan',$number,$offset)->result();		
+	}
+ 
+	public function jumlah_data(){
+		return $this->db->get('laporan')->num_rows();
+	}
 }
 
 ?>
