@@ -3,11 +3,8 @@
         <h1 class="judulapp">LAPOR ITERA!</h1>
     </div>
     <div class="content">
-        <div class="head">
-            Buat Laporan/Komentar
-        </div>
+        <div class="head">Buat Laporan/Komentar</div>
         <hr>
-
         <form method="post" action="" encytpe="multipart/form-data">
             <?php if(validation_errors()) : ?>    
                 <?=validation_errors()?>
@@ -20,7 +17,7 @@
 
             <div class="kategori">
                 <select name="kategori">
-                    <option default>Pilih Kategori Pelaporan/Komentar</option>
+                    <option value="">Pilih Kategori Pelaporan/Komentar</option>
                     <option value="Dosen">Dosen</option>
                     <option value="Staff">Staff</option>
                     <option value="Mahasiswa">Mahasiswa</option>

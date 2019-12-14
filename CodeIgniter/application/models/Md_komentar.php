@@ -45,9 +45,20 @@ class Md_komentar extends CI_Model{
         return $this->upload->data('file_name');
     }
 
-    public function deleteCommet($id){
+    public function hapusKomentar($id){
         $this->db->query("DELETE FROM komentar WHERE id='$id'");
         return $this->db->affected_rows();
+    }
+
+    public function editKomentar($id){
+        $waktuPengiriman = date('d M Y | H:i:s');
+        $judul_komentar = $this->input->post('judul_komentar');
+        $komentar = $this->input->post('komentar');
+        $kategori = $this->input->post('kategori');
+        var_dump($this->input->post());
+
+        $data = $this->db->query("UPDATE komentar SET waktuPengiriman='$waktuPengiriman', judul_komentar='$judul_komentar', kategori='$kategori' WHERE id='$id'");
+        return $data;
     }
 
 }
