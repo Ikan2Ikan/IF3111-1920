@@ -26,8 +26,9 @@
                   <input type="file" name="image">
                   <label>Pilih Aspek Pelaporan/Komentar:</label>
                   <select name="pilihan">
-                    <option value="mahasiswa">mahasiswa</option>
-                    <option value="dosen">dosen</option>
+                    <option value="Administrasi">Administrasi</option>
+                    <option value="Infrastruktur">Infrastruktur</option>
+                    <option value="Keluhan">Keluhan</option>
                   </select>
               </fieldset>
             <input type="submit" value="Tambah" />
