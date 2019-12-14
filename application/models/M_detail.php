@@ -22,4 +22,9 @@ class M_detail extends CI_Model {
 			//Kirimkan 0 jika tidak ada datanya
 		}
 	}
+	
+	function hapus_data($where,$posting){
+	$this->db->where($where);
+	$this->db->delete($posting);
+	}
 }
