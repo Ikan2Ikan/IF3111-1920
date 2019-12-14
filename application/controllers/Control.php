@@ -9,7 +9,7 @@ class Control extends CI_Controller {
 		$data['laporan']= $this->laporan_model->get_laporan();
 		$this->load->helper("url");
 		$this->load->view('default/header');
-		$this->load->view('konten/'.$page,$data)
+		$this->load->view('konten/'.$page,$data);
 	
 	}
 }
