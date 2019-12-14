@@ -17,13 +17,13 @@
 
     <a onclick="document.getElementById('id01').style.display='block'"><center>Buat Laporan/Komentar</center></a>
       <div id="id01" class="ketiklapor">
-        <form class="ketiklapor-content animate" action="<?php echo base_url('Form/db') ?>" method="post">
+        <form class="ketiklapor-content animate" action="<?php echo base_url('form/input_form') ?>" method="post">
             <div class="tampilan">
               <fieldset>
                   <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Tutup">&times;</span>
                   <input type="text" name="judul" placeholder="judul">
                   <textarea name="komen" placeholder="Laporan"></textarea>
-                  <input type="file" name="img">
+                  <input type="file" name="image">
                   <label>Pilih Aspek Pelaporan/Komentar:</label>
                   <select name="pilihan">
                     <option value="mahasiswa">mahasiswa</option>
@@ -56,7 +56,7 @@
 
           <br>
           <div class="lampiran">Lampiran : <?php echo $recent['lampiran']; ?></div>
-          <a class="detail" href= <?php echo base_url('')?>>Lihat Detail ></a>
+          <a class="detail" href= <?php echo base_url().'index.php/laporan/view/'.$recent['id_laporan'];?>>Lihat Detail ></a>
           <div class="waktu">Waktu : <?php echo $recent['waktu']; ?></div>
           <br>
           <hr>

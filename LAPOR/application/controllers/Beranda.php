@@ -6,7 +6,7 @@ class Beranda extends CI_Controller {
 	{
 		parent::__construct();
 		$this->load->model('Beranda_model');
-
+		$this->load->helper('Form');
 	}
 	public function index()
 	{
