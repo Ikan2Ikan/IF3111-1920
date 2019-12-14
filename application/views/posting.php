@@ -5,3 +5,17 @@
 	<title>Detail Laporan</title>
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url().'assets/css/detail.css'?>">
 </head>	
+<body>
+	<div class="body">
+	<h1><center>SIMPLE LAPOR!<center></h1>
+	
+	<p>Detail Laporan/Komentar</p>
+	<hr color="black" size="2">
+	
+	<br><p>Lampiran :</p>
+	
+	<p> Waktu : &nbsp; 
+		Aspek: 
+		<span class="fa fa-plus"> Hapus Laporan/Komentar X</a></span>
+	</p></div>
+	<hr color="black" size="2">
