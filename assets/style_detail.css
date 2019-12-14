@@ -9,3 +9,14 @@
 	text-align: center;
 	margin-top: 20px;
 }
+
+.itm-title {
+	width: 150px;
+}
+
+p {
+	display: block;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}

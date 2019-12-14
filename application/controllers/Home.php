@@ -1,7 +1,6 @@
 <?php
 class Home extends CI_Controller
 {
-
     public function __construct()
     {
         parent::__construct();
@@ -22,9 +21,10 @@ class Home extends CI_Controller
             $this->Comment->tComm();
         }
     }
-    public function detail()
+    public function detail($id)
     {
-        $this->load->view('V_detail');
+        $data['result'] = $this->Comment->sComm2($id);
+        $this->load->view('V_detail', $data);
     }
 
 

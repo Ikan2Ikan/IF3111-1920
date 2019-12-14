@@ -27,6 +27,11 @@ class Comment extends CI_Model
         $data = $this->db->query("SELECT * FROM komentar")->result_array();
         return $data;
     }
+    public function sComm2($id)
+    {
+        $data = $this->db->query("SELECT * FROM komentar WHERE id_comm=" . $id)->row_array();
+        return $data;
+    }
 
     public function detComm()
     {
