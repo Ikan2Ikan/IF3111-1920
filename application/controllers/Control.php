@@ -14,7 +14,9 @@ class Control extends CI_Controller
     // menampilkan semua data ================================================
     public function index()
     {
+
         $data['laporan'] = $this->control_model->read();
+
         $this->load->view("pages/tampilan_utama", $data);
     }
 
@@ -60,15 +62,30 @@ class Control extends CI_Controller
         $this->load->view("pages/tampilan_lapor");
     }
 
-    // load halaman tampilan_detail =========================================
-    public function tampilan_detail()
+
+    public function tampilan_detail($id)
+
     {
-        $this->load->view("pages/tampilan_detail");
+        $detail = $this->control_model->get_by_id_laporan($id);
+        $data = array(
+            "detail" => $detail
+        );
+        $this->load->view("pages/tampilan_detail", $data);
     }
 
     // load halaman tampilan_ubah =========================================
     public function tampilan_ubah()
     {
         $this->load->view("pages/tampilan_ubah");
+    }
+
+    public function search()
+    {
+        $keyword = $this->input->post('keyword');
+        $listlaporan = $this->control_model->search_laporan($keyword);
+        $data = array(
+            "listlaporan" => $listlaporan
+        );
+        $this->load->view("pages/tampilan_utama", $data);
     }
 }

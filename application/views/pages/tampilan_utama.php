@@ -16,15 +16,15 @@
 		<header>
 			<div class="container">
 				<center>
-					<h1>Simple Lapor!</h1>
+					<h1><a href="<?php echo base_url() ?>" style="color: white; text-decoration: none;">Simple Lapor!</a></h1>
 				</center>
 			</div>
 		</header>
 
 		<section id="searchlaporan">
 			<div class="container">
-				<form action="" method="get">
-					<input type="text" placeholder="search" />
+				<form action="search" method="POST">
+					<input name="keyword" type="text" placeholder="search" />
 					<button type="submit" class="button-1">Search Now</button>
 				</form>
 			</div>
@@ -33,7 +33,7 @@
 		<section id="buatlaporan">
 			<div class="container">
 				<center>
-					<h4><a href="<?php echo base_url() . 'control/tampilan_lapor' ?>">Buat Laporan/Komentar</a></h4>
+					<a href="<?php echo base_url() . 'control/tampilan_lapor' ?>">Buat Laporan/Komentar</a> <span style="text-style:bold;padding: 1px 2px;background-color: #000; color: #fff;">+</span>
 					<!-- belum ditambah icon+(plus) -->
 				</center>
 			</div>
@@ -82,7 +82,11 @@
 					?>
 
 
+
 				</div>
+			</div>
+			<div class="container">
+				<hr>
 			</div>
 
 		</section>

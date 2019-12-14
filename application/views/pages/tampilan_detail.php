@@ -72,9 +72,9 @@
 					"</div>",
 					"</div>";
 				?>
+
 			</div>
 		</section>
-
 	</fieldset>
 </body>
 

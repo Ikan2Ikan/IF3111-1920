@@ -32,6 +32,7 @@ class control_model extends CI_Model
         return $this->db->insert('laporan', $object);
     }
 
+
     // proses READ ==========================================================
     public function read()
     {
@@ -65,5 +66,12 @@ class control_model extends CI_Model
     {
         $this->db->where('id', $id);
         return $this->db->delete('laporan');
+    }
+    public function search_laporan($keyword)
+    {
+        $this->db->like("laporan", $keyword);
+        $this->db->order_by("waktu", "desc");
+        $query = $this->db->get("laporan");
+        return $query->result();
     }
 }
