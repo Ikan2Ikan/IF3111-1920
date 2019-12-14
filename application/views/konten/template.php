@@ -3,7 +3,8 @@
 
         <div class="search">
             <input type="text" name="searchbox" id="search-box" placeholder="Telusuri laporan">
-            <input type="button"name="searchbutton" id = "search-button" value="Cari">
+          
+            <button type class="searchbutton">  <i class="fa fa-search"> Cari</i>
         </div>
         <div class="buat">
         <a href="<?php echo base_url().'index.php/buatlaporan'; ?>">
