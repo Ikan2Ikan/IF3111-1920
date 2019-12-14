@@ -20,9 +20,9 @@
 
         <div class="dropdownbuatlaporan">
             <select name="dropdownbuat" id="dropdown-buat">
-            <option value="pilihaspek"selected>Pilih Aspek Laporan/Komentar</option>
-            <option value="laporan">Laporan</option>
-            <option value="komentar">Komentar</option>
+            <option value="Laporan" selected>Laporan</option>
+            <option value="Komentar">Komentar</option>
+            
             </select>
         </div>
 
