@@ -6,7 +6,7 @@
             <input type="button"name="searchbutton" id = "search-button" value="Cari">
         </div>
         <div class="buat">
-        <a href="index.php/buatlaporan">
+        <a href="<?php echo base_url().'index.php/buatlaporan'; ?>">
             Buat Laporan/Komentar
         </a>
         </div>
