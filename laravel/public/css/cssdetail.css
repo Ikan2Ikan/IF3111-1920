@@ -1,0 +1,59 @@
+h1{
+	border:white;
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 64px;
+line-height: 75px;
+position: relative;
+	text-align: center;
+}
+
+.gartil{
+	width: 1000px;
+height: 0px;
+left: 50px;
+top: 512px;
+margin-top: -10px;
+margin-left: 180px;
+border: 1px solid #000000;
+}
+.detaillap p{
+	margin-left: 200px;
+}
+.rincian p{
+	border:white;
+	width: 950px;
+	height: 100px
+	text-align: relative;
+	margin-top: 10px;
+	margin-left: 180px;
+	padding: 20px;
+}
+.foto img{
+	margin-left: 200px;
+}
+.kaki{
+	margin-left: 200px;
+}
+.kaki a{
+	padding-left: 31em;
+}
+.kotak {
+	border:solid;
+	width: 400px;
+	height: 400px;
+	margin-left: 200px;
+	
+}
+.garput{
+	width: 1000px;
+height: 0px;
+left: 50px;
+top: 512px;
+margin-top: -10px;
+margin-left: -20px;
+border: 1px solid #000000;
+
+}
+
