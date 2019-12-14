@@ -9,7 +9,7 @@
 <body>
 
 <header>
-  <form action="<?php echo base_url().'lapor/tambah_lapor' ?>" method="POST">
+  <form action="<?php echo base_url().'lapor/tambah_aksi' ?>" method="POST">
 <div class="header">
   <h1>Layanan Aspirasi Mahasiswa Teknik Informatika ITERA</h1>
 </div>
@@ -22,14 +22,14 @@
    <br><br>
    <select   name="aspek_komentar">
                 <option >Pilih Aspek Komentar</option>
-                <option value="">Ruangan</option>
-                <option value="">Matakuliah</option>
-                <option value="">Nilai</option>
-                <option value="">Dosen</option>
+                <option value="Ruangan">Ruangan</option>
+                <option value="Matakuliah">Matakuliah</option>
+                <option value="Nilai">Nilai</option>
+                <option value="Dosen">Dosen</option>
                 
             </select>
             <br>
-    <input type="file" name="file" value=" " class="konten">
+    <input type="file" name="file"  class="konten">
   </div>
   <footer>
     <input type="submit" value="BUAT LAPOR!">
