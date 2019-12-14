@@ -22,7 +22,7 @@
         <p>HAI! <?= $this->session->userdata("fullname"); ?></p>
       </span>
       <div class="right-menu">
-        <span><a href="<?= base_url('home/myLapor') ?>">My Lapor</a></span>
+        <span><a href="<?= base_url('home/myLapor') ?>">Laporanku</a></span>
         <span>
           <a href="<?= base_url('home/logOut') ?>">Logout</a>
         </span>
