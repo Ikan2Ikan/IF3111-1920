@@ -10,6 +10,10 @@ di program studi teknik informatika ITERA.
 
 ### Anggota Tim :cyclone:
 Project dikerjakan secara **berkelompok** dengan maksimal jumlah anggota adalah 2-3 orang mahasiswa.
+Anggota kelompok :
+Robby Legitra K. - 14117101
+Yusuf Firmansyah W. P. - 1411609
+Angelica Kirana Sandra Dewi - 14117008
 
 ### Petunjuk Pengerjaan :umbrella:
 1. Fork pada repository ini dengan akun github anda.
