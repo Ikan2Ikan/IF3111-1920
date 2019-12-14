@@ -6,14 +6,12 @@ class Home extends CI_controller {
 		$this->load->view('templates/header', $data);
 		$data['data'] = $this->ambil_data->tampil_data()->result();
 		$this->load->view('home/index', $data);
-		$this->load->view('templates/footer');
 	}
 
 	public function lapor(){
 		$data['title'] = 'Membuat Laporan';
 		$this->load->view('templates/header', $data);
 		$this->load->view('home/lapor');
-		$this->load->view('templates/footer');
 	}
 
 	public function lihat($id){
@@ -22,7 +20,6 @@ class Home extends CI_controller {
 		$nomor = $id;
 		$data['data'] = $this->ambil_data->laporandetail($nomor);
 		$this->load->view('home/lihat', $data);
-		$this->load->view('templates/footer');
 		// echo $id;
 	}
 
@@ -35,7 +32,6 @@ class Home extends CI_controller {
 		// $data['laporan'] = $this->ambil_data->edit_data($where,'laporan')->result();;
 		$data['aspek'] = ['Dosen', 'Staff', 'Mahasiswa', 'Infrastruktur', 'Pengajaran'];
 		$this->load->view('home/ubah', $data);
-		$this->load->view('templates/footer');
 
 		// echo $id;
 	}
@@ -92,7 +88,6 @@ class Home extends CI_controller {
 		$cari = $this->input->post('cari');
 		$data['data']=$this->ambil_data->coba_cari($cari, 'laporan');
 		$this->load->view('home/index',$data);
-		$this->load->view('templates/footer');
 	}
 }
 
