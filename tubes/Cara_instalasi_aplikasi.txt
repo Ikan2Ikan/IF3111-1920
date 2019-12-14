@@ -1,0 +1,9 @@
+Cara instalasi aplikasi ini :
+-Download folder "tubes" pada repositori ini.
+-Copy folder "tubes"(beserta isinya tentunya) ke xampp/htdocs.
+-Buka xampp, start Apache dan MySQL.
+-Pada browser, pergi ke localhost/phpmyadmin.
+-Buat database dengan nama "lapor".
+-Import lapor.sql(ada di dalam folder "tubes" yang sudah di download tadi) ke database "lapor".
+-Masih di browser, pergi ke localhost/tubes/index.php/C_lapor.
+-Aplikasi sudah bisa digunakan.
