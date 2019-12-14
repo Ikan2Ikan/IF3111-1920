@@ -26,7 +26,13 @@
 	<?php } ?>
 	
 	<p> Waktu : &nbsp; 
-		Aspek: 
+		Aspek: <?php
+		if(is_array($posting)){
+			foreach($posting as $key){
+				$aspek = $key->Aspek;
+				echo $aspek;
+			}
+		}?>
 		<span class="fa fa-plus"> Hapus Laporan/Komentar X</a></span>
 	</p></div>
 	<hr color="black" size="2">
