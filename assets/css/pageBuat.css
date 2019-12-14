@@ -42,6 +42,7 @@ button{
     float: right;
 }
 select{
+    border: 1px solid black;
+    color: black;
     height: 30px;
-    width: auto
 }

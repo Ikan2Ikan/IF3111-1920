@@ -14,7 +14,7 @@
     <div class="page">
         <h1 id="judulPage">SIMPLE LAPOR!</h1>
         <div class="container">
-            <p>Detail Laporan/Komentar</p>
+            <h4>Detail Laporan/Komentar</h4>
             <hr>
             <?php
             foreach ($dataLaporan as $data) :
@@ -35,7 +35,9 @@
                             <p>Aspek: <?php echo $kategori ?>&nbsp;&nbsp;&nbsp;&nbsp;</p>
                         </div>
                         <div class="rightFloat">
-                            <p><a href="<?php echo site_url('Laporan/edit/') . $IdKomentar ?>">Edit </a>| <a href="<?php echo site_url('Laporan/hapus/') . $IdKomentar ?>">Hapus Laporan/Komentar</a></p>
+                            <p><a href="<?php echo site_url('Laporan/edit/') . $IdKomentar ?>">Edit <img src="<?php echo base_url() ?>assets/img/pEdit.png" alt="" style="width: 11px;"></a> &nbsp;
+                                <a href="<?php echo site_url('Laporan/hapus/') . $IdKomentar ?>" onclick="return confirm('Are you sure you want to delete this item?');">Hapus Laporan/Komentar <img src="<?php echo base_url() ?>assets/img/xDelete.png" alt="" style="width: 11px;"> </a>
+                            </p>
                         </div>
                     </div>
                 </div>

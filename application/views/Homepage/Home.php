@@ -45,7 +45,7 @@
                     </tr>
                     <div style="float: right;">
                         Waktu : <?php echo $waktu ?> &nbsp;
-                        <a href="<?php echo site_url('Laporan/detail/') . $IdKomentar ?>">Lihat Selengkapnya ></a>
+                        <a href="<?php echo site_url('Laporan/detail/') . $IdKomentar ?>">Lihat Selengkapnya  <img src="<?php echo base_url() ?>assets/img/xMore.png" alt="" style="width: 11px;"></a>
                     </div>
                 </div>
                 <hr>

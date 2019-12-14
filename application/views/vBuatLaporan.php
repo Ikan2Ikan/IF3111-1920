@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/pageBuat.css" media="screen">
 
     <title>Document</title>
-  
+
 </head>
 
 <body>
@@ -17,13 +17,15 @@
         <div class="container">
             <p>Buat laporan/komentar</p>
             <hr>
-            <form action="<?= base_url('Laporan/input_laporan'); ?>" method="POST" enctype="multipart/form-data">
+            <form name="formLaporan" onsubmit="return validasi()" action="<?= base_url('Laporan/input_laporan'); ?>" method="POST" enctype="multipart/form-data">
                 <textarea name="comment" placeholder="Laporan/Komentar" aria-valuemax="500"></textarea>
-                <select style="border: 1px solid black;color: black;" name="pilih">
-                    <option value="volvo">REbbbbbbbbbbb</option>
-                    <option value="volvo">Volvo</option>
-                    <option value="volvo">Volvo</option>
-                    <option value="volvo">Volvo</option>
+                <select name="pilih">
+                    <option value="Mahasiswa">Mahasiswa</option>
+                    <option value="Dosen">Dosen</option>
+                    <option value="Staff">Staff</option>
+                    <option value="Satpam">Satpam</option>
+                    <option value="OB">OB</option>
+                    <option value="Asisten">Asisten</option>
                 </select><br><br>
                 <input type="file" name="myFile" class="input-file">
                 <button type="submit">Buat LAPOR!</button>
@@ -33,5 +35,4 @@
         </div>
     </div>
 </body>
-
 </html>
