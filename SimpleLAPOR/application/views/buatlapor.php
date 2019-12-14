@@ -3,6 +3,15 @@
 <head>
 	<title>LAPOR!</title>
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('tampilan/css/style.css'); ?>">
+	<script type="text/javascript">
+	function validateForm(){
+		var x=document.forms["users"]["nama"].value;
+		if (x==null || x==""){
+  			alert("Nama Wajib Diisi");
+  				return false;
+  		}
+	}
+	</script>
 </head>
 <body>
 	<div class="header">
@@ -21,7 +30,7 @@
 		</div>
 
 			
-			<form method="POST" action="<?php echo base_url().'tambah' ?>">
+			<form name="users" onsubmit="return validateForm()" method="POST" action="<?php echo base_url().'tambah' ?>">
 				<input type="text" name="nama" placeholder="Nama" class="nama"><br><br>
 				<input type="text" name="kontak" placeholder="Kontak" class="kontak"><br><br>
 				<textarea cols="110" rows="20" name ="komentar" placeholder="Laporan/Komentar"></textarea><br>

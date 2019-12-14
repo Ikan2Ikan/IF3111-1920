@@ -99,6 +99,16 @@ Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/
 Instalasi framework yang saya lakukan dengan menggunakan extract folder codeigniter yang telah di download, setelah itu ubah tampilan awal dengan tidak menampilkan welcome codeigniter dengan mengubah url defaultnya
 Untuk koneksi basis data dengan cara pada folder aplication -> folder config -> database.php , isi bagian 'username' => 'root' , 'database' => 'lapor', 'dbdriver' => 'mysqli'
 
+Kami memakai JavaScript untuk memvalidasi form pada halaman buatlapor.php. pertama-tama script yang dibuat yaitu,
+   function validateForm(){
+      var x=document.forms["users"]["nama"].value;
+      if (x==null || x==""){
+         alert("Nama Wajib Diisi");
+            return false;
+      }
+   }
+Script tersebut akan mengeluarkan alert jika kolom nama tidak diisi pada form
+
 ### Knowledge
 Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaikan tugas ini.
 - CSS: margin, padding, header tag, font-size, text-align, float, clear, border, color, div, span, placeholder, 
