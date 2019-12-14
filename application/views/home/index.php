@@ -25,8 +25,6 @@
         
     </section>
 
-    
-    
     <section id="boxes">
     <?php foreach ( $lapor as $lpr ) :?>
         <div class="container">

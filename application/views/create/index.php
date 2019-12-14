@@ -2,7 +2,8 @@
         <center>
             <h2>BUAT LAPORAN</h2>
         </center>
-        <form action="<?php echo base_url('home/create')?>" method="POST">
+        <?php echo form_open("home/create", array('enctype'=>'multipart/form-data')); ?>
+        
         <div class="container">
             <div class="styled-input wide">
                 <textarea name='komentar' required></textarea>
@@ -10,7 +11,7 @@
                 <span></span> </div>
 
             <div class="styled-input">
-                <input type="file" name="file" class="button_1">
+                <input type="file" name="lampiran" class="button_1">
                 <span></span> </div>
 
             <div class="styled-input wide">
@@ -27,6 +28,6 @@
                 <button type="submit" class="button_1" name="create">Buat Laporan</button>
             <span></span> </div>
 
-        </form>
+        <?php echo form_close(); ?>
         </div>
     </section>
