@@ -4,12 +4,11 @@
         
         <div class=kata>
           <a href="<?= base_url(); ?>Buatform">Buat Laporan/Komentar <button class="button2">'</button> </a>
-        </div>
-    </form>
+         </p>
+     </form>
+     <div class="tampil">
+      Laporan/Komentar Terakhir
 
-    <p> Laporan/Komentar Terakhir </p>
-    <hr width="100%" color="gray" />
-
-    
+     </div>
     </body>
 </html>
