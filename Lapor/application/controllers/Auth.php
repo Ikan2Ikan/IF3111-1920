@@ -47,4 +47,18 @@ class Auth extends CI_Controller
         redirect('auth/');
     }
 
+    function BacaSelengkapnya($id) {
+        $data = array(
+            'id' => $id
+        );
+        $hasil['komentar'] = $this->Auth_model->Baca($data)->result();
+        $this->load->view('auth/baca', $hasil);
+    }
+
+    function hapus($id) {
+        $data = array('id' => $id);
+	    $this->Auth_model->hapusdata($data);
+	    redirect('auth/');
+    }
+
 }
