@@ -6,15 +6,14 @@
 			</div>
 			<!-- <h3>Sampaikan laporan Anda langsung kepada instansi kampus berwenang</h3> -->
 
-			<div class="heading">
+			<div class="head">
 				<p>Buat Laporan/Komentar</p>
-				<hr>
 			</div>
 			<form action="post">
 				<div class="nama">
 					<input class="type" name="nama" placeholder="Nama Pelapor">
 				</div>
-				<br>
+				<br><br>
 				<div class="keterangan">
 					<textarea type="text" name="laporan" rows="13" cols="97" placeholder="Ketik laporan Anda..."></textarea>
 				</div>

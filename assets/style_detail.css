@@ -1,0 +1,21 @@
+.container {
+	width: 900px;
+	height: 700px;
+	margin: auto;
+	background-color: #5f9ea0;
+}
+
+.container .heading {
+	justify-content: center;
+	display: flex;
+}
+
+.container .heading h1 {
+	text-align: center;
+	margin-top: 50px;
+}
+
+.content {
+	margin-left: 50px;
+	margin-right: 50px;
+}

@@ -1,12 +1,15 @@
 .container {
-	width: 800px;
+	width: 900px;
+	height: 700px;
 	margin: auto;
+	background-color: #b1854b;
 }
 
 .judul,
 form,
 .lapor {
 	text-align: center;
+	margin-top: 20px;
 }
 
 .judul {
