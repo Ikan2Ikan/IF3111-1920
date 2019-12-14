@@ -58,7 +58,7 @@ class CRUD extends CI_Controller {
 				'waktu' 	=> $waktu
 			);
 			$this->Input_model->tambah($data,'laporan');
-			redirect('http://localhost/IF3111-1920-master');
+			redirect('http://localhost/IF3111-1920');
 		}
 	}
 
@@ -77,14 +77,14 @@ class CRUD extends CI_Controller {
 		);
 
 		$this->Input_model->edit_data($this->input->post('ID'), 'laporan', $data);
-		redirect('http://localhost/IF3111-1920-master');	
+		redirect('http://localhost/IF3111-1920');	
 		return 0;
 
 	}	
 
 	function hapus($id){
 		$this->Input_model->hapus($id, 'laporan');
-		redirect('http://localhost/IF3111-1920-master');	
+		redirect('http://localhost/IF3111-1920');	
 		
 	}
 
