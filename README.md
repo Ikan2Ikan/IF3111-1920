@@ -9,11 +9,11 @@
 ![](stuff/register.png)
 
 
-###Anggota Tim :cyclone:
+### **Anggota Tim :cyclone:**
 - **Habib Abdurrasyid** 
 - **Dhiko jangjaya Putra**
 
-###Penjelasan Teknis
+### **Penjelasan Teknis**
 **Instalasi Framework  Codeigniter 3.1**
    - Mendownload Framework CI
    - Melakukan konfigurasi dasar Codeigniter pada folder config
