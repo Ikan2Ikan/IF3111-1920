@@ -37,4 +37,3 @@
         </div>
     <?php endforeach;?>
 </div>
-<script src="<?base_url('Dokumen/js/pencarian.js')?>"></script>
