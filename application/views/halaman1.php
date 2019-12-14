@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Layanan Aspirasi Mahasiswa Teknik Informatika ITERA</title>
     <link rel="stylesheet" href="<?php echo base_url() ?>fitur/css/cssH1.css">
@@ -30,7 +31,7 @@
             </span>
             </h4>
       
-            <hr>
+
         <?php  }
         ?>
       <br>
