@@ -14,6 +14,11 @@
 
 }
 
+.nm,
+.choose {
+	text-align: left;
+}
+
 .kolom-lapor1 {
 	border: 1px black;
 	text-align: right;
