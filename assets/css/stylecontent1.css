@@ -1,0 +1,53 @@
+body{
+/*  margin-left:4.7vw;
+  margin-right:4.7vw;*/
+}
+.container{
+	margin-left:4.7vw;
+	margin-right:4.7vw;
+}
+.tagline{
+	margin-left:-7vw;
+	float: center;
+	margin-top: 0px;
+	margin-bottom: 50px;
+	height: 35vw;
+	width: 100vw;
+  	background-image: url(../img/home-cover.jpg);
+  	background-repeat: no-repeat;
+	background-size: 150vw 500vw;
+	background-color: none;
+	box-shadow : 5px 10px #CECECEFF;
+}
+.tagline-atas{
+	padding-top: 10px;
+	text-align: center;
+	font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+h2{
+	font-size: 33px;
+	font-weight: 350;
+	color: black;
+}
+p{
+	/*font-size: 23px;*/
+	font-weight: 100;
+	color: black;
+}
+.tagline-bawah{
+	font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-align: center;
+}
+.title-S{
+	font-size: 40px;
+	font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-align: center;
+	margin-top:-130px;
+}
+.title-formulir{
+	margin:auto;
+	left: 0;
+	right: 0;
+	top:0;
+	bottom: 0;
+}
