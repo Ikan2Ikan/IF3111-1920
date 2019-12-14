@@ -3,14 +3,17 @@
         <hr>
         <p><?php echo $laporan['isi_laporan']; ?></p>
         <div class="lampiran">
-            <span>lampiran</span>
+            <span>Lampiran :</span>
             <img src = "<?php echo base_url().'upload/'.$laporan['lampiran'];?>" alt="">
         </div>
+
+    <hr>
 
     <span>Aspek : <?php echo $laporan['aspek'];?></span><br>
     <span>Dibuat pada : <?php echo $laporan ['waktu_laporan']; ?></span>
     <?php $id = $laporan['id_laporan'];?>
     <a href = "<?php echo base_url().'index.php/laporan/delete/'.$id;?>">Hapus</a>
             
+
 </div>
 
