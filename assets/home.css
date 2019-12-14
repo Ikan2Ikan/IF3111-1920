@@ -1,0 +1,22 @@
+.container {
+	width: 800px;
+	margin: auto;
+}
+
+.kepala h1 {
+	text-align: center;
+	margin-top: 50px;
+}
+
+.kolom-lapor {
+	border: 1px black;
+	margin-top: 10px;
+
+}
+
+.kolom-lapor1 {
+	border: 1px black;
+	text-align: right;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
