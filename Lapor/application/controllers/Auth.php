@@ -22,4 +22,10 @@ class Auth extends CI_Controller
         $this->load->view('auth/home', $data);
     }
 
+    public function Buat_Laporan()
+    {
+        $this->load->view('auth/BuatLaporan');
+        
+    }
+    
 }
