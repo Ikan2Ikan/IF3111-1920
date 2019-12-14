@@ -1,0 +1,46 @@
+body {
+	font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+	display: block;
+	height: 100px;
+	text-align: center;
+}
+
+#formcari {
+	display: inline-block;
+	width: 50%;
+	height: 7%;
+	border-style: solid;
+	padding: 10px;
+	font-size: 15px;
+}
+
+.tombolcari {
+	display: inline-block;
+	height: 9%;
+	width: 7%;
+	border : solid;
+	position: relative;
+	left: -6px;
+	font-size: 20px;
+}
+
+.untukcari {
+    text-align: center;
+}
+
+.lapor {
+    text-align: center;
+    line-height: 50px;
+}
+
+.laporanterakhir {
+	margin-left: 20vw;
+    margin-right: 20vw;
+    font-size: 15px;
+    margin-bottom: 2vh;
+    margin-top: -1vh;
+    border: 1px solid white;
+}
