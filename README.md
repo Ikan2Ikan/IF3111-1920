@@ -28,7 +28,7 @@
   - Framework     : Codeigniter 3.1
   - DBMS          : mysql
   - Language      : PHP, Javascript (Native)
-  - Fitur         : CRUD laporan / komentar, Validasi form, Search komentar
+  - Fitur         : CRUD laporan / komentar, Validasi form, Search komentar, Login, Register
 
 
 ![](stuff/buat-laporan.PNG)
