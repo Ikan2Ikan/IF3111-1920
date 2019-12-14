@@ -14,16 +14,19 @@
     
     <?php
     echo "laporan atau komentar terakhir<br>";
-    
+
     foreach($laporan as $data){
         echo "anonim<br>";
+        $data->laporan=substr($data->laporan,0,30);
         echo $data->laporan."<br>";
-        
+
         foreach($aspek as $dataAspek)
         if($data->id_aspek == $dataAspek->id){
             echo $dataAspek->nama."<br><br>";
         }
-        ?><a href="./view">Lihat Selengkapnya</a>
+        ?>
+
+        <a  href="<?php echo base_url();?>index.php/laporan/detail/<?php echo $data->id;?>">Lihat Selengkapnya</a>
         <br>
         <br>
     <?php
