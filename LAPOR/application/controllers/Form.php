@@ -5,27 +5,36 @@ class Form extends CI_Controller {
 	public function __construct()
 	{
 		parent::__construct();
-		$this->load->model('Form_model');
+		$this->load->model('input_form');
 		$this->load->library('form_validation');
 
 	}
-	public function db(){
-		$judul = $_POST['judul'];
-		$komen = $_POST['komen'];
-		$img = $_FILES['img']['name'];
-		$tmp = $_FILES['img']['tmp_name'];
-		$pilihan = $_POST['pilihan'];
+	function input_form(){
+		$judul = $this->input->POST['judul'];
+		$komen = $this->input->POST['komen'];
+		$img = $_FILES['image']['name'];
+		$pilihan = $this->input->POST['pilihan'];
+	  
+		$config['upload_path'] = '/.images/';
+		$config['allowed_types'] = 'gif|jpg|png';
+		$config['file_name'] = date('Y-m-d H-i-s', time());
+		$this->load->library('upload', $config);
 
-		$fotobaru = date('dmYHis').$img;
-		$path = "images/".$fotobaru;
+		if(!$this->upload->do_upload('lampiran')){
+			echo "upload gagal"; die();
+		}else{
+			$img = $this->upload->data('file_name');
+		}
 
-	  if(move_uploaded_file($tmp, $path)){
-		  $query = "INSERT INTO lapor VALUES('".$judul."', '".$komen."', '".$img."', '".$pilihan."')";
-		  $sql = mysqli_query($connect, $query);
-	  }else{
-		echo "Maaf, Gambar gagal untuk diupload.";
-	  }
-	  redirect('beranda')
+		$data = array(
+			'judul'	=> $judul,
+			'kolom_komentar' => $komen,
+			'lampiran' => $img,
+			'aspek_pelaporan' => $pilihan
+		);
+
+	  $this->input_form->input($this->table_name, $data);
+	  redirect('');
 	}
 
 }
