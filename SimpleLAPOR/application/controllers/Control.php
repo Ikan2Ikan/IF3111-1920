@@ -52,11 +52,10 @@ class Control extends CI_Controller {
 	}
 
 	public function search(){
-		$keyword = $this->input->get('cari');
+		$keyword = $this->input->get('keyword');
 		$data['result'] = $this->laporan_model->search_data($keyword, ['laporan']);
-		$this->load->view('hasilsearch' , $data);
-
-		redirect('');
+		$this->load->view('search_result' , $data);
+		
 	}
 
 	public function tambah(){

@@ -1,7 +1,7 @@
 <p>Laporan / Komentar</p>
 <hr>
 
-<?php foreach ($search_result as $post) : ?>
+<?php foreach ($result as $post) : ?>
 
     <?php if(strlen($post['komentar']) <= 400){ ?>
         <?php echo $post['komentar'] ; ?>
@@ -11,5 +11,6 @@
         <?php  }?>
 
     Waktu : <?php echo $post['tanggal'] ;?>
+    <a href="<?php echo base_url().'detail/'.$post['no']; ?>"> Lihat Selengkapnya ></a>></p>
 
-    <a href=""></a>
+ <?php endforeach; ?>

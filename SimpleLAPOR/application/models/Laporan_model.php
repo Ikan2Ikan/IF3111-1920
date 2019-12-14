@@ -26,10 +26,9 @@ class Laporan_model extends CI_Model{
         $this->db->delete($table);
     }
 
-    public function search_data($keyword , $tabel){
+    public function search_data($keyword , $table){
         $this->db->like('komentar' , $keyword);
         $query = $this->db->get($table);
-
         return $query->result_array();
     }
 }
