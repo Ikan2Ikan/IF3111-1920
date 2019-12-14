@@ -53,8 +53,8 @@ class Control extends CI_Controller
     public function ubah($id)
     {
         $upload = $this->control_model->upload();
-        $this->control_model->update($upload, $id);
-        redirect('control');
+        $this->control_model->update($id, $upload);
+        redirect(base_url());
     }
 
     // menghapus data yang dipilih ==========================================
