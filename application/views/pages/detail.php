@@ -10,6 +10,15 @@
 
         <div class="container">
             <p><?= $lpr['laporan']; ?></p>
+            
+            <?php
+                if($lpr['tipe']=="image/png" || $lpr['tipe']=="image/jpg" || $lpr['tipe']=="image/jpeg" ){
+                    echo "<img src'" .base_url("asset/filess/".$lpr['lampiran'])."'width='400' height='400'>";
+                }else{
+                    echo "<img src'" .base_url("asset/filess/".$lpr['lampiran'])."'width='400' height='400'>";
+                }
+            ?>
+            
             <div class="box">
                 <p>Lampiran : <?= $lpr['lampiran']; ?> </p>
             </div>

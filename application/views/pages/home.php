@@ -18,7 +18,7 @@
             <input type="text" placeholder="Enter Search Key">
             <button type="submit" class="button_1">Search</button>
         </form>
-        <form action="<?php echo base_url('home/tambah') ?>">
+        <form action="<?php echo base_url('home/loadlapor') ?>">
             <p>Tidak Menemukan yang dicari? <button type="submit" class="button_2">Buat Laporan + </button></p>
         </form>
     </div>

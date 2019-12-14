@@ -16,11 +16,13 @@
 
             <div class="styled-input wide">
                 <select name="aspek" id="" class="button_1">
+                Dosen, Staff, Mahasiswa, Infrastruktur dan Pengajaran
                     <option value="">Pilih Aspek Pelaporan/Komentar</option>
-                    <option value="Sosial">Sosial</option>
-                    <option value="Politik">Politik</option>
-                    <option value="Akademik">Akademik</option>
-                    <option value="Lainnya">Lainnya</option>
+                    <option value="Sosial">Dosen</option>
+                    <option value="Politik">Staff</option>
+                    <option value="Akademik">Mahasiswa</option>
+                    <option value="Lainnya">Infrastruktur</option>
+                    <option value="Lainnya">Pengajaran</option>
                 </select>
             <span></span> </div>
 
