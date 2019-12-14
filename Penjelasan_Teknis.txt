@@ -1,0 +1,17 @@
+Instalasi Framework (kami menggunakan Code Igniter) : 
+-Download framework CI
+-Ekstrak hasil download
+-Ubah nama folder menjadi "tubes"
+-Copy dan paste ke xampp/htdocs
+
+Koneksi database :
+-Buka file xampp/htdocs/tubes/application/config/autoload.php
+-Cari $autoload['libraries'] lalu tambahkan library database (seperti dibawah ini) :
+$autoload['libraries'] = array('database');
+-Buka file xampp/htdocs/tubes/application/config/database.php
+-Isi 'localhost' pada hostname, 'root' pada username, dan 'lapor' pada database
+(Database yang kami gunakan bernama 'lapor')
+
+Validasi di client-side :
+Kami menggunakan fungsi minlength="20" untuk validasi isi laporan memiliki 20 karakter atau lebih.
+Kami juga menggunakan fungsi required sebagai validasi bahwa kolom tersebut tidak kosong.
