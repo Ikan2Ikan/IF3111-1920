@@ -1,6 +1,6 @@
 <html>
 <head>
-    <script src="assets/js/kode.js"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>assets/js/kode.js"></script>
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/style.css" />
     <title>Buat Laporan!</title>
 </head>
@@ -15,7 +15,7 @@
 <center>
 <?php foreach($komentar as $komen) {
 ?>
-<form method="POST" action="<?php echo base_url('auth/update/').$komen->id ?>" onSubmit="valid()">
+<form method="POST" action="<?php echo base_url('auth/update/').$komen->id ?>" onSubmit="return valid(this)">
 
         <textarea type="text" name="komentar"><?php echo $komen->isi; ?></textarea>
 
