@@ -13,6 +13,7 @@ Cara mengoneksikan CodeIgniter terhadap localhost yaitu sebagai berikut :
 4. kunjungi $config['base_url'] = 'http://localhost:8080/CodeIgniter/'; ,maka akan muncul pesan welcome dan CodeIgniter telah terpasang dengan baik.
 
 Cara menghubungkan CodeIgniter dengan database yaitu debagai berikut :
+database berada pada folder CodeIgniter
 1. mengaktifkan modul yang bernama database pada folder Application -> Config -> database.php
    'hostname' => 'localhost',
 	'username' => 'root',
