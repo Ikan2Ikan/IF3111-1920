@@ -31,7 +31,7 @@
 	<div class="tombol">
 		<a href="<?php echo base_url() ?>home/edit/<?php echo $key->id; ?>">Edit </a>
 		|
-		<a href="<?php echo base_url() ?>home/hapus/<?php echo $key->id; ?>">Hapus</a>
+		<a href="<?php echo base_url() ?>home/hapus/<?php echo $key->id; ?>" onClick="return confirm('Anda Yakin Akan Menghapus Laporan Ini?')">Hapus</a>
 	</div>
 	<hr>
 </body>
