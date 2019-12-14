@@ -1,4 +1,6 @@
 <?php 
+defined('BASEPATH') OR exit('No direct script access allowed');
+
 	class Halaman_utama extends CI_Controller{
 		//fungsi menampilkan data dari database
 		public function __construct(){
@@ -17,7 +19,7 @@
 			
 			$this->load->view('templates/header',$data);
 			$this->load->view('Lapor/index',$data);
-			$this->load->view('templates/footer');
+			// $this->load->view('templates/footer');
 		}
 
 		//menambahkan data ke database
@@ -27,23 +29,92 @@
 
 	   		$this->load->view('templates/header',$data);
 			$this->load->view('Lapor/halaman_Laporan');//folder dan file
-			$this->load->view('templates/footer');
+			$this->load->view('templates/footer');	   	
+	   }
 
-	   	   	if(isset($_POST['submit'])){
+	   public function ProsesDataLapor(){
+	   	date_default_timezone_set('Asia/Jakarta');
+	   	if(isset($_POST['submit'])){
 			//input kedatabase
 	   	   	if($this->session->userdata('email')==null){
 	   	   		$this->session->set_flashdata('anda belum login',"tambah gagal");
 	   	   		redirect('Halaman_utama/Login');
 	   	   	}else{
 	   	   		// $result['pesan'] = '';
-		   	   	$this->Lapor_model->InputContentLaporan();//fungsi mahasiswa,fungsi berada pada controler, dan file Model_mahasiswa
+	   	   		$lampiran = $_FILES['file_file']['name'];
+
+	   	   		if($lampiran = ''){
+
+	   	   		}else{
+
+	   	   			$config['upload_path']='./lampiran';
+	   	   			$config['allowed_types']='JPG|png|pdf|docx|jpg|ppt|pptx|xls|xlsx';
+	   	   			
+	   	   			$this->load->library('upload',$config);
+
+	   	   			if(!$this->upload->do_upload('file_file')){
+	   	   				
+						$data2 = [
+							"komentar_id" => '',
+							"komentar" => $this->input->post('komentar',true),
+							"lampiran" => '',
+							"waktu" => date('l,d-F-Y  h:i:s'),
+							"kategori" => $this->input->post('kategori'),
+							"email" =>  $this->session->userdata('email')//yg dilempar gan
+						]; 
+
+						$this->Lapor_model->InputContentLaporan($data2);//fungsi mahasiswa,fungsi berada pada controler, dan file Model_mahasiswa
+
+		   	   	
+				   		$this->session->set_flashdata('input_laporan',"lapor berhasil");
+				   		redirect('Halaman_utama');//dialihkan lagi ke halaman mahasiswa
+	   	   			}else{
+	   	   				$lampiran = $this->upload->data('file_name');
+	   	   			}
+	   	   	
+
+	   	   		
+				$data2 = [
+					"komentar_id" => '',
+					"komentar" => $this->input->post('komentar',true),
+					"lampiran" => $lampiran,
+					"waktu" => date('l,d-F-Y  h:i:s'),
+					"kategori" => $this->input->post('kategori'),
+					"email" =>  $this->session->userdata('email')//yg dilempar gan
+				]; 
+
+
+	   	   		$this->Lapor_model->InputContentLaporan($data2);//fungsi mahasiswa,fungsi berada pada controler, dan file Model_mahasiswa
 
 		   	   	
 		   		$this->session->set_flashdata('input_laporan',"lapor berhasil");
 		   		redirect('Halaman_utama');//dialihkan lagi ke halaman mahasiswa
 
+	   	   		}
+
+
 	   	   	}
-	   		echo json_encode($result);
+
+	   	   	}
+	   		
+	   }
+	   //Ubah Data Laporan
+
+	   public function UbahDataLaporan($id){
+
+		$data['judul1']  = 'Ubah Laporan';
+		$data['lapor'] = $this->Lapor_model->getDataId($id);
+
+	   		$this->load->view('templates/header',$data);
+			$this->load->view('Lapor/halaman_Ubah_Laporan');//folder dan file
+			$this->load->view('templates/footer');
+
+	   	   	if(isset($_POST['submit'])){
+				//ubah kedatabase
+		   	   	$this->Lapor_model->UbahContentLaporan();//fungsi mahasiswa,fungsi berada pada controler, dan file Model_mahasiswa
+		   		$this->session->set_flashdata('input_laporan',"lapor berhasil");
+		   		redirect('Halaman_utama');//dialihkan lagi ke halaman mahasiswa
+
 	   	   	}
 	   		
 	   	
@@ -116,7 +187,8 @@
 	    			
 	    			
 
-	    			$this->session->set_userdata('email',$email);
+	    			$this->session->set_userdata('email',$email);//menyimpan email untuk dilempar lempar
+	    			
 	    			$this->session->set_flashdata('login_berhasil',"password benar");
 	    			redirect('Halaman_utama/InputDataLapor');
 
@@ -132,7 +204,7 @@
 	   	
 	   }//fungsi
 
-	   public function logout(){
+	public function logout(){
 		$this->session->sess_destroy();
 		redirect('Halaman_utama/login');
 	}
