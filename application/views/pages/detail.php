@@ -28,7 +28,7 @@
 
             <div class="box">
                 <p><a href ="<?=$linkubah;?>">Ubah</a>
-                <a href ="<?=$linkhapus;?>">Hapus</a>
+                <a href ="#" onclick="confirmUser()">Hapus</a>
                 </p>
             </div>
             
@@ -37,3 +37,11 @@
     <?php endforeach; ?>
 </section>
     </section>
+    <script type="text/javascript">
+        function confirmUser(){
+            var ask = confirm("Apa anda yakin ingin menghapus?");
+            if(ask){
+                window.location="<?=$linkhapus;?>";
+            }
+        }
+    </script>

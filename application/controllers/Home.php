@@ -33,7 +33,8 @@ class Home extends CI_Controller {
 
     //Menampilkan Menu Lapor
     public function loadlapor(){
-      $this->load->view('templates/header');
+      $title['judul'] = 'Create';
+      $this->load->view('templates/header',$title);
       $this->load->view('pages/create');
       $this->load->view('templates/footer');
     }
@@ -62,4 +63,18 @@ class Home extends CI_Controller {
 
     
     
+    //Mengedit Laporan
+    public function ubah($id){
+      $data['lapor'] = $this->Lapor_model->getDataById($id);
+      $title['judul'] = 'Update';
+      $this->load->view('templates/header',$title);
+      $this->load->view('pages/update',$data);
+      $this->load->view('templates/footer');
+    }
+
+    public function edit_simpan($id){
+      $upload = $this->Lapor_model->upload();
+      $this->Lapor_model->editData($id, $upload);
+      redirect(base_url());
+    }
 }
