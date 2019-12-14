@@ -8,8 +8,12 @@
 	text-align: left;
 }
 
+.spasi {
+	padding-left: 1cm;
+}
+
 .poskanan {
-	padding-left: 400px;
+	padding-left: 30%;
 	font-family: sans-serif;
 	text-align: right;
 }
