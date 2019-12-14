@@ -27,12 +27,6 @@ p{
 hr{
     width: 90%;
 }
-
-p a{
-    text-decoration: none;
-    color: black;
-}
-
 #header{
     width:80%;          
     height:100%; 
@@ -42,27 +36,55 @@ p a{
     border: solid 1px black;
 }
 
-.konten h4{
+.konten1 p{
+    font-size: 13px;
+    text-align: justify;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.konten1 h4{
     margin-left: 50px;
     margin-right: 50px;
     margin-bottom: 0px;
 }
-
-.konten h4 a{
-    text-decoration: none;
-    color: black;
+.konten2 h4{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 0px;
 }
-
-.konten p{
+.konten2 p{
      font-size: 13px;
     text-align: justify;
     margin-left: 50px;
     margin-right: 50px;   
 }
-.konten span{
+.konten2 span{
     float: right;
 }
 
+.konten3 h4{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 0px;
+}
+.konten3 p{
+     font-size: 13px;
+    text-align: justify;
+    margin-left: 50px;
+    margin-right: 50px;   
+}
+.konten3 span{
+    float: right;
+}
+.konten4 h4{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 0px;
+}
+.konten4 span{
+    float: right;
+}
 .space1{
     width: 25px;
     height: 25px;
@@ -70,8 +92,3 @@ p a{
     border-radius: 100%;
     margin-left: 450px;
 }
-
-h4{
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-bottom: 0px;

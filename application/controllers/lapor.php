@@ -7,8 +7,6 @@ class lapor extends CI_Controller {
 
 		$this->load->view('halaman1',$data);
 	
-
-
-		}
+  		}
+		
 	}
-
