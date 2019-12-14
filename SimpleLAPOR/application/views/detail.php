@@ -36,7 +36,7 @@
 			<?php $id = $laporan_item['no']; ?>
 
 			<a  href="<?php echo base_url().'hapus/'.$id;?>">Hapus/delete x</a>
-			<a  href="<?php echo base_url().'update/'.$id;?>">Update data</a>
+			<a  href="<?php echo base_url().'update/'.$id;?>"></a>
 
 			
 
