@@ -53,5 +53,10 @@ class Lapor_model extends CI_model {
       return $this->db->delete('laporan');
     }
 
+    public function searchbykey($key){
+      $this->db->like("laporan",$key);
+      // $this->db->order_by("waktu","desc");
+      return $this->db->get('laporan')->result_array();
+    }
       
 }

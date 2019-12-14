@@ -14,8 +14,8 @@
 
 <section id="search-box">
     <div class="container">
-        <form action="">
-            <input type="text" placeholder="Enter Search Key">
+            <form action="home/searchlaporan" method="POST" enctype="multipart/form-data">  
+            <input type="text" name="keyword" placeholder="Keyword">
             <button type="submit" class="button_1">Search</button>
         </form>
         <form action="<?php echo base_url('home/loadlapor') ?>">
