@@ -26,12 +26,13 @@
             <br><br>
             <h4>Lampiran : //kodeuntukgambar</h4>
             <span> <?php echo $data->tgl_lapor; ?>
-            &emsp;&emsp; <a href="">Lihat Selengkapnya></a>
+            &emsp;&emsp; a href="">Lihat Selengkapnya></a>
             </span>
             <hr>
-         <?php }
+        <?php  }
         ?>
       </p><br>
   </div>
+  
 </body>
 </html>
