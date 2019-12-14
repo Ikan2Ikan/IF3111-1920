@@ -1,0 +1,56 @@
+.container {
+
+	padding: 0px;
+	margin-left: 200px;
+	margin-right: 200px;
+	display: fix;
+}
+
+.container1 {
+	padding: 20px;
+	background-image: url('../img/background.jpg');
+	background-size: cover;
+	border: 1px solid rgb(70, 130, 180);
+}
+
+.container2 {
+	padding: 10px;
+	border: 1px solid rgb(70, 130, 180);
+}
+
+.container h1 {
+	text-align: center;
+	color: whitesmoke;
+
+}
+
+.container h4 {
+	color: rgb(70, 130, 180);
+
+}
+
+.container a {
+	text-decoration: none;
+}
+
+.container .laporan .details {
+	display: flex;
+	justify-content: space-between;
+}
+
+.container .laporan a {
+	color: rgb(70, 130, 180);
+}
+
+.details .action {
+	display: flex;
+	justify-content: space-between;
+}
+
+.details .action .edit,
+.details .action .delete {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0 5px;
+}

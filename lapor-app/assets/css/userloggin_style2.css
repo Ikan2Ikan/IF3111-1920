@@ -1,0 +1,139 @@
+.container {
+
+	padding: 0px;
+	margin-left: 200px;
+	margin-right: 200px;
+	display: fix;
+
+}
+
+.container1 {
+	padding: 20px;
+	background-image: url('../img/background.jpg');
+	background-size: cover;
+	border: 1px solid rgb(70, 130, 180);
+}
+
+.container2 {
+	padding: 10px;
+	border: 1px solid rgb(70, 130, 180);
+}
+
+.container .heading-icon {
+	display: flex;
+	justify-content: center;
+}
+
+.container .heading-icon img {
+	padding: 15px;
+	width: 50px;
+	height: 50px;
+}
+
+.container .nav-bar {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: transparent;
+	height: 30px;
+	margin-bottom: 5px;
+	border: 1px solid whitesmoke;
+	justify-content: space-between;
+}
+
+.container .nav-bar span {
+	padding: 2px;
+}
+
+.container .nav-bar span p {
+	margin-left: 10px;
+	color: whitesmoke;
+}
+
+.container .nav-bar span a {
+	margin-right: 10px;
+	color: whitesmoke;
+}
+
+.container h1 {
+	text-align: center;
+	color: whitesmoke;
+}
+
+.container form {
+	text-align: center;
+}
+
+.container form input {
+	width: 300px;
+	padding: 5px;
+	border: 1px solid rgb(70, 130, 180);
+	background: whitesmoke;
+
+}
+
+.container form button {
+	background: transparent;
+	width: 50px;
+	padding: 5px;
+	border: 1px solid whitesmoke;
+	color: whitesmoke;
+}
+
+.container form button:hover {
+	background: rgb(70, 130, 180);
+}
+
+.container a {
+	text-decoration: none;
+	display: block;
+	text-align: center;
+	color: whitesmoke;
+}
+
+.container .laporan a {
+	font-weight: bold;
+	display: block;
+	text-align: left;
+	color: whitesmoke;
+}
+
+.container a:hover {
+	color: rgb(70, 130, 180);
+}
+
+.container hr {
+	border: 1px solid rgb(70, 130, 180);
+}
+
+.container .laporan .details {
+	display: flex;
+	justify-content: space-between;
+}
+
+.container2 h4 {
+	color: rgb(70, 130, 180);
+}
+
+.container2 .laporan a {
+	color: rgb(70, 130, 180);
+}
+
+.container2 .laporan a:hover {
+	color: blue;
+}
+
+.container2 .laporan {
+	max-height: 200px;
+}
+
+.container2 .laporan p {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.nav-bar .right-menu {
+	display: flex;
+	justify-content: space-between;
+}

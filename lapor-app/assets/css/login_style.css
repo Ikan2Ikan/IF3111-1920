@@ -1,0 +1,50 @@
+div {
+	border: 2px rgb(70, 130, 180);
+	padding: 20px;
+	margin-left: 500px;
+	margin-right: 500px;
+	margin-top: 140px;
+	border-radius: 5px;
+	background-image: url('../img/background.jpg');
+	background-size: cover;
+}
+
+.container {
+	text-align: center;
+}
+
+.container button {
+	background: transparent;
+	width: 80px;
+	padding: 6px;
+	border: 1px solid whitesmoke;
+	color: whitesmoke;
+	border-radius: 20px;
+}
+
+.container button:hover {
+	background: rgb(70, 130, 180);
+}
+
+.container .fa {
+	color: whitesmoke;
+}
+
+.container input {
+	border: 1px solid whitesmoke;
+	border-radius: 15px;
+	padding: 5px;
+}
+
+.container h2 {
+	color: whitesmoke;
+}
+
+.container a {
+	text-decoration: none;
+	color: whitesmoke;
+}
+
+.container a:hover {
+	color: rgb(70, 130, 180);
+}
