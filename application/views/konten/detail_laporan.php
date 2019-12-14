@@ -10,7 +10,7 @@
     <span>Aspek : <?php echo $laporan['aspek'];?></span><br>
     <span>Dibuat pada : <?php echo $laporan ['waktu_laporan']; ?></span>
     <?php $id = $laporan['id_laporan'];?>
-    <a href = "<?php echo base_url('laporan/delete/').$id;?>">Hapus</a>
+    <a href = "<?php echo base_url().'index.php/laporan/delete/'.$id;?>">Hapus</a>
             
 </div>
 

@@ -52,7 +52,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'control';
 $route['laporan/input'] = 'laporan/input';
 $route['laporan/view/(:any)'] = 'laporan/view/$1';
-$route['laporan/delete'] = 'laporan/delete';
+$route['laporan/delete/(:any)'] = 'laporan/delete/$1';
 $route['(:any)'] = 'control/index/$1';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

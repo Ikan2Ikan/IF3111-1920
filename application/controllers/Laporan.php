@@ -20,6 +20,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             $this->laporan_model->input_laporan('laporan',$data);
             redirect('template');
         }
+
+        public function delete($id){
+            $where = array('id_laporan' => $id);
+            $this->laporan_model->hapus_laporan($where, 'laporan');
+            redirect('template');
+        }
         
         public function view($id) {
             $data['laporan'] = $this->laporan_model->get_laporan($id);

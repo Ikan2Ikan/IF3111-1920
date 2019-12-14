@@ -18,6 +18,10 @@
             $this->db->insert($table, $data);
         }
 
+        public function hapus_laporan($where, $table){
+            $this->db->where($where);
+            $this->db->delete($table);
+        }
 
     }
 ?>
