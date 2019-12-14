@@ -88,7 +88,7 @@
 		<a href="<?php echo base_url().'lampiran/'.$mhs['lampiran'] ?>" target="blank"> view</a>
 	<?php elseif($data = substr($mhs['lampiran'],-4) == 'docx'): ?>
 		File Docx :
-		<a download="#" href="<?php echo base_url().'lampiran/'.$mhs['lampiran'] ?>" target="blank"> Download</a>
+		<a download="" href="<?php echo base_url().'lampiran/'.$mhs['lampiran'] ?>" target="blank"> Download</a>
 	<?php elseif($mhs['lampiran'] == ''): ?>
 		Tidak Ada File Terlampir!
 	<?php endif; ?>
