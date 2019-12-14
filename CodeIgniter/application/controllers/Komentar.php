@@ -1,19 +1,30 @@
 <?php
 
 class Komentar extends CI_Controller{
-    public function __contruct(){
+    public function __construct(){
         parent::__construct();
         $this->load->model('Md_komentar');
+        $this->load->library('form_validation');
     }
 
     public function index(){
         $data['title']="Tambah Komentar/Laporan";
-        $this->load->view('templates/header_komentar', $data);
-        $this->load->view('komentar/index.php', $data);
-        $this->load->view('templates/footer');
+
+        $this->form_validation->set_rules('judul_komentar', 'Judul', 'required');
+        $this->form_validation->set_rules('komentar', 'Komentar', 'required|min_length[20]');
+        $this->form_validation->set_rules('kategori', 'Kategori', 'required');
+        $this->form_validation->set_rules('lampiran', 'Lampiran', 'required');
+
+        if($this->form_validation->run()== FALSE){
+            $this->load->view('templates/header_komentar', $data);
+            $this->load->view('komentar/index', $data);
+            $this->load->view('templates/footer');
+        } else{
+            $this->Md_komentar->tambahKomentar();
+            redirect('home');
+        }
 
         if(isset($_POST['submit'])){
-            $this->load->model('Md_komentar'); # <- add this
             $this->Md_komentar->tambahKomentar();
             echo "<script>alert('Report / Komentar berhasil ditambahkan!');</script>";
         }   
