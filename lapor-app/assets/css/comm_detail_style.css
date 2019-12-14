@@ -1,118 +1,42 @@
 .container {
-	border: 1px solid green;
-	padding: 10px;
+
+	padding: 0px;
 	margin-left: 200px;
 	margin-right: 200px;
-	/* display: fix; */
+	display: fix;
 }
 
-.container .log-reg {
-	display: flex;
-	justify-content: flex-end;
+.container1 {
+	padding: 20px;
+	background-image: url('../img/background.jpg');
+	background-size: cover;
+	border: 1px solid rgb(70, 130, 180);
 }
 
-.container .log-reg a {
-	padding: 4px;
-	margin-right: 10px;
-	border: 1px solid green;
-	border-radius: 5px;
-}
-
-.container .heading-icon {
-	display: flex;
-	justify-content: center;
-}
-
-.container .heading-icon img {
-	padding: 15px;
-	width: 40px;
-	height: 50px;
-}
-
-.container .com_link {
-	display: flex;
-	justify-content: center;
-}
-
-.container .com_link i {
-	padding: 2px;
-	color: green;
-}
-
-.container .com_link i {
-	padding: 2px;
-	color: green;
-}
-
-.container .log-reg a:hover {
-	background: greenyellow;
-	color: green;
+.container2 {
+	padding: 10px;
+	border: 1px solid rgb(70, 130, 180);
 }
 
 .container h1 {
 	text-align: center;
-	color: green;
-}
+	color: whitesmoke;
 
-.container form {
-	text-align: center;
-}
-
-.container form input {
-	width: 300px;
-	padding: 5px;
-	border: 1px solid green;
-	border-radius: 10px;
-}
-
-.container form button {
-	background: transparent;
-	width: 50px;
-	padding: 5px;
-	border: 1px solid green;
-	border-radius: 10px;
-}
-
-.container form button:hover {
-	background: greenyellow;
 }
 
 .container a {
 	text-decoration: none;
-	display: block;
-	text-align: center;
-	color: green;
-}
-
-.container .laporan a {
-	font-weight: bold;
-	display: block;
-	text-align: left;
-	color: green;
-}
-
-.container .laporan small {
-	font-weight: bold;
-}
-
-.container a:hover {
-	color: greenyellow;
-}
-
-.container hr {
-	border: 1px solid green;
-}
-
-.container h3 {
-	color: green;
 }
 
 .container .laporan .details {
 	display: flex;
 	justify-content: space-between;
-
 }
 
-/* .container .laporan {
-	max-height: 200px;
-} */
+.container .laporan a {
+	color: rgb(70, 130, 180);
+}
+
+.container .laporan a:hover {
+	color: blue;
+}

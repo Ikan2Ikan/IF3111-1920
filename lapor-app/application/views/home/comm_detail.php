@@ -10,25 +10,33 @@
 </head>
 
 <body>
-  <?php var_dump($result); ?>
+  <?php //var_dump($result); 
+  ?>
   <div class="container">
-    <div class="laporan">
-      <a>
-        <a href="#"><?= $result['comm_title'] ?></a>
-        <small>Pelapor : <?= $result['fullname'] ?></small>
-      </a>
+    <div class="container1">
+      <h1>COMMENT DETAILS</h1>
+    </div>
 
-      <p><?= $result['comm'] ?></p>
+    <div class="container2">
+      <div class="laporan">
+        <a>
+          <a href="#"><?= $result['comm_title'] ?></a>
+          <br>
+          <small>Pelapor : <?= $result['fullname'] ?></small>
+        </a>
 
-      <div class="details">
-        <span>
-          <span id="lampiran"><?= $result['lampiran'] ?> </span>
-          <span id="timestamp"><?= $result['timestamp'] ?> WIB</span>
-        </span>
-        <?php
-        if ($result['user_id'] == $this->session->userdata['id']) : ?>
-          <a onclick="return confirm('are you sure for deleting this lapor message?')" href="<?= base_url('home/deleteComm/') . $result['comm_id'] ?>">Delete Comment</a>
-        <?php endif; ?>
+        <p><?= $result['comm'] ?></p>
+
+        <div class="details">
+          <span>
+            <span id="lampiran"><?= $result['lampiran'] ?> </span>
+            <span id="timestamp"><?= $result['timestamp'] ?> WIB</span>
+          </span>
+          <?php
+          if ($result['user_id'] == $this->session->userdata['id']) : ?>
+            <a onclick="return confirm('are you sure for deleting this lapor message?')" href="<?= base_url('home/deleteComm/') . $result['comm_id'] ?>">Delete Comment</a>
+          <?php endif; ?>
+        </div>
       </div>
     </div>
   </div>
