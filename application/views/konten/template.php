@@ -1,10 +1,14 @@
 
     <div class="container">
 
-        <div class="search">
+        <!-- <div class="search">
             <input type="text" name="searchbox" id="search-box" placeholder="Telusuri laporan">
-          
-            <button type class="searchbutton">  <i class="fa fa-search"> Cari</i>
+           -->
+            <!-- <button type class="searchbutton">  <i class="fa fa-search"> Cari</i> -->
+            <form action="<?php echo base_url().'index.php/search'?>" method="GET">
+                <input type="text" name ="keyword" placeholder="Cari...">
+                <input type="submit"value="Cari"><br>
+            </form>
         </div>
         <div class="buat">
         <a href="<?php echo base_url().'index.php/buatlaporan'; ?>">

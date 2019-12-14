@@ -42,7 +42,7 @@ h1{
     top: -1.03px;
 }
 
-#search-button:hover{
+.searchbutton:hover{
     background-color: magenta;
 }
 
