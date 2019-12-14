@@ -20,6 +20,7 @@
         <div>
             <p class="laporan">Detail Laporan/Komentar</p>
         </div>
+        <hr></hr>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi at tempora eius dolorem assumenda libero, laboriosam deserunt animi illo earum asperiores quos nisi repellendus rerum vel maiores eum cupiditate enim?</p>
 
     </div>
