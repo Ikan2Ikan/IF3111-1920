@@ -1,7 +1,24 @@
 <?php
   class Detail_Model extends CI_model{
-  public function getAllDetail_Lapor(){
-     return $this->db->get('laporan')->result_array();
+    public function __construct(){
+      $this->load->database();
+    }
+
+    public function getAllLapor($id = FALSE){
+      if($id===FALSE){
+        $query = $this->db->get('laporan');
+        return $query->result_array();
+      }
+        $query = $this->db->get_where('laporan', array('id_laporan'=>$id));
+        return $query->row_array();
+    }
+
+    public function input_laporan($table, $data){
+      $this->db->insert($table, $data);
+    }
+    public function hapus_laporan($where, $table){
+      $this->db->where($where);
+      $this->db->delete($table);
     }
   }
  ?>
