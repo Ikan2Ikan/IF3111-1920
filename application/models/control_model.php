@@ -5,6 +5,7 @@ class control_model extends CI_Model
     public function index()
     { }
 
+    // proses CREATE ==========================================================
     public function upload()
     {
         $config['upload_path'] = './lampiran/';
@@ -14,8 +15,7 @@ class control_model extends CI_Model
 
         $this->load->library('upload', $config);
         if ($this->upload->do_upload('lampiran')) {
-            $return = array('result' => 'success', 'file' => $this->upload->data(), 'error' => '');
-            return $return;
+            return array('result' => 'success', 'file' => $this->upload->data(), 'error' => '');
         }
     }
 
@@ -30,5 +30,40 @@ class control_model extends CI_Model
         );
 
         return $this->db->insert('laporan', $object);
+    }
+
+    // proses READ ==========================================================
+    public function read()
+    {
+        $this->db->order_by('waktu', 'DESC');
+        return $this->db->get('laporan')->result();
+    }
+
+    public function view_by($id)
+    {
+        $this->db->where('id', $id);
+        return $this->db->get('laporan')->row();
+    }
+
+    // proses UPDATE ==========================================================
+    public function update($upload, $id)
+    {
+        $object = array(
+            'laporan' => $this->input->post('laporan'),
+            'aspek' => $this->input->post('aspek'),
+            'lampiran' => $upload['file']['file_name'],
+            'ukuran_file' => $upload['file']['file_size'],
+            'tipe_file' => $upload['file']['file_type']
+        );
+
+        $this->db->where('id', $id);
+        return $this->db->update('laporan', $object);
+    }
+
+    // proses DELETE ==========================================================
+    public function delete($id)
+    {
+        $this->db->where('id', $id);
+        return $this->db->delete('laporan');
     }
 }
