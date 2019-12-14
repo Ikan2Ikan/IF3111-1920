@@ -49,84 +49,40 @@
 			<div class="container">
 				<hr />
 				<div class="box-v">
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-						officiis atque rem provident? Aperiam nihil officiis sit consequatur
-						quaerat, itaque, eius eos vel commodi voluptates dolor temporibus
-						illum id voluptatum?
-					</p>
-					<div class="box-h">
-						<div class="lampiran">
-							<h4><a href="#">Lampiran : </a></h4>
-						</div>
-					</div>
-					<div class="box-h">
-						<div class="waktu">
-							<h4>Waktu :</h4>
-						</div>
-					</div>
-					<div class="box-h">
-						<div class="lihat">
-							<h4><a href="<?php echo base_url() . 'control/tampilan_detail' ?>">Lihat Selengkapnya></a></h4>
-						</div>
-					</div>
-				</div>
-			</div>
+
+					<?php
+					foreach ($laporan as $data) {
+						$link = base_url('control/lihat/' . $data->id);
+
+						echo "<p>" . $data->laporan . "</p>",
+							"<div class='box-h'>",
+							"<div class='lampiran'>",
+							"<h4>Lampiran : " . $data->lampiran . "</h4>",
+							"</div>",
+							"</div>";
+
+						echo "<div class='box-h'>",
+							"<div class='waktu'>",
+							"<h4>Waktu :" . $data->waktu . "</h4>",
+							"</div>",
+							"</div>";
+
+						echo "<div class='box-h'>",
+							"<div class='lihat'>",
+							"<h4><a href=" . $link . ">Lihat Selengkapnya></a></h4>",
+							"</div>",
+							"</div>";
+
+						echo "<br>",
+							"<br>",
+							"<br>",
+							"<br>",
+							"<hr>";
+					}
+					?>
 
 
-			<div class="container">
-				<hr />
-				<div class="box-v">
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-						officiis atque rem provident? Aperiam nihil officiis sit consequatur
-						quaerat, itaque, eius eos vel commodi voluptates dolor temporibus
-						illum id voluptatum?
-					</p>
-					<div class="box-h">
-						<div class="lampiran">
-							<h4><a href="#">Lampiran : </a></h4>
-						</div>
-					</div>
-					<div class="box-h">
-						<div class="waktu">
-							<h4>Waktu :</h4>
-						</div>
-					</div>
-					<div class="box-h">
-						<div class="lihat">
-							<h4><a href="#">Lihat Selengkapnya></a></h4>
-						</div>
-					</div>
 				</div>
-			</div>
-
-			<div class="container">
-				<hr />
-				<div class="box-v">
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-						officiis atque rem provident? Aperiam nihil officiis sit consequatur
-						quaerat, itaque, eius eos vel commodi voluptates dolor temporibus
-						illum id voluptatum?
-					</p>
-					<div class="box-h">
-						<div class="lampiran">
-							<h4><a href="#">Lampiran : </a></h4>
-						</div>
-					</div>
-					<div class="box-h">
-						<div class="waktu">
-							<h4>Waktu :</h4>
-						</div>
-					</div>
-					<div class="box-h">
-						<div class="lihat">
-							<h4><a href="#">Lihat Selengkapnya></a></h4>
-						</div>
-					</div>
-				</div>
-				<hr />
 			</div>
 
 		</section>
