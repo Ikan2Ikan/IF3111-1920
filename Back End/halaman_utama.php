@@ -11,7 +11,7 @@
 		<header>
 			SIMPLE LAPOR!
 			<div class="search-box">
-				<form action="" method="POST">
+				<form action="" method="POST" enctype="multipart/form-data">
 					<input name="search" required="yes" type="text">
 					<button type="submit"><img src="img/icon-search.png">Cari</button>
 				</form>
@@ -73,10 +73,5 @@
 			<img src="img/menu-option.png">
 		</footer>
 	</div>
-	<!-- <div class="kotak-pencarian">
-		<input type="search" name="cari">
-	</div>
-	<button type="submit"></button> -->
 </body>
-
 </html>
