@@ -20,35 +20,6 @@
 			$this->load->view('templates/footer');
 		}
 
-		//menambahkan data ke database
-	   public function InputDataLapor(){
-
-		 $data['judul1']  = 'Form Tambah Laporan';
-
-	   		$this->load->view('templates/header',$data);
-			$this->load->view('Lapor/halaman_Laporan');//folder dan file
-			$this->load->view('templates/footer');
-
-	   	   	if(isset($_POST['submit'])){
-			//input kedatabase
-	   	   	if($this->session->userdata('email')==null){
-	   	   		$this->session->set_flashdata('anda belum login',"tambah gagal");
-	   	   		redirect('Halaman_utama/Login');
-	   	   	}else{
-	   	   		// $result['pesan'] = '';
-		   	   	$this->Lapor_model->InputContentLaporan();//fungsi mahasiswa,fungsi berada pada controler, dan file Model_mahasiswa
-
-		   	   	
-		   		$this->session->set_flashdata('input_laporan',"lapor berhasil");
-		   		redirect('Halaman_utama');//dialihkan lagi ke halaman mahasiswa
-
-	   	   	}
-	   		echo json_encode($result);
-	   	   	}
-	   		
-	   	
-	   }
-
 	   
 	    public function DaftarAkunLaporan(){
 
@@ -90,68 +61,7 @@
 	   	
 	   }
 
-	    public function Login(){
-
-	 		$data['judul1']  = 'Login';
-	   		//jika gagal
-	   		//header diganti menajadi header_daftar/login
-	   		$this->load->view('templates/header_daftar_login',$data);
-			$this->load->view('Lapor/halaman_login');//folder dan file
-			$this->load->view('templates/footer');
-
-	    	$email = $this->input->post('email');
-	    	$password = $this->input->post('password');
-
-	    	$user = $this->db->get_where('user',['email' => $email])->row_array();
-
-	    	if(isset($_POST['submit'])){
-	    		
-	    	if($user==null){
-	    		$this->session->set_flashdata('email_tida_ada',"email_salah");
-	    		redirect('Halaman_utama/Login');
-	    	}
-	    	else{
-
-	    		if($password == $user['password'] ){
-	    			
-	    			
-
-	    			$this->session->set_userdata('email',$email);
-	    			$this->session->set_flashdata('login_berhasil',"password benar");
-	    			redirect('Halaman_utama/InputDataLapor');
-
-	    		}else{
-	    			$this->session->set_flashdata('login_gagal',"password salah");
-	    			redirect('Halaman_utama/Login');
-	    		}
-
-
-	    	}//if user ==null
-	    		
-	    }
-	   	
-	   }//fungsi
-
-	   public function logout(){
-		$this->session->sess_destroy();
-		redirect('Halaman_utama/login');
-	}
-	// parameter $id buat nampung id dari url
-	public function halaman_selengkapnya($id){
-		$data['judul1']  = 'Detail Laporan';
-		$data['lapor'] = $this->Lapor_model->getDataId($id);
-		//folder = Lapor dan file = halaman_selengkapnya
-		$this->load->view('templates/header_daftar_login',$data);
-		$this->load->view('Lapor/halaman_selengkapnya',$data);
-		$this->load->view('templates/footer');
-	}
-	// parameter $id buat nampung id dari url
-	public function HapusData($id){
-
-		$this->Lapor_model->HapusDataLapor($id);
-		$this->session->set_flashdata('hapus berhasil','data hapus ok');
-		redirect('Halaman_utama');
-	}
+	
  
 	}//class
 
