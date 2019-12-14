@@ -2,6 +2,7 @@
 
 <div class="container">
     <head>
+
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -13,7 +14,7 @@
     <hr>
     </div>
     <?php foreach ($komentar as $komen){?>
-    <form action="<?php echo base_url('index.php/laporan/update/').$komen->id_laporan; ?>" method="post" enctype="multipart/form-data">
+    <form action="<?php echo base_url('index.php/laporan/update/').$komen->id_laporan; ?>" method="post" enctype="multipart/form-data" onSubmit="return valid(this)">
         <div class="buatlaporan">
         <textarea name="kolomlaporan" id="kolom-laporan" cols="133" rows="20" placeholder="Laporan/Komentar"><?php echo $komen->isi_laporan;?></textarea>
         </div>
