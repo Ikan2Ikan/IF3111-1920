@@ -16,27 +16,30 @@
         <div class="container">
             <p>Detail Laporan/Komentar</p>
             <hr>
-            <div class="isiKomentar">
-                <p>ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
-                    fffffffffffffffffffffffffffffffffffffffff
-                    fffffffffffffffffffffffffffffffffffffffff
-                    fffffffffffffffffffffffffffffffffffffffff
-                    fffffffffffffffffffffffffffffffffffffffff
-                    fffffffffffffffffffffffffffffffffffffffff
-                    fffffffffffffffffffffffffffffffffffffffff
-                    fffffffffffffffffffffffffffffffffffffffff
-                </p>
-                <p>Lampiran : </p>&nbsp;&nbsp;&nbsp;&nbsp;
-                <div class="clearfix">
-                    <div class="leftFloat">
-                        <p>Waktu: &nbsp;&nbsp;</p>
-                        <p>Aspek: </p>
-                    </div>
-                    <div class="rightFloat">
-                        <a href=""><p>Hapus Laporan/Komentar</p></a>
+            <?php
+            foreach ($dataLaporan as $data) :
+                $IdKomentar = $data['id_laporan'];
+                $namaUser = $data['nama'];
+                $pesan = $data['komentar'];
+                $waktu = $data['waktu'];
+                $lampiran = $data['lampiran'];
+                $kategori = $data['kategori'];
+
+                ?>
+                <div class="isiKomentar">
+                    <p><?php echo $pesan ?></p>
+                    <p>Lampiran : <?php echo $lampiran ?></p>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <div class="clearfix">
+                        <div class="leftFloat">
+                            <p>Waktu: <?php echo $waktu ?>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                            <p>Aspek: <?php echo $kategori ?>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                        </div>
+                        <div class="rightFloat">
+                            <p><a href="<?php echo site_url('Laporan/hapus/') . $IdKomentar ?>">Hapus Laporan/Komentar</a></p>
+                        </div>
                     </div>
                 </div>
-            </div>
+            <?php endforeach; ?>
             <hr>
         </div>
     </div>

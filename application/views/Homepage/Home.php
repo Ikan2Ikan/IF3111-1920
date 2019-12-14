@@ -88,31 +88,31 @@
         <hr>
 
         <?php
-        foreach ($dataLaporan as $data) {
+        foreach ($dataLaporan as $data) :
+            $IdKomentar = $data['id_laporan'];
+            $namaUser = $data['nama'];
+            $pesan = $data['komentar'];
+            $waktu = $data['waktu'];
+            $lampiran = $data['lampiran'];
+
             ?>
             <div class="komentar">
                 <!-- <h3>Angelo</h3> -->
-                <h3 id="empty"><?php echo $data->namaUser ?></h3>
-                <p><?php echo $data->pesan ?></p>
+                <h3 id="empty"><?php echo $namaUser ?></h3>
+                <p><?php echo $pesan ?></p>
                 <div class="rightFloat">
                     <tr>
-                        <td>Lampiran: <?php echo $data->lampiran ?></td>
+                        <td>Lampiran: <?php echo $lampiran ?></td>
                     </tr>
                     <div style="float: right;">
-                        Waktu : <?php echo $data->waktu ?> &nbsp;
-                        <a href="<?php echo site_url('Laporan/detail/') . $data->IdKomentar ?>">Lihat Selengkapnya ></a>
+                        Waktu : <?php echo $waktu ?> &nbsp;
+                        <a href="<?php echo site_url('Laporan/detail/') . $IdKomentar ?>">Lihat Selengkapnya ></a>
                     </div>
                 </div>
                 <hr>
             </div>
-        <?php
-        }
-        ?>
-
-
-
+        <?php endforeach; ?>
     </div>
-
 </body>
 
 </html>

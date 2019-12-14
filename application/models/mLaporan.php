@@ -14,25 +14,27 @@ class mLaporan extends CI_Model
     {
         $this->db->select("*");
         $this->db->from('laporan');
-        $this->db->join('user', 'laporan.idUser=user.idUser');
+        $this->db->order_by('id_laporan', 'DESC');
         $query = $this->db->get();
-        return $query->result();
+        return $query->result_array();
     }
     public function get_detail($id)
     {
         $this->db->select("*");
         $this->db->from('laporan');
-        $this->db->join('user', 'laporan.idUser=user.idUser');
-        $this->db->where('laporan.idKomentar', $id);
+        $this->db->where('laporan.id_laporan', $id);
         $query = $this->db->get();
-        return $query->result();
+        return $query->result_array();
     }
 
-    function del_data($where,$table){
-		$this->db->where($where);
-		$this->db->delete($table);
-	}
-
-
-
+    function del_data($id)
+    {
+        $this->db->where($id);
+        $this->db->delete('laporan');
+    }
+    function insert_laporan($data)
+    {
+        $tambah = $this->db->insert('laporan', $data);
+        return $tambah;
+    }
 }
