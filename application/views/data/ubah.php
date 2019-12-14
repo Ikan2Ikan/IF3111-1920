@@ -1,15 +1,18 @@
 <div class="wrapper">
-	<br>
-	<br>
-<h1>LAPOR ITERA!</h1>
+<br><br>
+<h1>LAPOR!</h1>
 </div>
+
 <?= validation_errors();?>
 
-<form action="" method="post" enctype="multipart/form-data">
+<form action="" name="formUbah" onsubmit="return validasiUbah()" method="post" enctype="multipart/form-data">
 				    
+	<label for="username">Username</label>
+		<input type="text" name="username" id="username" readonly value="<?= $user['username']?>">
+		<br>
 	<label for="lapor">Masukkan Keluhan/Komentar
 		<br>
-	<textarea name="lapor" id="lapor" placeholder="Masukkan keluhan anda disini..." value="<?= $keluhan['lapor'];?>"></textarea>
+	<textarea name="lapor" id="lapor"><?= $keluhan['lapor'];?></textarea>
 	</label>
 	<br><br>
 
@@ -23,6 +26,7 @@
 		<option>Pengajar</option>
 	</select>
 	<br><br>
+
 
 	<label for="gambar">Gambar</label>
 	<input type="file" name="gambar" id="gambar">

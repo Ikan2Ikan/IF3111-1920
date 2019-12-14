@@ -1,14 +1,15 @@
 <fieldset>
-<div class="wrapper">
-	<br>
-	<br>
+	<br><br>
+	<div class="wrapper">
 <h1>LAPOR ITERA!</h1>
 </div>
-
 <?= validation_errors();?>
 <div class="tambah">
-	<form action="" method="post" enctype="multipart/form-data">
-				    
+	<form name="formTambah" action="" onsubmit="return validasiKeluhan()" method="post" enctype="multipart/form-data" >
+				
+		<label for="username">Username</label>
+		<input type="text" name="username" id="username" readonly value="<?= $user['username']?>">   
+		<br><br>
 		<label for="lapor">Buat Laporan/Komentar
 		<hr />
 			<br>
@@ -30,8 +31,6 @@
 			
 			<br><br>
 		<button type="submit" name="tambah">Tambah data</button>
-		<br><br>
-		<br><br>
 </form>	
 </div>
 </fieldset>

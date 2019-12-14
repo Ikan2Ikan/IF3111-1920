@@ -7,8 +7,8 @@ ul.navbar {
   width: 100%;  
 }
 .navbar{
-  position: fixed !important;
-  top: 0%; 
+  /*position: fixed !important;*/ 
+  top: 0%;
  }
 
 li.navbar {
@@ -28,14 +28,18 @@ li.navbar a.navbar{
   height: 65px;
   padding: 20px 1px;
   text-decoration: none;
+  transition: background-color .3s;
 }
 
 li a.navbar:hover {
+  border-radius: 5px; 
   background-color: lightseagreen ;
 }
 
 ul.detail li.detail{
-	list-style-type: none;
+  margin-right: 5%;
+  list-style-type: none;
+  text-align: right;
 }
 
 body{
@@ -44,7 +48,7 @@ body{
 }
 
 p{
-	color:red;
+  color:red;
 }
 
 .wrapper {
@@ -73,7 +77,7 @@ h2{
 
 .search{
   text-align: center;
-	position: static;
+  position: static;
 
 }
 
@@ -89,13 +93,13 @@ h2{
 }
 
 .buat{
-	text-align: center;
-	margin-top: 1%;
+  text-align: center;
+  margin-top: 1%;
   margin-bottom: 1%;
 }
 
 .tulisan{
-	margin-left: 23%;
+  margin-left: 23%;
   margin-right: 23%;
   margin-top: 1%;
   margin-bottom: 1%;
@@ -104,7 +108,7 @@ h2{
 }
 
 .tulisan2{
-	margin-left: 23%;
+  margin-left: 23%;
   margin-right: 23%;
   margin-top: 1%;
   margin-bottom: 5%;
@@ -187,11 +191,11 @@ button:hover{
   left: 0;
   bottom: 0%;
   width: 100%;
+  height: 20%;
   background-color:#9099A2;
   text-align: center;
-  position: fixed !important;
 }
 
-h4{
+h6{
   color: white;
 }

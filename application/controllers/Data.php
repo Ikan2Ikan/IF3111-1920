@@ -22,9 +22,11 @@ class Data extends CI_Controller{
 	public function tambah(){
 
 		$data['judul']='tambah data lapor';
+		$data['link']='user/index';
+		$data['user']=$this->db->get_where('user',['username' => $this->session->userdata('username')])->row_array();
 		$this->form_validation->set_rules('lapor','Lapor','required');
 		$this->form_validation->set_rules('aspek','Aspek','required');
-		//$this->form_validation->set_rules('gambar','gambar','required');
+		// // $this->form_validation->set_rules('gambar','gambar','required');
 		if($this->form_validation->run()==FALSE){
 		$this->load->view('templates/header',$data);
 		$this->load->view('data/tambah');
@@ -32,7 +34,8 @@ class Data extends CI_Controller{
 	}else{
 		
 		$config['upload_path'] = './asset/gambar/';
-        $config['allowed_types'] = 'gif|jpg|png|jpeg|JPG|PNG|JPEG';
+		//detect gambarnya
+        $config['allowed_types'] = 'gif|jpg|jpeg|png|doc|docx|xls|xlsx|ppt|pptx|pdf';
         // load library upload
         $this->load->library('upload', $config);
         if (!$this->upload->do_upload('gambar')) {
@@ -47,17 +50,34 @@ class Data extends CI_Controller{
         }
 		$this->Data_model->tambahDataLapor();
 		//$this->session->set_flashdata('flash','Ditambahkan');
-		redirect('home');
+		redirect('user/index');
 	}
 	}
-	public function detail($id){
+	public function detailPerUser($username){
 		$data['judul']='Detail laporan';
+		$data['link']='user/index';
+		$data['keluhan']=$this->Data_model->getDataByUsername($username);
+		$this->load->view('templates/header',$data);
+		$this->load->view('data/detail',$data);
+		$this->load->view('templates/footer');
+	}
+	public function detailDalam($id){
+		$data['judul']='Detail laporan';
+		$data['link']='home';
 		$data['keluhan']=$this->Data_model->getDataById($id);
 		$this->load->view('templates/header',$data);
 		$this->load->view('data/detail',$data);
 		$this->load->view('templates/footer');
 	}
 
+	public function detail($id){
+		$data['judul']='Detail laporan';
+		$data['link']='home';
+		$data['keluhan']=$this->Data_model->getDataById($id);
+		$this->load->view('templates/header',$data);
+		$this->load->view('data/detailLuar',$data);
+		$this->load->view('templates/footer');
+	}
 	public function poto(){
 		if($this->input->post('upload')){
 			$config=array(
@@ -73,13 +93,15 @@ class Data extends CI_Controller{
 	public function hapus($id){
 		$this->Data_model->hapusDataLapor($id);
 		//$this->session->set_flashdata('flash','Dihapus');
-		redirect('home');
+		redirect('user/index');
 	}
 
 	public function ubah($id){
 
 		$data['judul']='ubah data lapor';
+		$data['link']='user/index';
 		$data['keluhan']=$this->Data_model->getDataById($id);
+		$data['user']=$this->db->get_where('user',['username' => $this->session->userdata('username')])->row_array();
 		$this->form_validation->set_rules('lapor','Lapor','required');
 		$this->form_validation->set_rules('aspek','Aspek','required');
 		// $this->form_validation->set_rules('gambar','gambar','required');
@@ -90,7 +112,7 @@ class Data extends CI_Controller{
 	}else{
 		
 		$config['upload_path'] = './asset/gambar/';
-        // $config['allowed_types'] = 'gif|jpg|png|jpeg|JPG|PNG|JPEG';
+        $config['allowed_types'] = 'gif|jpg|jpeg|png|doc|docx|xls|xlsx|ppt|pptx|pdf';
         // load library upload
         $this->load->library('upload', $config);
         if (!$this->upload->do_upload('gambar')) {
@@ -105,7 +127,7 @@ class Data extends CI_Controller{
         }
 		$this->Data_model->ubahDataLapor($id);
 		//$this->session->set_flashdata('flash','Ditambahkan');
-		redirect('home');
+		redirect('user/index');
 	}
 }
 }

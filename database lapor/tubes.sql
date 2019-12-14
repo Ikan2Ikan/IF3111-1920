@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 08, 2019 at 10:27 AM
+-- Generation Time: Dec 14, 2019 at 03:48 PM
 -- Server version: 10.3.16-MariaDB
 -- PHP Version: 7.3.7
 
@@ -30,6 +30,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `keluhan` (
   `id` int(11) NOT NULL,
+  `username` varchar(128) NOT NULL,
   `lapor` varchar(10000) NOT NULL,
   `aspek` varchar(99) NOT NULL,
   `gambar` varchar(99) NOT NULL,
@@ -43,10 +44,17 @@ CREATE TABLE `keluhan` (
 --
 
 CREATE TABLE `user` (
-  `id` int(11) NOT NULL,
-  `username` varchar(16) NOT NULL,
-  `password` varchar(16) NOT NULL
+  `username` varchar(128) NOT NULL,
+  `password` varchar(128) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `user`
+--
+
+INSERT INTO `user` (`username`, `password`) VALUES
+('muhammad.14117112', '1999-11-11'),
+('pungki.14117154', '1999-12-02');
 
 --
 -- Indexes for dumped tables
@@ -62,7 +70,7 @@ ALTER TABLE `keluhan`
 -- Indexes for table `user`
 --
 ALTER TABLE `user`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`username`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -72,13 +80,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `keluhan`
 --
 ALTER TABLE `keluhan`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
-
---
--- AUTO_INCREMENT for table `user`
---
-ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

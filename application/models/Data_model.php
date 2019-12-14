@@ -5,6 +5,9 @@ class Data_model extends CI_model{
 	public function getDataLapor(){
 		return $this->db->get('keluhan')->result_array();
 	}
+	// public function getDataLaporUser(){
+	// 	return $this->db->get_where('keluhan',['username'=>])->result_array();
+	// }
 	public function tambahDataLapor(){
 
 		$gambar=$this->Data_model->upload();
@@ -13,12 +16,17 @@ class Data_model extends CI_model{
 		}
 
 		$data = [
+			"username"=>$this->input->post('username'),
 			"lapor"=>$this->input->post('lapor',true),
 			"aspek"=>$this->input->post('aspek',true),
 			"gambar"=>$gambar
 		];
-
+		
 		$this->db->insert('keluhan',$data);
+	}
+
+	public function getDataByUsername($username){
+		return $this->db->get_where('keluhan',['username'=>$username])->row_array();
 	}
 
 	public function getDataById($id){
@@ -37,9 +45,9 @@ class Data_model extends CI_model{
 		$error=$_FILES['gambar']['error'];
 		$tmpName=$_FILES['gambar']['tmp_name'];
 
-		$ekstensiGambarValid=['jpg','jpeg','png'];
-		$ekstensiGambar=explode('.', $namaFile);
-		$ekstensiGambar=strtolower(end($ekstensiGambar));
+		// $ekstensiGambarValid=['jpg','jpeg','png','gif'];
+		// $ekstensiGambar=explode('.', $namaFile);
+		// $ekstensiGambar=strtolower(end($ekstensiGambar));
 
 		return $namaFile;
 
@@ -58,11 +66,17 @@ class Data_model extends CI_model{
 		}
 		//$this->Data_model->getDataById($id);
 		$data = [
+			"username"=>$this->input->post('username'),
 			"lapor"=>$this->input->post('lapor',true),
 			"aspek"=>$this->input->post('aspek',true), 
 			"gambar"=>$gambar
 		];
 		$this->db->where('id',$id);
 		$this->db->update('keluhan',$data);
+	}
+
+	public function limitKata($string,$word_limit){
+		$words=explode(" ", $string);
+		return implode(" ", array_splice($words,0,$word_limit));
 	}
 }

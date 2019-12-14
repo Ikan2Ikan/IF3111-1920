@@ -1,8 +1,4 @@
-<div class="wrapper">
-    <br>
-    <br>
 <h1>LAPOR!</h1>
-</div>
 <p>Detail laporan/Komentar</p>
 <br>
 <p><?= $data['lapor'];?></h5>
