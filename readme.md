@@ -113,6 +113,12 @@ Pada Tubes kali ini kami menggunakan Framework CodeIgniter versi 3.1.11 dan Data
     Kami juga menggunakan fungsi required sebagai validasi bahwa kolom tersebut tidak kosong.
 4. Pembuatan Tampilan (User Interface)
     -Pembuatan layout sebagai user interfaces menggunakan HTML5 dengan viewport untuk menciptakan tampilan yang responsif sesuai dengan ukuran device yang akan mengakses, lalu untuk styling, menggunakan CSS yang mana terdapat beberapa parameter CSS yang perlu diperhatikan yaitu parameter Global (Menyeluruh terhadap tampilan web) dan parameter special yang khusus untuk bagian tertentu seperti search-box, form, image dsb
+5. Kerangka kerja MVC (Model View Controller)
+    Kerangka kerja MVC (Pada CodeIgniter) berfungsi mempermudah dan meningkatkan keamanan data. Terdapat beberapa bagian yang perlu diperhatikan, khususnya yang kami kerjakan saat membuat simple lapor ini, yaitu Bagian route, merupakan bagian yang mengarahkan alur link dari web (jalur).
+    Autoload & Helper berfungsi memberikan proses load secara otomaris, sedangkan helper berfungsi membantu menyederhanakan proses-proses backend php menjadi lebih singkat, mudah dan cepat
+    Bagian Controller merupakan bagian yang mengatur view dan model serta menghubungkan nya kepada route yang akan tersambung kepada user, contoh isi controller didalam web ini adalah controller Home yang mengatur jalur halaman dari home ke halaman lain
+    Bagian Model merupakn bagian yang berhubungan dengan database, didalam model terdapat query pengaksesan database seperti contohnya fungsi getalldata yang menggunakan query helper CI.
+    Bagian View yang menangani tampilan halama web.
 
 ### Knowledge
 Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaikan tugas ini.
