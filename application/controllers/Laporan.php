@@ -2,6 +2,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Laporan extends CI_Controller {
+    public $table_name = 'posts';
 
     public function __construct(){
         parent::__construct();
@@ -21,7 +22,6 @@ class Laporan extends CI_Controller {
     }
 
     public function add(){
-        $this->load->helper('form');
         $this->load->view('template/header');
         $this->load->view('pages/add', array('error' => ' '));
         $this->load->view('template/footer');
@@ -52,21 +52,20 @@ class Laporan extends CI_Controller {
                 'lampiran' => $lampiran
             );
 
-            $this->post_model->input_laporan('posts', $data);
+            $this->post_model->input_laporan($this->table_name, $data);
             redirect('');
         }
     }
 
     public function delete($id){
         $deleted_row = array('id'=>$id);
-        $this->post_model->hapus_data($deleted_row, 'posts');
+        $this->post_model->hapus_data($deleted_row, $this->table_name);
         redirect('');
     }
 
     public function edit($id){
         $searchkey = array('id' => $id);
         $data['laporan'] = $this->post_model->get_posts($id);
-        $this->load->helper('form');
         $this->load->view('template/header');
         $this->load->view('pages/edit', $data);
         $this->load->view('template/footer');
@@ -80,7 +79,15 @@ class Laporan extends CI_Controller {
             'aspek' => $aspek
         );
         $searchkey = array('id' => $id);
-        $this->post_model->update_data($searchkey, $data, 'posts');
+        $this->post_model->update_data($searchkey, $data, $this->table_name);
         redirect('laporan/view/'.$id);
+    }
+
+    public function search(){
+        $keyword = $this->input->get('keyword');
+        $data['result'] = $this->post_model->search_data($keyword, $this->table_name);
+        $this->load->view('template/header');
+        $this->load->view('pages/search_result', $data);
+        $this->load->view('template/footer');
     }
 }
