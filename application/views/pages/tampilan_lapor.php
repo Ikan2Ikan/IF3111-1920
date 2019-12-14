@@ -28,9 +28,9 @@
 
 		<section id="formbuatlaporan">
 			<div class="container">
-				<form action="tambah" method="POST" enctype="multipart/form-data">
+				<form action="tambah" method="POST" enctype="multipart/form-data" onsubmit="validasi()">
 
-					<textarea name="laporan" id="laporan" cols="77" rows="20" placeholder="Laporan/Komentar" required></textarea>
+					<textarea name="laporan" id="laporan" cols="77" rows="20" placeholder="Laporan/Komentar"></textarea>
 					<br><br>
 					<label for="">Pilih Aspek Pelaporan/Komentar</label>
 					<br>
@@ -43,7 +43,7 @@
 					</select>
 					<br>
 					<br>
-					<input type="file" name="lampiran" id="" required>
+					<input type="file" name="lampiran" id="lampiran">
 					<br><br>
 					<hr>
 					<br>
@@ -55,5 +55,21 @@
 		</section>
 	</fieldset>
 </body>
+
+<script type="text/javascript">
+	function validasi() {
+		var laporan = document.getElementById("laporan").value;
+		var aspek = document.getElementById("aspek").value;
+		var lampiran = document.getElementById("lampiran").value;
+		if (laporan == "" || aspek == "" || lampiran == "") {
+			alert('Anda harus mengisi data dengan lengkap !');
+		} else if (laporan.length <= 20) {
+			alert('Anda harus mengisi laporan lebih dari 20 huruf');
+		} else {
+			alert('Kamu berhasil membuat laporan');
+
+		}
+	}
+</script>
 
 </html>
