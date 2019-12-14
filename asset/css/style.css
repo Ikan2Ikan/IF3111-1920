@@ -184,12 +184,13 @@ button:hover{
 
 .footer{
   left: 0;
-  bottom: 50%;
+  bottom: 0%;
   width: 100%;
   background-color:#9099A2;
   text-align: center;
+  position: fixed !important;
 }
 
-h6{
+h4{
   color: white;
 }

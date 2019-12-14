@@ -30,6 +30,8 @@
 			
 			<br><br>
 		<button type="submit" name="tambah">Tambah data</button>
+		<br><br>
+		<br><br>
 </form>	
 </div>
 </fieldset>
