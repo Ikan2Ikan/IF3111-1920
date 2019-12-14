@@ -39,4 +39,10 @@ class control_model extends CI_Model
         $query = $this->db->get();
         return $query->result();
     }
+    public function search_laporan($keyword){
+        $this->db->like("laporan", $keyword);
+        $this->db->order_by("waktu", "desc");
+        $query = $this->db->get("laporan");
+        return $query->result();
+    }
 }

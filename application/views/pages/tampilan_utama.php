@@ -16,15 +16,15 @@
 		<header>
 			<div class="container">
 				<center>
-					<h1>Simple Lapor!</h1>
+					<h1><a href="<?php echo base_url()?>" style="color: white; text-decoration: none;">Simple Lapor!</a></h1>
 				</center>
 			</div>
 		</header>
 
 		<section id="searchlaporan">
 			<div class="container">
-				<form action="" method="get">
-					<input type="text" placeholder="search" />
+				<form action="search" method="POST">
+					<input name="keyword" type="text" placeholder="search" />
 					<button type="submit" class="button-1">Search Now</button>
 				</form>
 			</div>
@@ -68,7 +68,7 @@
 				</div>
 				<div class="box-h">
 					<div class="lihat">
-						<h4><a href="#">Lihat Selengkapnya></a></h4>
+						<h4><a href="<?php echo base_url();?>detail/<?php echo $value->id ?>">Lihat Selengkapnya></a></h4>
 					</div>
 				</div>
 			</div>

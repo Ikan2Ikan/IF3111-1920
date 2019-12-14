@@ -27,7 +27,7 @@ class Control extends CI_Controller
         //$data["pages"] = "tampilan_lapor";
         $this->load->view("pages/tampilan_lapor");
     }
-    public function tampilan_detail()
+    public function tampilan_detail($id)
     {
         $this->load->view("pages/tampilan_detail");
     }
@@ -37,5 +37,14 @@ class Control extends CI_Controller
         $data = array();
         $upload = $this->control_model->upload();
         $this->control_model->create($upload);
+    }
+
+    public function search(){
+        $keyword = $this->input->post('keyword');
+        $listlaporan = $this->control_model->search_laporan($keyword);
+        $data = array(
+            "listlaporan" => $listlaporan
+        );
+        $this->load->view("pages/tampilan_utama", $data);
     }
 }
