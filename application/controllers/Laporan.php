@@ -21,12 +21,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             redirect('template');
         }
         
-        public function view() {
-            $data['post_item'] = $this->laporan_model->get_laporan($id);
+        public function view($id) {
+            $data['laporan'] = $this->laporan_model->get_laporan($id);
+            $this->load->view('default/header');
             $this->load->view('konten/detail_laporan', $data);
         }
  
         
     }
-
-}

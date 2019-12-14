@@ -16,7 +16,7 @@
             <?php foreach($laporan as $item_laporan):?>
                 <p class="isi"><?php echo $item_laporan["isi_laporan"]; ?></p>
                 <p class="waktu"><?php echo $item_laporan["waktu_laporan"];?></p>
-                <a href = "<?php echo base_url().'laporan/view/'.$item_laporan['id_laporan'];?>">Lihat selengkapnya</a>
+                <a href = "<?php echo base_url().'index.php/laporan/view/'.$item_laporan['id_laporan'];?>">Lihat selengkapnya</a>
             <?php endforeach;?>
 
         
