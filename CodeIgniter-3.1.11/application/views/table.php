@@ -16,14 +16,14 @@
             <th>aspek</th>
             <th>file</th>
         </tr>
-        <?php foreach($data as $d) {
-        /*echo "<tr>";
-            echo "<td>".$d['id']."</td>";
-            echo "<td>".$d['laporan']."</td>";
-            echo "<td>".$d['aspek']."</td>";
-            echo "<td>".$d['file']."</td>";
-        echo "</tr>";*/
-        ?>
+        <?php foreach ($data as $d) {
+            echo "<tr>";
+            echo "<td>" . $d['id'] . "</td>";
+            echo "<td>" . $d['laporan'] . "</td>";
+            echo "<td>" . $d['aspek'] . "</td>";
+            echo "<td>" . $d['file'] . "</td>";
+            echo "</tr>";
+        } ?>
     </table>
 </body>
 

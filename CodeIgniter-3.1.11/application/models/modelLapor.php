@@ -31,15 +31,10 @@ class ModelLapor extends CI_Model
 		return $isi;
 	}
 
-	public function tampilData()
+	public function TampilData($where)
 	{
-		$data = $this->db->query('select * from lapor');
+		$isi = $this->db->query('select * from $where');
 
-		foreach ($data->result_array() as $key) {
-			echo "id : " . $key['id'] . "<br>";
-			echo "laporan : " . $key['laporan'] . "<br>";
-			echo "aspek : " . $key['aspek'] . "<br>";
-			echo "file : " . $key['file'] . "<hr>";
-		}
+		return $isi;
 	}
 }

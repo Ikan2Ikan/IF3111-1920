@@ -7,12 +7,14 @@ class Welcome extends CI_Controller
 	{
 		$data = $this->modelLapor->GetLapor();
 
-		foreach ($data as $key) {
+		/*foreach ($data as $key) {
 			echo "id : " . $key['id'] . "<br>";
 			echo "laporan : " . $key['laporan'] . "<br>";
 			echo "aspek : " . $key['aspek'] . "<br>";
 			echo "file : " . $key['file'] . "<hr>";
-		}
+		}*/
+
+		$this->load->view('halaman_utama', array('data' => $data));
 	}
 
 	public function tampil()
@@ -27,14 +29,14 @@ class Welcome extends CI_Controller
 		}
 	}
 
-	public function insert()
+	public function BuatLaporan()
 	{
 		$isi = $this->modelLapor->InsertData(
 			array(
-				"id" => "zxcvb",
-				"laporan" => "ruangan kotor",
-				"aspek" => "ruang kelas",
-				"file" => ""
+				"laporan" => "jalanan rusak",
+				"aspek" => "jalanan",
+				"file" => "",
+				"waktu" => "2019-10-10 20:10:15"
 			)
 		);
 
