@@ -48,7 +48,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	   	   		}else{
 
 	   	   			$config['upload_path']='./lampiran';
-	   	   			$config['allowed_types']='JPG|png|pdf|docx|jpg';
+	   	   			$config['allowed_types']='JPG|png|pdf|docx|jpg|ppt|pptx|xls|xlsx';
 	   	   			
 	   	   			$this->load->library('upload',$config);
 

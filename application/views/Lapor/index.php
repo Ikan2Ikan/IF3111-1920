@@ -86,9 +86,15 @@
 	<?php elseif($data = substr($mhs['lampiran'],-3) == 'pdf'): ?>
 		Lihat File PDF :
 		<a href="<?php echo base_url().'lampiran/'.$mhs['lampiran'] ?>" target="blank"> view</a>
-	<?php elseif($data = substr($mhs['lampiran'],-4) == 'docx'): ?>
+	<?php elseif($data = substr($mhs['lampiran'],-4) == 'docx' || $data = substr($mhs['lampiran'],-3) == 'doc' ): ?>
 		File Docx :
-		<a download="" href="<?php echo base_url().'lampiran/'.$mhs['lampiran'] ?>" target="blank"> Download</a>
+		<a download="" href="<?php echo base_url().'lampiran/'.$mhs['lampiran'] ?>" target="blank"> Download</a>	
+	<?php elseif($data = substr($mhs['lampiran'],-3) == 'ppt' || $data = substr($mhs['lampiran'],-4) == 'pptx' ): ?>
+		File Power Point :
+		<a download="" href="<?php echo base_url().'lampiran/'.$mhs['lampiran'] ?>" target="blank"> Download</a>	
+	<?php elseif($data = substr($mhs['lampiran'],-3) == 'xls' || $data = substr($mhs['lampiran'],-4) == 'xlsx' ): ?>
+		File XLS dan XLSX :
+		<a download="" href="<?php echo base_url().'lampiran/'.$mhs['lampiran'] ?>" target="blank"> Download</a>	
 	<?php elseif($mhs['lampiran'] == ''): ?>
 		Tidak Ada File Terlampir!
 	<?php endif; ?>
