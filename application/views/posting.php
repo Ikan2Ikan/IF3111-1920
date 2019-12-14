@@ -11,14 +11,6 @@
 	
 	<p>Detail Laporan/Komentar</p>
 	<hr color="black" size="2">
-	<?php
-	if(is_array($posting)){
-		foreach($posting as $key){
-			$isi = $key->Isi;
-			echo $isi;
-		}
-	}
-	?>
 	
 	<br><p>Lampiran :</p>
 	
