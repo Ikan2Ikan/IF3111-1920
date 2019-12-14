@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="<?php echo base_url('asset/css/style.css')?>">
     <title><?php echo $judul; ?> | Lapor</title>
+    <script type="text/javascript" src="<?php echo base_url('asset/js/script.js')?>"></script>
 </head>
 
 <body>
