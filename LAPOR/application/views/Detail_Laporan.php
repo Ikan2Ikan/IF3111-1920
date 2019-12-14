@@ -3,7 +3,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Detail Laporan</title>
+
     <link rel="stylesheet" type="text/css" href="styledl.css">
   </head>
 <body>
@@ -11,23 +11,19 @@
         <div class="judul">
             <p><class="subjudul">Detail Laporan / Komentar</p>
               <hr>
-    <p>Nama Pelapor : </p>
       <br>
       <br>
-        <div class="isi">
-          <?php foreach ($laporan as $detail):
-          ?>
-            <?php
-              echo $detail['kolom_komentar']; ?>
-              <br>
-            <?php endforeach; ?>
-        </div>
-<br>
-    <p class="arsip">Lampiran:</p>
-    <img src="" width="200" height="200">
+          <?php echo $laporan['kolom_komentar'];?>
+          <br>
+    <div class="arsip">
+      <span>Lampiran:</span>
+    <img src="" width="200  " height="200">
     <br>
     <br>
     <br>
+    <span>Aspek : <?php echo $laporan['aspek_pelaporan'];?></span><br>
+    <span>Waktu : <?php echo $laporan['waktu']; ?></span>
+    <?php $id= $laporan['id_laporan']; ?>
 <div class="waktu2">
 
     <?php

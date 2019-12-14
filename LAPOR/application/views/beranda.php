@@ -56,7 +56,7 @@
 
           <br>
           <div class="lampiran">Lampiran : <?php echo $recent['lampiran']; ?></div>
-          <a class="detail" href= <?php echo base_url('')?>>Lihat Detail ></a>
+          <a class="detail" href= <?php echo base_url().'index.php/laporan/view/'.$recent['id_laporan'];?>>Lihat Detail ></a>
           <div class="waktu">Waktu : <?php echo $recent['waktu']; ?></div>
           <br>
           <hr>
