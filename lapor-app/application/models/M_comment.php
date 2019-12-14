@@ -36,7 +36,7 @@ class M_comment extends CI_Model
   {
     $config = [
       'upload_path' => './assets/doc',
-      'allowed_types' => "gif|jpg|png|jpeg|pdf",
+      'allowed_types' => "gif|jpg|png|jpeg|pdf|doc|docx|pptx|txt",
       'overwrite' => TRUE,
       'max_size' => "2048000",
       'max_height' => "768",
@@ -62,5 +62,27 @@ class M_comment extends CI_Model
   {
     $this->db->query("delete from comment where comm_id='$comm_id'");
     return $this->db->affected_rows();
+  }
+
+  public function editComment($comm_id)
+  {
+    // $old = $this->db->query("select * from comment where comm_id='$comm_id'")->result_array()[0];
+    $timestamp = date('d M Y | H:i:s');
+    $comm_title = $this->input->post('comm_title');
+    $comm = $this->input->post('comment');
+    $aspect = $this->input->post('aspect');
+    var_dump($this->input->post());
+    // var_dump($data);
+    // die;
+    $query = "update comment set 
+      timestamp = '$timestamp',
+      comm_title = '$comm_title',
+      comm = '$comm',
+      aspek = '$aspect'
+      where comm_id= $comm_id
+    ";
+    $data = $this->db->query($query);
+    // return $this->db->affected_rows();
+    return $data;
   }
 }

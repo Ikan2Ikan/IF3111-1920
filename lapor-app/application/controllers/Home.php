@@ -51,4 +51,16 @@ class Home extends CI_Controller
     $this->M_comment->deleteComment($comm_id);
     redirect('home');
   }
+
+  public function updateComm()
+  {
+    $comm_id = $this->uri->segment(3);
+    $this->load->model('M_comment');
+    $data['result'] = $this->M_comment->showCommDetail($comm_id);
+    // var_dump($data);
+    $this->load->view('home/edit_lapor', $data);
+    if (isset($_POST['edit'])) {
+      $this->M_comment->editComment($comm_id);
+    }
+  }
 }
