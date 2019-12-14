@@ -15,7 +15,11 @@ class Control extends CI_Controller
     public function index()
     {
         // $data["pages"] = "tampilan_utama";
-        $this->load->view("pages/tampilan_utama");
+        $listlaporan = $this->control_model->get_all_laporan();
+        $data = array(
+            "listlaporan" => $listlaporan
+        );
+        $this->load->view("pages/tampilan_utama", $data);
     }
 
     public function tampilan_lapor()

@@ -33,7 +33,7 @@
 		<section id="buatlaporan">
 			<div class="container">
 				<center>
-					<h4><a href="<?php echo base_url() . 'control/tampilan_lapor' ?>">Buat Laporan/Komentar</a></h4>
+					<a href="<?php echo base_url() . 'control/tampilan_lapor' ?>">Buat Laporan/Komentar</a> <span style="text-style:bold;padding: 1px 2px;background-color: #000; color: #fff;">+</span>
 					<!-- belum ditambah icon+(plus) -->
 				</center>
 			</div>
@@ -46,88 +46,41 @@
 		</section>
 
 		<section id="boxes">
-			<div class="container">
-				<hr />
-				<div class="box-v">
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-						officiis atque rem provident? Aperiam nihil officiis sit consequatur
-						quaerat, itaque, eius eos vel commodi voluptates dolor temporibus
-						illum id voluptatum?
-					</p>
-					<div class="box-h">
-						<div class="lampiran">
-							<h4><a href="#">Lampiran : </a></h4>
-						</div>
+		<?php 
+			if(count($listlaporan)>0){
+				$count = 1;
+				foreach($listlaporan as $index => $value){
+		?>
+		<div class="container">
+			<hr />
+			<div class="box-v">
+				<p><?php echo $value->laporan ?>
+				</p>
+				<div class="box-h">
+					<div class="lampiran">
+						<h4><a href="#">Lampiran : <?php echo $value->lampiran ?></a></h4>
 					</div>
-					<div class="box-h">
-						<div class="waktu">
-							<h4>Waktu :</h4>
-						</div>
+				</div>
+				<div class="box-h">
+					<div class="waktu">
+						<h4>Waktu : <?php echo $value->waktu ?></h4>
 					</div>
-					<div class="box-h">
-						<div class="lihat">
-							<h4><a href="<?php echo base_url() . 'control/tampilan_detail' ?>">Lihat Selengkapnya></a></h4>
-						</div>
+				</div>
+				<div class="box-h">
+					<div class="lihat">
+						<h4><a href="#">Lihat Selengkapnya></a></h4>
 					</div>
 				</div>
 			</div>
+		</div>
 
+		<?php
+		
+				}
+			}
+		?>
 
-			<div class="container">
-				<hr />
-				<div class="box-v">
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-						officiis atque rem provident? Aperiam nihil officiis sit consequatur
-						quaerat, itaque, eius eos vel commodi voluptates dolor temporibus
-						illum id voluptatum?
-					</p>
-					<div class="box-h">
-						<div class="lampiran">
-							<h4><a href="#">Lampiran : </a></h4>
-						</div>
-					</div>
-					<div class="box-h">
-						<div class="waktu">
-							<h4>Waktu :</h4>
-						</div>
-					</div>
-					<div class="box-h">
-						<div class="lihat">
-							<h4><a href="#">Lihat Selengkapnya></a></h4>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="container">
-				<hr />
-				<div class="box-v">
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-						officiis atque rem provident? Aperiam nihil officiis sit consequatur
-						quaerat, itaque, eius eos vel commodi voluptates dolor temporibus
-						illum id voluptatum?
-					</p>
-					<div class="box-h">
-						<div class="lampiran">
-							<h4><a href="#">Lampiran : </a></h4>
-						</div>
-					</div>
-					<div class="box-h">
-						<div class="waktu">
-							<h4>Waktu :</h4>
-						</div>
-					</div>
-					<div class="box-h">
-						<div class="lihat">
-							<h4><a href="#">Lihat Selengkapnya></a></h4>
-						</div>
-					</div>
-				</div>
-				<hr />
-			</div>
+		<div class="container"><hr></div>
 
 		</section>
 	</fieldset>

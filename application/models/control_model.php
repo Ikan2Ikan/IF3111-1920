@@ -31,4 +31,12 @@ class control_model extends CI_Model
 
         return $this->db->insert('laporan', $object);
     }
+
+    public function get_all_laporan(){
+        $this->db->select("*");
+        $this->db->from("laporan");
+        $this->db->order_by("waktu", "desc");
+        $query = $this->db->get();
+        return $query->result();
+    }
 }
