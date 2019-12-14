@@ -5,6 +5,7 @@
 <!DOCTYPE HTML>
 <HTML lang="en-US">
     <body>
+    <?php echo form_open_multipart('crud/aksi'); ?>
     <form action="<?php echo base_url(). 'crud/aksi'; ?>"method="post">
         <tr>
             <td>
@@ -34,7 +35,7 @@
         <tr>
             <td>
                 <p>
-                <input class="lampiran" type="file" name="upload" />
+                <input class="lampiran" type="file" name="lampiran" />
                 </p>
             </td>
         </tr>
