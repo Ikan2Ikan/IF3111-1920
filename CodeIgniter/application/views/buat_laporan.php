@@ -17,7 +17,7 @@
 			<br>
 
 
-			<form action="" method="POST">
+			<form action="" method="POST" enctype="multipart/form-data">
 				<div>
 					<textarea placeholder="Laporan/Komentar" name="deskripsi" ></textarea>
 				</div>
@@ -31,6 +31,9 @@
 					<option>Bidang Resejahteraan Rakyat</option>
 					<option>Pemilu</option>
 					<option>Energi dan Sumber Daya Alam</option>
+					<option>Bidang Politik, Hukum, dan Kesejahteraan</option>
+					<option>Kesehatan</option>
+					<option>Pekerjaan</option>
 				</select>
 				</div>
 				<br>
@@ -46,7 +49,7 @@
 				<div class="buatLapor">
 			
 					<a href="<?php echo base_url()?>Tampil/index">
-						<button type="button"> Balik</button>
+						<button type="button">Kembali</button>
 					</a>
 				</div>
 				<br>
