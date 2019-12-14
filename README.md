@@ -96,7 +96,17 @@ Validasi **wajib** dilakukan pada *client-side*, dengan menggunakan **javascript
 Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/komentar`.
 
 ### Penjelasan Teknis
-`Silakan isi bagian ini dengan penjelasan anda, sesuai Petunjuk Pengerjaan di atas.`
+Cara instalasi
+- Jalankan Xampp
+- Gunakan database yang berada di assets
+
+Cara pemakaian 
+- Gunakan data login yang berada pada database atau gunakan fungsi register
+- Pada laman Home terdapat button buat untuk membuat laporan
+- Pada laman Home terdapat button lihat selengkapnya untuk melihat laporan
+- Pada laman Laporan terdapat fungsi hapus untuk hapus laporan
+- Pada laman Laporan terdapat fungsi edit untuk edit laporan
+
 
 ### Knowledge
 Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaikan tugas ini.
