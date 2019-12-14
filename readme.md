@@ -96,7 +96,29 @@ Validasi **wajib** dilakukan pada *client-side*, dengan menggunakan **javascript
 Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/komentar`.
 
 ### Penjelasan Teknis
-`Silakan isi bagian ini dengan penjelasan anda, sesuai Petunjuk Pengerjaan di atas.`
+Pada Tubes kali ini kami menggunakan Framework CodeIgniter versi 3.1.11 dan Database MySQL
+
+1. Instalasi Framework
+- Download framework CodeIgniter dan ekstrak hasil download ke folder "IF3111-1920"
+- Copy paste ke xampp/htdocs
+2. Koneksi Database
+- Buka file xampp/htdocs/tubes/application/config/autoload.php
+- Cari $autoload['libraries'] lalu tambahkan library database (seperti dibawah ini) :
+$autoload['libraries'] = array('database');
+- Buka file xampp/htdocs/tubes/application/config/database.php
+- Isi 'localhost' pada hostname, 'root' pada username, dan 'lapor' pada database
+(Database yang kami gunakan bernama 'lapor')
+3. Validasi di client-side
+- Kami menggunakan fungsi minlength="20" untuk validasi isi laporan memiliki 20 kata atau lebih.
+Kami juga menggunakan fungsi required sebagai validasi bahwa kolom tersebut tidak kosong.
+4. Pembuatan Tampilan (User Interface)
+- Pembuatan layout sebagai user interfaces menggunakan HTML5 dengan viewport untuk menciptakan tampilan yang responsif sesuai dengan ukuran device yang akan mengakses, lalu untuk styling, menggunakan CSS yang mana terdapat beberapa parameter CSS yang perlu diperhatikan yaitu parameter Global (Menyeluruh terhadap tampilan web) dan parameter special yang khusus untuk bagian tertentu seperti search-box, form, image dsb
+5. Kerangka kerja MVC (Model View Controller)
+- Kerangka kerja MVC (Pada CodeIgniter) berfungsi mempermudah dan meningkatkan keamanan data. Terdapat beberapa bagian yang perlu diperhatikan, khususnya yang kami kerjakan saat membuat simple lapor ini, yaitu Bagian route, merupakan bagian yang mengarahkan alur link dari web (jalur).
+- Autoload & Helper berfungsi memberikan proses load secara otomaris, sedangkan helper berfungsi membantu menyederhanakan proses-proses backend php menjadi lebih singkat, mudah dan cepat
+- Bagian Controller merupakan bagian yang mengatur view dan model serta menghubungkan nya kepada route yang akan tersambung kepada user, contoh isi controller didalam web ini adalah controller Home yang mengatur jalur halaman dari home ke halaman lain
+- Bagian Model merupakn bagian yang berhubungan dengan database, didalam model terdapat query pengaksesan database seperti contohnya fungsi getalldata yang menggunakan query helper CI.
+- Bagian View yang menangani tampilan halama web.
 
 ### Knowledge
 Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaikan tugas ini.
@@ -112,4 +134,3 @@ anchor tag.
 
 Dosen       : Rajif Agung Yunmar, S.Kom., M.Cs.	,Ahmad Luky Ramdani, S.Komp., M.Kom. ,
 Arief Ichwani, S.Kom., M.Cs., Andre Febrianto, S.Kom., M.Eng, Ilham Firman Ashari, S.Kom., M.T
-
