@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 12, 2019 at 04:23 PM
--- Server version: 10.1.38-MariaDB
--- PHP Version: 7.1.27
+-- Waktu pembuatan: 14 Des 2019 pada 14.10
+-- Versi server: 10.1.38-MariaDB
+-- Versi PHP: 7.3.3
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -25,7 +25,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `laporan`
+-- Struktur dari tabel `laporan`
 --
 
 CREATE TABLE `laporan` (
@@ -37,24 +37,37 @@ CREATE TABLE `laporan` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
+-- Dumping data untuk tabel `laporan`
+--
+
+INSERT INTO `laporan` (`id_lapor`, `isi_lapor`, `jenis_lapor`, `tgl_lapor`, `file`) VALUES
+(22, 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi lacinia ante augue, vel fermentum odio lacinia non. Vivamus ornare suscipit turpis quis viverra. Aenean et neque sem. Duis ut erat et orci ultricies scelerisque sit amet quis ante. Curabitur fringilla, enim eget volutpat malesuada, lorem nunc rhoncus odio, eu porta diam massa sit amet urna. Integer pellentesque, neque sed vestibulum pellentesque, neque ex feugiat metus, id viverra quam diam in lectus. Curabitur convallis, mauris eleifend vestibulum tincidunt, ex leo auctor neque, blandit faucibus magna ex eget nisl. Vestibulum ut ante risus. In fringilla malesuada est, eget tempor nibh varius vel. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur vitae scelerisque augue. Etiam luctus tincidunt tempor. Aenean tincidunt ultricies orci, sed feugiat eros iaculis ac. ', 'Matakuliah', '2019-12-14 03:55:37', 'x.png'),
+(23, 'Kelar cuy alhamdulillah wkwkwk', 'Matakuliah', '2019-12-14 03:56:09', 'plus.png'),
+(28, 'Ini untuk mencoba fitur hapus laporan', 'Dosen', '2019-12-14 11:38:49', '1427472_1.jpg'),
+(30, 'tes tambah data', 'Matakuliah', '2019-12-14 11:53:53', 'left and right.jpg'),
+(31, 'saffafa', 'Nilai', '2019-12-14 11:55:35', 'allen.png'),
+(32, 'fsafa', 'Matakuliah', '2019-12-14 12:01:54', 'aza.png'),
+(33, 'tes update ', 'Matakuliah', '2019-12-14 12:02:21', 'Closers-2.jpg');
+
+--
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `laporan`
+-- Indeks untuk tabel `laporan`
 --
 ALTER TABLE `laporan`
   ADD PRIMARY KEY (`id_lapor`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
 --
--- AUTO_INCREMENT for table `laporan`
+-- AUTO_INCREMENT untuk tabel `laporan`
 --
 ALTER TABLE `laporan`
-  MODIFY `id_lapor` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_lapor` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
