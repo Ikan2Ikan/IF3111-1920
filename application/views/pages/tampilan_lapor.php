@@ -20,8 +20,9 @@
 		</header>
 		<section id="buatlaporan">
 			<div class="container">
-				<h4>Buat Laporan/Komentar</h4>
+				<h3>Buat Laporan/Komentar</h3>
 				<hr>
+				<br>
 			</div>
 		</section>
 
@@ -31,9 +32,9 @@
 
 					<textarea name="laporan" id="laporan" cols="77" rows="20" placeholder="Laporan/Komentar" required></textarea>
 					<br><br>
-
+					<label for="">Pilih Aspek Pelaporan/Komentar</label>
+					<br>
 					<select name="aspek" id="aspek">
-						<option value="">Pilih Aspek Pelaporan/Komentar</option>
 						<option value="Dosen">Dosen</option>
 						<option value="Staf">Staff</option>
 						<option value="Mahasiswa">Mahasiswa</option>
@@ -44,7 +45,7 @@
 					<br>
 					<input type="file" name="lampiran" id="" required>
 					<br><br>
-					<button type="submit" class="button-1" name="cubmit" value="simpan">Buat LAPOR!</button>
+					<button type="submit" class="button-1" name="submit" value="simpan">Buat LAPOR!</button>
 
 				</form>
 				<br>
