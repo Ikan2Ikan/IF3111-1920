@@ -1,5 +1,6 @@
 
-	<p>Detail Laporan/Komentar</p>
+	<div class="lihatlaporan">
+    <label class>Detail Lampiran/Komentar</label>
 	<hr>
 
 	<?= $data['laporan'] ?>
@@ -12,7 +13,8 @@
 	Waktu: <?= $data['date']?>  &nbsp &nbsp &nbsp
 	Aspek: <?= $data['aspek']?> 
 
-	&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+	&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
 	<a href="<?= base_url(); ?>home/ubah/<?= $data['id']?>">Ubah Laporan/Komentar</a>
 	&nbsp &nbsp
 	<a href="<?= base_url(); ?>home/hapus/<?= $data['id']?>">Hapus Laporan/Komentar</a>
+</div>

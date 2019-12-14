@@ -1,13 +1,15 @@
-
-	<form action="<?= base_url(). 'home/cari_laporan'; ?>"  method="POST" >
-		<input type="text" name="cari" placeholder="Cari Aspek">
+	<div class = "untukcari">
+	<form action="<?= base_url(). 'home/cari_laporan'; ?>"  method="POST">
+		<input type="text" name="cari" id="formcari" placeholder="Cari berdasarkan aspek atau isi laporan">
 	    <button type="submit"><i class="fa fa-search"> CARI</i></button>
 	</form>
+	</div>
 
-	<br>
+	<div class = "lapor">
 	<a style="text-align: center;" href="<?= base_url(); ?>home/lapor">Buat Laporan/Komentar</a>
-	<br>
+	</div>
 
+	<div class="laporanterakhir">
 	<label class="lampiran">Lampiran/Komentar Terakhir</label>
 	<hr>
 	<?php 
@@ -21,13 +23,16 @@
 			echo $trimstring;
 	?>	
 	<p>
-		Lampiran: <?= $tampil->file?>
+		Lampiran: <?= $tampil->file?> &nbsp &nbsp &nbsp 
 		<span>
-			<a> Waktu: <?= $tampil->date?>  </a>  
+		<div style="text-align: right;">
+			<a> Waktu: <?= $tampil->date?>  </a>  &nbsp &nbsp &nbsp 
 			<a href="<?= base_url(); ?>home/lihat/<?= $tampil->id;?>">Lihat selengkapnya</a>
 		</span>
+		</div>
 	</p>
 	<hr>	
 		<?php } ?>
+	</div>
 </body>
 </html>
