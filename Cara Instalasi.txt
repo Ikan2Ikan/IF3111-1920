@@ -1,0 +1,7 @@
+Nama : 1. Riwandy (14117098)
+       2. Jefri Manurung (14117107)
+
+Cara Instalasi :
+1. Import database dengan nama lapor
+2. Copy folder web ke dalam direktori server
+3. Buka web di web browser
