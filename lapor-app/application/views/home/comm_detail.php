@@ -23,7 +23,7 @@
 
         <div class="container2">
           <div class="laporan">
-            <p><?= $result['comm_title'] ?></p>
+            <h4><?= $result['comm_title'] ?></h4>
 
             <small>Pelapor : <?= $result['fullname'] ?></small>
 
