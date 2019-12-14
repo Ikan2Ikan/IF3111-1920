@@ -9,13 +9,17 @@ class Detail_Lapor extends CI_Controller {
 		$this->load->helper('url');
 
 	}
-	public function index()
-	{
+	public function index(){
 		$data['laporan'] = $this->Detail_Model->getAllLapor();
 		$this->load->view('detail_laporan',$data);
 	}
 	public function view($id) {
 		$data['laporan'] = $this->Detail_Model->getAllLapor($id);
 		$this->load->view('detail_laporan', $data);
+	}
+	public function hapus($id){
+		$where = array('id_laporan' => $id);
+		$this->Detail_Model->hapus_laporan($where,'laporan');
+		redirect('');
 	}
 }

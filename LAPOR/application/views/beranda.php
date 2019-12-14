@@ -9,7 +9,7 @@
     <h1><center>Layanan Aspirasi dan Pengaduan Mahasiswa ITERA</center></h1>
     <div class="cari">
       <form action= "<?php echo base_url('cari'); ?>" method="get">
-        <center><input class="pencarian" type="text" name="keyword">
+        <center><input type="text" name="keyword">
         <input class="button" type="submit" value="Cari"></center><br>
       </form>
     </div>
@@ -42,6 +42,7 @@
       }
     </script>
     <div class="container">
+    <div class="recentlaporan">
     <h3>Laporan/Komentar Terakhir</h3>
     <hr>
         <?php foreach ($laporan as $recent): ?>
@@ -59,6 +60,7 @@
           <br>
           <hr>
         <?php endforeach; ?>
+    </div>
     </div>
   </body>
 </html>
