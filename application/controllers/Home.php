@@ -21,6 +21,7 @@ class Home extends CI_Controller
             $this->Comment->tComm();
         }
     }
+    // ahsjskslslsjsjjs
     public function detail($id)
     {
         $data['result'] = $this->Comment->sComm2($id);

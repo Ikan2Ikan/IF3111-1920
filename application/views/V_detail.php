@@ -26,7 +26,7 @@
             <p><?= $result['nama'] ?></p>
             <p><?= $result['isi_comm']; ?></p>
 
-
+<!-- ahsjskslslsjsjjs -->
         </div>
     </body>
 

@@ -29,7 +29,7 @@
         <div>
             <p class="laporan">Laporan/Komentar Terakhir</p>
         </div>
-
+        <!-- ahsjskslslsjsjjs -->
         <hr>
         <?php foreach ($result as $data) : ?>
             <div class="itm-title">

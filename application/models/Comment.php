@@ -21,7 +21,7 @@ class Comment extends CI_Model
         $this->db->insert('komentar', $data);
         redirect('home');
     }
-
+    // ahsjskslslsjsjjs
     public function  sComm()
     {
         $data = $this->db->query("SELECT * FROM komentar")->result_array();
