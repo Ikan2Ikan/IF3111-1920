@@ -13,12 +13,11 @@
                     <input type="text" name="cari">
 
                     <button type="submit" name="cari laporan" class="btn btn-primary">Cari</button>
-
                 </form>
+
                 <a href="<?php echo base_url('index.php/laporan/buatLaporan/') ?>"><button type="" name="create" class="btn btn-primary">Buat Laporan/Komentar</button></a>
                 <br>
                 <br>
-                
             </div>
             <div class = "konten">
                 <br>

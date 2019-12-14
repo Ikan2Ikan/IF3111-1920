@@ -43,7 +43,7 @@ body{
     bottom: 0px;
 }
 
-.h1{
+h1{
     text-align: center;
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -57,13 +57,16 @@ p{
     padding: 0px;
 }
 
-.p1{
-    text-align: right;
+p1{
+    text-align: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     padding: 0px;
 }
 
-ul.navbar{
+a href{
+    text-decoration: none;
+}
+/* ul.navbar{
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -75,11 +78,24 @@ ul.navbar{
     color:#fff;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
-}
+} */
 
 
 
 /*buatLaporan.php*/
+
+textarea{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tampilDetail{
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    background:rgba(9, 112, 172, 0.658);
+}
 
 .upload{
     margin-left: 2cm;
