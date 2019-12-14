@@ -21,8 +21,8 @@ class Pusatlapor extends CI_Controller
 			show_404();
 		}
 
-		$data['title'] = 'Simple Lapor';
+		$data['title'] = 'SIMPLE LAPOR';
 
-		$this->load->view('pusatlapor/laporan', $data);
+		$this->load->view('pusatlapor/menu', $data);
 	}
 }

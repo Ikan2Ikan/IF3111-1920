@@ -13,7 +13,7 @@
 		</div>
 		<a href="index_home">Home</a>
 		<a href="pusatlapor">Laporan</a>
-		<a style="float:right; border-style:solid" href="#">Daftar</a>
+		<a style="float:right" href="#">Daftar</a>
 		<a style="float:right" href="#">Masuk</a>
 	</div>
 	<br><br>

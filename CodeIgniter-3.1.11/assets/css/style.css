@@ -1,24 +1,11 @@
-/* Margin */
+/* margin */
 body {
 	margin: 20px 150px 20px 150px;
 }
 
-/* Tombol Lapor */
+/* tombol lapor */
 .tombol_lapor {
 	float: right;
-}
-
-/* Footer */
-.footer {
-	right: 0;
-	bottom: 0;
-	left: 0;
-	padding: 2px 2px;
-}
-
-.formlapor {
-	font-family: 'Times New Roman', Times, serif;
-	color: black;
 }
 
 /* Menu */
@@ -38,14 +25,22 @@ body {
 	font-family: 'Times New Roman', Times, serif;
 }
 
-/* Logo*/
+/* logo navbar*/
 .logo img {
 	float: left;
 	width: 45px;
 	height: 45px;
 }
 
-/* Container*/
+/* footer */
+.footer {
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 2px 2px;
+}
+
+/* container pada body*/
 .container h2 {
 	font-size: 50px;
 	font-family: 'Times New Roman', Times, serif;
@@ -56,7 +51,7 @@ body {
 	font-family: 'Times New Roman', Times, serif;
 }
 
-/* Tombol Cari */
+/* Style the search box inside the navigation bar */
 .searchTerm {
 	width: 100%;
 	padding: 5px;
