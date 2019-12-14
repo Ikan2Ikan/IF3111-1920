@@ -19,6 +19,9 @@ class Lapor extends CI_Controller {
 		$aspek = $this->input->post('aspek');
 		$date = date('Y-m-d H:i:s');
 
+		$config['upload_path'] = './assets/images';
+		$config['allowed_types'] = 'gif|jpeg|jpg|png|doc|docx|xls|xlsx|ppt|pptx|pdf';
+
 		$data = array(
 			'id'	=>	NULL,
 			'tanggal'	=> $date,
@@ -31,5 +34,19 @@ class Lapor extends CI_Controller {
 		$this->load->view('v_review_lapor',$data);
 	}
 
+	public function hapus(){
+			redirect('');
+	}
+
+	function cari()
+    {
+        $keyword    =   $this->input->post('search');
+        $data['results']    =   $this->Laporan->search($keyword);
+        $this->load->view('v_after_search',$data);
+    }
+
+	public function tampil_rev(){
+			$this->load->view('v_review_lapor');
+	}
 
 }

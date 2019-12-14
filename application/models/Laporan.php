@@ -18,4 +18,11 @@ class Laporan extends CI_model{
 	$this->db->where($where);
 	$this->db->delete($table);
 }
+
+  function search($keyword)
+  {
+      $this->db->like('komentar',$keyword);
+      $this->db->or_like('aspek',$keyword);
+      return $this->db->get('isi')->result_array();
+  }
 }

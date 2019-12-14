@@ -34,7 +34,7 @@
       <div>
         <div>
           <h3 class="laporan kiri">Laporan/Komentar Terakhir</h3>
-            <?php foreach ( $laporan as $key) : ?>
+            <?php foreach ( $results as $key) : ?>
               <section class="list-laporan">
                 <section class="list-komentar" style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">
                   <?= $key['komentar']; ?>
@@ -44,8 +44,7 @@
                   <br><?='<img style="border: 1px solid black; width:120px; height:100px" src="data:image/jpeg;base64,'.base64_encode( $key['file'] ).'"/>'; ?>
                   <section class="kanan">
                     Waktu : <?= $key['tanggal']; ?>
-                    <br>
-                    <a style="color:black" href="<?php echo base_url();?>selengkapnya/<?= $key['id']?>">Lihat Selengkapnya ></a>
+                    <br> <a style="color:black" href="<?php echo base_url();?>selengkapnya/index" (<?= $key['id']?>)>Lihat Selengkapnya ></a>
                   </section>
                 </section>
               </section>
