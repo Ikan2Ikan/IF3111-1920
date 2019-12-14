@@ -23,7 +23,7 @@ class Home extends CI_Controller
     }
     public function detail()
     {
-        // $this->load->view('V_detail', $data);
+        $this->load->view('V_detail');
     }
     // public function fileUpload()
     // {
