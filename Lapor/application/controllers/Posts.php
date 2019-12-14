@@ -28,12 +28,17 @@
 			
 			$this->form_validation->set_rules('deskripsi', 'Deskripsi', 'required|min_length[20]');
 			$this->form_validation->set_rules('kategori', 'Kategori', 'required');
+			if (empty($_FILES['userfile']['name'])) {
+					$this->form_validation->set_rules('userfile', 'Document', 'required');
+			}
+
 
 			if ($this->form_validation->run() == FALSE) {
 				$this->load->view('posts/create', $data);
 			}else{
 				$config['upload_path'] = './assets/lampiran/';
 				$config['allowed_types'] = 'gif|jpg|png|doc|docx|xls|xlsx|ppt|pptx|pdf';
+				
 
 				$this->load->library('upload', $config);
 

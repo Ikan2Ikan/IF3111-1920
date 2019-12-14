@@ -183,6 +183,15 @@ hr {
   color: #666;
   font-family: Georgia;
 }
+
+.wrap h3{
+  text-align: center;
+  padding:0;
+  margin:0 0 15px;
+  font-weight: normal;
+  color: #666;
+  font-family: Georgia;
+}
  
 .konten p:last-child {
   text-align: justify;

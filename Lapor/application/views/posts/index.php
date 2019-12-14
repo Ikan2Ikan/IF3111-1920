@@ -15,6 +15,13 @@
 	</form>
 	<!-- Akhir Header -->
 	
+	<div class="wrap">
+		<div class="konten">
+			<h1>Laporan/Komentar Terakhir</h1> 
+			<hr>
+		</div>
+	</div>
+
 	<?php foreach($posts as $post) : ?>
 	<!-- Isi -->
 	<div class="wrap"> 

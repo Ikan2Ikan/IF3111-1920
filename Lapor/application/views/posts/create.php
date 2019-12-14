@@ -20,7 +20,9 @@
 	</header>
 	<!-- Akhir Header -->
 	
-	<?php echo validation_errors(); ?>
+	<div class="wrap">
+			<h3><?php echo validation_errors(); ?></h3>
+	</div>
 
 	
 	<!-- Isi -->
