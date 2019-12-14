@@ -2,22 +2,22 @@
         <center>
             <h2>BUAT LAPORAN</h2>
         </center>
-        <form action="tambah" method="POST" enctype="multipart/form-data">
+        <form name="createForm" action="tambah" onsubmit="return validateForm()" method="POST" enctype="multipart/form-data">
         
         <div class="container">
             <div class="styled-input wide">
-                <textarea name='komentar' required></textarea>
+                <textarea name='komentar'></textarea>
                 <label>Message</label>
                 <span></span> </div>
 
             <div class="styled-input">
                 <input type="file" name="lampiran" class="button_1">
-                <span></span> </div>
+                <span></span> </div>    
 
             <div class="styled-input wide">
                 <select name="aspek" id="" class="button_1">
                 Dosen, Staff, Mahasiswa, Infrastruktur dan Pengajaran
-                    <option value="">Pilih Aspek Pelaporan/Komentar</option>
+                    <option value="kosong">Pilih Aspek Pelaporan/Komentar</option>
                     <option value="Sosial">Dosen</option>
                     <option value="Politik">Staff</option>
                     <option value="Akademik">Mahasiswa</option>
