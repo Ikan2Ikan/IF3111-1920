@@ -8,5 +8,3 @@
 </head>
 <body>
 	<h1 align="center"> SIMPLE LAPOR! </h1>
-</body>
-</html>

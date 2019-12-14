@@ -1,5 +1,4 @@
 <?php 
-
 class Crud extends CI_Controller{
  
  function __construct(){
@@ -7,7 +6,6 @@ class Crud extends CI_Controller{
      $this->load->model('m_data');
              $this->load->helper('url');
  }
-
  function index(){
     $this->load->view('templates/header');
     $this->load->view('HomePage/HomeDesign');
@@ -19,7 +17,6 @@ class Crud extends CI_Controller{
     $isi_laporan = $this->input->post('isi_laporan');
     $kategori = $this->input->post('kategori');
     $tgl_laporan = date("Y-m-d H:i:s");
-
     $data = array(
         'isi_laporan' => $isi_laporan,
         'kategori' => $kategori,
@@ -27,6 +24,6 @@ class Crud extends CI_Controller{
         );
         
     $this->m_data->input_data($data,'laporan');
-    redirect('crud/index');
+    redirect('Home');
  }
-}
+ }

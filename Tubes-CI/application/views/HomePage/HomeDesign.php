@@ -46,13 +46,11 @@ form {
     background: #ecee5d;
     color:#000000;
 }
-
-p{
+.kata{
     text-align: center; 
     font-size: 15px;
-
+    padding: 10px;
 }
-
 .button2{
     background-image: url(./aset/button1.png);
     background-color: #ffffff;
@@ -62,6 +60,31 @@ p{
     background-position: center;
     background-size: 20px;
     bac
+}
+a{
+    text-decoration:none;
+    color: #000000;
+}
+.textarea {
+    resize: none;
+    width: 300px;
+    height: 150px;
+}
+.kotak{
+    width: 40%;
+    height: 25%;
+    background-color:lightgreen;
+    float: left;
+}
+.komentar{
+    width: 1000px;
+    height: 300px;
+}
+.submit{
+    border:1px solid #000000;
+    background-color: transparent;
+    color: black;
+    padding: 10px 20px;
 }
 </style>
  </head>

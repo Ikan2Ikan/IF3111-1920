@@ -1,22 +1,15 @@
-<?php
-    defined('BASEPATH') OR exit('No direct script access allowed');
-?>
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Halaman utama</title>
-        <link rel="stylesheet" href="HomeDesign.php">
-    </head>
-
-    <body>
-        <form>
+    <form>
             <input class="search" type="text" placeholder="">   
             <input class="button" type="button" value="Cari">       
         
-        <p>
+        <div class=kata>
           <a href="<?= base_url(); ?>Buatform">Buat Laporan/Komentar <button class="button2">'</button> </a>
-         </p>
-     </form>
+        </div>
+    </form>
 
+    <p> Laporan/Komentar Terakhir </p>
+    <hr width="100%" color="gray" />
+
+    
     </body>
 </html>

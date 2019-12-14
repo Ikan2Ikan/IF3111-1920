@@ -54,3 +54,12 @@ p{
     background-size: 20px;
     bac
 }
+a{
+    text-decoration:none;
+    color: #000000;
+}
+.textarea {
+    resize: none;
+    width: 300px;
+    height: 150px;
+}

@@ -1,13 +1,13 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Welcome extends CI_Controller {
-
+class Buatform extends CI_Controller {
 	public function index()
 	{
 		$this->load->view('templates/header');
-		$this->load->view('HomePage/HomeDesign');
-		$this->load->view('HomePage/home');
+		$this->load->view('HomePage/homedesign');
+		$this->load->view('laporan/laporan');
 	}
+	
 }
 ?>

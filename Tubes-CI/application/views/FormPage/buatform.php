@@ -1,10 +1,3 @@
-<?php
-    defined('BASEPATH') OR exit('No direct script access allowed');
-?>
-
-<!DOCTYPE HTML>
-<HTML lang="en-US">
-    <body>
     <form action="<?php echo base_url(). 'crud/aksi'; ?>"method="post">
         <tr>
             <td>
@@ -12,16 +5,6 @@
                 <hr width="100%" color="gray" />
             </td>
         </tr>
-
-        <!-- <div class="loadkomentar">
-            <tr>
-                <td><label for="textfield"></label>
-                    <label for="textarea"></label>
-                    <textarea name="Pesan"></textarea>
-                </td>
-            </tr>
-        </div>
-        -->
         <tr>
             <td>
                 <p>
