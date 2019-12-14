@@ -34,11 +34,17 @@ class Auth extends CI_Controller
           // die;
           redirect(base_url('home/user_logged_in'));
         } else {
-          echo "password salah!";
+          echo "<script>
+                    alert('Password Anda Salah');
+                </script>
+            ";
         }
       } else {
         // redirect('auth/register');
-        echo "user tidak ada";
+        echo "<script>
+                    alert('Pengguna Tidak Ditemukan');
+              </script>
+            ";
       }
     }
   }
