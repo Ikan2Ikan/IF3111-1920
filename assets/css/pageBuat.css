@@ -27,20 +27,14 @@ textarea{
 input{
     float: left;
 }
-.input-file{
-    background-color: white; /* Green */
-    /* border: none; */
-    color: black;
-    float: right;
-    height: 40px;
-    width: 900px;    
-}
+
 button{
-    background-color: white; /* Green */
-    color: black;
+    border: 1px solid black;
+    color: black;  
+    background: white;
+    height: 40px;
+    width: 100px;
     float: right;
-    height: 400000px;
-    width: 900000px;
 }
 select{
     height: 30px;
