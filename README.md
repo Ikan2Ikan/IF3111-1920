@@ -96,7 +96,11 @@ Validasi **wajib** dilakukan pada *client-side*, dengan menggunakan **javascript
 Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/komentar`.
 
 ### Penjelasan Teknis
-`Silakan isi bagian ini dengan penjelasan anda, sesuai Petunjuk Pengerjaan di atas.`
+Validasi digunakan dalam form menggunakan Javascript
+Instalasi Framework CodeIgniter dilakukan pada folder xammp/htdocs/PABW-B/
+base_url = localhost/PABW-B/IF3111-1920/
+
+Cara Instalasi Aplikasi : download -> extract pada folder xampp/htdocs/PABW-B -> ketik di search bar browser localhost/PABW-B/IF3111-1920
 
 ### Knowledge
 Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaikan tugas ini.
