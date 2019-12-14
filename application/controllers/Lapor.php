@@ -26,8 +26,13 @@ class Lapor extends CI_Controller {
 			'file' => $file,
 			'aspek' => $aspek
 			);
+
 		$this->Laporan->input_data($data,'isi');
 		$this->load->view('v_review_lapor',$data);
+	}
+
+	public function tampil_rev(){
+			$this->load->view('v_review_lapor');
 	}
 
 }
