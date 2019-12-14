@@ -15,16 +15,16 @@
 
 
             <div class="main">
-                <input type="text" placeholder="Judul Laporan/Komentar" name="comm_title">
+                <input type="text" placeholder="Judul Laporan/Komentar" name="comm_title" required>
                 <br>
-                <textarea name="comment" placeholder="Laporan/Komentar"></textarea>
+                <textarea name="comment" placeholder="Laporan/Komentar" required></textarea>
             </div>
 
             <br>
 
             <div class="aspect">
-                <select name="aspect">
-                    <option default>Pilih Aspek Pelaporan/Komentar</option>
+                <select name="aspect" required>
+                    <option value="">Pilih Aspek Pelaporan/Komentar</option>
                     <option value="Dosen">Dosen</option>
                     <option value="Staff">Staff</option>
                     <option value="Mahasiswa">Mahasiswa</option>
@@ -36,7 +36,7 @@
             <br>
 
             <div class="file">
-                <input class="file_in" type="file" name="lampiran">
+                <input class="file_in" type="file" name="lampiran" required>
             </div>
 
             <br>
