@@ -6,7 +6,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" type="text/css" media="all" href="<?php echo base_url('assets/css/style_tampilan_ubah.css') ?>" />
+
 	<title>Tampilan Ubah</title>
+
+	<script type="text/javascript" src="<?php echo base_url('assets/js/script.js') ?>"></script>
 </head>
 
 <body>
@@ -29,13 +32,13 @@
 		<section id="formbuatlaporan">
 			<div class="container">
 
-				<form action="<?= base_url('control/ubah/' . $laporan->id); ?>" method="POST" enctype="multipart/form-data">
+				<form name="createForm" onsubmit="return validasi()" action="<?= base_url('control/ubah/' . $laporan->id); ?>" method="POST" enctype="multipart/form-data">
 
-					<textarea name="laporan" id="laporan" cols="77" rows="20" placeholder="Laporan/Komentar" required><?php echo set_value('laporan', $laporan->laporan) ?></textarea>
+					<textarea name="laporan" id="laporan" cols="77" rows="20" placeholder="Laporan/Komentar"><?php echo set_value('laporan', $laporan->laporan) ?></textarea>
 					<br><br>
-					<label for="">Pilih Aspek Pelaporan/Komentar</label>
-					<br>
+
 					<select name="aspek" id="aspek">
+						<option disabled selected value>Pilih Aspek Pelaporan/Komentar</option>
 						<option value="Dosen">Dosen</option>
 						<option value="Staf">Staff</option>
 						<option value="Mahasiswa">Mahasiswa</option>
@@ -45,13 +48,15 @@
 					<br>
 					<br>
 
-					<input type="file" name="lampiran" id="" required>
+					<input type="file" name="lampiran" id="lampiran">
 					<br><br>
 					<button type="submit" class="button-1" name="submit" value="simpan">Ubah LAPOR!</button>
 
 				</form>
 				<br>
+				<br>
 				<hr>
+				<br>
 
 			</div>
 		</section>
