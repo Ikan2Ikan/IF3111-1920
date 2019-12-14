@@ -12,4 +12,10 @@ class Detail extends CI_Controller {
 		$data['posting'] = $this->M_detail->list_posting();
 		$this->load->view('posting',$data);
 	}
+	
+	function hapus($id){
+	$where = array('ID' => $id);
+	$this->M_detail->hapus_data($where,'posting');
+	redirect('detail/index');
+	}
 }

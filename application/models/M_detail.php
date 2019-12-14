@@ -23,8 +23,8 @@ class M_detail extends CI_Model {
 		}
 	}
 	
-	function hapus_data($where,$posting){
-	$this->db->where($where);
+	function hapus_data($id,$posting){
+	$this->db->where($id);
 	$this->db->delete($posting);
 	}
 }
