@@ -25,17 +25,24 @@
                             <span>Gunakan Akun Media Sosial</span>
                         </h5>
                         <div class="row">
-                            <div class="col-sm-10 col-sm-push-1 col-8">
-                                <div class="col-6">
+                            <div class="col-sm-10 set">
+                                <div class="col-6 face ">
                                     <img src="<?= base_url() ?>assets/img/facebook.png" alt="facebook">
                                 </div>
-                                <div class="col-6">
+                                <div class="col-6 twit">
                                     <img src="<?= base_url() ?>assets/img/twitter.png" alt="twitter">
                                 </div>
                             </div>
                         </div>
+                        <h5 class="pesan"><span>Atau</span></h5>
                     </div>
-
+                </div>
+                <div class="row">
+                    <div class="col-sm-10 col-sm-push-1 col-8">
+                        <form action="" method="post">
+                            <input type="text" name="nama_lengkap" placeholder="Nama Lengkap">
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
