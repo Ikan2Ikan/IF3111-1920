@@ -28,7 +28,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     $lampiran = $this->upload->data('file_name');
                 }
                 $data = array(
-                    'isi_laporan'       => $isi,
+                    'isi_laporan'=> $isi,
                     'aspek'     => $aspek,
                     'lampiran' => $lampiran
                 );
