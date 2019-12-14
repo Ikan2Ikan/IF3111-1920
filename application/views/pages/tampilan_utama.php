@@ -33,7 +33,7 @@
 		<section id="buatlaporan">
 			<div class="container">
 				<center>
-					<a href="<?php echo base_url() . 'control/tampilan_lapor' ?>">Buat Laporan/Komentar</a> <span style="text-style:bold;padding: 1px 2px;background-color: #000; color: #fff;">+</span>
+					<a href="<?php echo base_url() . 'control/tampilan_lapor' ?>">Buat Laporan/Komentar</a> <span style="font-style:bold; padding: 1px 2px;background-color: #000; color: #fff;">+</span>
 				</center>
 			</div>
 		</section>
