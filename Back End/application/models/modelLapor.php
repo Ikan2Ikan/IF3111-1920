@@ -31,9 +31,9 @@ class ModelLapor extends CI_Model
 		return $isi;
 	}
 
-	public function TampilData($where)
+	public function GetData($where)
 	{
-		$isi = $this->db->query('select * from $where');
+		$isi = $this->db->query('select * from lapor where id=' . $where);
 
 		return $isi;
 	}
