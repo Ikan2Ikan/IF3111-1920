@@ -7,7 +7,7 @@ class Lapor_model extends CI_model {
     //CREATE DATA
     public function upload(){
         $config['upload_path'] = './asset/filess/';
-        $config['allowed_types'] = 'jpg|png|jpeg';
+        $config['allowed_types'] = 'jpg|png|jpeg|doc|docx|xls|xlsx|ppt|pptx|pdf';
         $config['max_size']  = '2048';
         $config['remove_space'] = TRUE;
       
