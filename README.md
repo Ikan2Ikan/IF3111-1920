@@ -46,3 +46,11 @@ $db['default'] = array(
 	'save_queries' => TRUE
 );
 step 3: kemudian isi 'hostname','username','database' ( database disini sesuaikan dengan nama databse anda) selesai, silahkan jalankan database anda
+
+#cara kerja ajx
+
+1.Permintaan (request) HTTP dikirimkan dari web browser ke server.
+2.server menerima, dan kemudian, mengambil data.
+3.Server mengirimkan data yang diminta ke web browser.
+4.Web browser menerima data dan mereload halaman untuk menampilkan data.
+5.Selama proses ini berlangsung, user tidak punya pilihan selain menunggu sampai keseluruhan proses berakhir. Tak hanya membuang-buang waktu, konsep konvensional juga memberikan loading yang tidak perlu ke server.
