@@ -21,7 +21,7 @@
       <?php $id= $laporan['id_laporan']; ?>
       <a class="hapus" href="<?php echo base_url().'index.php/laporan/hapus/'.$laporan['id_laporan'];?>">Hapus Laporan</a>
       </a>
-      <a class="edit" href=#>Edit Detail</a>
+      <a class="edit" href="<?php echo base_url().'index.php/laporan/edit/'.$laporan['id_laporan'];?>">Edit Detail</a>
       <hr>
       </div>
     </div>

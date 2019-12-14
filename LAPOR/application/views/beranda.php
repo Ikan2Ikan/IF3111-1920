@@ -1,3 +1,4 @@
+<?php/* include 'koneksi.php'; */?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -9,20 +10,20 @@
     <h1><center>Layanan Aspirasi dan Pengaduan Mahasiswa ITERA</center></h1>
     <div class="cari">
       <form action= "<?php echo base_url('cari'); ?>" method="get">
-        <center><input type="text" name="keyword">
+        <center><input class="pencarian" type="text" name="keyword">
         <input class="button" type="submit" value="Cari"></center><br>
       </form>
     </div>
 
     <a onclick="document.getElementById('id01').style.display='block'"><center>Buat Laporan/Komentar</center></a>
       <div id="id01" class="ketiklapor">
-        <form class="ketiklapor-content animate" action="<?php echo base_url('form/input_form') ?>" method="post" enctype="multipart/form-data">
+        <form class="ketiklapor-content animate" action="<?php echo base_url('form/input_form') ?>" method="post">
             <div class="tampilan">
               <fieldset>
                   <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Tutup">&times;</span>
                   <input type="text" name="judul" placeholder="judul">
                   <textarea name="komen" placeholder="Laporan"></textarea>
-                  <<input type="file" name="image">
+                  <input type="file" name="image">
                   <label>Pilih Aspek Pelaporan/Komentar:</label>
                   <select name="pilihan">
                     <option value="mahasiswa">mahasiswa</option>
