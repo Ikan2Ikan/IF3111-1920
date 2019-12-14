@@ -25,7 +25,7 @@
             <span></span> </div>
 
             <div class="styled-input-button">
-                <button type="submit" class="button_1" name="create">Buat Laporan</button>
+                <button type="submit" class="button_1" name="submit">Buat Laporan</button>
             <span></span> </div>
 
         <?php echo form_close(); ?>
