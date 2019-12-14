@@ -60,6 +60,7 @@ class Laporan extends CI_Controller {
 		// echo $sql;
 		if($sql==1){
 			//view bener
+			return redirect('/', 'refresh');
 		}else{
 			//else
 		}
@@ -68,11 +69,21 @@ class Laporan extends CI_Controller {
 	public function index(){
 		$this->load->model('Laporan_model');
 
-        $laporan=$this->Laporan_model->getIndex();
-        $data['laporan']=$laporan;
+        // $laporan=$this->Laporan_model->getIndex();
 		
+		$jumlah_data = $this->Laporan_model->jumlah_data();
+		$this->load->library('pagination');
+		$config['base_url'] = base_url().'index.php/laporan/index/';
+		$config['total_rows'] = $jumlah_data;
+		$config['per_page'] = 3;
+		$from = $this->uri->segment(3);
+		$this->pagination->initialize($config);		
+		$laporan = $this->Laporan_model->data($config['per_page'],$from);
+		
+		
+        $data['laporan']=$laporan;
 		$this->load->model('Aspek_model');
-
+		
         $aspek=$this->Aspek_model->getIndex();
 		$data['aspek']=$aspek->result();
 		

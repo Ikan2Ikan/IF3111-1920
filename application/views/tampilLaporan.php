@@ -40,6 +40,7 @@
         <hr>
     <?php
     }
+    echo $this->pagination->create_links();
     ?>
 
     </body>
