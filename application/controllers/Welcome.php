@@ -19,10 +19,3 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->view('v_detail.php');
 	}
-	// function edit($id){
-	// 	$where = array('id' => $id);
-	// 	$data['user'] = $this->m_data->edit_data($where,'user')->result();
-	// 	$this->load->view('v_edit',$data);
-	// }
-
-}
