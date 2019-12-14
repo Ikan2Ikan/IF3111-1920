@@ -1,0 +1,222 @@
+
+/* Full-width input fields */
+/*id -> pagar
+class -> titik
+css buat halaman selengkapnya
+*/
+body{
+    background: url('background/background_body.jpg');
+    margin: 0px;
+}
+.header{
+    background: #90EE90;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+}
+
+.header ul {
+    list-style: none;
+    float: left;
+    padding-left: 100px;
+
+}
+#pilih{
+    padding-left: 288px;
+    width: 100%;
+    background-color: #90EE90;
+}
+
+#cari{
+    position: fixed;
+    padding-left: 300px;
+}
+
+#cari input {
+
+    height: 50px;
+    width: 600px;
+
+}
+
+#cari button {
+
+    height: 50px;
+    width: 80px;
+
+}
+/*agar ul li nya menyamping*/
+.header ul li{
+    float: left;
+    padding: 10px;/* mengatur jarak antar menu*/
+
+}
+
+/*khusus button*/
+.header ul li button{
+    float: left;
+    padding: 8px;/* mengatur jarak antar menu*/
+
+}
+
+.header ul li a{
+    text-decoration: none;  /*menghilangkan garis bawah saat diberi link*/
+
+}
+
+#login{
+    padding-left: 1000px;
+}
+
+.clear{
+
+    clear: both;
+}
+textarea{
+    width: 700px;
+    height: 370px;
+}
+#tombol{
+    padding-left: 900px;
+    background-color: #90EE90;
+    height: 60px;
+}
+
+#tombol button{
+    height: 40px;
+}
+
+.content2{
+    width: 100%;
+    height: 800px auto;
+    background: #90EE90;
+    white-space: pre-line; 
+}
+.content2 a{
+    text-decoration: none;
+
+}
+#tambah_laporan{
+    padding-top: 60px;
+    white-space: pre-line;
+
+}
+#tambah_laporan img{
+    width: 150px;
+}
+
+#view a{
+    float: left;
+    padding-left: 50px;
+    font-size: 30px;
+}
+#nama{
+    float: left;
+    font-weight: 10px;
+    font-size: 16px;
+}
+#lampiran{
+    position: absolute;
+}
+
+#waktu{
+    float: right;
+    font-weight: 10px;
+    font-size: 16px;
+    padding-right: 40px;
+}
+#komentar a{
+    text-decoration: none;
+}
+#komentar p{
+    margin-left: 90px;
+    margin-right: 20px;
+    text-align: center;
+}
+h2{
+    color: red;
+}
+
+h3{
+    color: green;
+}
+.bungkus{
+    width: 700px;
+    height: 600px;
+    background-color: red;
+
+}
+
+/*css buat halaman "tentang"*/
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+/* Set a style for all buttons */
+
+button:hover {
+    opacity: 0.8;
+}
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+.container {
+    padding: 16px;
+}
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}

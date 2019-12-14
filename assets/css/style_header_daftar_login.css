@@ -1,0 +1,13 @@
+.header ul {
+
+	list-style: none;
+	float: left;
+	padding-left: 100px;
+
+}
+
+.header ul li{
+	float: left;
+	padding: 10px;/* mengatur jarak antar menu*/
+
+}
