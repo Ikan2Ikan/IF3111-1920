@@ -1,33 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>tampilan</title>
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url().'assets/css/tentang.css'?>">
-</head>
-<body>
-<header>
-<div class="container">
-    <div id="bagiankiri">
-      </div>
-          <nav>
-			<ul>
-            <li class="active"><a href="#" > Tentang Lapor! </a></li>
-             
-          </ul>
-      </nav>
-     <div id="bagiankanan">
-	      <nav>
-            <ul>
-             <li>
-	        <li> <a href="#"> Masuk </a></li> 
-		       <li> <a href="#"> Daftar </a></li>
-              </li>
-             </ul>
-         </nav>
-        </div>
-     </div>
-  </header>
- 
 <p class="judul" ><font color="black" size="28pt">Apa Itu LAPOR!?</font></p>
 <hr color="black" size="5" width="30%">
 <hr color="black" size="5" width="20%">
@@ -35,7 +5,7 @@
 			<div class="conteudo">
 				<div class="post-info">
 				</div>
-				<img src="<?php echo base_url().'assets/css/layananpengaduan.png'?>" width="0" height="310">
+				<img src="<?php echo base_url() ?>assets/img/layananpengaduan.png" width="0" height="310">
 				<h1> Sekilas Lapor ITERA </h1>
 				<hr>
 				<p>
@@ -47,37 +17,3 @@
 				<p> 2. Penyelenggara memberikan akses untuk partisipasi masyarakat dalam menyampaikan pengaduan</p>
 				<p> 3. Meningkatkan kualitas pelayanan publik.</p>
 			</div>
- 
-  <footer>
-            <section id="spons">
-                <div class="container">
-                    <div class="box">
-                        <p>Download Aplikasi Mobile LAPOR!</p>
-                        <a href="https://play.google.com/store/apps/developer?id=affandiStudio">
-                        <img src="<?php echo base_url().'assets/css/google.png'?>" width="150"></a>
-
-                    </div>
-                    <div class="box">
-                            <p>Dikembangkan Oleh : </p>
-                            <a href="http://itera.ac.id">
-                            <img src="<?php echo base_url().'assets/css/logo itera oke.png'?>" width="90" ></a>
-
-
-                     </div>
-                    <div class="box">
-                            <p>Lebih Dekat dengan Kami!</p>
-                            <a href="https://www.instagram.com/iteraofficial/">
-                            <img src="<?php echo base_url().'assets/css/Instagram_icon.png'?>" width="49" ></a>
-                            <a href="https://www.facebook.com/itera.official/">
-                            <img src="<?php echo base_url().'assets/css/facebook.png'?>" width="52"></a>
-
-                        </div>
-
-                </div>
-            </section>
-            <p id="copyright" > Copyright  @2019</p>
-
-        </footer> 
-  
-</body>
-</html>

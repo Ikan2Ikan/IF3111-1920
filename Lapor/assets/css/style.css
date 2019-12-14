@@ -10,8 +10,28 @@ body {
     background-image: url(bTovEQ.jpg);
 
 }
+.h1 {
+   margin:50px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+	font-size: 30pt;
+  color: #000;
+  width: auto;
+  text-align: center;
+}
 
-.login {
+.kotak_laporan {
+	width: 650px;
+	background: #CCC;
+	/*meletakkan form ke tengah*/
+	margin: 40px auto;
+	padding: 50px 30px;
+	
+}
+
+.kotak {
 	width: 500px;
 	background: #CCC;
 	/*meletakkan form ke tengah*/
@@ -21,149 +41,9 @@ body {
 }
 
 
-.blog {
-	float:center;
-}
- 
-.conteudo {
-	width:600px;
-	padding:25px;
-	margin:25px auto;
-	background: #fff;
-	border:1px solid #dedede;
-	-webkit-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.35);
-	-moz-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.35);
-	box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.35);
-}
- 
-.conteudo img {
-	min-width: 650px;
-	margin:0 0 25px -25px;
-	max-width: 650px;
-}
- 
-.conteudo h1 {
-	padding:0;
-	margin:0 0 15px;
-	font-weight: normal;
-	color: #666;
-	font-family: Georgia;
-}
- 
-.conteudo p:last-child {
-	margin: 0;
-}
- 
-.conteudo .continue-lendo {
-	color:#000;
-	transition: all 0.5s ease;
-	text-decoration: none;
-	font-weight: 700; 
-}
- 
-.conteudo .continue-lendo:hover {
-	margin-left:10px;
-}
- 
-.post-info {
-	float: right;
-	font-size: 12px;
-	margin: -10px 0 15px;
-	text-transform: uppercase;
-}
- 
-@media screen and (max-width: 960px) {
- 
-	.header {
-		position:inherit;
-	}
- 
-	.wrap {
-		width: 90%;
-		margin:25px auto;
-	}
-	.sidebar {
-		width:100%;
-		margin:25px 0 0;
-		float:right;
-	}
- 
-	.sidebar .widget {
-		padding:5%;
-	}
- 
-	nav.menu ul {
-		width: 100%;
-	}
- 
-	nav.menu ul {
-		float:inherit;
-	}
- 
-	nav.menu ul li {
-		float:inherit;
-		margin:0;
-	}
- 
-	nav.menu ul a {
-		padding:15px;
-		font-size: 16px;
-		border-top:1px solid #1abf9f;
-		border-bottom:1px solid #16a085;
-	}
- 
-	.blog {
-		width:90%;
-	}
- 
-	.conteudo {
-		float:inherit;
-		margin:0 auto 25px;
-		width:101%;
-		border:1px solid #dedede;
-		padding:5%;  
-		background: #fff;
-	}
- 
-	.conteudo img {
-		max-width: 110%;
-		margin:0 0 25px -5%;
-		min-width: 110%;
-	}
- 
-	.conteudo .continue-lendo:hover {
-		margin-left:0;
-	}
- 
- 
-}
- 
-@media screen and (max-width: 460px) {
- 
-	nav.menu ul a {
-		padding:15px;
-		font-size: 14px;
-	}
- 
-	.sidebar {
-		display:none
-	}
-	.post-info {
-		display:none;
-	}
- 
-	.conteudo {
-		margin:25px auto;
-	}
- 
-	.conteudo img {
-		margin:-5% 0 25px -5%;
-	}			
-}
-
-.login h1 {
+.kotak h1 {
   font-size: 28pt;
-  color: #F5032E;
+  color: #000;
   width: auto;
   text-align: center;
 }
@@ -172,27 +52,7 @@ body {
     margin : auto;
     overflow: hidden;
 }
- 
-.container-1 input#search{
-  width: 300px;
-  height: 35px;
-  background: #FFF;
-  border: none;
-  font-size: 10pt;
-  float: left;
-  color: #262626;
-  padding-left: 45px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
- 
-   
-    -webkit-transition: background .55s ease;
-  -moz-transition: background .55s ease;
-  -ms-transition: background .55s ease;
-  -o-transition: background .55s ease;
-  transition: background .55s ease;
-}
+
 
 header {
     background : #ED032D;
@@ -203,10 +63,6 @@ header {
 
 header #bagiankiri {
     float : left;
-}
-
-header #bagiankanan {
-    float : right;
 }
 
 header li {
@@ -228,7 +84,7 @@ ul {
     padding : 0 ;
 }
 
-header #bagiankiri, header #bagiankanan, .active a {
+header #bagiankiri,.active a {
     color : #fff;
     font-weight: bold;
 }
@@ -299,7 +155,20 @@ footer #p {
     background: white;
     border:1px solid black;
 }
-.button {
+
+.tombol {
+    margin :19px auto;
+    padding:10px 40px;
+    border:1px solid black;
+    background-color:#C0C0C0;
+    color:black;
+	font-family: "Quicksand", sans-serif;
+  	font-size: 10pt;
+  	font-weight: bold;
+    float: right;
+}
+
+.buttoncari {
     margin:10px auto;
     /* position:relative; */
     padding:10px 55px;
@@ -308,22 +177,11 @@ footer #p {
     color:black;
     
 }
-.button:hover  {
+.buttoncari:hover  {
     background-color:#fafafa;
     color:#207cca;
 }
-.h1{
-	font-size :28pt;
-	color : #F5032E;
-	width : auto;
-	text-align : center;
-	
-    
-}
-h4{
-    margin:50px auto;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+
 textarea{
     width: 100%;
     height: 40%;
@@ -335,17 +193,20 @@ select{
     font-size: 13px;
 }
 .submit{
-  
-  background-color: white; /* Green */
-  border: 1px solid black;
-  color: black;
-  padding: 8px 35px;
-  text-align: center;
-  text-decoration: none;
-  /* display: block; */
-  font-size: 16px;
-  margin-left: 100%;
+  display: block;
+  margin: 2em auto 0em;
+  border-radius: 5px;
+  padding: 5px 5px 5px 12px;
+  height: 40px;
+  width: 26.5%;
+  outline: none;
+  font-family: "Quicksand", sans-serif;
+  font-size: 10pt;
+  font-weight: bold;
+  background-color:#F5032E;
+  color: white;
 }
+
 .submit1{
     font-family: Arial, Helvetica, sans-serif; 
     font-size: 13px;
@@ -454,4 +315,124 @@ hr{
     font-size: 25px;
     text-align: center;
 }
+.hangat{
+    height: 700px;
+    position: relative;
+    background: linear-gradient(90deg, #FF8000, #FFEE04);
+  }
+  .hangat-b{
+    top: 5em;
+    display: block;
+    margin: auto;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 30px 0px;
+    padding: 30px;
+    background: rgb(255, 255, 255);
+    width: 70%;
+    height: 45%;
+  }
+
+  .hangat::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 155px;
+    background: url(../image/rectangl.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+
+  .b{
+    color: black;
+    padding-left: 15px;
+    margin-top: 30px;
+    width: auto;
+    height: 400px;
+    overflow: auto;
+    
+  }
+
+.b-post{
+  position: relative;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid black;
+}
+
+.b-post .title{
+  font-weight: 500;
+  color: black;
+  font-size: 18px;
+  padding-right: 70px;
+}
+.b-post .title a{
+  font-weight: 700;
+  color: black;
+  font-size: 20px;
+}
+
+.b-post .isi p{
+  line-height: 2.214;
+  color: #4a4a4a;
+}
+.conteudo {
+	width:600px;
+	padding:25px;
+	margin:25px auto;
+	background: #fff;
+	border:1px solid #dedede;
+	-webkit-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.35);
+	-moz-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.35);
+	box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.35);
+}
+ 
+.conteudo img {
+	min-width: 650px;
+	margin:0 0 25px -25px;
+	max-width: 650px;
+}
+ 
+.conteudo h1 {
+	padding:0;
+	margin:0 0 15px;
+	font-weight: normal;
+	color: #666;
+	font-family: Georgia;
+}
+ 
+.conteudo p:last-child {
+	margin: 0;
+}
+ 
+.conteudo .continue-lendo {
+	color:#000;
+	transition: all 0.5s ease;
+	text-decoration: none;
+	font-weight: 700; 
+}
+ 
+.conteudo .continue-lendo:hover {
+	margin-left:10px;
+}
+ 
+.post-info {
+	float: right;
+	font-size: 12px;
+	margin: -10px 0 15px;
+	text-transform: uppercase;
+}
+
+.aspek1{
+	padding-left: 250px;
+	display: inline-block;
+}
+.tambah{
+	display: inline-block;
+	padding-left: 10px;
+}
+
 /* CSS Choose File */
