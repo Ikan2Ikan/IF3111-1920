@@ -11,11 +11,11 @@
                 <span></span> </div>
 
             <div class="styled-input">
-                <input type="file" name="lampiran" class="button_1">
+                <input type="file" name="lampiran" class="button_3">
                 <span></span> </div>
 
             <div class="styled-input wide">
-                <select name="aspek" id="" class="button_1">
+                <select name="aspek" id="" class="button_3">
                     <option disabled selected value>Pilih Aspek Pelaporan/Komentar</option>
                     <option value="Sosial">Dosen</option>
                     <option value="Politik">Staff</option>
