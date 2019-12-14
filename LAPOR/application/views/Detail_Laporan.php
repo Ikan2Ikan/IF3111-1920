@@ -9,6 +9,7 @@
   <h1><center>Layanan Aspirasi dan Pengaduan Mahasiswa ITERA</center></h1>
     <div class="container">
     <h3>Detail Laporan/Komentar</h3>
+    <a class="back" href= <?php echo base_url();?>>Kembali</a>
     <hr>
       <?php echo $laporan['kolom_komentar'];?>
       <div class="arsip">
