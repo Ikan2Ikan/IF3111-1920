@@ -34,6 +34,7 @@
 				echo $aspek;
 			}
 		}?>
-		<span class="fa fa-plus"> Hapus Laporan/Komentar X</a></span>
+		<a href="#" class="btn btn-sm btn-success" data-toggle="modal" data-target="#ModalaAdd">
+		<span class="fa fa-plus">Hapus Laporan/Komentar X</span> </a>
 	</p></div>
 	<hr color="black" size="2">
