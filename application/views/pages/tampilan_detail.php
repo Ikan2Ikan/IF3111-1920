@@ -20,44 +20,58 @@
 			</div>
 		</header>
 
-		<section id="buatlaporan">
-			<div class="container">
-				<h4>Detail Laporan/Komentar</h4>
-			</div>
-		</section>
+		<div class="container">
+			<h4>Detail Laporan/Komentar</h4>
+		</div>
 
-		<section id="searchlaporan">
-			<div class="container">
-				<hr>
-				<p>
-					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate cumque, doloribus nisi cum dolore
-					obcaecati dignissimos iure vel in et, nobis alias, facilis pariatur minima tempore similique. Saepe,
-					minus magnam!
-				</p>
-			</div>
-		</section>
+		<div class="container">
+			<?php
+
+			echo form_open("control/lihat/" . $laporan->id);
+			echo $laporan->id;
+			echo "<p>" . $laporan->laporan . "</p>";
+
+			echo "<h4>Lampiran</h4>";
+			if ($laporan->tipe_file == 'imege/jpg' || $laporan->tipe_file == 'image/png'  || $laporan->tipe_file == 'image/jpeg') {
+				echo "<img src='" . base_url("lampiran/" . $laporan->lampiran) . "' width='500' height='500'>";
+			} else {
+				echo "<img src='" . base_url("lampiran/" . "icon-dokumen.PNG") . "' width='500' height='500'>";
+			}
+			?>
+		</div>
 
 		<section id="boxes">
 			<div class="container">
-				<h4>Lampiran</h4>
+				<?php
 
-				<img src="#" alt="">
+				echo form_open("control/lihat/" . $laporan->id);
+				$link = base_url('control/hapus/' . $laporan->id);
+				$link1 = base_url('control/ubah/' . $laporan->id);
 
-				<div class="box-h">
-					<div class="waktu">
-						<h4>Waktu : </h4>
-					</div>
-				</div>
-				<div class="box-h">
-					<div class="aspek">
-						<h4>Aspek :</h4>
-					</div>
-				</div>
-				<div class="box-h">
-					<div class="hapus">
-						<h4><a href="#">Hapus Laporan/Komentar></a></h4>
-					</div>
-				</div>
+				echo "<div class='box-h'>",
+					"<div class='waktu'>",
+					"<h4>Waktu :" . $laporan->waktu . "</h4>",
+					"</div>",
+					"</div>";
+
+				echo "<div class='box-h'>",
+					"<div class='aspek'>",
+					"<h4>Aspek : " . $laporan->aspek . "</h4>",
+					"</div>",
+					"</div>";
+
+				echo "<div class='box-h'>",
+					"<div class='lihat'>",
+					"<h4><a href=" . $link1 . ">Ubah</a></h4>",
+					"</div>",
+					"</div>";
+
+				echo "<div class='box-h'>",
+					"<div class='lihat'>",
+					"<h4><a href=" . $link . ">Hapus</a></h4>",
+					"</div>",
+					"</div>";
+				?>
 			</div>
 		</section>
 
