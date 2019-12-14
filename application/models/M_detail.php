@@ -1,5 +1,4 @@
 <?php
-
 class M_detail extends CI_Model {
 	function __construct()
 	{
