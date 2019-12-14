@@ -1,0 +1,11 @@
+.contain{
+	margin-left: 10.7vw;
+	margin-right: 10.7vw;
+	font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.title{
+	text-align: center;
+}
+.submit_button{
+	float: right;
+}
