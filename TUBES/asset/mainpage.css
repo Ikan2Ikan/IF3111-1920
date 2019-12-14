@@ -1,0 +1,70 @@
+hr {
+    width: 100%;
+}
+h1 {
+    text-align: center;
+}
+.search{
+    width: 86%; 
+    background:white;
+    box-sizing: border-box;
+    border:2px solid black;
+    font-size: 14px;
+    padding: 20px 20px 20px 20px;
+}
+.button1 {
+    float: right;
+    text-align: left;
+    width: 14%;
+    box-sizing: border-box;
+    border: 2px solid black;
+    font-size: 14px;
+    background-color: white;
+    background-image: url(searchicon.png);
+    background-repeat: no-repeat;
+    background-position: 20px;
+    background-size: 30px;
+    padding: 20px 20px 20px 50px;
+}
+.button2 {
+    color: black;
+    width: 10px;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 4px;
+    border: none;
+    background-image: url(plusicon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+}
+
+.selengkapnya {
+    float: inline-end;
+    font-size: 13px;
+    border: none;
+    background: none;
+}
+
+.waktu {
+    margin-left: 60%;
+    border: none;
+    background: none;
+    font-size: 13px;
+}
+
+.lampiran{
+    float: left;
+    font-size: 15px;
+}
+.enter{
+    color: white;
+}
+.dot{
+    margin-left: 50%;
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 5px;
+    background: black;
+}

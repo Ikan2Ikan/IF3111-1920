@@ -96,7 +96,16 @@ Validasi **wajib** dilakukan pada *client-side*, dengan menggunakan **javascript
 Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/komentar`.
 
 ### Penjelasan Teknis
-`Silakan isi bagian ini dengan penjelasan anda, sesuai Petunjuk Pengerjaan di atas.`
+Nama kelompok :
+1. Achmad Bany Majesty 14117164
+2. Rizqun Rizal Ahsani 14117133
+3. Yose Alloisius Saragih 14117092
+
+1. Instalasi Framework
+Framework yang digunakan adalah Code Igniter. Code Igniter didapatkan melalui website www.codeigniter.com/download.
+Versi code igniter yang digunakan adalah versi 3, dikarenakan code igniter versi 4 belum stabil. Setelah berhasil diunduh, unzip code igniter dan masukkan foldernya ke dalam folder htdocs yang ada di xampp. Rename folder code igniter sesuai dengan ketentuan.
+2. Koneksi Basis Data
+Koneksi basis data dilakukan di crud.php pada bagian controller. selain itu, koneksi basis data juga memerlukan perubahan di bagian autoload, serta m_data pada bagian model.
 
 ### Knowledge
 Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaikan tugas ini.
