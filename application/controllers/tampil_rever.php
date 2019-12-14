@@ -7,8 +7,10 @@ class tampil_rever extends CI_Controller {
 		$this->load->model('rev');
 	}
 
-	public function index()
+	public function index($id)
 	{
-	$this->load->view('v_review_lapor');
-}
+		$data['rev'] = $this->rev->getLapor($id);
+		$this->load->view('v_review_lapor', $data);
+
+	}
 }

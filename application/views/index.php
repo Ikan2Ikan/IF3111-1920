@@ -16,7 +16,7 @@
   <!--END HEADER-->
 
     <div class="home">
-      <form action="<?php echo base_url();?>lapor/cari" method="post">
+      <form action="">
       <input type="text"style="width:89.5%; height: 44px;" name="search">
       <input type="submit" class="cari" value="Cari"></input>
       </form>
@@ -44,8 +44,7 @@
                   <br><?='<img style="border: 1px solid black; width:120px; height:100px" src="data:image/jpeg;base64,'.base64_encode( $key['file'] ).'"/>'; ?>
                   <section class="kanan">
                     Waktu : <?= $key['tanggal']; ?>
-                    <br>
-                    <a style="color:black" href="<?php echo base_url();?>selengkapnya/<?= $key['id']?>">Lihat Selengkapnya ></a>
+                    <br> <a style="color:black" href="<?php echo base_url(); ?>tampil_rever">Lihat Selengkapnya ></a>
                   </section>
                 </section>
               </section>
