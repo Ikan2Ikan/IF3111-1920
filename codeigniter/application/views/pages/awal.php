@@ -16,7 +16,7 @@
                 <?= $laporan_item['laporan']; ?> <br>
                 Lampiran :<?= $laporan_item['lampiran']; ?>
                 <div class="samping">
-                   <?=  $laporan_item['tanggal']; ?>
+                <?=  $laporan_item['tanggal']; ?>
                     <a href="<?= site_url('detail/'.$laporan_item['id']); ?>"> Lihat Selengkapnya ></a>
                 </div>
                 <hr>
@@ -24,4 +24,7 @@
         </div>
         
     </form>
+    <!-- <div id="test">
+            <?php //$this->load->view('pages/awal', array('laporan'=>$laporan)); ?>
+        </div> -->
 </div>

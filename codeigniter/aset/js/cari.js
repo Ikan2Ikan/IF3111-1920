@@ -8,7 +8,7 @@ $(document).ready(function () {
 			url: baseurl + 'cari/search', // File tujuan
 			type: 'POST', // Tentukan type nya POST atau GET
 			data: {
-				keyword: $("#keyword").val()
+				keyword: $("#dataS").val()
 			}, // Set data yang akan dikirim
 			dataType: "json",
 			beforeSend: function (e) {
@@ -22,7 +22,7 @@ $(document).ready(function () {
 				$("#cari").html("SEARCH").removeAttr("disabled");
 
 				// Ganti isi dari div view dengan view yang diambil dari controller siswa function search
-				$("#view").html(response.hasil);
+				$("#test").html(response.hasil);
 			},
 			error: function (xhr, ajaxOptions, thrownError) { // Ketika terjadi error
 				alert(xhr.responseText); // munculkan alert
