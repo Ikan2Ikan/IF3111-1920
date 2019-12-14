@@ -16,8 +16,7 @@
 
             <div class="styled-input wide">
                 <select name="aspek" id="" class="button_1">
-                Dosen, Staff, Mahasiswa, Infrastruktur dan Pengajaran
-                    <option value="">Pilih Aspek Pelaporan/Komentar</option>
+                    <option disabled selected value>Pilih Aspek Pelaporan/Komentar</option>
                     <option value="Sosial">Dosen</option>
                     <option value="Politik">Staff</option>
                     <option value="Akademik">Mahasiswa</option>
