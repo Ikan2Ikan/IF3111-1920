@@ -9,9 +9,9 @@
 ![](stuff/register.png)
 
 
-### Anggota Tim :cyclone:
-**Habib Abdurrasyid** 
-**Dhiko jangjaya Putra**
+###Anggota Tim :cyclone:
+- **Habib Abdurrasyid** 
+- **Dhiko jangjaya Putra**
 
 ###Penjelasan Teknis
 **Instalasi Framework  Codeigniter 3.1**
