@@ -1,14 +1,20 @@
 <div class="container">
+    <div class="header">
+        <h1 class="judulapp">LAPOR ITERA!</h1>
+    </div>
+
     <div class="form">
         <input type="text" name="cari" id="cari" placeholder="Masukkan Keyword Pencarian">
         <button type="submit" name="cari">Cari</button>
     </div><br>
     
     <div class="link_komentar">
-        <a href="<?base_url('komentar')?>">Buat Laporan/Komentar</a>
+        <a href="<?base_url('komentar')?>">Buat Laporan/Komentar </a>
+        <i class="fa fa-plus-square" aria-hidden="true"></i>
     </div>
+    <br><br>
     
-    <h4>Laporan/Komentar Terkini</h4>
+    <h5 class="subjudul">Laporan/Komentar Terkini</h5>
     <hr>
     <?php foreach($result as $x) :?>
         <div class="laporan">
@@ -20,8 +26,8 @@
 
             <div class="detail">
                 <span>
-                    <span id="lampiran"><?= $d['lampiran'] ?></span>
-                    <span id="waktuPengiriman"><?= $d['waktuPengiriman']?> WIB</span>
+                    <span id="lampiran">Lampiran: <?= $x['lampiran'] ?></span>
+                    <span id="waktuPengiriman">Waktu: <?= $x['waktuPengiriman']?> WIB</span>
                 </span>
                 <span>
                     <a href="<?=base_url('home/detail_komentar/') . $x['id']?>">Lihat Selengkapnya ></a>
