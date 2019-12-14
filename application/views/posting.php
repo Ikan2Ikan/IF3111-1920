@@ -36,7 +36,7 @@
 		}?>
 		<span>
 		<?php foreach($posting as $key){?>
-			<?php echo anchor('crud/hapus/'.$id = $key->ID,'Hapus Laporan/Komentar X'); ?></span> </a>
+			<?php echo anchor('detail/hapus/'.$id = $key->ID,'Hapus Laporan/Komentar X'); ?></span> </a>
 		<?php } ?>
 	</p></div>
 	<hr color="black" size="2">
