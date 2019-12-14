@@ -111,6 +111,8 @@ Pada Tubes kali ini kami menggunakan Framework CodeIgniter versi 3.1.11 dan Data
 3. Validasi di client-side
     -Kami menggunakan fungsi minlength="20" untuk validasi isi laporan memiliki 20 kata atau lebih.
     Kami juga menggunakan fungsi required sebagai validasi bahwa kolom tersebut tidak kosong.
+4. Pembuatan Tampilan (User Interface)
+    -Pembuatan layout sebagai user interfaces menggunakan HTML5 dengan viewport untuk menciptakan tampilan yang responsif sesuai dengan ukuran device yang akan mengakses, lalu untuk styling, menggunakan CSS yang mana terdapat beberapa parameter CSS yang perlu diperhatikan yaitu parameter Global (Menyeluruh terhadap tampilan web) dan parameter special yang khusus untuk bagian tertentu seperti search-box, form, image dsb
 
 ### Knowledge
 Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaikan tugas ini.
