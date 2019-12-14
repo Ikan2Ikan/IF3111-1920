@@ -34,6 +34,8 @@ p span a{
     color: black;
 }
 
+
+
 hr{
     width: 90%;
 }
@@ -58,42 +60,11 @@ hr{
     margin-right: 50px;
     margin-bottom: 0px;
 }
-.konten2 h4{
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-bottom: 0px;
-}
-.konten2 p{
-     font-size: 13px;
-    text-align: justify;
-    margin-left: 50px;
-    margin-right: 50px;   
-}
-.konten2 span{
-    float: right;
-}
 
-.konten3 h4{
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-bottom: 0px;
-}
-.konten3 p{
-     font-size: 13px;
-    text-align: justify;
-    margin-left: 50px;
-    margin-right: 50px;   
-}
-.konten3 span{
+.konten1 span{
     float: right;
-}
-.konten4 h4{
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-bottom: 0px;
-}
-.konten4 span{
-    float: right;
+    text-decoration: none;
+    color: black;
 }
 .space1{
     width: 25px;
