@@ -13,7 +13,7 @@
     <hr>
     </div>
 
-    <form action="<?php echo base_url('index.php/laporan/input'); ?>" method="post">
+    <form action="<?php echo base_url('index.php/laporan/input'); ?>" method="post" enctype="multipart/form-data">
         <div class="buatlaporan">
         <textarea name="kolomlaporan" id="kolom-laporan" cols="133" rows="20" placeholder="Laporan/Komentar"></textarea>
         </div>
