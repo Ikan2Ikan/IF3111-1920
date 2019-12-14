@@ -12,7 +12,3 @@ Dosen       : Arief Ichwani, S.Kom., M.Cs., Andre Febrianto, S.Kom., M.Eng
 
 
 
-![](TUBES PABW/home.png)
-
-
-![](tampilan/detail.png)
