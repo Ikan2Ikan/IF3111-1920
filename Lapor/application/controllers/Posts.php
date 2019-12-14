@@ -27,13 +27,20 @@
 			$data['title'] = 'Create Post';
 			
 			$this->form_validation->set_rules('deskripsi', 'Deskripsi', 'required|min_length[20]');
-			$this->form_validation->set_rules('lampiran', 'Lampiran', 'required');
 			$this->form_validation->set_rules('kategori', 'Kategori', 'required');
 
 			if ($this->form_validation->run() == FALSE) {
 				$this->load->view('posts/create', $data);
 			}else{
-				$this->Post_model->create_post();
+				$config['upload_path'] = './assets/lampiran/';
+				$config['allowed_types'] = 'gif|jpg|png|doc|docx|xls|xlsx|ppt|pptx|pdf';
+
+				$this->load->library('upload', $config);
+
+				$data = array('upload_data' => $this->upload->data());
+				$lampiran = $_FILES['userfile']['name'];
+
+				$this->Post_model->create_post($lampiran);
 				redirect($_SERVER['HTTP_REFERER']);
 			}
 		}

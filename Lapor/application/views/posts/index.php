@@ -22,9 +22,11 @@
 			<h1> Laporan Tentang <?php echo $post['kategori']; ?></h1>
 			<hr>
 			<p>
-				<?php echo $post['deskripsi']; ?>
+				<?php echo word_limiter($post['deskripsi'], 60); ?>
 			</p>
-			<img src="<?php echo $post['lampiran']; ?>">
+			<p>
+				Lampiran : <?php echo $post['lampiran']; ?>
+			</p>
 			<form>
 				<label>Waktu: <?php echo $post['waktu']; ?></label>		
 				<a href="posts/<?php echo $post['id']; ?>" class="next">Selengkapnya →</a>

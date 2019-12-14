@@ -14,11 +14,11 @@
 			return $query->row_array();
 		}
 
-		public function create_post(){
+		public function create_post($lampiran){
 			$data = array(
 				'deskripsi' => $this->input->post('deskripsi'),
-				'lampiran' => $this->input->post('lampiran'),
-				'kategori' => $this->input->post('kategori'),
+				'lampiran' => $lampiran,
+				'kategori' => $this->input->post('kategori')
 			);
 
 			return $this->db->insert('simple_lapor', $data);

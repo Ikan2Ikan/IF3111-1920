@@ -29,7 +29,7 @@
 			</p>
 			<p>Lampiran:</p>
 			<div>
-				<img src="<?php echo $post['lampiran']; ?>">
+				<img src="../assets/lampiran/<?php echo $post['lampiran']; ?>">
 			</div>
 			<form>
 				<label>Waktu: <?php echo $post['waktu']; ?>  ||</label>	

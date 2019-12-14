@@ -28,7 +28,7 @@
 		<div class="konten">
 			<h2>Buat Laporan/Komentar</h2>
 			<hr>
-			<?php echo form_open('../../../../posts/create'); ?>
+			<?php echo form_open_multipart('../../../../posts/create'); ?>
   				<div>
  				 	 <textarea name="deskripsi" rows="10" placeholder="Komentar"></textarea>
  			 	</div>
@@ -44,7 +44,7 @@
 
 				<br><br>
 				<div>
-					<input name="lampiran" type="file" value="Choose File"/>
+					<input name="userfile" type="file" size="20">
 				</div>
  			 	<div class="sbmt">
  			 		<button type="submit">Buat LAPOR!</button>
