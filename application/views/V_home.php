@@ -17,7 +17,6 @@
         <div class="heading">
             <h1>ITERA LAPOR!</h1>
         </div>
-
         <div class="head">
            <p> Buat Laporan/Komentar</p>
         </div>
@@ -48,6 +47,7 @@
         </form>
     </div>
 </div>
+
 </body>
 
 </html>
