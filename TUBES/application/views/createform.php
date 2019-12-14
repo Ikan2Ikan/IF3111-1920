@@ -13,15 +13,6 @@
             </td>
         </tr>
 
-        <!-- <div class="loadkomentar">
-            <tr>
-                <td><label for="textfield"></label>
-                    <label for="textarea"></label>
-                    <textarea name="Pesan"></textarea>
-                </td>
-            </tr>
-        </div>
-        -->
         <tr>
             <td>
                 <p>

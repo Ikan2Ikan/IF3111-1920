@@ -6,17 +6,12 @@
     <table border="0" align="center" width="1000px">
         <form>
         <tr>
-            <center>
-                <h1>SIMPLE LAPOR!</h1>
-            </center>
-        </tr>
-        <tr>
             <td>
                 <input class="search" [type="text"]/> <input class="button1" type="submit" value="Cari"/>
                 <center>
-                    <p>Buat Laporan/Komentar
-                        <button class="button2">`</button>
-                    </p>
+                    <br>
+                    <a href="<?= base_url(); ?>createform">Buat Laporan/Komentar 
+                    <button class="button2">`</button></a>
                 </center>
             </td>
         </tr>

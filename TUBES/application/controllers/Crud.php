@@ -10,7 +10,7 @@ class Crud extends CI_Controller{
 
  function index(){
     $this->load->view('desain');
-    $this->load->view('beranda');
+    $this->load->view('mainpage');
 }
 
  function aksi() {
@@ -26,6 +26,6 @@ class Crud extends CI_Controller{
         );
         
     $this->m_data->input_data($data,'laporan');
-    redirect('crud/index');
+    redirect('');
  }
 }
