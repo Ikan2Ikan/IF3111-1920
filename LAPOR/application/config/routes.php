@@ -55,3 +55,4 @@ $route['cari'] = 'Beranda/cari';
 $route['(:any)']='Beranda/index/$1';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+$route['form/input_form'] = 'Form/input_form';
