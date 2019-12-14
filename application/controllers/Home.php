@@ -12,19 +12,10 @@ class Home extends CI_Controller
     {
 
         $data['judul'] = "Halaman Lapor";
-<<<<<<< HEAD
         $this->load->view('V_simple',$data);
         $this->load->view('V_home',$data);
         $this->load->view('V_detail',$data);
-=======
-        $this->load->view('templates/coment', $data);
-        $this->load->view('V_simple', $data);
-        $this->load->view('V_home', $data);
-        $this->load->view('V_detail', $data);
-        $this->load->view('templates/footer', $data);
->>>>>>> 3e2987a5b7a35ab7e13f61deb0c9fe6a6eafccc6
     }
-
 
     public function fileUpload()
     {
