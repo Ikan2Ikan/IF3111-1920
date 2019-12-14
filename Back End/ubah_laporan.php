@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>Buat Laporan</title>
+	<title>Ubah Laporan</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 

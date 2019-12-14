@@ -15,7 +15,7 @@
 			<hr><br>
 
 			<form action="" method="POST" enctype="multipart/form-data">
-				<textarea name="laporan" id="laporan">Laporan/Komentar</textarea>
+				<textarea name="laporan" id="laporan" rows="16px">Laporan/Komentar</textarea>
 				<select>
 					<option value="">Pilih Aspek Pelaporan/Komentar</option>
 					<option value="Ruang Kelas">Ruang Kelas</option>
