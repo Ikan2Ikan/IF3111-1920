@@ -35,10 +35,10 @@
         <?php foreach ($result as $data) : ?>
             <p><?= $data['isi_comm']; ?></p>
             <div>
-                <tr>
-                    <td>Lampiran : <?= $data['lampiran']; ?></td>
-                    <td>Waktu :<?= $data['timestamp']; ?></td>
-                    <td>
+                <tr class="jarak">
+                    <td class="lamp">Lampiran : <?= $data['lampiran']; ?></td>
+                    <td class="time">Waktu :<?= $data['timestamp']; ?></td>
+                    <td class="lihat">
                         <a href="<?= base_url('home/detail') ?>">Lihat selengkapnya &raquo;</a>
                     </td>
                 </tr>

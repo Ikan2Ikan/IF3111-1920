@@ -19,6 +19,7 @@ class Comment extends CI_Model
             'lampiran' => $this->input->post('lampiran')
         ];
         $this->db->insert('komentar', $data);
+        redirect('home');
     }
 
     public function  sComm()
