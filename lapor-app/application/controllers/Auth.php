@@ -77,8 +77,17 @@ class Auth extends CI_Controller
     // ];
 
     if (isset($_POST['register'])) {
-      $this->User_model->insertUserData();
-      redirect('auth');
+      $result = $this->User_model->email_verify();
+
+      if ($result == 1) {
+        echo "<script>
+                    alert('Email telah terdaftar');
+              </script>
+            ";
+      } else {
+        $this->User_model->insertUserData();
+        redirect('auth');
+      }
     }
   }
 }

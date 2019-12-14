@@ -19,6 +19,7 @@ class User_model extends CI_model
     ];
     // var_dump($data);
     // die;
+
     $this->db->insert('user', $data);
   }
 
@@ -26,6 +27,20 @@ class User_model extends CI_model
   {
     $this->session->unset_userdata();
     redirect(base_url('auth'));
+  }
+
+  public function email_verify()
+  {
+    $email = $this->input->post('email');
+    $data = $this->db->query("select email from user where email = '$email'")->result_array();
+    $temp = 0;
+
+    foreach ($data as $d) {
+      if ($d['email'] == $email) {
+        $temp = true;
+      }
+    }
+    return $temp;
   }
 
   public function search()
