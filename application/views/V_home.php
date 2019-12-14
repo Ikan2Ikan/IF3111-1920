@@ -20,7 +20,6 @@
 			<div>
 				<h1 class="judul">LAPOR! ITERA</h1>
 			</div>
-
 			<div>
 				<p class="laporan">Buat Laporan/Komentar</p>
 			</div>
