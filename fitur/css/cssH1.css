@@ -36,55 +36,23 @@ hr{
     border: solid 1px black;
 }
 
-.konten1 p{
+.konten p{
     font-size: 13px;
     text-align: justify;
     margin-left: 50px;
     margin-right: 50px;
 }
 
-.konten1 h4{
+.konten h4{
     margin-left: 50px;
     margin-right: 50px;
     margin-bottom: 0px;
 }
-.konten2 h4{
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-bottom: 0px;
-}
-.konten2 p{
-     font-size: 13px;
-    text-align: justify;
-    margin-left: 50px;
-    margin-right: 50px;   
-}
-.konten2 span{
+
+.konten span{
     float: right;
 }
 
-.konten3 h4{
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-bottom: 0px;
-}
-.konten3 p{
-     font-size: 13px;
-    text-align: justify;
-    margin-left: 50px;
-    margin-right: 50px;   
-}
-.konten3 span{
-    float: right;
-}
-.konten4 h4{
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-bottom: 0px;
-}
-.konten4 span{
-    float: right;
-}
 .space1{
     width: 25px;
     height: 25px;
