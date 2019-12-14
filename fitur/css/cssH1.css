@@ -24,6 +24,16 @@ p{
     text-align: center;
 }   
 
+p a{
+    text-decoration: none;
+    color: black;
+}
+
+p span a{
+    text-decoration: none;
+    color: black;
+}
+
 hr{
     width: 90%;
 }

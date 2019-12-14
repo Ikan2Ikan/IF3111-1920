@@ -24,7 +24,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 
-$config['base_url'] = 'http://localhost:8000/IF3111-1920/';
+$config['base_url'] = 'http://localhost:8080/IF3111-1920/';
 
 
 /*
