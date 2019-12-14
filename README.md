@@ -96,7 +96,33 @@ Validasi **wajib** dilakukan pada *client-side*, dengan menggunakan **javascript
 Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/komentar`.
 
 ### Penjelasan Teknis
-`Silakan isi bagian ini dengan penjelasan anda, sesuai Petunjuk Pengerjaan di atas.`
+`1.cara installasi framework
+    menggunakan framework codeigniter dengan cara mendownload pada website codeigniter setelah itu diunzip dan dimasukkan ke folder htdocs untuk dibuka pada localhost
+2.koneksi basisdata dengan mengatur pada bagian folder config dan file database.php seperti ini
+$db['default'] = array(
+'dsn'	=> '',
+'hostname' => 'localhost',
+'username' => 'root',
+'password' => '',
+'database' => 'LAPOR',
+'dbdriver' => 'mysqli',
+'dbprefix' => '',
+'pconnect' => FALSE,
+'db_debug' => (ENVIRONMENT !== 'production'),
+'cache_on' => FALSE,
+'cachedir' => '',
+'char_set' => 'utf8',
+'dbcollat' => 'utf8_general_ci',
+'swap_pre' => '',
+'encrypt' => FALSE,
+'compress' => FALSE,
+'stricton' => FALSE,
+'failover' => array(),
+'save_queries' => TRUE
+);
+
+3.validasi pada client side
+4.melakukan ajax`
 
 ### Knowledge
 Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaikan tugas ini.
