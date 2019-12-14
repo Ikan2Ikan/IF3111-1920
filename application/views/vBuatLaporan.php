@@ -16,20 +16,16 @@
         <div class="container">
             <p>Buat laporan/komentar</p>
             <hr>
-            <form action="">
+            <form action="<?= base_url('Laporan/input_laporan'); ?>" method="POST" enctype="multipart/form-data">
                 <textarea name="comment" placeholder="Laporan/Komentar"></textarea>
-                <select style="border: 1px solid black;
-  color: black;">
+                <select style="border: 1px solid black;color: black;" name="pilih">
                     <option value="volvo">REbbbbbbbbbbb</option>
                     <option value="volvo">Volvo</option>
                     <option value="volvo">Volvo</option>
                     <option value="volvo">Volvo</option>
                 </select><br><br>
                 <input type="file" name="myFile" class="input-file">
-                <button type="submit"  style=" border: 1px solid black;
-  color: black;  height: 40px;
-    width: 100px;">Buat LAPOR!</button>
-
+                <button type="submit" style=" border: 1px solid black;color: black;  height: 40px;width: 100px;">Buat LAPOR!</button>
             </form>
             <br><br><br>
             <hr>
