@@ -10,9 +10,10 @@ class Home extends CI_Controller {
         
         $data['judul'] = "Halaman Lapor";
         $this->load->view('templates/coment', $data);
+        $this->load->view('V_simple');
         $this->load->view('V_home',$data);
         $this->load->view('templates/footer', $data);
-        $this->load->view('V_simple');
+       
     }
 
 
@@ -34,5 +35,3 @@ class Home extends CI_Controller {
     }
     
 }
-
-?>
