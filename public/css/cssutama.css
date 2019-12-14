@@ -1,0 +1,88 @@
+h1{
+border:white;
+text-align: center ;
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 64px;
+line-height: 75px;
+position: relative;
+}
+
+.container{
+	text-align: relative;
+	border:white;
+	width:400px;
+	height:90px;
+	padding:20px;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	margin-top: -20px;
+	margin-left: -220px;
+}
+.box{
+	
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	
+}
+.buat{
+	text-align: center;
+	vertical-align: middle;
+	
+}
+form{
+	margin: 50px auto;
+	width: 400px;
+
+	
+}
+.recently{
+	margin-top: -180px;
+}
+.garis{
+
+width: 1000px;
+height: 0px;
+left: 50px;
+top: 512px;
+margin-top: -30px;
+margin-left: 180px;
+border: 1px solid #000000;
+}
+.text p{
+	border:white;
+	width: 950px;
+	height: 100px
+	text-align: relative;
+	margin-top: 10px;
+	margin-left: 180px;
+	padding: 20px;
+}
+p{
+	text-align: left;
+	margin-top: 200px;
+	margin-left: 180px;
+}
+.gambar img{
+	width: 200px;
+	height: 
+}
+.gambar{
+	margin-left: 180px;
+}
+.gambar p{
+	margin-top:-20px; 
+	margin-left: 700px;
+}
+.garislapor{
+	width: 1000px;
+height: 0px;
+left: 50px;
+top: 512px;
+margin-top: -10px;
+margin-left: 180px;
+border: 1px solid #000000;
+}
