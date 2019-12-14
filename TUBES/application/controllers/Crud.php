@@ -42,7 +42,6 @@ class Crud extends CI_Controller{
     public function view($id) {
         $data['laporan'] = $this->m_data->tampil_data($id);
         $this->load->view('desain');
-        $this->load->view('mainpage');
         $this->load->view('detail', $data);
     }
 }
