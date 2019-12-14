@@ -47,7 +47,6 @@ class M_comment extends CI_Model
     $this->load->library('upload', $config);
     $this->upload->do_upload('lampiran');
     print_r($this->upload->display_errors());
-
     return $this->upload->data('file_name');
   }
 

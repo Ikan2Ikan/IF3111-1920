@@ -1,3 +1,19 @@
+<?php
+// $_POST['keyword'] = $this->uri->segment(3);
+// var_dump($_POST['keyword']);
+if (isset($_POST['cari'])) {
+  $key = $_POST['search'];
+  // var_dump($key);
+  $data = $this->db->query("select * from comment natural join user where 
+  timestamp like '%$key%' or 
+  fullname like '%$key%' or
+  comm_title like '%$key%' or
+  comm like '%$key%' or
+  aspek like '%$key%'")->result_array();
+  // var_dump($data);
+  $result = $data;
+}
+?>
 <div class="container">
   <?php
   // var_dump($this->session->userdata());
@@ -29,7 +45,7 @@
       </div>
     </div>
 
-    <form action="" method="get">
+    <form action="" method="post">
       <label for=""></label>
       <input type="text" name="search" id="search" aria-describedby="helpId" placeholder="Masukkan keyword">
       <button type="submit" name="cari">Cari</button>
