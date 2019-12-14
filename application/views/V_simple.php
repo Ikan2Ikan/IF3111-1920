@@ -33,13 +33,16 @@
         <hr>
         </hr>
         <?php foreach ($result as $data) : ?>
-            <p><?= $data['isi_comm']; ?></p>
+            <div class="itm-title">
+                <p><?= $data['nama'] ?></p>
+                <p><?= $data['isi_comm']; ?></p>
+            </div>
             <div>
                 <tr class="jarak">
                     <td class="lamp">Lampiran : <?= $data['lampiran']; ?></td>
                     <td class="time">Waktu :<?= $data['timestamp']; ?></td>
                     <td class="lihat">
-                        <a href="<?= base_url('home/detail') ?>">Lihat selengkapnya &raquo;</a>
+                        <a href="<?= base_url('home/detail/') . $data['id_comm'] ?>">Lihat selengkapnya &raquo;</a>
                     </td>
                 </tr>
                 <hr>

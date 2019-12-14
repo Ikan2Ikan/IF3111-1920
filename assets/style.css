@@ -5,6 +5,17 @@
 	background-color: #5f9ea0;
 }
 
+.itm-title {
+	width: 150px;
+}
+
+p {
+	display: block;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
 .jarak {
 	margin-top: 50px;
 }
