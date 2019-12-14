@@ -96,7 +96,14 @@ Validasi **wajib** dilakukan pada *client-side*, dengan menggunakan **javascript
 Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/komentar`.
 
 ### Penjelasan Teknis
-`Silakan isi bagian ini dengan penjelasan anda, sesuai Petunjuk Pengerjaan di atas.`
+- Instalasi Framework :
+   Pada program ini Framework yang digunakan adalah CodeIgniter. Pada instalasi CodeIgniter hanya perlu memindahkan file CodeIgniter yang sudah didownload ke dalam folder C:/xampp/htdocs/ dan pastikan Anda telah menginstal Xampp pada komputer Anda, agar program dapat dijalankan.
+- Koneksi Database
+   Pada koneksi database ini, dapat dilakukan dengan menambahkan libraries database ke dalam autoload.php yang ada dalam folder application/config/ cari baris $autoload['libraries'] = array(''); dan ubah menjadi seperti ini $autoload['libraries'] = array('database'); setelah itu setting database dengan cara buka database.php cari username dan nama database lalu isi username dan nama database tersebut menjadi seperti ini 'username' => 'root', 'database' => 'tubesweb'.
+- Validasi Client Side
+   Pada validasi ini menggunakan syntax document.forms["nama-form"]["nama-database"].value; untuk mengambil isi/value dari data yang ingin divalidasi lalu dapat dilakukan validasi dengan JavaScript, jika validasi tidak valid akan memberikan output seperti "Isi Laporan Tidak Boleh Kosong" yang mana didapatkan dari syntax alert("Isi Laporan Tidak Boleh Kosong");.
+- Cara Pemakaian Sistem Ini
+   Untuk menjalankan program website ini silahkan pindahkan semua folder ini kedalam xampp/htdocs/. Jalankan xampp terlebih dahulu dan aktifkan Module Apache dan MySQL, lalu setelah itu silahkan import file tubesweb.sql yang tertera ke dalam localhost/phpmyadmin dengan nama database "tubesweb" terlebih dahulu. Jika sudah semua silahkan buka website tersebut dengan url : http://localhost/IF3111-1920/TugasBesarWeb/home.
 
 ### Knowledge
 Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaikan tugas ini.
