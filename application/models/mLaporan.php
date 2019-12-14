@@ -37,4 +37,10 @@ class mLaporan extends CI_Model
         $tambah = $this->db->insert('laporan', $data);
         return $tambah;
     }
+    function update_laporan($data, $id)
+    {
+        $this->db->where('id_laporan', $id);
+        $update = $this->db->update('laporan', $data);
+        return $update;
+    }
 }
