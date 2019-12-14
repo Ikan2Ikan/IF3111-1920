@@ -1,16 +1,16 @@
   <div class="container">
     <form action="<?= base_url('auth/register') ?>" method="post">
       <h2> REGISTER KUY! </h2>
-      <input type="text" name="fullname" id="fullname" placeholder="Full Name">
+      <input type="text" name="fullname" id="fullname" placeholder="Full Name" required>
       <br>
       <br>
-      <input type="text" name="email" id="email" placeholder="Email">
+      <input type="email" name="email" id="email" placeholder="Email" required>
       <br>
       <br>
-      <input type="password" name="password" id="password" placeholder="Password">
+      <input type="password" name="password" id="password" placeholder="Password" required>
       <br>
       <br>
-      <input type="password" name="password2" id="password2" placeholder="Repeat password">
+      <input type="password" name="password2" id="password2" placeholder="Repeat password" required>
       <br>
       <br>
       <button type="submit" name="register">Register</button>
