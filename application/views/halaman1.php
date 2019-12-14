@@ -20,7 +20,7 @@
           
           <!-- Buat Laporan -->
           <p>Buat Laporan/Komentar 
-            <a href="<?php base_url('tubes/halaman2');?>">
+            <a href="<?php base_url();?>tubes/halaman2">
             <img src="<?php echo base_url() ?>fitur/img/plus.png" width="10px">
             </img>
             </a>
