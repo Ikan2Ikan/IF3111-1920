@@ -14,7 +14,7 @@
   ?>
   <div class="container">
     <div class="container1">
-      <h1>COMMENT DETAILS</h1>
+      <h1>Comment Details</h1>
     </div>
 
     <div class="container2">
