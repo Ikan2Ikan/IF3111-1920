@@ -32,6 +32,14 @@ class ambil_data extends CI_Model{
 	    return $data;
  	}
 
+ 	public function coba_cari($cari){
+		$this->db->select('*');
+		$this->db->from('laporan');
+		$this->db->like('aspek', $cari);
+		$this->db->or_like('laporan', $cari);
+		return $this->db->get()->result();
+	}
+
  	
 }
 
