@@ -13,13 +13,7 @@
           <nav>
 			<ul>
             <li class="active"><a href="#" > Tentang Lapor! </a></li>
-             <li> <a href="#"> Laporan </a></li>
-             <li> <a href="#"> Cari Aduan </a></li>
              <div class="box">
-  		<div class="container-1">
-      		<span class="icon"><i class="fa fa-search"></i></span>
-      			<input type="search" id="search" placeholder="Search..." />
-  			</div>
 		</div>
           </ul>
       </nav>
@@ -48,7 +42,8 @@
 <br><br>
 	<!-AspekLaporan-> 
 		<select name="My Lab">
-			<option value="Indo" >Pilih Aspek Pelaporan/Komentar </option>
+            <option value="" >Pilih Aspek Pelaporan/Komentar </option>
+            
 		</select>
 
 <br /> <br />

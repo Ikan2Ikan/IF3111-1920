@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>tampilan</title>
-	<link rel="stylesheet" type="text/css" href="style1.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url().'assets/css/tampilan.css'?>">
 </head>
 <body>
 <header>
@@ -27,28 +27,36 @@
         </div>
      </div>
   </header>
- 
-<p class="judul" ><font color="black" size="28pt">Apa Itu LAPOR!?</font></p>
-<hr color="black" size="5" width="30%">
-<hr color="black" size="5" width="20%">
-<div class="blog">
-			<div class="conteudo">
-				<div class="post-info">
-				</div>
-				<img src="layananpengaduan.png" width="0" height="310">
-				<h1> Sekilas Lapor ITERA </h1>
-				<hr>
-				<p>
-					Pengelolaan pengaduan pelayanan publik di Institut Teknologi Sumatera belum terkelola secara efektif dan terintegrasi. Masing-masing organisasi penyelenggara mengelola pengaduan secara parsial dan tidak terkoordinir dengan baik. Akibatnya terjadi duplikasi penanganan pengaduan, atau bahkan bisa terjadi suatu pengaduan tidak ditangani oleh satupun organisasi penyelenggara, dengan alasan pengaduan bukan kewenangannya. Oleh karena itu, untuk mencapai visi dalam good governance maka perlu untuk mengintegrasikan sistem pengelolaan pengaduan pelayanan masyarakat ITERA dalam satu pintu. Tujuannya,agar masyarakat ITERA memiliki satu saluran pengaduan secara resmi dan dapat ditangani dengan baik.
-				</p>				
-				<p> Untuk itu Institut Teknologi Sumatera membentuk Sistem Pengelolaan Pengaduan Pelayanan Publik yang berfungsi sebagai media penyampaian semua aspirasi dan pengaduan masyarakat ITERA</p>
-				<p> Selain itu, Sistem Pengaduan ini juga bertujuan untuk :</p>
-				<p> 1. Penyelenggara dapat mengelola pengaduan dari masyarakat secara sederhana, cepat, tepat, tuntas, dan terkoordinasi dengan baik</p>
-				<p> 2. Penyelenggara memberikan akses untuk partisipasi masyarakat dalam menyampaikan pengaduan</p>
-				<p> 3. Meningkatkan kualitas pelayanan publik.</p>
-			</div>
- 
-  <footer>
+  
+  <p class="subjudul">Laporan/Komentar Terakhir</p>
+    <hr>
+    <br><br>     
+         	<?php foreach ($home as $hm )  :
+             $id = $hm['id_lapor']; 
+             $now = date("Y-m-d H:i"); ?>
+          <div class="arsip"> 
+          	<p><?php echo substr($hm['laporan'], 0, 450); ?></p>
+       </div><br>
+        <tr>
+        	<a class='more' href='detail?detail_id=$id'>Lihat Selengkapnya  &nbsp<img src="more.png" height=13px></a>		
+          </tr>
+          <div class="waktu">
+       <?php 
+          $date = new DateTime($hm['waktu']);
+          	echo 'Waktu : ';
+            echo $date->format('d-m-Y H:i'); // 21-01-2017 05:13:03
+          	?>
+        </div> 
+  <div class="lampir">
+      <?php
+            echo 'Lampiran:'; 
+            echo  $hm['lampiran']; 
+            ?>
+ </div>
+       
+<br><br><br><br><br><br><br>
+
+ <footer>
             <section id="spons">
                 <div class="container">
                     <div class="box">

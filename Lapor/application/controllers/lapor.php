@@ -9,7 +9,12 @@ class lapor extends CI_Controller{
     }
 
     function index(){
-        $this->load->view('home');
+        $this->load->view('tampilan');
+    }
+
+    function data_laporan(){
+        $data=$this->m_lapor->list_lapor();
+        echo json_encode($data);
     }
 
     function login(){
@@ -20,6 +25,13 @@ class lapor extends CI_Controller{
         $this->load->view('buat');
     }
 
+    function tentang(){
+        $this->load->view('tentang');
+    }
+
+    function daftar (){
+        $this->load->view('daftar');
+    }
 
 }
 

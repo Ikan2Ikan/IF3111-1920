@@ -1,8 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>tampilan</title>
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url().'assets/css/home.css'?>">
+  <title>tampilan</title>
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url().'assets/css/tampilan.css'?>">
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url().'assets/css/home.css'?>">
+  <script type="text/javascript">
+        function load(){
+          var ajax = new XMLHttpRequest();
+          ajax.onreadystatechange = function(){
+            if (ajax.readyState == 4 && ajax.status == 200){
+              var data = JSON.pasre(this.responseText);
+              for(x in data){
+               txt =+ <div class="box-post">
+                  <div class="isi">
+                  <p>data[x].laporan</p>
+                </div>
+              </div>
+                }
+                document.getElementsById('laporan').innerHTML = txt;
+            }
+          };
+          ajax.open("GET", "<?php echo site_url('lapor/data_laporan')?>", true);
+          ajax.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+          ajax.send();
+        }
+    </script>
 </head>
 <body>
 <header>
@@ -11,10 +33,7 @@
       </div>
           <nav>
 			<ul>
-            <li class="active"><a href="#" > Tentang Lapor! </a></li>
-             <li> <a href="#"> Laporan </a></li>
-             <li> <a href="#"> Cari Aduan </a></li>
-             <div class="box">
+            <li class="active"><a href="<?php echo site_url('lapor/tentang')?>" > Tentang Lapor! </a></li>
           </ul>
       </nav>
      <div id="bagiankanan">
@@ -41,11 +60,17 @@
     </form>
 
    
-    <a class="buat" href="<?php site_url('lapor/buat'); ?>buat">Buat Laporan / Komentar &nbsp<img src="<?php echo base_url().'assets/img/tambah.png'?>" height="13px"></a>
+    <a class="buat" href="<?php echo site_url('lapor/buat')?>">Buat Laporan / Komentar &nbsp<img src="<?php echo base_url().'assets/img/tambah.png'?>" height="13px"></a>
         <br><hr><br>
-        <img class="gambar" src="<?php echo base_url(); ?>assets/icon/menu.png">
-        <img class="gambar" src="<?php echo base_url(); ?>assets/icon/menu.png">
-        <br>
+        <section class="hangat">
+  <div class="hangat-box">
+    <h1 class="notop" style="text-align: left; padding-top: 0em; ">Laporan Terhangat</h1>
+
+    <div class="box" id="laporan">
+    </div>
+    </div>
+  </section>
+     </div></div>
  </div>
  <footer>
             <section id="spons">
