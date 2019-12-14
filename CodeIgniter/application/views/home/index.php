@@ -1,6 +1,6 @@
 
-	<form>
-		<input type="text" name="cari">
+	<form action="<?= base_url(). 'home/cari_laporan'; ?>"  method="POST" >
+		<input type="text" name="cari" placeholder="Cari Aspek">
 	    <button type="submit"><i class="fa fa-search"> CARI</i></button>
 	</form>
 
