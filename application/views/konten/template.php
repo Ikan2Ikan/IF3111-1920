@@ -8,7 +8,7 @@
         </div>
         <div class="buat">
         <a href="<?php echo base_url().'index.php/buatlaporan'; ?>">
-            Buat Laporan/Komentar
+            Buat Laporan/Komentar <i class="fa fa-plus-square"></i>
         </a>
         </div>
         <div class="laporanterakhir">
