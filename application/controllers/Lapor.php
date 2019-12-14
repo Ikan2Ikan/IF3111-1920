@@ -31,8 +31,5 @@ class Lapor extends CI_Controller {
 		$this->load->view('v_review_lapor',$data);
 	}
 
-	public function tampil_rev(){
-			$this->load->view('v_review_lapor');
-	}
 
 }

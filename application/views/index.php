@@ -44,7 +44,7 @@
                   <br><?='<img style="border: 1px solid black; width:120px; height:100px" src="data:image/jpeg;base64,'.base64_encode( $key['file'] ).'"/>'; ?>
                   <section class="kanan">
                     Waktu : <?= $key['tanggal']; ?>
-                    <br> <a style="color:black" href="<?php echo base_url();?>lapor/tampil_rev">Lihat Selengkapnya ></a>
+                    <br> <a style="color:black" href="<?php echo base_url(); ?>tampil_rever">Lihat Selengkapnya ></a>
                   </section>
                 </section>
               </section>
