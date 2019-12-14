@@ -183,9 +183,7 @@ input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid
      pointer-events: none;
    }
    
-   .styled-input.wide { 
-       width: 100%; 
-    }
+   .styled-input.wide { width: 100%; }
    
    input,
    textarea {

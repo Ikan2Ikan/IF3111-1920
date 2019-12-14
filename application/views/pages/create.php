@@ -6,27 +6,16 @@
         
         <div class="container">
             <div class="styled-input wide">
-                <textarea name='komentar'></textarea>
-                <label>Message</label>
+                <textarea name='komentar' placeholder="Masukkan Komentar"></textarea>
                 <span></span> </div>
 
             <div class="styled-input">
-<<<<<<< HEAD
                 <input type="file" name="lampiran" class="button_3">
                 <span></span> </div>
 
             <div class="styled-input wide">
                 <select name="aspek" id="" class="button_3">
                     <option disabled selected value>Pilih Aspek Pelaporan/Komentar</option>
-=======
-                <input type="file" name="lampiran" class="button_1">
-                <span></span> </div>    
-
-            <div class="styled-input wide">
-                <select name="aspek" id="" class="button_1">
-                Dosen, Staff, Mahasiswa, Infrastruktur dan Pengajaran
-                    <option value="kosong">Pilih Aspek Pelaporan/Komentar</option>
->>>>>>> bbadb9cb14ad24d0af9085b3cab6105e07186a23
                     <option value="Sosial">Dosen</option>
                     <option value="Politik">Staff</option>
                     <option value="Akademik">Mahasiswa</option>

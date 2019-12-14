@@ -7,8 +7,7 @@
         
         <div class="container">
             <div class="styled-input wide">
-                <textarea name='komentar' required><?= $lpr['laporan']; ?></textarea>
-                <label>Message</label>
+                <textarea name='komentar' placeholder="Masukkan Komentar"><?= $lpr['laporan']; ?></textarea>
                 <span></span> </div>
 
             <div class="styled-input">
