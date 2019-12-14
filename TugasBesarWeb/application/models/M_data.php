@@ -10,6 +10,7 @@ class M_data extends CI_Model{
 	}
 
 	function tampil_data(){
+		$this->db->order_by('waktu', 'desc');
 		return $this->db->get('laporan');
 	}
 

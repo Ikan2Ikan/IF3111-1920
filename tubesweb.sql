@@ -30,7 +30,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `laporan` (
   `id` int(11) NOT NULL,
-  `isi` varchar(500) NOT NULL,
+  `isi` text NOT NULL,
   `aspek` varchar(30) NOT NULL,
   `lampiran` varchar(70) NOT NULL,
   `waktu` datetime NOT NULL

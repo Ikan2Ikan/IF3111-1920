@@ -12,11 +12,16 @@
 	<hr>
 
 <?php
-	foreach ($laporan as $key) {		
+	foreach ($laporan as $key) {
+		$kata = substr($key->isi, 0, 600);
 		echo "<center><table width='810px'>
-				<tr>
-					<td style='text-align:justify;'>$key->isi</td>
-				</tr>
+				<tr>";
+					if (strlen($key->isi) > 600) {
+						echo "<td style='text-align:justify;'>$kata...</td>";
+					} else {
+						echo "<td style='text-align:justify;'>$key->isi</td>";
+					}
+				echo "</tr>
 			</table></center><br>
 		";
 
