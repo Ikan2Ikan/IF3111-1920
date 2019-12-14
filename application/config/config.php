@@ -23,7 +23,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://localhost/PHP/TUBES_WEB/lapor/';
+$config['base_url'] = 'http://localhost/PABW-B/IF3111-1920/';
 
 /*
 |--------------------------------------------------------------------------
