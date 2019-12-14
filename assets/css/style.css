@@ -3,10 +3,9 @@
     position: relative;
 }
 
-.h{
+.h1{
     text-align: right;
     font-weight: bold;
-    font-size: 40pt;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 5px;
 }
@@ -62,10 +61,35 @@ ul.detail li.detail{
 body{
     background-size: cover;
     background-attachment: fixed;
-    background-image: url(assets/blue-snow.png);
-    background: whitesmoke;
+    background-image: url(css/blue-snow.png);
+    background: tomato;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    margin-bottom: 5%;
+    margin-top: auto;
+    text-decoration: none;
+}
 
+/*buatLaporan.php*/
+
+.upload{
+    margin-left: 2cm;
+    height: 30px;
+  }
+  .tombol{
+    width: 100%;
+    height: 50px;
+    border-radius: 20px;
+    color: #008B8B;	
+    float: center;
+    display: block;
+  }
+
+.tambah{
+    text-align: center;
+    margin-top: auto;
+    margin bottom: 5%;
+    background: #ffffff;
 }
 .cari{
     text-align: left;
@@ -76,12 +100,7 @@ body{
     left: 50%;
     transform: translate(-50%,-50%);
 }
-.tambah{
-    text-align: center;
-    margin-bottom: 5%;
-    margin-top: auto;
-    text-decoration: none;
-}
+
 .footer{
     width: 100px;
     height: 50px;

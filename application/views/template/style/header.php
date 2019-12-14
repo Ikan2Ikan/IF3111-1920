@@ -14,5 +14,4 @@
         <li class="navbar"><a class="navbar"class="active" title="about" href="<?= base url();?>about/index"> <i class="fas fa-address-card" aria-hidden="true" style="height:60px'width:60px;"></i></a> </li>
         <li class="navbar"><a class="navbar"class="active" title="lapor" href="<?= base url();?>home/detail"> <i class="fas fa-archive" style="height:60px'width:60px;"></i></a> </li>
     </ul>
-    </body>
-</html>
+    </div>
