@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 13, 2019 at 09:59 AM
+-- Generation Time: Dec 14, 2019 at 09:48 AM
 -- Server version: 10.1.31-MariaDB
 -- PHP Version: 7.2.4
 
@@ -545,18 +545,23 @@ CREATE TABLE `laporan` (
   `id` int(255) NOT NULL,
   `laporan` longtext NOT NULL,
   `id_aspek` int(255) NOT NULL,
-  `file` varchar(255) NOT NULL
+  `file` varchar(255) NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `laporan`
 --
 
-INSERT INTO `laporan` (`id`, `laporan`, `id_aspek`, `file`) VALUES
-(1, 'asdfghjkl;', 1, 'WhatsApp Image 2019-09-24 at 06.18.41.jpeg'),
-(2, 'tes tuwaga', 2, '196346.jpg'),
-(3, 'Laporan/Komentar', 1, 'Drawing202.png'),
-(4, 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 19, 'Drawing32.png');
+INSERT INTO `laporan` (`id`, `laporan`, `id_aspek`, `file`, `created_at`, `updated_at`) VALUES
+(1, 'ajbaiusgsdiudgiugdiugdc', 1, 'Drawing141.png', '2019-12-14 07:27:01', '2019-12-14 07:27:01'),
+(2, 'tes tuwaga', 2, '196346.jpg', '2019-12-14 07:27:01', '2019-12-14 07:27:01'),
+(3, 'Laporan/Komentar', 1, 'Drawing202.png', '2019-12-14 07:27:01', '2019-12-14 07:27:01'),
+(4, '   Lorem ipsummmm', 7, 'Drawing207.png', '2019-12-14 07:27:01', '2019-12-14 07:27:01'),
+(5, 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?', 10, 'Drawing2.png', '2019-12-14 07:27:01', '2019-12-14 07:27:01'),
+(6, ' Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? ', 19, 'Drawing21.png', '2019-12-14 07:27:01', '2019-12-14 07:27:42'),
+(7, 'aabhbdbsiiusgdiugsigsiugsi', 1, 'Drawing14.png', '2019-12-14 07:27:01', '2019-12-14 07:27:01');
 
 --
 -- Indexes for dumped tables
@@ -589,7 +594,7 @@ ALTER TABLE `aspek`
 -- AUTO_INCREMENT for table `laporan`
 --
 ALTER TABLE `laporan`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- Constraints for dumped tables
