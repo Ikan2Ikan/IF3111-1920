@@ -1,13 +1,11 @@
 
     <div class="container">
 
-        <!-- <div class="search">
-            <input type="text" name="searchbox" id="search-box" placeholder="Telusuri laporan">
-           -->
+        
             <!-- <button type class="searchbutton">  <i class="fa fa-search"> Cari</i> -->
             <form action="<?php echo base_url().'index.php/search'?>" method="GET">
                 <input type="text" name ="keyword" placeholder="Cari...">
-                <input type="submit"value="Cari"><br>
+                <input type="submit" value="Cari">
             </form>
        
         <div class="buat">
@@ -25,18 +23,17 @@
                         <p class="isi"><?php echo substr ($item_laporan["isi_laporan"],0,300); ?>...</p>
                 <?php }?>
                 <div class="waktu">waktu: <?php echo $item_laporan["waktu_laporan"];?>  
-                
-               
-                <div class="detail">
-                <a href = "<?php echo base_url().'index.php/laporan/view/'.$item_laporan['id_laporan'];?>">Lihat Selengkapnya ></a>
-                
-            </div>
-                </div>  
+                    <div class="detail">
+                    <a href = "<?php echo base_url().'index.php/laporan/view/'.$item_laporan['id_laporan'];?>">Lihat Selengkapnya ></a>
+                    </div>
+                </div>
+              
                 <hr>
+                
             <?php endforeach;?>
-
-                    
-        
+            </div>
+                
+            </div>   
     </div>
     
 </body>

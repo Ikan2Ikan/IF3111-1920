@@ -18,7 +18,7 @@
     
     <div class = "hapus">
     <?php $id = $laporan['id_laporan'];?>
-    
+    <a href = "<?php echo base_url().'index.php/laporan/edit/'.$id;?>">Edit Laporan/Komentar <i class="fa fa-times"></i></a>
     <a href = "<?php echo base_url().'index.php/laporan/delete/'.$id;?>">Hapus Laporan/Komentar <i class="fa fa-times"></i></a>
     </div>      
     </div>

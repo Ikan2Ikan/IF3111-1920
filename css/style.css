@@ -31,16 +31,7 @@ h1{
 
 
 }
-.searchbutton{
-    display: inline-block;
-    width: 120px;
-    height:9.03%;
-    background-color: whitesmoke;
-    border:grey solid 1px;
-    position: relative;
-    left: -3.8px;
-    top: -1.03px;
-}
+
 
 .searchbutton:hover{
     background-color: magenta;

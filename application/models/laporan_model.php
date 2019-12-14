@@ -13,6 +13,12 @@
             $query = $this->db->get_where('laporan', array('id_laporan'=>$id));
             return $query->row_array();
         }
+
+        public function get_laporan1($id){
+            return $this->db->get_where("laporan",$id);
+           
+        }
+    
     
         public function input_laporan($table, $data){
             $this->db->insert($table, $data);
@@ -23,6 +29,13 @@
             $this->db->delete($table);
         }
 
+        public function update($a,$b,$c){
+            $this->db->where($a);
+            $this->db->update($c,$b);
+          
+            
+        }
+        
         public function search_data($keyword,$table){
             $this->db->like('isi_laporan',$keyword);
             $query=$this->db->get($table);
