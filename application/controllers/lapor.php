@@ -6,6 +6,13 @@ class lapor extends CI_Controller {
 		result();
 
 		$this->load->view('halaman1',$data);
+
+  		}
+
+  	 	public function detail($id){
+  			$this->load->model('l_lapor');
+  			$detail = $this->l_lapor->detail_data($id);
+  			$data['detail']= $detail;
   		}
 
 
@@ -34,6 +41,7 @@ class lapor extends CI_Controller {
  			);
 		$this->l_lapor->input_data($data,'laporan');
 		redirect('http://localhost:8080/IF3111-1920/');
+
 	}
 
 	}

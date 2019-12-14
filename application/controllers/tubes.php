@@ -12,4 +12,9 @@ class Tubes extends CI_Controller {
 	{
 		$this->load->view('halaman2');
 	}
+	public function halaman3()
+	{
+		$this->load->view('halaman3');
+	}
+	
 }
