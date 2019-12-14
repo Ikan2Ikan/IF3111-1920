@@ -1,0 +1,21 @@
+<div style="
+	background-color: #; 
+	border: 1px solid #17202A; 
+	height: auto; 
+	margin: 20px 0px; 
+	padding: 10px; 
+	text-align: right; 
+	width: auto;
+">
+</div>
+
+.body p{
+	font-size: 15px;
+	text-align: justify;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+.body span{
+	float:right;
+}
+

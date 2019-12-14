@@ -12,6 +12,7 @@
 	<p>Detail Laporan/Komentar</p>
 	<hr color="black" size="2">
 	<?php
+	//periksa apakah datanya array atau hanya 0
 	if(is_array($posting)){
 		foreach($posting as $key){
 			$isi = $key->Isi;
@@ -25,14 +26,16 @@
 		<img  src="<?php'$lampiran = $key->Lampiran' echo $lampiran;?>">
 	<?php } ?>
 	
-	<p> Waktu : &nbsp; 
-		Aspek: <?php
+	<p> Waktu : <?php date_default_timezone_set('Asia/Jakarta'); echo date("d-m-Y H:i") ?> &nbsp; 
+		Aspek: 
+		<?php
 		if(is_array($posting)){
 			foreach($posting as $key){
 				$aspek = $key->Aspek;
 				echo $aspek;
 			}
 		}?>
-		<span class="fa fa-plus"> Hapus Laporan/Komentar X</a></span>
-	</p></div>
+		<span class="fa fa-plus"></span> Hapus Laporan/Komentar X</a></div>
+	</p>
 	<hr color="black" size="2">
+	
