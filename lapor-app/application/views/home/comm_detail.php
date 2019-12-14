@@ -33,7 +33,7 @@
 
             <?php $tmp = explode('.', $result['lampiran']);
             $ext = end($tmp);
-            // var_dump($ext);  
+
             ?>
             <?php if ($ext == "jpg" || $ext == "jpeg" || $ext == "png") : ?>
               <img src="<?= base_url('assets/doc/') . $result['lampiran'] ?>" alt="">
