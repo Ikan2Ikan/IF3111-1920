@@ -4,35 +4,29 @@ body{
   width: 70%;
 }
 
-section{
-  margin-bottom: 20px;
-}
-
 h1{
   padding-bottom: 50px;
-}
-
-.boxcari{
-  width: 100%;
-  height: 50px;
-  border: 3px solid black;
-  display: flex;
 }
 
 .form-control{
   width: 100%;
 }
 
-.boxcari > div > input{
+.space{
+  margin-bottom: 20px;
+}
+
+div > form > input{
   background-color: #ffff;
-  position: absolute;
   right: 15%;
-  padding-top: 3px;
-  margin: -3px 2px 0 0;
   width: 100px;
-  height: 56px;
+  height: 50px;
+  padding: 0 !important;
   font-size: 30px;
   border: 3px solid black;
+}
+
+.cari{
   cursor: pointer;
 }
 
@@ -44,11 +38,70 @@ h1{
   text-decoration: none;
   display: inline-block;
   font-size: 14px;
+  width: 16px;
   cursor: pointer;
 }
 
 .laporan{
   padding-top: 30px;
-  text-align: left;
   border-bottom: 2px solid black;
+}
+
+.home{
+  padding-top: 30px;
+}
+
+.kiri{
+  text-align: left;
+}
+
+.kanan{
+  text-align: right;
+}
+
+.atas{
+top: 0;
+}
+
+.bawah{
+
+}
+
+.button {
+  background-color: white;
+  border: 2px solid black;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  width: 70%;
+}
+
+.list-laporan{
+  height: 250px;
+  width: 100%;
+}
+
+.list-komentar{
+    height: 30px;
+    width: 100%;
+}
+
+.no-padding{
+  padding: 0 !important;
+}
+
+section > text > a{
+  right: 16%;
+  position: absolute;
 }
