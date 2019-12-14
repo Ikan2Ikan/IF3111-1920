@@ -97,6 +97,17 @@ Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/
 
 ### Penjelasan Teknis
 `Silakan isi bagian ini dengan penjelasan anda, sesuai Petunjuk Pengerjaan di atas.`
+Pertama kali, kami mengunggah CodeIgniter sebagai FrameWork kami untuk mengerjakan tugas besar ini.
+Selanjutnya, kami membuat database, dimana di dalamnya memuat tabel "komentar" yang berisi atribut id, judul_komentar,
+komentar, waktuPengiriman, dan lampiran.
+Selanjutnya kami melakukan konfigurasi pada folder config untuk database agar terhubung dengan database yang
+kami buat. Lalu, kami mulai membuat tampilan pada folder view yang kami bagi menjadi 2 : untuk home dan untuk komentar.
+Folder ini berisikan pengaturan tampilan sebelum dikirim ke controller.
+Setelah menyelesaikan tampilan kami membuat file php di model, dimana di folder tersebut terdapat 1 file untuk mengatur
+fungsi-fungsi yang akan digunakan nantinya.
+Setelah view dan model telah selesai, kami mencoba mengaksesnya lewat controller.
+
+Pada website yang kami buat kami dapat menampilkan tampilan home lalu jika diklik tambah komentar maka akan tampil tampilan tambah komentar dan klik tombol Buat Lapor! untuk submit laporannya yang kemudian akan disimpan pada database. JIka sudah masuk ke database maka akan muncul di home daftar komentarnya. Namun jika klik Lihat Selangkapnya masih error dan belum bisa menampilkan tampilan detail laporannya. Oleh karena itu, disini kami juga belum menambahkan fitur edit dan juga hapus.
 
 ### Knowledge
 Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaikan tugas ini.
