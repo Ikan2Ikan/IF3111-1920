@@ -42,20 +42,26 @@
         }
       }
     </script>
-
+    <div class="container">
     <div class="recentlaporan">
     <h3>Laporan/Komentar Terakhir</h3>
     <hr>
-      <ul>
         <?php foreach ($laporan as $recent): ?>
-          <p><?php echo $recent['kolom_komentar']; ?></p>
+
+          <?php if (strlen($recent['kolom_komentar'])<=200) { ?>
+            <p><?php echo $recent['kolom_komentar']; ?></p>
+          <?php } else { ?>
+            <p><?php echo substr($recent['kolom_komentar'],0,200).'....'; ?></p>
+          <?php } ?>
+
           <br>
           <div class="lampiran">Lampiran : <?php echo $recent['lampiran']; ?></div>
+          <a class="detail" href= <?php echo base_url('')?>>Lihat Detail ></a>
           <div class="waktu">Waktu : <?php echo $recent['waktu']; ?></div>
           <br>
           <hr>
         <?php endforeach; ?>
-      </ul>
+    </div>
     </div>
   </body>
 </html>
