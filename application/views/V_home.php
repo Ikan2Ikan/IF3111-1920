@@ -1,40 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<style>
+
+</style>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" type="text/css" href="assets/home.css">
+	<title>LAPOR! ITERA</title>
+
+</head>
+
+<body>
 	<div class="container">
-		<div class="content">
-			<div class="heading">
-				<h1>ITERA  LAPOR!</h1>
+		<div class="kepala">
+			<div>
+				<h1 class="judul">LAPOR! ITERA</h1>
 			</div>
-			<!-- <h3>Sampaikan laporan Anda langsung kepada instansi kampus berwenang</h3> -->
 
+<<<<<<< HEAD
 			<div class="head">
 				<p>Buat Laporan/Komentar</p>
+=======
+			<div>
+				<p class="laporan">Buat Laporan/Komentar</p>
+>>>>>>> 1664431ae23a77d09221da79ad4ab0e666f2fd1b
 			</div>
+			<hr>
+			</hr>
 			<form action="post">
-				<div class="nama">
-					<input class="type" name="nama" placeholder="Nama Pelapor">
+				<div class="nm">
+					<input type="text" name="nama" placeholder="nama pelapor">
 				</div>
+<<<<<<< HEAD
 				<br><br>
 				<div class="keterangan">
 					<textarea type="text" name="laporan" rows="13" cols="97" placeholder="Ketik laporan Anda..."></textarea>
+=======
+				<div class="kolom-lapor">
+					<textarea type="text" name="laporan" rows="19" cols="111" placeholder="Ketik laporan Anda..."></textarea>
+>>>>>>> 1664431ae23a77d09221da79ad4ab0e666f2fd1b
 				</div>
-				<br>
-				<div class="aspek">
-                <select name="aspek">
-                    <option default>Pilih Aspek Pelaporan/Komentar</option>
-                    <option value="Dosen">Dosen</option>
-                    <option value="Staff">Staff</option>
-                    <option value="Mahasiswa">Mahasiswa</option>
-                    <option value="Infrastruktur">Infrastruktur</option>
-                </select>
-           		</div>
-			<br>
-			<div class="file">
-                <input class="file_in" type="file" name="lampiran">
-            </div>
-			<br>
-			<div class="lapor">
+				<div class="choose">
+					<input type="file">
+				</div>
+			</form>
+			<div class="kolom-lapor1">
 				<input class="button" type="submit" value="Buat LAPOR!">
 			</div>
-			</form>
+			<hr>
+			</hr>
 		</div>
-	</div>
+</body>
+
+</html>
