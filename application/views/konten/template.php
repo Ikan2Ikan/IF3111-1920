@@ -19,8 +19,12 @@
                 <?php }else {?>          
                         <p class="isi"><?php echo substr ($item_laporan["isi_laporan"],0,300); ?>...</p>
                 <?php }?>
-                <p class="waktu"><?php echo $item_laporan["waktu_laporan"];?></p>
+                <div class="detail">
                 <a href = "<?php echo base_url().'index.php/laporan/view/'.$item_laporan['id_laporan'];?>">Lihat selengkapnya</a>
+              
+                <div class="waktu"><?php echo $item_laporan["waktu_laporan"];?></div>
+                </div>
+               <hr>
             <?php endforeach;?>
 
         

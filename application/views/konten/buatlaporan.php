@@ -15,7 +15,7 @@
 
     <form action="<?php echo base_url('index.php/laporan/input'); ?>" method="post">
         <div class="buatlaporan">
-        <textarea name="kolomlaporan" id="kolom-laporan" cols="121" rows="10" placeholder="Laporan/Komentar"></textarea>
+        <textarea name="kolomlaporan" id="kolom-laporan" cols="133" rows="20" placeholder="Laporan/Komentar"></textarea>
         </div>
 
         <div class="dropdownbuatlaporan">
