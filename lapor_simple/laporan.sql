@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 13 Des 2019 pada 15.37
+-- Waktu pembuatan: 14 Des 2019 pada 13.48
 -- Versi server: 10.1.37-MariaDB
 -- Versi PHP: 7.3.1
 
@@ -67,7 +67,8 @@ INSERT INTO `laporan` (`id_laporan`, `isi`, `aspek`, `file`, `waktu`) VALUES
 (18, 'apaaa', 'Infrastuktur', 'ECC-(2019).pdf', '2019-12-13'),
 (20, 'jdsklaJDlsald', 'Administrasi', 'images.jpg', '2019-12-13'),
 (21, 'jfvklsjdlkz', 'Fasilitas', 'baju1.jpg', '2019-12-13'),
-(22, 'hjkk', 'Fasilitas', 'baju3.jpg', '2019-12-13');
+(22, 'hjkk', 'Fasilitas', 'baju3.jpg', '2019-12-13'),
+(23, 'Pengajaran sudah baik oleh dosen, hanya saja masih ada yang kurang mengenai transaparansi nilai, sehingga mahasiswa tidak mnegetahui. ', 'Penilaian Dosen', 'Desert1.jpg', '2019-12-14');
 
 -- --------------------------------------------------------
 
@@ -117,13 +118,13 @@ ALTER TABLE `laporan`
 -- AUTO_INCREMENT untuk tabel `aspek_laporan`
 --
 ALTER TABLE `aspek_laporan`
-  MODIFY `id_aspek` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id_aspek` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT untuk tabel `laporan`
 --
 ALTER TABLE `laporan`
-  MODIFY `id_laporan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `id_laporan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
