@@ -3,7 +3,7 @@
             <h2>EDIT LAPORAN</h2>
         </center>
         <?php foreach ($lapor as $lpr) : ?>
-        <form action="<?= base_url('home/edit_simpan/' .$lpr['id']); ?>" method="POST" enctype="multipart/form-data">
+        <form name="createForm" action="<?= base_url('home/edit_simpan/' .$lpr['id']); ?>" onsubmit="return validateForm()" method="POST" enctype="multipart/form-data">
         
         <div class="container">
             <div class="styled-input wide">
