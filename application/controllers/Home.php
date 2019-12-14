@@ -8,12 +8,13 @@ class Home extends CI_Controller {
 
     public function index(){
         
-        $data['judul'] = "Halaman Utama";
+        $data['judul'] = "Halaman Lapor";
         $this->load->view('templates/coment', $data);
         $this->load->view('V_home',$data);
         $this->load->view('templates/footer', $data);
         $this->load->view('V_simple');
     }
+
 
     public function fileUpload(){
         $file['fileup'] = base_url('assets/');
@@ -30,7 +31,7 @@ class Home extends CI_Controller {
             alert('gagal di upload');
             </script>";
         }
-
+    }
     
 }
 
