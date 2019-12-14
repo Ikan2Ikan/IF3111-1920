@@ -1,12 +1,12 @@
 ## `SIMPLE LAPOR`
 
 
-![](stuff/1.png)
-![](stuff/buat-laporan.png)
-![](stuff/detail-komentar.png)
-![](stuff/laporanku.png)
-![](stuff/login.png)
-![](stuff/register.png)
+![](stuff/1.PNG)
+![](stuff/buat-laporan.PNG)
+![](stuff/detail-komentar.PNG)
+![](stuff/laporanku.PNG)
+![](stuff/login.PNG)
+![](stuff/register.PNG)
 
 
 ### **Anggota Tim :cyclone:**
@@ -31,21 +31,21 @@
   - Fitur         : CRUD laporan / komentar, Validasi form, Search komentar
 
 
-![](stuff/buat-laporan.png)
+![](stuff/buat-laporan.PNG)
 - Tampilan di atas digunakan untuk mengajukan atau mengubah laporan/komentar.
 - Ekstensi file upload:`doc, docx, xls, xlsx, ppt, pptx, pdf`
 
-![](stuff/detail-komentar.png)
+![](stuff/detail-komentar.PNG)
 - Bagian ini menampilkan laporan/komentar
 - terdapat menu untuk mengubah dan menghapus pertanyaan.
 
 ### List laporan/komentar
-![](stuff/1.png)
+![](stuff/1.PNG)
   - list laporan/komentar
 
 
 ### Ubah Laporan/komentar
-![](stuff/ubah.png)
+![](stuff/ubah.PNG)
   - halaman ubah laporan/komentar
 
 
