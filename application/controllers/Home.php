@@ -20,6 +20,17 @@ class Home extends CI_Controller {
         $this->load->view('templates/footer');
     }
 
+    //Menampilkan Hasil Searching
+    public function searchlaporan(){
+      $key = $this->input->post('keyword');
+      $data['lapor'] = $this->Lapor_model->searchbykey($key);
+      
+      $title['judul'] = 'Home';
+      $this->load->view('templates/header',$title);
+      $this->load->view('pages/home',$data);
+      $this->load->view('templates/footer');
+    }
+
     //Menampilkan Menu Lapor
     public function loadlapor(){
       $title['judul'] = 'Create';
@@ -49,6 +60,8 @@ class Home extends CI_Controller {
       $this->Lapor_model->deleteDataById($id);
       redirect("home");
     }
+
+    
     
     //Mengedit Laporan
     public function ubah($id){

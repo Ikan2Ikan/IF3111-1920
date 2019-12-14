@@ -18,8 +18,6 @@ body {
     overflow: hidden;
 }
 
-
-
 .button_1 {
     height: 38px;
     background: #e8491d;
@@ -91,7 +89,7 @@ header a:hover{
 /*Showcase*/
 #showcase {
     min-height: 400px;
-    background:url('../img/showcase.jpg') no-repeat;
+    background:url('backgound.jpg') no-repeat;
     text-align: center;
     color: white;
 }
