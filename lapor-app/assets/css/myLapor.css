@@ -37,25 +37,6 @@
 	color: rgb(70, 130, 180);
 }
 
-<<<<<<< HEAD
-.details .action {
-	display: flex;
-	justify-content: space-between;
-}
-
-.details .action .edit,
-.details .action .delete {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding: 0 5px;
-}
-
-/* .container .laporan {
-	max-height: 200px;
-} */
-=======
 .container .laporan a:hover {
 	color: blue;
 }
->>>>>>> d3841d4bb475fe943935c12c06496659fd40a18e

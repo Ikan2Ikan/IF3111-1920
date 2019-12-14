@@ -16,46 +16,54 @@
   <div class="container">
     <form action="" method="post" enctype="multipart/form-data">
       <div class="laporan">
-        <a>
-          <a href="#"><?= $result['comm_title'] ?></a>
-          <small>Pelapor : <?= $result['fullname'] ?></small>
-        </a>
 
-        <p><?= $result['comm'] ?></p>
-
-        <?php $tmp = explode('.', $result['lampiran']);
-        $ext = end($tmp);
-        // var_dump($ext);  
-        ?>
-        <?php if ($ext == "jpg" || $ext == "jpeg" || $ext == "png") : ?>
-          <img src="<?= base_url('assets/doc/') . $result['lampiran'] ?>" alt="">
-        <?php elseif ($ext == "pdf") : ?>
-          <a href="<?= base_url('assets/doc/') . $result['lampiran'] ?>" target="_blank"><?= $result['lampiran'] ?></a>
-        <?php elseif ($ext == "docx" || $ext == "doc" || $ext == "pptx" || $ext == "txt") : ?>
-          <a href="<?= base_url('assets/doc/') . $result['lampiran'] ?>"><?= $result['lampiran'] ?></a>
-        <?php else : ?>
-          <p>No Attachment</p>
-        <?php endif; ?>
-        <div class="details">
-          <span>
-            <span id="lampiran"><?= $result['lampiran'] ?> </span>
-            <span id="timestamp"><?= $result['timestamp'] ?> WIB</span>
-          </span>
-          <?php
-          if ($result['user_id'] == $this->session->userdata['id']) : ?>
-            <div class="action">
-              <a class="edit" href="<?= base_url('home/updateComm/') . $result['comm_id'] ?>">
-                <i class="fa fa-edit"></i>
-                <small>edit</small>
-              </a>
-              <a class="delete" onclick="return confirm('are you sure for deleting this lapor message?')" href="<?= base_url('home/deleteComm/') . $result['comm_id'] ?>">
-                <i class="fa fa-trash" aria-hidden="true"></i>
-                <small>delete</small>
-              </a>
-            </div>
-          <?php endif; ?>
+        <div class="container1">
+          <h1>Detail Komentar</h1>
         </div>
-      </div>
+
+        <div class="container2">
+          <div class="laporan">
+            <p><?= $result['comm_title'] ?></p>
+            <br>
+
+            <small>Pelapor : <?= $result['fullname'] ?></small>
+
+            <p><?= $result['comm'] ?></p>
+
+            <?php $tmp = explode('.', $result['lampiran']);
+            $ext = end($tmp);
+            // var_dump($ext);  
+            ?>
+            <?php if ($ext == "jpg" || $ext == "jpeg" || $ext == "png") : ?>
+              <img src="<?= base_url('assets/doc/') . $result['lampiran'] ?>" alt="">
+            <?php elseif ($ext == "pdf") : ?>
+              <a href="<?= base_url('assets/doc/') . $result['lampiran'] ?>" target="_blank"><?= $result['lampiran'] ?></a>
+            <?php elseif ($ext == "docx" || $ext == "doc" || $ext == "pptx" || $ext == "txt") : ?>
+              <a href="<?= base_url('assets/doc/') . $result['lampiran'] ?>"><?= $result['lampiran'] ?></a>
+            <?php else : ?>
+              <p>No Attachment</p>
+            <?php endif; ?>
+            <div class="details">
+              <span>
+                <span id="lampiran"><?= $result['lampiran'] ?> </span>
+                <span id="timestamp"><?= $result['timestamp'] ?> WIB</span>
+              </span>
+              <?php
+              if ($result['user_id'] == $this->session->userdata['id']) : ?>
+                <div class="action">
+                  <a class="edit" href="<?= base_url('home/updateComm/') . $result['comm_id'] ?>">
+                    <i class="fa fa-edit"></i>
+                    <small>edit</small>
+                  </a>
+                  <a class="delete" onclick="return confirm('are you sure for deleting this lapor message?')" href="<?= base_url('home/deleteComm/') . $result['comm_id'] ?>">
+                    <i class="fa fa-trash" aria-hidden="true"></i>
+                    <small>delete</small>
+                  </a>
+                </div>
+                <a onclick="return confirm('are you sure for deleting this lapor message?')" href="<?= base_url('home/deleteComm/') . $result['comm_id'] ?>">Delete Comment</a>
+              <?php endif; ?>
+            </div>
+          </div>
     </form>
   </div>
 </body>

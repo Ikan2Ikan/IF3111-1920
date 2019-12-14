@@ -1,6 +1,6 @@
 <div class="container">
   <?php
-  var_dump($this->session->userdata());
+  // var_dump($this->session->userdata());
   // var_dump($result);
   if (!isset($this->session->userdata['logged_in'])) {
     echo "<script>
@@ -11,30 +11,33 @@
   }
   ?>
 
-  <div class="heading-icon">
-    <img src=<?= base_url('assets/img/logoitera.png') ?> alt="ini foto.png">
-    <h1>LAPOR ITERA!</h1>
-  </div>
-
-  <div class="nav-bar">
-    <span>
-      <p>HAI! <?= $this->session->userdata("fullname"); ?></p>
-    </span>
-    <div class="right-menu">
-      <span><a href="<?= base_url('home/myLapor') ?>">My Lapor</a></span>
-      <span>
-        <a href="<?= base_url('home/logOut') ?>">Logout</a>
-      </span>
+  <div class="container1">
+    <div class="heading-icon">
+      <img src=<?= base_url('assets/img/logoitera.png') ?> alt="ini foto.png">
+      <h1>LAPOR ITERA!</h1>
     </div>
+
+    <div class="nav-bar">
+      <span>
+        <p>HAI! <?= $this->session->userdata("fullname"); ?></p>
+      </span>
+      <div class="right-menu">
+        <span><a href="<?= base_url('home/myLapor') ?>">Laporanku</a></span>
+        <span>
+          <a href="<?= base_url('home/logOut') ?>">Logout</a>
+        </span>
+      </div>
+    </div>
+
+    <form action="" method="get">
+      <label for=""></label>
+      <input type="text" name="search" id="search" aria-describedby="helpId" placeholder="Masukkan keyword">
+      <button type="submit" name="cari">Cari</button>
+    </form>
+    <br>
+    <a href="<?= base_url('comment') ?>">Buat Laporan/Komentar &plus;</a>
+
   </div>
-
-  <form action="" method="get">
-    <label for=""></label>
-    <input type="text" name="search" id="search" aria-describedby="helpId" placeholder="Masukkan keyword . . .">
-    <button type="submit" name="cari">cari</button>
-  </form>
-  <a href="<?= base_url('comment') ?>">Buat Laporan/Komentar &plus;</a>
-
 
   <div class="container2">
     <h4>Laporan/Komentar Terkini</h4>
@@ -66,3 +69,5 @@
     <?php endforeach;
     ?>
   </div>
+
+</div>

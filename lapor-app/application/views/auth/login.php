@@ -4,7 +4,6 @@
       <input type="text" name="email" id="email" placeholder="Email">
       <br>
 
-      <!-- <label for="password">Password : </label> -->
       <br>
       <input type="password" name="password" id="password" placeholder="Password">
       <br>
