@@ -13,15 +13,9 @@ class Home extends CI_Controller
 
         $data['judul'] = "Halaman Lapor";
         $this->load->view('templates/coment', $data);
-<<<<<<< HEAD
-        $this->load->view('V_simple',$data);
-        $this->load->view('V_home',$data);
-        $this->load->view('V_detail',$data);
-=======
-        $this->load->view('V_simple');
+        $this->load->view('V_simple', $data);
         $this->load->view('V_home', $data);
-        $this->load->view('V_detail');
->>>>>>> 1664431ae23a77d09221da79ad4ab0e666f2fd1b
+        $this->load->view('V_detail', $data);
         $this->load->view('templates/footer', $data);
     }
 
