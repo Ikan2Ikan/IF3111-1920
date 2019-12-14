@@ -1,19 +1,10 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="UTF-8">
-	<title>Tubes Web</title>
-	<link rel="stylesheet" href="<?php echo base_url() ?>asset/style.css"/>
-</head>
-<body>
-	<center><h1>SIMPLE LAPOR!</h1></center>
-
+	<div class="tabel">
 	<center><table border="1">
 		<tr>
 			<td width="790px"><input type="text" name="search" size="110" /></td>
 			<td width="10px"><a href="">Cari</a></td>
 		</tr>
-	</table></center><br>
+	</table></center></div><br>
 
 	<center><a href="<?php echo base_url() ?>home/tambah/">Buat Laporan/Komentar</a></center>
 
@@ -36,6 +27,3 @@
 
 	<?php	echo "<hr><br>";
 	} ?>
-	
-</body>
-</html>

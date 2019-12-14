@@ -12,11 +12,15 @@ class Home extends CI_Controller
 
     function detail($id) {
     	$data['laporan'] = $this->m_data->tampil_sebagian($id)->result();
+    	$this->load->view('v_header',$data);
 		$this->load->view('v_detail',$data);
+		$this->load->view('v_footer');
 	}
 
 	function tambah() {
+		$this->load->view('v_header');
 		$this->load->view('v_buat_laporan');
+		$this->load->view('v_footer');
 	}
 
 	function insert(){
@@ -49,12 +53,16 @@ class Home extends CI_Controller
 
 	function index(){
         $data['laporan'] = $this->m_data->tampil_data()->result();
+        $this->load->view('v_header',$data);
         $this->load->view('v_tampil',$data);
+        $this->load->view('v_footer');
     }
 
     function edit($id) {
 		$data['laporan'] = $this->m_data->tampil_sebagian($id)->result();
+		$this->load->view('v_header',$data);
 		$this->load->view('v_edit',$data);
+		$this->load->view('v_footer');
 	}
 
 	public function hapus($id) {

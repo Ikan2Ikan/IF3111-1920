@@ -1,13 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="UTF-8">
-	<title>Detail Laporan</title>
-	<link rel="stylesheet" href="<?php echo base_url() ?>asset/style.css"/>
-</head>
-<body>
-	<center><h1>SIMPLE LAPOR!</h1></center>
-
 	<p>Detail Laporan/Komentar</p>
 	<hr>
 	<br>
@@ -34,5 +24,3 @@
 		<a href="<?php echo base_url() ?>home/hapus/<?php echo $key->id; ?>" onClick="return confirm('Anda Yakin Akan Menghapus Laporan Ini?')">Hapus</a>
 	</div>
 	<hr>
-</body>
-</html>

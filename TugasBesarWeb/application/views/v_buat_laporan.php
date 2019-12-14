@@ -1,13 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="UTF-8">
-	<title>Buat Laporan</title>
-	<link rel="stylesheet" href="<?php echo base_url() ?>asset/style.css"/>
-</head>
-<body>
-	<center><h1>SIMPLE LAPOR!</h1></center>
-
 <form name="form-data"  onsubmit="return saveForm(this)" action="<?php echo base_url(). 'home/insert'; ?>" method="post" enctype="multipart/form-data">
 	<p>Buat Laporan/Komentar</p>
 	<hr>
@@ -65,6 +55,3 @@
 	}
   }
 </script>
-
-</body>
-</html>

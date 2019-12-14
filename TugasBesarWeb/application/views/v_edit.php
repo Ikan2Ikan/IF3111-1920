@@ -1,15 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="UTF-8">
-	<title>Edit Laporan</title>
-	<link rel="stylesheet" href="<?php echo base_url() ?>asset/style.css"/>
-</head>
-<body>
-	<center><h1>SIMPLE LAPOR!</h1></center>
-
 <form name="form-data"  onsubmit="return saveForm(this)" action="<?php echo base_url(). 'home/ubah'; ?>" method="post" enctype="multipart/form-data">
-	<p>Buat Laporan/Komentar</p>
+	<p>Edit Laporan/Komentar</p>
 	<hr>
 
 <?php
@@ -94,6 +84,3 @@ foreach ($laporan as $key) {
 	}
   }
 </script>
-
-</body>
-</html>
