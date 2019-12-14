@@ -34,8 +34,12 @@
 
 		<span><?php
                 echo "
-                <a href= javascript:confirmDelete('delete?hapus_id=$id')>Hapus Laporan/Komentar &nbsp</a>";?><i class="fa fa-close"></i>
-               		
+                <a href= javascript:confirmDelete('delete?hapus_id=$id')>Hapus Laporan/Komentar &nbsp</a>
+               	
+               	<a href='update?ubah_id=$id'> || Ubah Laporan/Komentar  &nbsp</a>
+               	";
+
+               	?>
                 
 		</span><i class="fa fa-edit"></i>
 		<hr>

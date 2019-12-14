@@ -15,9 +15,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <a href="<?php echo site_url('home')?>">
     <h1>SIMPLE LAPOR!</h1></a>
 
-    <form action="<?php echo site_url('home/search')?>" method="POST">
+    <form action="#" method="POST">
         <input type="text" name="cari" placeholder=" Cari berdasarkan: Nama/ Judul / Aspek">
-        <button type="submit"><i class="fa fa-search"> CARI</i></button>
+        <button type="submit" name="submit"><i class="fa fa-search"> CARI</i></button>
       </form>
       <br>
       <a style="text-align: center;" href="<?php echo site_url('home/lapor') ?>">Buat Laporan/Komentar
@@ -33,7 +33,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             
           
           <p align="justify">
-            <?php echo substr($l['laporan'], 0, 450); ?></p>
+            <?php echo substr($l['laporan'], 0, 250); 
+            echo " ..."?></p>
           
           <p align="left">
             <i class="fa fa-folder"></i>

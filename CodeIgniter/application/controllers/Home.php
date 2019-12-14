@@ -41,12 +41,7 @@ class Home extends CI_Controller {
 			);
 		$this->m_data->input_data($data,'lapor');
 		redirect('home');
+	
 	}
-	public function search(){
-		$cari = $this->input->post('cari');
-
-		$datac['lapor']=$this->m_data->get_product_keyword($cari, 'lapor');
-		$this->load->view('v_home',$datac);
-	}
-
+	
 }
