@@ -14,11 +14,13 @@ body {
 .judul {
 	padding: 30px;
 	text-align: center;
+
 }
 
 .judul label{
 	font-size: 60px;
 	font-family: corbel, serif;
+
 }
 
 .search {

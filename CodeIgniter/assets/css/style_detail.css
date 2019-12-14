@@ -41,7 +41,12 @@ table {
 }
 
 .hapus {
-	float: inline-end;
+	float: right;
+}
+
+.kembali {
+	float: right;
+	
 }
 
 hr {

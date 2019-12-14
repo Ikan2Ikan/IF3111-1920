@@ -34,6 +34,7 @@
 					<option>Bidang Politik, Hukum, dan Kesejahteraan</option>
 					<option>Kesehatan</option>
 					<option>Pekerjaan</option>
+					<option>Mancanegera</option>
 				</select>
 				</div>
 				<br>

@@ -74,6 +74,7 @@ class M_lapor extends CI_Model
 		$this->db->select('*');
 		$this->db->from('laporan');
 		$this->db->like('deskripsi', $keyword);
+		$this->db->order_by("created_at","DESC");
 		return $this->db->get()->result_array();	
 	}
 

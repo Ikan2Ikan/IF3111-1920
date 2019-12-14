@@ -25,7 +25,7 @@
 			</tr>
 			<tr>
 				<td>
-					<p class="lampiran">Lampiran : </p>
+					<p class="lampiran"> <b>Lampiran <b> : </p>
 					<img src="<?php echo base_url('assets/lampiran/'.$lapor['berkas']) ?>" width="300" height="300"/>
 				</td>
 			</tr>
@@ -34,7 +34,7 @@
 					<br>
 					<a class="Waktu">Waktu: <?=$lapor['created_at']?></a>
 					<a class="Aspek">Aspek: <?=$lapor['aspek']?></a>
-					<a class="hapus" href="<?= base_url(); ?>Tampil/hapus/<?= $lapor['id']; ?>" onclick="return confrim('yakin????');"> Hapus Laporan/Komentar <i class="fa fa-times"> </i></a><br>
+					<a class="hapus" href="<?= base_url(); ?>Tampil/hapus/<?= $lapor['id']; ?>" onclick="return confrim('yakin?');"> Hapus Laporan/Komentar <i class="fa fa-times"> </i></a><br>
 					<hr>
 				</td>
 			</tr>
@@ -43,7 +43,7 @@
 			<label>Detail Laporan/Komentar</label>
 		<hr>
 		</div> -->	
-			<a href="<?php echo base_url()?>Tampil/index">
+			<a class="kembali" href="<?php echo base_url()?>Tampil/index">
 						<button type="button">Kembali</button>
 					</a>
 
