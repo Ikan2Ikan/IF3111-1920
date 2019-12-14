@@ -24,6 +24,11 @@
 
 }
 
+.container h4 {
+	color: rgb(70, 130, 180);
+
+}
+
 .container a {
 	text-decoration: none;
 }

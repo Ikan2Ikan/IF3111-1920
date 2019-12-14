@@ -85,8 +85,17 @@ class Auth extends CI_Controller
               </script>
             ";
       } else {
-        $this->User_model->insertUserData();
-        redirect('auth');
+        $match_pswd = $this->User_model->matching_password();
+
+        if ($match_pswd == 1) {
+          $this->User_model->insertUserData();
+          redirect('auth');
+        } else {
+          echo "<script>
+                    alert('Password Tidak Sama');
+              </script>
+            ";
+        }
       }
     }
   }

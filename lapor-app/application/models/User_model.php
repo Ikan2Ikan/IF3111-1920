@@ -43,6 +43,18 @@ class User_model extends CI_model
     return $temp;
   }
 
+  public function matching_password()
+  {
+    $firstpswd = $this->input->post('password');
+    $secondpswd = $this->input->post('password2');
+
+    if ($firstpswd == $secondpswd) {
+      return 1;
+    } else {
+      return 0;
+    }
+  }
+
   public function search()
   {
     $keyword = $this->input->post('keyword');
