@@ -5,10 +5,13 @@
 	</header>
 
 	<!-- Pencarian -->
-	<form>
-  		<input class="search" type="text" placeholder="Cari..." required>	
-  		<input class="button" type="button" value="Cari">	
-	</form>
+	<br>
+	<div class="search">
+	<input type="text" class="searchTerm">
+	<button type="submitSearch" class="searchButton">
+		<i class="fa fa-search">  Cari  </i>
+	</button>
+	</div>
 	<!-- Akhir Pencarian -->
 
 	<form>
