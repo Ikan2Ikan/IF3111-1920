@@ -33,10 +33,11 @@
 		<?php		}  ?>
 		 <?php echo '<img src="data:image/;base64,'.base64_encode( $laporan_item['lampiran'] ).'"/>' ?>
 		<p> <?php echo $laporan_item['tanggal'];?> </p>
-		 <h4>Lampiran: Gambar.jpg <span>(WAKTU) <a href="<?php echo base_url().'detail'; ?>">Lihat Selengkapnya ></a>></span></h4>
+		 <h4>Lampiran: Gambar.jpg <span>(WAKTU)  </span></h4> 
+		<a href="<?php echo base_url().'detail/'.$laporan_item['no']; ?>"> Lihat Selengkapnya ></a>>
 		<?php } ?>
 
-		
+
 		</div>
 		
 			<div class="footer">

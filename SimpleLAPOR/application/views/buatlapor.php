@@ -21,7 +21,9 @@
 		<div class="lapor">
 		<p>Buat Laporan/Komentar</p><hr>
 		</div>
-			<form method="POST" action="">
+
+			
+			<form method="POST" action="<?php echo base_url().'tambah' ?>">
 				<input type="text" name="nama" placeholder="Nama" class="nama"><br><br>
 				<input type="text" name="kontak" placeholder="Kontak" class="kontak"><br><br>
 				<textarea cols="110" rows="20" placeholder="Laporan/Komentar"></textarea><br>

@@ -20,25 +20,26 @@
 <h1 align="center">SIMPLE LAPOR!</h1>
 
 
-<div class="konten1">
+	
 		<h4>Detail Laporan / Komentar</h4>
 		<hr>
-		
-</div>
-        
-<div class="lampiran1">
-<h4>Lampiran : </h4>
+		<p><?php echo $laporan_item['komentar'];?></p>
+		<!-- <script type="text/javascript"> -->
+		<!-- function image(img) { -->
+  		  <!-- var src = img.src; -->
+   			 <!-- window.open(src); -->
+			<!-- } -->
 
-<script type="text/javascript">
-function image(img) {
-    var src = img.src;
-    window.open(src);
-}
+			
+		<?php echo '<img src="data:image/;base64,'.base64_encode( $laporan_item['lampiran'] ).'"/>' ?>
+			<span>Aspek : <?php echo $laporan_item['aspek_pelaporan']; ?> </span>
+			<span>Dibuat pada : <?php echo $laporan_item['tanggal']; ?> </span>
+			
+			<?php $id = $laporan_item['no']; ?>
+			
+
 </script>
-<img src="https://cdn-u1-gnfi.imgix.net/post/large-gunung-kerinci-a05e1da851e221b71264ba26b705bafd.jpg?w=715&max-h=550&fit=crop&crop=face" height="150" size="150" alt="Johnson Pond" onclick="image(this)">
 
-
-<pre> Waktu                           Aspek :                             Hapus Laporan / Komentar</pre>
 </div>
 					
 

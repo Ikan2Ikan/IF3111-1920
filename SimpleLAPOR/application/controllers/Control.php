@@ -24,7 +24,8 @@ class Control extends CI_Controller {
         $this->load->model('laporan_model');
         $this->load->helper('url_helper');
 	}
-	
+
+
 	public function index()
 	{
 		$data['laporan'] = $this->laporan_model->get_laporan();
@@ -36,8 +37,28 @@ class Control extends CI_Controller {
 	public function buat(){
 		$this->load->view('buatlapor');	
 	}
-	public function detail(){
-		$this->load->view('detail');
+
+	public function tambah(){
+		$nama = $this->input->post('nama_lengkap');
+		$kontak = $this->input->post('kontak');
+		$komentar = $this->input->post('komentar');
+		$aspek = $this->input->post('aspek_pelaporan');
+		$lampiran = $this->input->post('laporan');
+
+		$data = array(
+			'nama_lengkap' => $nama;
+			'kontak' => $kontak;
+			'komentar' => $komentar;
+			'aspek_pelaporan' =>$aspek;
+			'lampiran' = >$lampiran;
+		)
+
+
+	}
+	public function detail($id){
+
+		$data['laporan_item'] = $this->laporan_model->get_laporan($id);
+		$this->load->view('detail' ,$data);
 	}    
 /*
 	public function home(){
