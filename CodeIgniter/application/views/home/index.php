@@ -9,7 +9,7 @@
     </div><br>
     
     <div class="link_komentar">
-        <a href="<?base_url('komentar')?>">Buat Laporan/Komentar </a>
+        <a href="<?=base_url('komentar')?>">Buat Laporan/Komentar </a>
         <i class="fa fa-plus-square" aria-hidden="true"></i>
     </div>
     <br><br>
