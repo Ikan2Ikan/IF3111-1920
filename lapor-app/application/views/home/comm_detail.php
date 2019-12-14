@@ -24,7 +24,6 @@
         <div class="container2">
           <div class="laporan">
             <p><?= $result['comm_title'] ?></p>
-            <br>
 
             <small>Pelapor : <?= $result['fullname'] ?></small>
 
@@ -53,14 +52,13 @@
                 <div class="action">
                   <a class="edit" href="<?= base_url('home/updateComm/') . $result['comm_id'] ?>">
                     <i class="fa fa-edit"></i>
-                    <small>edit</small>
+                    <small>Edit</small>
                   </a>
                   <a class="delete" onclick="return confirm('are you sure for deleting this lapor message?')" href="<?= base_url('home/deleteComm/') . $result['comm_id'] ?>">
                     <i class="fa fa-trash" aria-hidden="true"></i>
-                    <small>delete</small>
+                    <small>Delete</small>
                   </a>
                 </div>
-                <a onclick="return confirm('are you sure for deleting this lapor message?')" href="<?= base_url('home/deleteComm/') . $result['comm_id'] ?>">Delete Comment</a>
               <?php endif; ?>
             </div>
           </div>
