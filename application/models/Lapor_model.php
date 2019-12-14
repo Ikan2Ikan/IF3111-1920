@@ -59,4 +59,16 @@ class Lapor_model extends CI_model {
       return $this->db->get('laporan')->result_array();
     }
       
+    public function editData($id, $upload){
+      date_default_timezone_set('Asia/Jakarta');
+      $data = array(
+          'laporan' => $this->input->post('komentar'),
+          "tanggal" => mdate('%Y-%m-%d'),
+          "waktu" => mdate('%H:%i:%s'),
+          'lampiran' => $upload['file']['file_name'],
+          'tipe' => $upload['file']['file_type'],
+          "aspek" => $this->input->post('aspek')
+          );
+      return $this->db->update('laporan', $data, array('id' => $id));
+    }   
 }
