@@ -33,7 +33,7 @@ CREATE TABLE `laporan` (
   `isi_laporan` varchar(5000) NOT NULL,
   `kategori` varchar(15) NOT NULL,
   `tgl_laporan` datetime NOT NULL,
-  `berkas` varchar(255) NOT NULL
+  `lampiran` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
