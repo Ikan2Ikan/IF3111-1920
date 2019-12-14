@@ -25,6 +25,7 @@
 	$query = mysqli_query($koneksi, $sql) or die (mysqli_error());
 
 	while($data = mysqli_fetch_array($query)){
+		$id = $data['id_lapor'];
 		$isi = $data['isi_lapor'];
 		$jenis = $data['jenis_lapor'];
 		$tgl = $data['tgl_lapor'];
@@ -39,35 +40,23 @@
 	<br>
 	<div class="lampiran">
 		<br>
-		<?php echo "<img src='img/".$file."'style='width:200px; height:200px;'>"?>
+		<?php echo "<img src='img/".$file."'style='width:200px; height:200px;'>" ?>
 	</div>
 	<br>
 	<p class="ratakiri">Waktu : <?php echo $tgl; ?> &emsp;&emsp; Aspek : <?php echo $jenis; ?></p>
-	<p class="ratakanan">Hapus Laporan/Komentar<img src="img/x.png" width="10px"></p>
+	<p class="ratakanan">
+		<a href="ubah.php?ubah=<?php echo $id ?>" onclick="javascript: return confirm('Anda yakin ingin mengubah data ?')" >Ubah Laporan/Komentar</a>
+		<a href="hapus.php?hapus=<?php echo $id ?>" onclick="javascript: return confirm('Anda yakin ingin mengubah data ')" ><img src="img/x.png" width="10px"></a>
+		&emsp;
+		&emsp;
+		<a href="hapus.php?hapus=<?php echo $id ?>" onclick="javascript: return confirm('Anda yakin hapus ?')" >Hapus Laporan/Komentar</a>
+		<a href="hapus.php?hapus=<?php echo $id ?>" onclick="javascript: return confirm('Anda yakin hapus ?')" ><img src="img/x.png" width="10px"></a>
+	</p>
 	<br><br><br>
 	<hr>
 
-
-
-
-
-   <!-- <textarea  name="komentar" id="message" rows="20" cols="130"></textarea> 
-   <br><br>
-   <select   name="aspek_komentar">
-                <option >Pilih Aspek Komentar</option>
-                <option value="Ruangan">Ruangan</option>
-                <option value="Matakuliah">Matakuliah</option>
-                <option value="Nilai">Nilai</option>
-                <option value="Dosen">Dosen</option>
-                
-            </select>
-            <br>
-    <input type="file" name="file" value="" class="konten">
-  </div>
-
-  <footer>
-    <input type="submit" value="BUAT LAPOR!">
-  </footer> -->
+	<?php } ?>
+</div>
 
 </body>
 </html>

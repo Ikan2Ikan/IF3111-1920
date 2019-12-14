@@ -8,7 +8,7 @@ $jenis = $_POST['aspek_komentar'];
 date_default_timezone_set('Asia/Jakarta');
 $tgl= date ("Y-m-d H:i:s");
 $berkas = $_FILES['file']['name'];
-$ekstensi_diperbolehkan = array('png','jpg');
+$ekstensi_diperbolehkan = array('png','jpg','doc', 'docx', 'xls', 'xlsx', 'ppt','pptx','pdf');
 $x = explode('.', $berkas);
 $ekstensi = strtolower(end($x));
 $ukuran_file = $_FILES['file']['size'];
@@ -23,7 +23,10 @@ $sql = "INSERT INTO laporan (isi_lapor,jenis_lapor,tgl_lapor,file) VALUES('$kom'
 $query = mysqli_query($koneksi, $sql) or die (mysqli_error($koneksi));
 
 if($query){
- echo "Data berhasil ditambahkan";
+?> <p align="center">
+ 	Data berhasil ditambahkan
+ 	</p>
+ <?php header( "refresh:1;url=halaman1.php" );
 
 }else {
  echo "Error: ".$sql."<br>".mysqli_error($koneksi);
@@ -34,5 +37,6 @@ if($query){
  echo 'EKSTENSI FILE YANG DI UPLOAD TIDAK DI PERBOLEHKAN';
 }
 
+
+
  ?>
- <meta http-equiv="refresh" content="0;URL=index.php" />
