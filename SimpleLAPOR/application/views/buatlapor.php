@@ -44,7 +44,7 @@
 					<option value="pengajaran">Pengajaran</option>
 				</select><br><br>
 				<input class="upload" type="file" name ="lampiran" value="Choose File"><br>
-				<input class="buat" type="submit" value="Buat LAPOR!">
+				<input class="buat" type="submit" value="Buat LAPOR!" id="#submit-button">
 			</form>											
 		</div>
 		<div class="footer">
