@@ -7,13 +7,23 @@
             <img src = "<?php echo base_url().'upload/'.$laporan['lampiran'];?>" alt="">
         </div>
 
-    <hr>
-
-    <span>Aspek : <?php echo $laporan['aspek'];?></span><br>
-    <span>Dibuat pada : <?php echo $laporan ['waktu_laporan']; ?></span>
+    
+    
+    <div class = "momen">
+    <span>waktu : <?php echo $laporan ['waktu_laporan']; ?></span>
+    
+    <div class ="aspek">
+    <span>Aspek : <?php echo $laporan['aspek'];?></span>
+    
+    <div class = "hapus">
     <?php $id = $laporan['id_laporan'];?>
-    <a href = "<?php echo base_url().'index.php/laporan/delete/'.$id;?>">Hapus</a>
-            
-
+    
+    <a href = "<?php echo base_url().'index.php/laporan/delete/'.$id;?>">Hapus Laporan/KomentarX</a>
+    </div>      
+    </div>
+    </div>
+    <hr>    
+    
 </div>
+
 

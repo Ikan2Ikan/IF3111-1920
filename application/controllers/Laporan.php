@@ -22,19 +22,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 $config['file_name']        = date('Y-m-d H-i-s', time());
                 $this->load->library('upload', $config);
 
-                if (!$this->upload->do_upload('lampiran')) {
+                if (!$this->upload->do_upload('namalampiran')) {
                     echo "upload gagal"; die();
                 } else {
                     $lampiran = $this->upload->data('file_name');
                 }
                 $data = array(
-                    'isi'       => $isi,
+                    'isi_laporan'       => $isi,
                     'aspek'     => $aspek,
                     'lampiran' => $lampiran
                 );
             
-                $this->laporan_model->input_laporan($this->table_name,$data);
-            redirect('template');
+                $this->laporan_model->input_laporan(laporan,$data);
+            redirect('');
         }
     }
 
