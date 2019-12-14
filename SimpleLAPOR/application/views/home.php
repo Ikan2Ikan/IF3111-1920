@@ -11,15 +11,13 @@
 	<div class="navbar">
 		<ul>
 		  <li><a class="active" href="<?php echo base_url().''; ?>">Beranda</a></li>
-		  <span><li><a href="">Masuk</a></li>
-		  <li><a href="#contact">Daftar</a></li></span>
 		  <li><a href="<?php echo base_url().'create'; ?>">Buat Laporan/Komentar</a></li>
 		</ul>
 	</div>
 	<div id="box">	
 		<form action="<?php echo base_url().'search' ?>"   method="GET" >
-			<input type="text" name ="keyword" placeholder="cari...">	
-			<input type="submit" value="Cari"><br>
+			<input type="text" name ="keyword" placeholder="cari..." class="cari">	
+			<input type="submit" value="Cari" class="submit"><br>
 		</form>				
 		<div class="konten1">
 		<h4>Laporan/Komentar Terakhir</h4>
