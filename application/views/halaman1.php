@@ -25,7 +25,7 @@
           foreach ($lapor as $data) { ?>
            <p><?php echo $data->isi_lapor; ?></p>
             <br>
-            <h4>Lampiran : //kodeuntukgambar
+            <h4>Lampiran : <?php echo $data->file ?>;
              <span><?php echo $data->tgl_lapor; ?>
               &emsp; <a href="">Lihat Selengkapnya</a>
             </span>
