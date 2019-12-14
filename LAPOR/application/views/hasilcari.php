@@ -24,7 +24,7 @@
         <?php } ?>
         <br>
         <div class="lampiran">Lampiran : <?php echo $cari['lampiran']; ?></div>
-        <a class="detail" href= <?php echo base_url('')?>>Lihat Detail ></a>
+        <a class="detail" href= <?php echo base_url().'index.php/laporan/view/'.$cari['id_laporan'];?>>Lihat Detail ></a>
         <div class="waktu">Waktu : <?php echo $cari['waktu']; ?></div>
         <br>
         <hr>
