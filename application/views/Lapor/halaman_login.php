@@ -1,5 +1,3 @@
-<link rel="stylesheet" href="<?php echo base_url() ?>assets/css/style_login.css"/>
-<div class></div>
 <?php if($this->session->flashdata('login_gagal')) {
 	echo "
 		<script>
@@ -27,30 +25,43 @@
 	";
 }
 
-
 ?>
-
-<div class="background">
 <h3>Login Akun Laporan</h3>
 
-<form method="post" action="">
+
+<form method="post" onSubmit="return validasi()" action="">
 
 	<ul>
 	<li>
 		<label>Email  </label>
-		<input type="text" name="email" placeholder="masukan email" autocomplete="none">
+		<input type="text" name="email" placeholder="masukan email" autocomplete="none" id="email">
 	</li>
+
 	
 
 	<li>
 		<label>Password  </label>
-		<input type="password" name="password" placeholder="masukan password">
+		<input type="password" name="password" placeholder="masukan password" id="password">
 	</li>
+
 	
-	<button type="submit" name="submit" class="tombol">Masuk</button>
+	<button type="submit" name="submit">Masuk</button>
 </ul>
 
 </form>
-</div>
-<div>
-</div>
+
+<script>
+   function validasi() {
+    var email = document.getElementById("email").value;
+    var password = document.getElementById("password").value;
+   
+    if (email != "" && password != ""){
+      return true;
+    } 
+    else{
+      alert('Semua Kolom Harus diisi!');
+      return false;
+    }
+  }
+
+</script>

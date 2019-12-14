@@ -17,36 +17,51 @@
 }
 
 ?>
-
-<center >
-<?php echo form_open_multipart('Halaman_utama/ProsesDataLapor'); ?>
-<textarea type="text" name="komentar" size = "100px" autofocus autocomplete="off" cols="30" rows="7" id="texts"  placeholder="ketik laporan anda......."  required ></textarea>
+<br><br><br>
+<center>
+<form method="POST" onSubmit="return validasi(this)" action="<?php echo base_url('Halaman_utama/ProsesDataLapor') ?>" enctype="multipart/form-data">
+<textarea type="text" name="komentar" size = "100px" autofocus autocomplete="off" cols="30" rows="7" id="texts"  placeholder="ketik laporan anda......."  ></textarea>
 </center>
-
+<br>
 <div id="pilih">
 
 <select name="kategori">
-    <option value="pemerintah">Pilih Kategori</option>
-    <option value="administrasi">Amdinistrasi</option>
-    <option value="iuran">Iuran</option>
+    <option value="pilih">Pilih Aspek Komentar</option>
+    <option value="Dosen">Dosen</option>
+    <option value="Infrastruktu">Infrastruktur</option>
+    <option value="Mahasiswa">Mahasiswa</option>
+    <option value="Staff">Staffr</option>
+    <option value="Pengajaran">Pengajaranr</option>
 </select>
 <br><br>
 <input type="file" name="file_file">
 </div>
 
 <div id="tombol">
-<button type="submit" name="submit" onclick="validasi()">Buat Laporan</button>
+<button type="submit" name="submit">Buat Laporan</button>
 </div>
 </center>
 </form>
 
 <script>
-   function validasi() {
-    var nama = document.getElementById("texts").value;
-    if (nama != ""){
+   function validasi(form) {
+    var text = document.getElementById("texts").value;
+    var banyak_kata = document.getElementById('texts').value
+    banyak_kata = banyak_kata.split(" ")
+   
+    if (text != "" && banyak_kata.length>=20 && form.kategori.value!="pilih"){
       return true;
-    }else{
-      alert('Anda harus mengisi data dengan lengkap !');
     }
+    else if(text == ""){
+      alert('Kolom Text Harus diisi!');
+      return false;
+    }else if(banyak_kata.length<20){
+      alert('Jumlah Text Harus lebih dari 20 kata!');
+      return false;
+    }else if(form.kategori.value=="pilih"){
+      alert('aspek tidak boleh kosong');
+      return false;
+    }
+
   }
 </script>

@@ -19,7 +19,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			
 			$this->load->view('templates/header',$data);
 			$this->load->view('Lapor/index',$data);
-			$this->load->view('templates/footer');
+			// $this->load->view('templates/footer');
 		}
 
 		//menambahkan data ke database
@@ -29,9 +29,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 	   		$this->load->view('templates/header',$data);
 			$this->load->view('Lapor/halaman_Laporan');//folder dan file
-			$this->load->view('templates/footer');
-
-	   	
+			$this->load->view('templates/footer');	   	
 	   }
 
 	   public function ProsesDataLapor(){
@@ -50,7 +48,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	   	   		}else{
 
 	   	   			$config['upload_path']='./lampiran';
-	   	   			$config['allowed_types']='JPG|png|pdf|docx|jpg';
+	   	   			$config['allowed_types']='JPG|png|pdf|docx|jpg|ppt|pptx|xls|xlsx';
+	   	   			
 	   	   			$this->load->library('upload',$config);
 
 	   	   			if(!$this->upload->do_upload('file_file')){
@@ -99,9 +98,68 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	   	   	}
 	   		
 	   }
+	   //Ubah Data Laporan
 
+	   public function UbahDataLaporan($id){
 
+		$data['judul1']  = 'Ubah Laporan';
+		$data['lapor'] = $this->Lapor_model->getDataId($id);
 
+	   		$this->load->view('templates/header',$data);
+			$this->load->view('Lapor/halaman_Ubah_Laporan');//folder dan file
+			$this->load->view('templates/footer');
+
+	   	   	if(isset($_POST['submit'])){
+				//ubah kedatabase
+		   	   	$this->Lapor_model->UbahContentLaporan();//fungsi mahasiswa,fungsi berada pada controler, dan file Model_mahasiswa
+		   		$this->session->set_flashdata('input_laporan',"lapor berhasil");
+		   		redirect('Halaman_utama');//dialihkan lagi ke halaman mahasiswa
+
+	   	   	}
+	   		
+	   	
+	   }
+
+	   
+	    public function DaftarAkunLaporan(){
+
+	   	$data['judul1']  = 'Daftar Laporan';
+
+	   	$this->form_validation->set_rules('nama','Nama','required');
+	   	$this->form_validation->set_rules('email','Email','required|valid_email');
+	   	$this->form_validation->set_rules('password','password','required');
+
+	   	if($this->form_validation->run() == FALSE){
+	   		//jika gagal
+	   		//header diganti menajadi header_daftar/login
+	   		$this->load->view('templates/header_daftar_login',$data);
+			$this->load->view('Lapor/halaman_registrasi');//folder dan file
+			$this->load->view('templates/footer');
+	   	}else{
+
+	   		//input kedatabase
+	   		// cek email di database apakah sama dengan apa yang diinputkan
+	   		$cek = $this->db->query("SELECT * FROM user where email='".$this->input->post('email')."'")->num_rows();
+
+	   		if($cek==1){
+
+	   			$this->session->set_flashdata('email-ada',"daftar ulang");
+	    		redirect('Halaman_utama/DaftarAkunLaporan');
+
+	   		}else{
+
+	   		$this->Lapor_model->RegistrasiUser();//fungsi mahasiswa,fungsi berada pada controler, dan file Model_mahasiswa
+	   		$this->session->set_flashdata('flas',"daftar");
+	   		$this->session->set_flashdata('daftar sukses',"suskses daftar");
+	   		redirect('Halaman_utama/Login');//dialihkan lagi ke halaman mahasiswa
+	   	
+
+	   		}
+
+	   	}
+	
+	   	
+	   }
 
 	    public function Login(){
 
@@ -149,6 +207,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	public function logout(){
 		$this->session->sess_destroy();
 		redirect('Halaman_utama/login');
+	}
+	// parameter $id buat nampung id dari url
+	public function halaman_selengkapnya($id){
+		$data['judul1']  = 'Detail Laporan';
+		$data['lapor'] = $this->Lapor_model->getDataId($id);
+		//folder = Lapor dan file = halaman_selengkapnya
+		$this->load->view('templates/header_daftar_login',$data);
+		$this->load->view('Lapor/halaman_selengkapnya',$data);
+		$this->load->view('templates/footer');
 	}
 	// parameter $id buat nampung id dari url
 	public function HapusData($id){
