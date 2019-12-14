@@ -23,7 +23,7 @@ class M_comment extends CI_Model
 
   public function showAllComments()
   {
-    $data = $this->db->query("select * from user natural join comment natural join user_role")->result_array();
+    $data = $this->db->query("select * from user natural join comment natural join user_role order by timestamp desc")->result_array();
     return $data;
   }
   public function showCommDetail($comm_id)
@@ -46,7 +46,7 @@ class M_comment extends CI_Model
 
     $this->load->library('upload', $config);
     $this->upload->do_upload('lampiran');
-    print_r($this->upload->display_errors());
+    // print_r($this->upload->display_errors());
     return $this->upload->data('file_name');
   }
 

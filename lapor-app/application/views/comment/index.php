@@ -34,7 +34,7 @@
             </div>
             <br>
             <div class="file">
-                <input class="file_in" type="file" name="lampiran" required>
+                <input class="file_in" type="file" name="lampiran">
             </div>
             <br>
             <div class="btn_submit">
