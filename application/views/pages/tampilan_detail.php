@@ -25,14 +25,16 @@
 				<h4>Detail Laporan/Komentar</h4>
 			</div>
 		</section>
-
+		<?php 
+			if(count($detail)>0){
+				$count = 1;
+				foreach($detail as $index => $value){
+		?>
 		<section id="searchlaporan">
 			<div class="container">
 				<hr>
 				<p>
-					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate cumque, doloribus nisi cum dolore
-					obcaecati dignissimos iure vel in et, nobis alias, facilis pariatur minima tempore similique. Saepe,
-					minus magnam!
+					<?php echo $value->laporan ?>
 				</p>
 			</div>
 		</section>
@@ -40,27 +42,43 @@
 		<section id="boxes">
 			<div class="container">
 				<h4>Lampiran</h4>
-
-				<img src="#" alt="">
-
+				<?php
+					if($value->tipe_file == "image/png" || $value->tipe_file == "image/jpeg"){
+				?>
+				<img src="<?php echo base_url()."lampiran/".$value->lampiran ?>" width="500" height="375" alt="">
+				<?php 
+					} if($value->tipe_file == "application/pdf") { 
+				?>
+				<embed src= "<?php echo base_url()."lampiran/".$value->lampiran ?>" width= "500" height= "375">
+				<?php 
+					} else {
+				?>
+				<a href="<?php echo base_url()."lampiran/".$value->lampiran ?>"><?php echo $value->lampiran ?></a>
+				<?php 
+					}
+				?>
 				<div class="box-h">
 					<div class="waktu">
-						<h4>Waktu : </h4>
+						<h4>Waktu : <?php echo $value->waktu ?></h4>
 					</div>
 				</div>
 				<div class="box-h">
 					<div class="aspek">
-						<h4>Aspek :</h4>
+						<h4>Aspek : <?php echo $value->aspek ?></h4>
 					</div>
 				</div>
 				<div class="box-h">
 					<div class="hapus">
-						<h4><a href="#">Hapus Laporan/Komentar></a></h4>
+						<h4><a href="<?php echo base_url()."delete/". $value->id?>">Hapus Laporan/Komentar></a></h4>
 					</div>
 				</div>
 			</div>
 		</section>
-
+		<?php
+		
+				}
+			}
+		?>
 	</fieldset>
 </body>
 

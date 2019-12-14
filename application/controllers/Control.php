@@ -29,7 +29,11 @@ class Control extends CI_Controller
     }
     public function tampilan_detail($id)
     {
-        $this->load->view("pages/tampilan_detail");
+        $detail = $this->control_model->get_by_id_laporan($id);
+        $data = array(
+            "detail" => $detail
+        );
+        $this->load->view("pages/tampilan_detail", $data);
     }
 
     public function tambah()
