@@ -33,7 +33,7 @@ class lapor extends CI_Controller {
 			// 'file'      => $foto
  			);
 		$this->l_lapor->input_data($data,'laporan');
-		redirect('index');
+		redirect('http://localhost:8080/IF3111-1920/');
 	}
 
 	}

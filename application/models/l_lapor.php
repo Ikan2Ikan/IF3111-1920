@@ -1,7 +1,9 @@
 <?php
  class L_lapor extends CI_Model{
  	public function tampil_data(){
- 		return $this->db->get('laporan');
+ 		$this->db->order_by('id_lapor', 'DESC');
+	    $query = $this->db->get('laporan');
+	    return $query;
  	}
 
  	function input_data($data,$table){
