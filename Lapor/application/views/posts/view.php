@@ -32,7 +32,7 @@
 			</form>
 
 			<?php echo form_open('../../../../posts/delete/'.$post['id']); ?>
-					<input type="submit" value="Delete">
+					<input class="danger" type="submit" value="Delete" onclick="clicked(event)">
 			</form>
 			<br><br><br>
 			<hr>
@@ -43,5 +43,8 @@
 	<div class="footer">
   		<p>Created by Laurensius Joshua Anrico Agustinus and Krisdiyansyah</p>
 	</div>
+
+	<script type="text/javascript" src="../assets/js/javascript.js" ></script>
+	<script type="text/javascript" src="../assets/js/ajax.js" ></script>
 </body>
 </html>
