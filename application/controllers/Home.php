@@ -12,6 +12,7 @@ class Home extends CI_Controller {
         $this->load->view('templates/coment', $data);
         $this->load->view('V_home',$data);
         $this->load->view('templates/footer', $data);
+        $this->load->view('V_simple');
     }
 
     public function fileUpload(){
