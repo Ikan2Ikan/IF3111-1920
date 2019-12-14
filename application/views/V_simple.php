@@ -13,6 +13,7 @@
     <div class="container">
         <div>
             <h1 class="judul">ITERA LAPOR!</h1>
+            <h3 class="judul">Layanan Aspirasi dan Pengaduan Online Rakyat</h3>
         </div>
 
         <div>

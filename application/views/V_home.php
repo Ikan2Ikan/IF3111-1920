@@ -23,7 +23,7 @@
 			</div>
 			<hr>
 			</hr>
-			<form method="post">
+			<form method="post" action="<?= base_url('Home/fileUpload') ?>" enctype="multipart/form-data">
 				<div class="keterangan">
 					<input type="text" placeholder="Nama Pelapor" name="nama">
 					<br>

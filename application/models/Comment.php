@@ -16,7 +16,7 @@ class Comment extends CI_Model
             'nama' => $this->input->post('nama'),
             'isi_comm' => $this->input->post('comment'),
             'aspek' => $this->input->post('aspek'),
-            'lampiran' => $this->input->post('lampiran')
+            'lampiran' => "gggg"
         ];
         $this->db->insert('komentar', $data);
         redirect('home');
@@ -33,10 +33,10 @@ class Comment extends CI_Model
         return $data;
     }
 
-    public function detComm()
-    {
-        // $data = $this->db->query("SELECT * FROM komentar WHERE id=$id")->result_array()[0];
-        // return $data;
+    public function detComm($id)
+    { 
+         $data = $this->db->query("DELETE FROM komentar WHERE id_comm=" . $id);
+         return $data;
     }
 
     public function uploadfile()
@@ -48,12 +48,15 @@ class Comment extends CI_Model
             'size' => "2048000",
             'height' => "768",
             'width' => "1024",
-            'filename' => $this->session->userdata('id') .  "-" . data(dmY - His)
+            'file_name' => $this->input->post('lampiran')
         ];
+
+        var_dump($file);
+        // die;
 
         $this->load->library('upload', $file);
         $this->upload->do_upload('lampiran');
         print_r($this->upload->display_errors());
-        return $this->upload->data('filename');
+        return $this->upload->data('file_name');
     }
 }
