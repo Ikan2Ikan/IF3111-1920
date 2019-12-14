@@ -69,12 +69,19 @@ h1{
 
 
 .detail{
-  text-align: right;
+  float: right;
+}
+.detail a{
+  text-decoration: none;
+  color: black;
 }
 
-.laporanterakhir .waktu{
-    display: inline;
-   
+.waktu{
+    text-align: right;
+}
+
+.laporanterakhir{
+    float: right;
 
 }
 
@@ -121,7 +128,11 @@ h1{
 /* AKHIR BUAT LAPORAN */
 
 /* HALAMAN DETAIL LAPORAN */
-
+.container {
+    text-align: justify;
+    font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    
+}
 
 .momen{
     text-align: left;
@@ -137,6 +148,13 @@ h1{
 
 .hapus a {
     float: right;
+    text-decoration: none;
+    color: black;
 }
 
-
+.footer{
+    width: 100%;
+    line-height: 100px;
+    background: black;
+    color: black;
+}
