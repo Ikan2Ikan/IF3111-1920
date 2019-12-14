@@ -103,7 +103,7 @@ Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/
 	- Atur konfigurasi CodeIgniter pada folder config.
 	
 2. Koneksi database
-	- Import file SQL yang dilampirkan pada repository ini.
+	- Import file SQL yang dilampirkan pada repository ini dengan nama database lapor.
 	- Buka file database.php pada folder config.
 	- Atur nama database, username, password dan konfigurasi lain.
 	- Jika konfigurasi benar, database telah terkoneksi.
