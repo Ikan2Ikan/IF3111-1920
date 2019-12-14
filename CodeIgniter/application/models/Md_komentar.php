@@ -18,7 +18,7 @@ class Md_komentar extends CI_Model{
     }
 
     public function tampilDaftarKomentar(){
-        $data = $this->db->query("SELECT * FROM komentar")->result_array();
+        $data = $this->db->query("SELECT * FROM komentar ORDER BY id DESC")->result_array();
         return $data;
     }
 
@@ -44,5 +44,11 @@ class Md_komentar extends CI_Model{
 
         return $this->upload->data('file_name');
     }
+
+    public function deleteCommet($id){
+        $this->db->query("DELETE FROM komentar WHERE id='$id'");
+        return $this->db->affected_rows();
+    }
+
 }
 ?>
