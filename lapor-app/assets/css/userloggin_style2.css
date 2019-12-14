@@ -4,17 +4,19 @@
 	margin-left: 200px;
 	margin-right: 200px;
 	display: fix;
-	border: 1px solid rgb(70, 130, 180);
+
 }
 
 .container1 {
 	padding: 20px;
 	background-image: url('../img/background.jpg');
 	background-size: cover;
+	border: 1px solid rgb(70, 130, 180);
 }
 
 .container2 {
 	padding: 10px;
+	border: 1px solid rgb(70, 130, 180);
 }
 
 .container .heading-icon {
