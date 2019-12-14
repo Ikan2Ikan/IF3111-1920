@@ -21,6 +21,9 @@
 	?>
 	
 	<br><p>Lampiran :</p>
+	<?php foreach ($posting as $key){?>
+		<img  src="<?php'$lampiran = $key->Lampiran' echo $lampiran;?>">
+	<?php } ?>
 	
 	<p> Waktu : &nbsp; 
 		Aspek: 
