@@ -8,4 +8,8 @@ class account extends CI_Controller
     {
         $this->load->view('account/login');
     }
+    public function index()
+    {
+        $this->load->view('account/login');
+    }
 }
