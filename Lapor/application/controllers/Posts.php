@@ -46,7 +46,7 @@
 				$lampiran = $_FILES['userfile']['name'];
 
 				$this->Post_model->create_post($lampiran);
-				redirect($_SERVER['HTTP_REFERER']);
+				redirect($_SERVER['HTTP_REFERER'].'../../../');
 			}
 		}
 

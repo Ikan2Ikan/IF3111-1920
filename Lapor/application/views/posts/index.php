@@ -1,4 +1,5 @@
 <!-- Header -->
+<br><br>
 	<header>
 		<h1 class="judul">SIMPLE LAPOR!</h1>
 	</header>
