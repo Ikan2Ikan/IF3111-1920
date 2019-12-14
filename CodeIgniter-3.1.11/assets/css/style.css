@@ -1,0 +1,105 @@
+/* Margin */
+body {
+	margin: 20px 150px 20px 150px;
+}
+
+/* Tombol Lapor */
+.tombol_lapor {
+	float: right;
+}
+
+/* Footer */
+.footer {
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 2px 2px;
+}
+
+.formlapor {
+	font-family: 'Times New Roman', Times, serif;
+	color: black;
+}
+
+/* Menu */
+.topnav a {
+	float: left;
+	color: black;
+	text-align: center;
+	font-family: 'Times New Roman', Times, serif;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+/* Menu hover */
+.topnav a:hover {
+	font-weight: 600;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+/* Logo*/
+.logo img {
+	float: left;
+	width: 45px;
+	height: 45px;
+}
+
+/* Container*/
+.container h2 {
+	font-size: 50px;
+	font-family: 'Times New Roman', Times, serif;
+	text-align: center;
+}
+
+.container {
+	font-family: 'Times New Roman', Times, serif;
+}
+
+/* Tombol Cari */
+.searchTerm {
+	width: 100%;
+	padding: 5px;
+	height: 70px;
+	border: 2px solid black;
+	font-size: 24px;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+.searchButton {
+	width: 120px;
+	height: 70px;
+	border: 2px solid black;
+	background: white;
+	text-align: center;
+	color: black;
+	cursor: pointer;
+	font-size: 24px;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+.searchButton:hover {
+	font-weight: 600;
+}
+
+.search {
+	left: 20%;
+	width: 60%;
+	position: relative;
+	display: flex;
+}
+
+/* Lapor button */
+.lapor {
+	left: 45%;
+	position: relative;
+	background: white;
+	border: none;
+	cursor: pointer;
+	color: black;
+	text-decoration: none;
+}
+
+.lapor:hover {
+	font-weight: 600;
+}
