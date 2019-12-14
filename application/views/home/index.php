@@ -65,6 +65,7 @@
         <hr>
         <br>
         <?php endforeach; ?>
+        
         <img class="gambar" src="<?php echo base_url(); ?>assets/icon/menu.png">
         <img class="gambar" src="<?php echo base_url(); ?>assets/icon/menu.png">
         <br>
