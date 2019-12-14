@@ -1,0 +1,121 @@
+body{
+	background-color: #F7F8F9FF;
+}
+.container{
+	width: 90vw;
+	min-height: 1vw;
+	background-color: #F7F8F9FF;
+	margin-right: auto;
+	margin-left: auto;
+	padding-bottom: 15px;
+	padding-top: 15px;
+}
+.footerup{
+	width: 90vw;
+	min-height: 13.7vw;
+	background-color: #F7F8F9FF;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: auto;
+}
+.footerbottom{
+	width: 90vw;
+	min-height: 1vw;
+	background-color: #F7F8F9FF;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 40px;
+	margin-bottom: auto;
+}
+.fup{
+	width: 380px;
+	min-height: 100px;
+  	margin: 10px;
+	float: left;
+	background-color: #F7F8F9FF;
+}
+.text1{
+	font-size: 16px;
+	font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+	line-height: 1.618;
+	color: #777777;
+	margin-bottom: 7px;	
+}
+.goplay{
+	width: 20vw;
+	min-height: 4.5vw;	
+}
+.text2{
+	font-size: 16px;
+	font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+	line-height: 1.618;
+	color: #777777;
+	margin-bottom: 7px;	
+	text-align: center;
+}
+.staffkepres{
+	width: 8.5vw;
+	float: left;
+	min-height :5vw ;
+	margin-right: 5px;
+}
+.kemenpanrb{
+	width: 3.3vw;
+	min-height: 5vw;
+	float: left;
+	margin-left:5px;
+	margin-right:0px;
+}
+.ombudsman{
+	width: 14.1vw;
+	min-height: 4vw;
+	float: left;	
+	margin-left:10px;
+	margin-right:auto;
+}
+.sosmedcontainer{
+	margin-top: -10px; 
+	margin-left: 80px;
+}
+.lsosmed{
+	width: 3.8vw;
+	min-height: 3,8vw;
+	float: left;
+	position: center;
+	margin: 10px;
+}
+.footernavigation{
+	font-size: 14px;
+	font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+	line-height: 1.618;
+	margin-left: 200px; 
+	margin-bottom: 7px;
+	text-align: center;
+	height: 10px;
+}
+.footernavigation ul a{
+	color: rgba(0, 0, 0, 0.6);
+	float: left;
+	text-decoration: none;
+	text-align: center;
+	margin-right: 15px;
+}
+
+.footernavigation ul a:hover{
+	color: rgba(0, 0, 0, 0.6);
+	float: left;
+	text-decoration: underline;
+	text-align: center;
+	margin-right: 15px;
+}
+.footercopyright{
+	color: rgba(0, 0, 0, 0.6);
+	float: left;
+	text-align: center;
+	font-size: 15px;
+	font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+	line-height: 2;
+	margin-left: 25vw;
+	margin-top: 1vw;  
+	margin-bottom: 7vw;
+}
