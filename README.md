@@ -96,7 +96,50 @@ Validasi **wajib** dilakukan pada *client-side*, dengan menggunakan **javascript
 Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/komentar`.
 
 ### Penjelasan Teknis
-`Silakan isi bagian ini dengan penjelasan anda, sesuai Petunjuk Pengerjaan di atas.`
+1. Instalasi Framework
+dalam tugas besar ini kami menggunakan framework CodeIgniter, 
+-langkah pertama kunjungi halaman CodeIgniter lalu download sesuai versi yang diinginkan, disini kami menggunakan versi 3.0
+-jika sudah di download, ekstrak CodeIgniter-3.0.*.zip menggunakan WinRAR atau 7Zip kedalam folder htdocs jika Kamu menggunakan XAMPP atau /var/www/html. jika Kamu menggunakan Apache2 Standalone, setelah itu ubahlan nama foldernya menjadi IF3111-1920.
+-sekarang silahkan coba akses URL http://localhost/IF3111-1920/ melalui browser, akan langsung ditampilkan halaman awal Codeigniter yang berarti Instalasi telah berhasil.
+
+2. Koneksi Basis data
+-buka CodeIgneter, lalu klik application->config->database.php
+-lalu buka database.php, setelah itu ketikkan sesuai nama database yang kita buat.
+-contohnya:
+$db['default'] = array(
+	'dsn'	=> '',
+	'hostname' => 'localhost',
+	'username' => 'root',
+	'password' => '',
+	'database' => 'tubes',
+	'dbdriver' => 'mysqli',
+	'dbprefix' => '',
+	'pconnect' => FALSE,
+	'db_debug' => (ENVIRONMENT !== 'production'),
+	'cache_on' => FALSE,
+	'cachedir' => '',
+	'char_set' => 'utf8',
+	'dbcollat' => 'utf8_general_ci',
+	'swap_pre' => '',
+	'encrypt' => FALSE,
+	'compress' => FALSE,
+	'stricton' => FALSE,
+	'failover' => array(),
+	'save_queries' => TRUE
+);
+
+3. Melakukan validasi pada client-side
+-Input data field 
+-Data akan di proses menggunakan Ajax (Ajax mengirim ke Server Side)
+-Server Side akan cek data, apakah kosong ? duplikat data ? Angaka atau huruf ? Minimal dan Maksimal karakter ?
+-Jika cek Validasi Server Side berhasil, Server Side akan konfirmasi ke Ajax dan Ajax menampilakan pesan berhasil
+-Jika cek Validasi Server Side gagal, Server Side akan konfirmasi ke Ajax berupa input field tidak memenuhi syarat, dan Ajax menampilkan pesan syarat yang harus dipenuhi.
+
+4. Melakukan AJAX (mulai dari pengguna melakukan klik pada tombol LAPOR! sampai laporan/komentar terkirim).
+-jika ingin membuat laporan klik "buat laporan", lalu masukkan keluhan anda, pilih aspek, klik choose file untuk memasukkan file, selanjutnya klik tombol tambah data untuk submit.
+-laporan akan muncul secara otomatis ketika kita menambahkan laporan/komentar.
+-dihalaman home dapat melihat laporan yang sudah dikirim dengan mengklik "lihat selengkapnya".
+-jika ingin mencari laporan dengan kata kunci, ketikkan kata yang mau dicari lalu klik Cari.
 
 ### Knowledge
 Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaikan tugas ini.
