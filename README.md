@@ -93,10 +93,22 @@ Validasi **wajib** dilakukan pada *client-side*, dengan menggunakan **javascript
 - minimal jumlah kata dalam laporan/komentar adalah 20 kata.
 
 ### Bonus
-Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/komentar`.
+1. pengguna dapat melihat list laporan yang telah dimasukan
+2. pengguna dapat mencari laporan yang diinginkan berdasarkan isi dari komentar
 
 ### Penjelasan Teknis
-`Silakan isi bagian ini dengan penjelasan anda, sesuai Petunjuk Pengerjaan di atas.`
+- Instalasi Framework, Koneksi basis data 
+	1. download framework yang akan digunakan di situs framework pada kali ini 
+	framework yang digunakan adalah codeigniter.
+	2. lakukan configurasi controller, model dan view.
+	3. sesuaikan dengan kebutuhan yang diinginkan.
+	4. tambahkan basisdata pada file codeigniter dan ubah nama basisdata pada file database
+	5. setelah itu lakukan koneksi database dengan menyeting autoload.php supada database otomatis terload
+- Melakukan validasi pada client-side
+	1. pada client side, client dapat memasukan laporan yang diinginkan dan dapat mencari laporan berdasarkan
+	katakunci dari isi laporan.
+	2. client dapat melihat laporan-laporan yang telah dikirimkan sebelumnya.
+- Melakukan AJAX (mulai dari pengguna melakukan klik pada tombol LAPOR! sampai laporan/komentar terkirim).
 
 ### Knowledge
 Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaikan tugas ini.
