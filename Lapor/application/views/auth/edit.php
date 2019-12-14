@@ -23,10 +23,10 @@
 <br>
 <div class="poskiri">
     <select name="kategori">
-        <option value="none">Pilih Aspek Pelaporan/Komentar</option>
+        <option value="none">Pilih Aspek Laporan/Komentar</option>
         <option value="Akademik">Akademik</option>
-        <option value="nonakademik">Non-Akademik</option>
-        <option value="fasilitas">fasilitas</option>
+        <option value="nonakademik">NonAkademik</option>
+        <option value="fasilitas">Fasilitas</option>
         <option value="lainlain">Lain-Laink</option>
     </select>
     
@@ -38,13 +38,12 @@
     <br>
 
 <div id="tombol">
-    <button type="submit" name="submit">UPDATE !</button>
+    <button type="submit" name="submit">UPDATE KOMENTAR !</button>
 </div>
 </form>
 
 <?php
 }
 ?>
-
 </body>
 </html>
