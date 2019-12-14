@@ -1,3 +1,4 @@
+<fieldset>
 <html>
     <head>
         <title>SIMPLE LAPOR</title>
@@ -43,3 +44,5 @@
 
     </body>
 </html>
+
+</fieldset>

@@ -1,10 +1,17 @@
+
 <html>
     <head>
         <title>SIMPLE LAPOR</title>
         <link rel="stylesheet" href="<?php echo base_url('assets/css/style.css') ?>">
     </head>
+    <div id="container">
     <body>
-    <h1>SIMPLE LAPOR!</h1>
+        
+        
+       <div class="h1"><center> <h1>SIMPLE LAPOR!</h1> </center> </div> <br>
+       <div class="p"> <center> Layanan Aspirasi dan Pengaduan Online Rakyat </center> </div>
+       <div class="p1"><center> Sampaikan Laporan Langsung kepada instansi Pemerintah Berwenang </center></div>
+    </div>
     
     <form onsubmit="return validateFile()" action="<?php echo base_url('index.php/laporan/create')?>" method="POST" enctype="multipart/form-data">
     <textarea id="laporan" name="laporan" rows="20" cols="80" placeholder="Laporan/Komentar"></textarea>
