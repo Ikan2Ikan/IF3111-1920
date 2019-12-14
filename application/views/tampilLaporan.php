@@ -15,6 +15,10 @@
 
     </form>
     
+    <a href="<?php echo base_url('index.php/laporan/buatLaporan/') ?>"><button type="" name="create" class="btn btn-primary">Buat Laporan/Komentar</button></a>
+    <br>
+    <hr>
+    
     <?php
     echo "laporan atau komentar terakhir<br>";
 
@@ -29,9 +33,11 @@
         }
         ?>
 
-        <a  href="<?php echo base_url();?>index.php/laporan/detail/<?php echo $data->id;?>">Lihat Selengkapnya</a>
+        <?php $new_datetime = DateTime::createFromFormat ( "Y-m-d H:i:s", $data->updated_at );?>
+        
+        Waktu: <?php echo $new_datetime->format('d-m-Y H:i'); ?>  <a  href="<?php echo base_url();?>index.php/laporan/detail/<?php echo $data->id;?>">Lihat Selengkapnya</a>
         <br>
-        <br>
+        <hr>
     <?php
     }
     ?>
