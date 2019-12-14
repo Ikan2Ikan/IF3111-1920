@@ -8,11 +8,12 @@ class Lapor_model extends CI_model {
 
     public function createLaporan() 
     {
+        date_default_timezone_set('Asia/Jakarta');
         $data = [
             "nama" => "cobaanama",
             "laporan" => $this->input->post('komentar'),
-            "tanggal" => "cobaatgl",
-            "waktu" => "cobawaktu",
+            "tanggal" => mdate('%Y-%m-%d'),
+            "waktu" => mdate('%H:%i:%s'),
             "file" => "cobafile",
             "aspek" => $this->input->post('aspek')
         ];

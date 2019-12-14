@@ -18,7 +18,7 @@
                 <input type="text" placeholder="Enter Search Key">
                 <button type="submit" class="button_1">Search</button>
             </form>
-                <p>Tidak Menemukan yang dicari? <button type="submit" class="button_2">Buat Laporan + </button></p>
+                <p>Tidak Menemukan yang dicari? <button class="button_2" type="button" onclick="location.href='<?php echo base_url('create')?>'">Buat Laporan + </button></p>
         </div>
         
     </section>
