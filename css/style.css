@@ -50,13 +50,22 @@ h1{
     text-align: center;
 }
 
+#key{
+    width: 870px;
+    height: 9%;
+}
+
+#sub{
+    width: 120px;
+    height: 9%;
+}
+
 .buat {
     line-height: 50px;
     text-align: center;
 }
 
 .buat a{
-    
     color: black;
     text-decoration: none;
 }
