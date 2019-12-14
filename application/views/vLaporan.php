@@ -35,7 +35,7 @@
                             <p>Aspek: <?php echo $kategori ?>&nbsp;&nbsp;&nbsp;&nbsp;</p>
                         </div>
                         <div class="rightFloat">
-                            <p><a href="<?php echo site_url('Laporan/hapus/') . $IdKomentar ?>">Hapus Laporan/Komentar</a></p>
+                            <p><a href="<?php echo site_url('Laporan/edit/') . $IdKomentar ?>">Edit </a>| <a href="<?php echo site_url('Laporan/hapus/') . $IdKomentar ?>">Hapus Laporan/Komentar</a></p>
                         </div>
                     </div>
                 </div>

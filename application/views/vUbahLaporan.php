@@ -14,10 +14,20 @@
     <div>
         <h1 id="judulPage">SIMPLE LAPOR!</h1>
         <div class="container">
+            <?php
+            foreach ($dataLaporan as $data) :
+                $IdKomentar = $data['id_laporan'];
+                $namaUser = $data['nama'];
+                $pesan = $data['komentar'];
+                $waktu = $data['waktu'];
+                $lampiran = $data['lampiran'];
+                $kategori = $data['kategori'];
+
+            endforeach; ?>
             <p>Buat laporan/komentar</p>
             <hr>
-            <form action="<?= base_url('Laporan/input_laporan'); ?>" method="POST" enctype="multipart/form-data">
-                <textarea name="comment" placeholder="Laporan/Komentar" aria-valuemax="500"></textarea>
+            <form action="<?= base_url('Laporan/update/' . $IdKomentar); ?>" method="POST" enctype="multipart/form-data">
+                <textarea name="comment" placeholder="Laporan/Komentar" aria-valuemax="500"><?php echo $pesan ?></textarea>
                 <select style="border: 1px solid black;color: black;" name="pilih">
                     <option value="Mahasiswa">Mahasiswa</option>
                     <option value="Dosen">Dosen</option>
