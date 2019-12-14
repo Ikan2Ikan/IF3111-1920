@@ -58,9 +58,7 @@
       return false;
     }else if(banyak_kata.length<20){
       alert('Jumlah Text Harus lebih dari 20 kata!');
-      return false;
     }
 
   }
 
-</script>
