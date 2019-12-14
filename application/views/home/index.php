@@ -13,8 +13,7 @@
  <body> 
 <p class="judul">SIMPLE LAPOR!</p>
  <div class="lapor">
-
-
+// test komen
     <form class="pencarian" onSubmit="return pencarian(this)" action="<?php echo base_url('cari')?>" method="post">
 
         <input class="search" type="text" name="keyword" placeholder="search" autocomplete="off" autofocus>	
