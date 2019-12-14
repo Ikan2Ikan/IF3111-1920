@@ -35,8 +35,8 @@
  				 	 <textarea name="deskripsi" rows="10" placeholder="Komentar"></textarea>
  			 	</div>
 
- 			 	Pilih Aspek Pelaporan/Komentar :  
  			 	<select name="kategori">
+ 			 		<option disabled selected>Pilih Aspek Pelaporan/Komentar :</option>
  			 		<option value="Dosen">Dosen</option>
 					<option value="Staff">Staff</option>
 					<option value="Mahasiswa">Mahasiswa</option>
@@ -46,7 +46,7 @@
 
 				<br><br>
 				<div>
-					<input name="userfile" type="file" size="20">
+					<input name="userfile" type="file" >
 				</div>
  			 	<div class="sbmt">
  			 		<button type="submit">Buat LAPOR!</button>

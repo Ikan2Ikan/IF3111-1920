@@ -30,14 +30,14 @@
 		<div class="konten">
 			<h2>Buat Laporan/Komentar</h2>
 			<hr>
-			<?php echo form_open('../../../../../posts/update'); ?>
+			<?php echo form_open_multipart('../../../../../posts/update'); ?>
 				<input type="hidden" name="id" value="<?php echo $post['id']; ?>">
   				<div>
  				 	 <textarea name="deskripsi" rows="10" placeholder="Komentar"><?php echo $post['deskripsi']; ?></textarea>
  			 	</div>
 
- 			 	Pilih Aspek Pelaporan/Komentar :  
- 			 	<select name="kategori" value="<?php echo $post['kategori']; ?>">
+ 			 	<select name="kategori" >
+ 			 		<option selected="<?php echo $post['kategori']; ?>"><?php echo $post['kategori']; ?></option>
  			 		<option value="Dosen">Dosen</option>
 					<option value="Staff">Staff</option>
 					<option value="Mahasiswa">Mahasiswa</option>
@@ -47,7 +47,7 @@
 
 				<br><br>
 				<div>
-					<input name="lampiran" type="file" value="<?php echo $post['lampiran']; ?>"/>
+					<input name="userfile" type="file"/>
 				</div>
  			 	<div class="sbmt">
  			 		<button type="submit">Buat LAPOR!</button>

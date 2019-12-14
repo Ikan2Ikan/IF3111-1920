@@ -30,10 +30,10 @@
 			return true;
 		}
 
-		public function update_post(){
+		public function update_post($lampiran){
 			$data = array(
 				'deskripsi' => $this->input->post('deskripsi'),
-				'lampiran' => $this->input->post('lampiran'),
+				'lampiran' => $lampiran,
 				'kategori' => $this->input->post('kategori'),
 			);
 
