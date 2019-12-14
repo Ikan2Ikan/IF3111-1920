@@ -18,11 +18,20 @@ class Control extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
+
+	public function __construct(){
+        parent::__construct();
+        $this->load->model('laporan_model');
+        $this->load->helper('url_helper');
+	}
+	
 	public function index()
 	{
+		$data['laporan'] = $this->laporan_model->get_laporan();
+		// $data['lampiran'] = '';
 		$this->load->helper('url_helper');
-		$this->load->view('home');
-	
+		$this->load->view('home' , $data);
+		
 	}
 	public function buat(){
 		$this->load->view('buatlapor');	
