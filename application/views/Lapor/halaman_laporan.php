@@ -18,8 +18,7 @@
 
 ?>
 <br><br><br>
-<center >
-
+<center>
 <form method="POST" onSubmit="return validasi(this)" action="<?php echo base_url('Halaman_utama/ProsesDataLapor') ?>" enctype="multipart/form-data">
 <textarea type="text" name="komentar" size = "100px" autofocus autocomplete="off" cols="30" rows="7" id="texts"  placeholder="ketik laporan anda......."  ></textarea>
 </center>
