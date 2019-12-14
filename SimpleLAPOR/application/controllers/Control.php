@@ -25,7 +25,20 @@ class Control extends CI_Controller {
         $this->load->helper('url_helper');
 	}
 
+	public function hapus($id){
+		$delete_row = array('no' => $id);
+		$this->laporan_model->hapus_data($delete_row, 'laporan');
+		redirect('');
+	}
 
+	public function update($id){
+	//	$komentar = $th
+		$update_row = array('no' => $id);
+		$this->laporan_model->update_data($update_row);
+
+		redirect('');
+
+	}
 	public function index()
 	{
 		$data['laporan'] = $this->laporan_model->get_laporan();
@@ -39,6 +52,10 @@ class Control extends CI_Controller {
 	}
 
 	public function search(){
+		$keyword = $this->input->get('cari');
+		$data['result'] = $this->laporan_model->search_data($keyword, ['laporan']);
+		$this->load->view('hasilsearch' , $data);
+
 		redirect('');
 	}
 

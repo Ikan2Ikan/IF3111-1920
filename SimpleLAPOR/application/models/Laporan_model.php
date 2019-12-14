@@ -21,6 +21,17 @@ class Laporan_model extends CI_Model{
         $this->db->insert($table, $data);
     }
 
+    public function hapus_data($delete_row , $table ){
+        $this->db->where($delete_row);
+        $this->db->delete($table);
+    }
+
+    public function search_data($keyword , $tabel){
+        $this->db->like('komentar' , $keyword);
+        $query = $this->db->get($table);
+
+        return $query->result_array();
+    }
 }
 
 ?>

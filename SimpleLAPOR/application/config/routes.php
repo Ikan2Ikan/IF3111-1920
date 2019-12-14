@@ -53,6 +53,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'Control';
 //$route['home'] ='Control/home';
 //$route['Control/view/(:any)'] = 'Control/view/$1';
+$route['update/(:any)'] = 'Control/update/$1';
+$route['hapus/(:any)']  = 'Control/hapus/$1';
 $route['search'] = 'Control/search';
 $route['tambah'] = 'Control/tambah';
 $route['create'] = 'Control/buat';
