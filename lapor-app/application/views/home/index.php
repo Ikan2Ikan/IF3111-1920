@@ -1,6 +1,6 @@
 <?php
-$_POST['keyword'] = $this->uri->segment(3);
-var_dump($_POST['keyword']);
+// $_POST['keyword'] = $this->uri->segment(3);
+// var_dump($_POST['keyword']);
 ?>
 <div class="container">
 
