@@ -34,7 +34,9 @@
 				echo $aspek;
 			}
 		}?>
-		<a href="#" class="btn btn-sm btn-success" data-toggle="modal" data-target="#ModalaAdd">
-		<span class="fa fa-plus">Hapus Laporan/Komentar X</span> </a>
+		<span>
+		<?php foreach($posting as $key){?>
+			<?php echo anchor('crud/hapus/'.$id = $key->ID,'Hapus Laporan/Komentar X'); ?></span> </a>
+		<?php } ?>
 	</p></div>
 	<hr color="black" size="2">
