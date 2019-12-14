@@ -180,3 +180,15 @@ button{
 button:hover{
   background: deepskyblue;
 }
+
+.footer{
+  left: 0;
+  bottom: 50%;
+  width: 100%;
+  background-color:#9099A2;
+  text-align: center;
+}
+
+h6{
+  color: white;
+}
