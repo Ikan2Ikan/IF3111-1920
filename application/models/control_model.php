@@ -47,18 +47,17 @@ class control_model extends CI_Model
     }
 
     // proses UPDATE ==========================================================
-    public function update($reload, $id)
+    public function update($id, $upload)
     {
         $object = array(
             'laporan' => $this->input->post('laporan'),
             'aspek' => $this->input->post('aspek'),
-            'lampiran' => $reload['file']['file_name'],
-            'ukuran_file' => $reload['file']['file_size'],
-            'tipe_file' => $reload['file']['file_type']
+            'lampiran' => $upload['file']['file_name'],
+            'ukuran_file' => $upload['file']['file_size'],
+            'tipe_file' => $upload['file']['file_type']
         );
 
-        $this->db->where('id', $id);
-        $this->db->update('laporan', $object);
+        return $this->db->update('laporan', $object, array('id' => $id));
     }
 
     // proses DELETE ==========================================================
