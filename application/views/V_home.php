@@ -1,41 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<style>
+
+</style>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" type="text/css" href="home.css">
+	<title>LAPOR! ITERA</title>
+
+</head>
+
+<body>
 	<div class="container">
-		<div class="content">
-			<div class="heading">
-				<h1>ITERA  LAPOR!</h1>
+		<div class="kepala">
+			<div>
+				<h1 class="judul">LAPOR! ITERA</h1>
 			</div>
-			<!-- <h3>Sampaikan laporan Anda langsung kepada instansi kampus berwenang</h3> -->
 
-			<div class="heading">
-				<p>Buat Laporan/Komentar</p>
-				<hr>
+			<div>
+				<p class="laporan">Buat Laporan/Komentar</p>
 			</div>
+			<hr>
+			</hr>
 			<form action="post">
-				<div class="nama">
-					<input class="type" name="nama" placeholder="Nama Pelapor">
+				<input type="text" name="nama" placeholder="nama pelapor">
+				<div class="kolom-lapor">
+					<textarea type="text" name="laporan" rows="19" cols="111" placeholder="Ketik laporan Anda..."></textarea>
 				</div>
-				<br>
-				<div class="keterangan">
-					<textarea type="text" name="laporan" rows="13" cols="97" placeholder="Ketik laporan Anda..."></textarea>
-				</div>
-				<br>
-				<div class="aspek">
-                <select name="aspek">
-                    <option default>Pilih Aspek Pelaporan/Komentar</option>
-                    <option value="Dosen">Dosen</option>
-                    <option value="Staff">Staff</option>
-                    <option value="Mahasiswa">Mahasiswa</option>
-                    <option value="Infrastruktur">Infrastruktur</option>
-                </select>
-           		</div>
-			<br>
-			<div class="file">
-                <input class="file_in" type="file" name="lampiran">
-            </div>
-			<br>
-			<div class="lapor">
+				<input type="file">
+			</form>
+			<div class="kolom-lapor1">
 				<input class="button" type="submit" value="Buat LAPOR!">
 			</div>
-			</form>
+			<hr>
+			</hr>
 		</div>
-	</div>
+</body>
+
+</html>
