@@ -10,7 +10,7 @@ h1 {
 
 #formcari {
 	display: inline-block;
-	width: 50%;
+	width: 53%;
 	height: 7%;
 	border-style: solid;
 	padding: 10px;
@@ -31,9 +31,19 @@ h1 {
     text-align: center;
 }
 
+#textarea {
+	resize:none;
+ 	width:790px;
+  	height:200px;
+}
+
+#tombol {
+	text-align: right;
+}
+
 .lapor {
     text-align: center;
-    line-height: 50px;
+	line-height: 50px;
 }
 
 .laporanterakhir {
@@ -43,4 +53,53 @@ h1 {
     margin-bottom: 2vh;
     margin-top: -1vh;
     border: 1px solid white;
+}
+
+.buatlaporan {
+	margin-left: 20vw;
+    margin-right: 20vw;
+    font-size: 15px;
+    margin-bottom: 2vh;
+    margin-top: -1vh;
+    border: 1px solid white;
+}
+
+.lihatlaporan {
+	margin-left: 20vw;
+    margin-right: 20vw;
+    font-size: 15px;
+    margin-bottom: 2vh;
+    margin-top: -1vh;
+    border: 1px solid white;
+}
+
+.ubahlaporan {
+	margin-left: 20vw;
+    margin-right: 20vw;
+    font-size: 15px;
+    margin-bottom: 2vh;
+    margin-top: -1vh;
+    border: 1px solid white;
+}
+
+.but {
+	float: right;
+}
+
+.back {
+	text-align: center;
+    display: inline-block;
+	height: 9%;
+	width: 5%;
+	border: thin;
+	border-radius: 5px;
+	position: relative;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-left: 10vw;
+	left: -1px;
+	font-size: 15px;
+    background: lightgrey;
 }
