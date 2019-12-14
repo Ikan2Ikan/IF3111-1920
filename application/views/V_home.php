@@ -21,6 +21,8 @@
 			<div class="head">
 				<p> Buat Laporan/Komentar</p>
 			</div>
+			<hr>
+			</hr>
 			<form method="post">
 				<div class="keterangan">
 					<input type="text" placeholder="Nama Pelapor">

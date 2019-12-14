@@ -15,8 +15,8 @@
             <h1 class="judul">ITERA LAPOR!</h1>
         </div>
         <nav>
-            <a href="V_simple.php">Home</a> |
-            <a href="detail.php">Detail Laporan/Komentar</a>
+            <a href="">Home</a> |
+            <a href="V_detail.php">Detail Laporan/Komentar</a>
         </nav>
         <div>
             <form>
