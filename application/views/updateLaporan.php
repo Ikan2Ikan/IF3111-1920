@@ -15,24 +15,22 @@
             <br>
         </div>
         <div class=konten>
-            <br><br><br>
+            <br>
+            <br>
+            <br>
             <form onsubmit="return validateFile()" action="<?php echo base_url('index.php/laporan/update/'.$laporan->id)?>" method="POST" enctype="multipart/form-data">
                 <textarea id="laporan" name="laporan" rows="20" cols="80" placeholder="Laporan/Komentar"> <?php echo $laporan->laporan ?></textarea>
                 <p style="color:red" id="error_laporan"></p>
                 
                 <br>
                 <select name="id_aspek" style="width: 150px">
-                <?php
-                
-                    foreach($aspek as $value){?>
-                        
-                        <option <?php if($laporan->id_aspek==$value->id){echo 'selected'; } ?> value="<?php echo $value->id?>"><?php echo $value->nama ?></option>
-                        
-                    <?php  }
-                ?>
+                    <?php
+                        foreach($aspek as $value){?>    
+                            <option <?php if($laporan->id_aspek==$value->id){echo 'selected'; } ?> value="<?php echo $value->id?>"><?php echo $value->nama ?></option>
+                        <?php  
+                        }
+                    ?>
                 </select>
-
-
                 <br>
                 <br>
 
@@ -41,7 +39,6 @@
                 <br>
 
                 <button type="submit" id="submitButton" disabled="true" name="updateLapor" class="btn btn-primary">Update LAPOR!</button> 
-            
             </form>
             <br>
             <br>
@@ -52,16 +49,8 @@
             Reza Octaviany . 14117062
             <br>
             Raras Franita . 14117063
-        
         </div>
     </div>
-
-
-    
-    
-        
-
-
     <script>
     
     function validation(){

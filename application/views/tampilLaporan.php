@@ -1,4 +1,3 @@
-<fieldset>
 <html>
     <head>
         <title>SIMPLE LAPOR</title>
@@ -21,10 +20,11 @@
             </div>
             <div class = "konten">
                 <br>
-                laporan/komentar terakhir<br>
+                laporan/komentar terakhir
+                <br>
                 <hr>
+
                 <?php
-                
                 foreach($laporan as $data){
                     echo "anonim<br>";
                     $data->laporan=substr($data->laporan,0,30);
@@ -38,11 +38,13 @@
 
                     <?php $new_datetime = DateTime::createFromFormat ( "Y-m-d H:i:s", $data->updated_at );?>
                     
-                    <p>Waktu: <?php echo $new_datetime->format('d-m-Y H:i'); ?>  <a  href="<?php echo base_url();?>index.php/laporan/detail/<?php echo $data->id;?>">Lihat Selengkapnya</a> </p>
+                    <p>Waktu: <?php echo $new_datetime->format('d-m-Y H:i'); ?><a  href="<?php echo base_url();?>index.php/laporan/detail/<?php echo $data->id;?>">Lihat Selengkapnya</a> </p>
                     
                     <hr>
                 <?php
-                } ?>
+                } 
+                ?>
+                
                 <center><?php echo $this->pagination->create_links();?></center>
                 <br>
             </div>
@@ -56,5 +58,3 @@
         </div>
     </body>
 </html>
-
-</fieldset>
