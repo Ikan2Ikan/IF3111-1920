@@ -1,0 +1,7 @@
+Cara Install Aplikasi
+
+1. Pindahkan folder Codeigniter ke dalam folder htdocs. (bentuknya jadi xampp/htdocs/Codeigniter/..)
+2. Export basis data dari file sql yang tertera dalam folder basis data.
+3. Masuk ke dalam localhost/codeigniter. Maka itulah hasil dari projectnya :)
+
+Terimakasih.

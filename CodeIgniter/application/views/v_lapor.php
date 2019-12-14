@@ -19,7 +19,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<label>Buat Laporan</label>
 	<hr><br>
 
-	<form method="POST" action="tambah_aksi" name="myForm" onsubmit="return validateForm()">
+	<form method="POST" action="tambah_aksi" name="myForm" onsubmit="return validateForm(this)">
 		<input type="text" class="nama" name="nama" placeholder=" Nama"><br><br>
 		<input type="text" class="judul" name="judul" placeholder=" Judul Laporan"> <br><br>
 		<textarea class="area" id="card" name="laporan" placeholder=" Laporan/Komentar"></textarea> <span></span>
@@ -39,7 +39,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		?>
 		<input type="text" name="waktu" value="<?php echo date('d-m-Y H:i:s')?>" hidden>
 		<br><br>
-		<input type="submit" class="but" value="Buat LAPOR!"><br><br>
+		<p align="right">
+		<input type="submit" class="but" value="Buat LAPOR!" onclick="return confirm('Apakah anda yakin datanya sudah benar?')"></p>
 
 		<hr>
 	</form>

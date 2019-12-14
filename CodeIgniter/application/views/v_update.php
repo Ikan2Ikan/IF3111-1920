@@ -5,54 +5,57 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Buat Laporan!</title>
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/v_lapor.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>Buat Laporan!</title>
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/v_lapor.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
-	<script type='text/javascript' src="<?php echo base_url(); ?>assets/js/jquery.min.js"></script>
+    <script type='text/javascript' src="<?php echo base_url(); ?>assets/js/jquery.min.js"></script>
 
 </head>
 
 <body>
-
-		<?php foreach ($ubah as $up )  :?>
+<?php foreach ($ubah as $up )  :?>
         <?php $id = $up['id']; ?>
-        <?php $nama = $up['nama']; ?>
-        <?php $judul = $up['judul']; ?>
         <?php $laporan = $up['laporan']; ?>
         <?php $aspek = $up['aspek']; ?>
         <?php $file = $up['file']; ?>
-	
-	<a href="<?php echo site_url('home')?>">
-	<h1>SIMPLE LAPOR!</h1></a>
-	<label>Buat Laporan</label>
-	<hr><br>
+        
+   
 
-	<form method="POST" action="update" name="myForm" onsubmit="return validateForm()">
-		<input type="text" name="id" value="<?php $up['id']?>" hidden>
-		<input type="text" class="nama" name="nama" placeholder=" Nama" value=" <?php echo $nama ?>"><br><br>
-		<input type="text" class="judul" name="judul" placeholder=" Judul Laporan" value=" <?php echo $judul ?>"> <br><br>
-		<textarea class="area" id="card" name="laporan" placeholder=" Laporan/Komentar"><?php echo $laporan?></textarea> <span></span>
-		<br><br>
-		<select style="height: 40px;" name="aspek">
-			<option>Pilih Aspek Pelaporan/Komentar:</option>
-			<option>Dosen</option>
-			<option>Infrastruktur</option>
-			<option>Staff</option>
-			<option>Mahasiswa</option>
-			<option>Pengajaran</option>
-		</select>
-		<br><br>
-		Pilih file: <input type="file" name="file" placeholder="File"  name="kirim" accept=".img, .png, .jpeg, .jpg, .doc, .docx, .xls, .xlsx, .ppt, .pptx, .pdf" value="<?php echo $up['file']?>">
-		<?php
-		date_default_timezone_set('Asia/Jakarta'); //memanggil fungsi waktu dan membuat format waktu Jakarta 
-		?>
-		<input type="text" name="waktu" value="<?php echo date('d-m-Y H:i:s')?>" hidden>
-		<br><br>
-		<input type="submit" class="but" value="Buat LAPOR!"><br><br>
+<a href="<?php echo site_url('home')?>">
+    <h1>SIMPLE LAPOR!</h1></a>
+    <label>Ubah Laporan</label>
+    <hr><br>
 
-		<hr>
-	</form>
-<?php endforeach; ?>
+        <form action="" method="post" name="myForm" onsubmit="return validateForm()">
+        <input type="hidden" name="id_lapor" value="<?php $up['id']; ?>" >
+        <input type="text" class="nama" name="nama" placeholder=" Nama" value="<?= $up['nama']?>"><br><br>
+		<input type="text" class="judul" name="judul" placeholder=" Judul Laporan" value="<?= $up['judul']?>"><br><br>
+        <textarea class="area" id="card" name="laporan" placeholder=" Laporan/Komentar"><?php echo $laporan ?></textarea><br>
+            <br>
+                <select id="aspek" name="aspek" value="<?php echo $aspek?>">
+                    <option style="height: 40px;">Pilih Aspek Pelaporan/Komentar:</option>
+
+                        <option value="Dosen">Dosen</option>
+                        <option value="Staff">Staff</option>
+                        <option value="Mahasiswa">Mahasiswa</option>
+                        <option value="Infrastruktur">Infrastruktur</option>
+                        <option value="Pengajaran">Pengajaran</option>
+
+                </select><br>
+            
+            <br>
+            <?php echo $up['file']?> <input type="file" name="file" value="Browse.."  onclick="return alert('Jika sebelumnya menyertakan file, mohon diinputkan lagi di halaman ini.')" name="kirim" accept=".img, .png, .jpeg, .jpg, .doc, .docx, .xls, .xlsx, .ppt, .pptx, .pdf">
+            
+            <p align="right">
+                <input type="submit" class="but" value="Ubah LAPOR!" onclick="return confirm('Apakah anda yakin datanya sudah benar?')"></p>
+                <div id="valid_msg">
+            
+            <hr>
+        </form>
+
+        <?php endforeach; ?>
+    </div>
+    
 </body>
 </html>

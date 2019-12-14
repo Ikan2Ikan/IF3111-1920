@@ -17,10 +17,11 @@ class Update extends CI_Controller{
        
         $this->form_validation->set_rules('laporan','Laporan','required');
         $this->form_validation->set_rules('aspek','Aspek','required');
+        $this->form_validation->set_rules('nama','Nama','required');
+        $this->form_validation->set_rules('judul','Judul','required');
 
         if($this->form_validation->run() == FALSE){
-            $data ['judul'] = 'Ubah Laporan';
-            $this->load->view('ubah_laporan/index',$data);
+            $this->load->view('v_update',$data);
         }
         else{
             $this->m_data->updateLaporan();

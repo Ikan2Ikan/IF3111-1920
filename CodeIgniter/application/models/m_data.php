@@ -37,10 +37,7 @@ class M_data extends CI_Model{
     }
 
     public function ubahLaporan(){
-        // return $this->db->get('simple_lapor')->result_array();
         $id = $_GET["ubah_id"];
-        // return "SELECT * FROM simple_lapor WHERE id_lapor= '$id'";
-        // return $this->db->get('simple_lapor')->result_array();
         $query = $this->db->get_where('lapor', array('id' => $id));
         return $query->result_array();
         
@@ -48,22 +45,18 @@ class M_data extends CI_Model{
     public function updateLaporan(){
         $id = $_GET["ubah_id"];
 
-        
-
-      
-
-    
-    
-    $data = [ 
-        "laporan" => $this->input->post('laporan',true),
-        "file" => $file,
-        "aspek" => $this->input->post('aspek',true)
-    ];
+        $data = [ 
+            "laporan" => $this->input->post('laporan',true),
+            "aspek" => $this->input->post('aspek',true),
+            "nama" => $this->input->post('nama',true),
+            "judul" => $this->input->post('judul',true),
+            "file" => $this->input->post('file',true)
+        ];
 
 
-    $this->db->update('lapor', $data, array('id' => $id));
-    echo "<script>alert('Berhasil di ubah');</script>";
-    echo "<script>location='home';</script>";
+        $this->db->update('lapor', $data, array('id' => $id));
+        echo "<script>alert('Berhasil di ubah');</script>";
+        echo "<script>location='home';</script>";
     }
 
 	

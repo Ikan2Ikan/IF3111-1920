@@ -20,10 +20,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <button type="submit" name="submit"><i class="fa fa-search"> CARI</i></button>
       </form>
       <br>
-      <a style="text-align: center;" href="<?php echo site_url('home/lapor') ?>">Buat Laporan/Komentar
-        <i class="fa fa-plus-square"></i>
-      </a><br><br><br>
-      <label class="lampiran">Lampiran/Komentar Terakhir</label>
+      <p align="center">
+      <a href="<?php echo site_url('home/lapor') ?>">Buat Laporan/Komentar
+        <i class="fa fa-plus-square"></i></p>
+      </a><br>
+      <label style="text-align: left !important;">Lampiran/Komentar Terakhir</label>
   <hr>
       
          <?php foreach ($lapor as $l )  :?>
@@ -36,15 +37,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <?php echo substr($l['laporan'], 0, 250); 
             echo " ..."?></p>
           
-          <p align="left">
+            <p align="left">
             <i class="fa fa-folder"></i>
               <?php
                 echo 'Lampiran: '; 
                 echo  $l['file']; 
                 ?>
 
+
               
-              <span>
+                <span>
                 <i class="fa fa-calendar"></i>
                 Waktu:
                 <?= 
@@ -55,7 +57,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 
                 <?php
                 echo "<tr>
-                <a href='detail?detail_id=$id'>Lihat Selengkapnya  &nbsp</a>
+                <a href='detail?detail_id=$id'>Lihat Selengkapnya&nbsp</a>
                 </tr>";?>
                 <i class="fa fa-caret-square-o-right"></i></span>
               </p>

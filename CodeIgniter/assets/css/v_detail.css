@@ -20,18 +20,10 @@
 		hr{
 			border: 1px solid;
 			color: black;
-			width: 72%;
 		}
 		span{
-			position: absolute;
-			right: 1px;
+			position: fixed;
+			left: 70%;
 		}
-		p{
-			width: 72%;
-			position: relative;
-			left: 165px;
-		}
-		label{
-			position: relative;
-			left: 165px;
-		}
+		
+		

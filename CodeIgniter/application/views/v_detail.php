@@ -22,7 +22,7 @@
         <?php $id = $d['id']; ?>
         <p><?= $d['laporan']; ?> </p>
     	<?php endforeach; ?>
-		?>
+	<br>
 		</p>
 		
 		<p align="left"> Lampiran: <?= $d['file']?><br><br>
@@ -32,18 +32,18 @@
 		Waktu: <?= $d['waktu']; ?> &nbsp &nbsp
 		Aspek: <?= $d['aspek']; ?>
 
-		<span><?php
+		<span><i class="fa fa-close"></i><?php
                 echo "
-                <a href= javascript:confirmDelete('delete?hapus_id=$id')>Hapus Laporan/Komentar &nbsp</a>
+                <a href= javascript:confirmDelete('delete?hapus_id=$id')> Hapus Laporan/Komentar &nbsp</a>
                	
-               	<a href='update?ubah_id=$id'> || Ubah Laporan/Komentar  &nbsp</a>
+               	<a href='update?ubah_id=$id'> || Ubah Laporan/Komentar
                	";
 
-               	?>
+               	?><i class="fa fa-edit"></i></a>
                 
-		</span><i class="fa fa-edit"></i>
+		</span></p>
 		<hr>
-	</p>
+	
 		
 </body>
 </html>
