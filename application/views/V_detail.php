@@ -22,21 +22,17 @@
                 <p class="laporan">Detail Laporan/Komentar</p>
             </div>
             <hr>
-            <p><?= $result['nama'] ?></p>
-            <p><?= $result['isi_comm']; ?></p>
-            <p>Lampiran : <?php $ex=explode('.', $result['lampiran'])?> </p>
-            <?php $ex=end($ex) ?>
-            <?php if($ex=='jpg'|| $ex=='png'): ?>
-            <img src="<?= base_url() . 'assets/file/' . $result['lampiran']?> ">
-            <?php endif;?>
-            <br>
+            <p>Nama Pelapor : <?= $result['nama'] ?></p>
+            <p><?= $result['isi_comm'] ?></p>
+            <p>Lampiran :  </p>
+            <a href="<?= base_url('assets/file/') . $result['lampiran']?>"><?=$result['lampiran']?></a>
+            <?= base_url('assets/file/') . $result['lampiran']?>
+            <br><br>
             <div>
                 <tr class="jarak">
                     <td class="time">Waktu : <?= $result['timestamp']; ?></td>
                     <td class="aspek">Aspek : <?= $result['aspek']; ?></td>
-                    <td class="hapus"><a href="<?php base_url(); ?>home/delete/<?= $result['id_comm']
-                    ?>">Hapus Laporan/Komentar</a></td>
-                    </td>
+                   
                 </tr>
                 <hr>
             </div>

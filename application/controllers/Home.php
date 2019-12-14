@@ -18,12 +18,9 @@ class Home extends CI_Controller
         $this->load->view('V_home');
         if (isset($_POST['submit'])) {
             $data=$this->Comment->tComm();
-            var_dump($data);
-            die;
-        }else{
-            echo "heh, salah";
         }
     }
+
     public function detail($id)
     {
         $data['result'] = $this->Comment->sComm2($id);
@@ -35,14 +32,27 @@ class Home extends CI_Controller
         redirect('home');
     }
 
-     public function fileUpload()
-     {
-         $file['upload_path'] = './assets/file';
-         $file['allowed_types']  = 'jpg|png|doc|gif|jpeg|pdf';
-         $file['max_size'] = 10000;
+    public function ubah($id){
+        $data['ubah']=$this->Comment->sComm2($id);
+        $this->load->view('V_ubah',$data);
+        if (isset($_POST['submit'])) {
+            $data=$this->Comment->uComm();
+            redirect('home');
+           
+        }
+       
+       
+    }
+    
 
-        $this->load->library('upload', $file);
-        $this->upload->do_upload('lampiran');
+   //  public function fileUpload()
+    // {
+      //   $file['upload_path'] = './assets/file';
+        // $file['allowed_types']  = 'jpg|png|doc|gif|jpeg|pdf';
+         //$file['max_size'] = 10000;
+
+       // $this->load->library('upload', $file);
+        //$this->upload->do_upload('lampiran');
         // if ($this->upload->do_upload('lampiran')) {
         //     echo "<script>
         //     alert('berhasil di upload');
@@ -53,5 +63,5 @@ class Home extends CI_Controller
         //     </script>";
         // }
         // redirect('home');
-    }
+    
 }

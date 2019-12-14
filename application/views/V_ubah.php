@@ -19,14 +19,15 @@
 				<h1>ITERA LAPOR!</h1>
 			</div>
 			<div class="head">
-				<p> Buat Laporan/Komentar</p>
+				<p> Ubah Laporan/Komentar</p>
 			</div>
 			<hr>
 			<form method="post" onsubmit="return validasi()">
 				<div class="keterangan">
-					<input type="text" placeholder="Nama Pelapor" name="nama">
+                    <input type="hidden" name="id" value="<?= $ubah['id_comm'] ?>">
+					<input type="text" placeholder="Nama Pelapor" name="nama" value="<?= $ubah['nama'] ?>">
 					<br>
-					<textarea name="comment" placeholder="Tulis Laporan/Komentar" id="text"></textarea>
+					<textarea name="comment" placeholder="Tulis Laporan/Komentar" id="text"><?= $ubah['isi_comm']  ?></textarea>
 				</div>
 				<br>
 				<div class="aspek">
@@ -44,7 +45,7 @@
 				</div>
 				<br>
 				<div class="lapor">
-					<button type="submit" name="submit">Buat LAPOR!</button>
+					<button type="submit" name="submit">Ubah LAPOR!</button>
 				</div>
 			</form>
 		</div>

@@ -1,8 +1,12 @@
+body {
+	background-image: url('img/dark-grey-terrazzo.png');
+}
+
 .container {
 	width: 900px;
-	height: auto;
+	height: 700px;
 	margin: auto;
-	background-color: #5f9ea0;
+	background-image: url('img/symphony.png');
 }
 
 .container .heading {
@@ -56,6 +60,6 @@
 .content .lapor button {
 	background: transparent;
 	padding: 6px;
-	color: whitesmoke;
-	border: 0.5px solid black;
+	color: black;
+	border: 0.5px solid #5f9ea0;
 }

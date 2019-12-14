@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <link rel="stylesheet" href="<?= base_url('assets/style.css') ?>">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <title>ITERA LAPOR!</title>
 </head>
 
@@ -30,10 +32,12 @@
         <div>
             <p class="laporan">Laporan/Komentar Terakhir</p>
         </div>
-
+        <!-- ahsjskslslsjsjjs -->
         <hr>
         <?php foreach ($result as $data) : ?>
             <div class="itm-title">
+           <p> <a href="<?= base_url(); ?>home/delete/<?= $data['id_comm']?>">Hapus Komentar</a></p>
+           <p> <a href="<?= base_url(); ?>home/ubah/<?= $data['id_comm']?>">Ubah Komentar</a></p>
                 <p><?= $data['nama'] ?></p>
                 <p><?= $data['isi_comm']; ?></p>
             </div>
