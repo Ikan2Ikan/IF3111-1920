@@ -2,16 +2,16 @@ function Daftar() {
 	alert("Akun Anda Berhasil Didaftarkan $id");
 }
 
-function peringatan() {
-	alert("Pastikan anda memasukan laporan yang valid");
-}
-
-function valid() {
-	var komen = document.getElementById("komentar").value;
-	if (komen.length > 20) {
-		alert('Anda harus mengisi data dengan lengkap !');
-		return true;
-	}else{
-		alert('Anda harus mengisi data dengan lengkap !');
+function valid(form) {
+	if (form.komentar.value.length > 20) {
+		if(form.kategori.value == "none"){
+			alert('Anda harus mengisi kategori !');
+			return false;
+		} else {
+			return true;
+		}
+	}else {
+		alert('Anda harus mengisi komentar minimal 30 karakter !');
+		return false;
 	}
 }
