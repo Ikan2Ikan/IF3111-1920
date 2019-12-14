@@ -6,7 +6,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" type="text/css" media="all" href="<?php echo base_url('assets/css/style_tampilan_lapor.css') ?>" />
+
 	<title>Tampilan Lapor</title>
+
+	<script type="text/javascript" src="<?php echo base_url('assets/js/script.js') ?>"></script>
 </head>
 
 <body>
@@ -28,13 +31,13 @@
 
 		<section id="formbuatlaporan">
 			<div class="container">
-				<form action="tambah" method="POST" enctype="multipart/form-data" onsubmit="validasi()">
+				<form name="createForm" onsubmit="return validasi()" action="tambah" method="POST" enctype="multipart/form-data">
 
 					<textarea name="laporan" id="laporan" cols="77" rows="20" placeholder="Laporan/Komentar"></textarea>
 					<br><br>
-					<label for="">Pilih Aspek Pelaporan/Komentar</label>
-					<br>
+
 					<select name="aspek" id="aspek">
+						<option disabled selected value>Pilih Aspek Pelaporan/Komentar</option>
 						<option value="Dosen">Dosen</option>
 						<option value="Staf">Staff</option>
 						<option value="Mahasiswa">Mahasiswa</option>
@@ -56,20 +59,20 @@
 	</fieldset>
 </body>
 
-<script type="text/javascript">
+<!-- <script type="text/javascript">
 	function validasi() {
 		var laporan = document.getElementById("laporan").value;
 		var aspek = document.getElementById("aspek").value;
 		var lampiran = document.getElementById("lampiran").value;
 		if (laporan == "" || aspek == "" || lampiran == "") {
 			alert('Anda harus mengisi data dengan lengkap !');
+
 		} else if (laporan.length <= 20) {
 			alert('Anda harus mengisi laporan lebih dari 20 huruf');
 		} else {
 			alert('Kamu berhasil membuat laporan');
-
 		}
 	}
-</script>
+</script> -->
 
 </html>
