@@ -14,10 +14,7 @@
         <div>
             <h1 class="judul">ITERA LAPOR!</h1>
         </div>
-        <nav>
-            <a href="">Home</a> |
-            <a href="V_detail.php">Detail Laporan/Komentar</a>
-        </nav>
+
         <div>
             <form>
                 <input class="search" type="text" placeholder="" required>
@@ -26,7 +23,7 @@
         </div>
 
         <div>
-            <p class="lapor"><a href="">Buat Laporan/Komentar</a></p>
+            <p class="lapor"><a href="<?= base_url('home/buat') ?>">Buat Laporan/Komentar</a></p>
         </div>
 
         <div>

@@ -25,7 +25,7 @@
 			</hr>
 			<form method="post">
 				<div class="keterangan">
-					<input type="text" placeholder="Nama Pelapor">
+					<input type="text" placeholder="Nama Pelapor" name="nama">
 					<br>
 					<textarea name="comment" placeholder="Tulis Laporan/Komentar"></textarea>
 				</div>
