@@ -14,6 +14,10 @@
 
     </form>
     
+    <a href="<?php echo base_url('index.php/laporan/buatLaporan/') ?>"><button type="" name="create" class="btn btn-primary">Buat Laporan/Komentar</button></a>
+    <br>
+    <hr>
+    
     <?php
     echo "laporan atau komentar terakhir<br>";
 
