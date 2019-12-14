@@ -22,6 +22,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			// $this->load->view('templates/footer');
 		}
 
+
 		//menambahkan data ke database
 	   public function InputDataLapor(){
 
@@ -120,6 +121,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	   	
 	   }
 
+
 	   
 	    public function DaftarAkunLaporan(){
 
@@ -160,6 +162,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	
 	   	
 	   }
+
 
 	    public function Login(){
 
@@ -224,6 +227,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		$this->session->set_flashdata('hapus berhasil','data hapus ok');
 		redirect('Halaman_utama');
 	}
+
  
 	}//class
 
