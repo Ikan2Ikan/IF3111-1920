@@ -17,7 +17,7 @@
         <div class="container">
             <p>Buat laporan/komentar</p>
             <hr>
-            <form action="<?= base_url('Laporan/input_laporan'); ?>" method="POST" enctype="multipart/form-data">
+            <form name="formLaporan" onsubmit="return validasi()" action="<?= base_url('Laporan/input_laporan'); ?>" method="POST" enctype="multipart/form-data">
                 <textarea name="comment" placeholder="Laporan/Komentar" aria-valuemax="500"></textarea>
                 <select name="pilih">
                     <option value="Mahasiswa">Mahasiswa</option>
@@ -35,5 +35,4 @@
         </div>
     </div>
 </body>
-
 </html>
