@@ -10,8 +10,8 @@
                 <input class="search" [type="text"]/> <input class="button1" type="submit" value="Cari"/>
                 <center>
                     <br>
-                    <a href="<?= base_url(); ?>createform">Buat Laporan/Komentar 
-                    <button class="button2">`</button></a>
+                    <text>Buat Laporan/Komentar 
+                    <a class="button2" href="<?= base_url(); ?>createform">```</a></text>
                 </center>
             </td>
         </tr>
@@ -62,7 +62,7 @@
         <tr>
             <td>
                 Lampiran :<a class="lampiran" ></a>
-                <button class="waktu">Waktu:20-11-2019 20:00</button>
+                <label class="waktu">Waktu:20-11-2019 20:00</label>
                 <input class="selengkapnya" type="submit" value="Lihat Selengkapnya >"/>
                 <hr>
             </td>
@@ -87,7 +87,7 @@
         <tr>
             <td>
                 Lampiran :<a class="lampiran" ></a>
-                <button class="waktu">Waktu:20-11-2019 20:00</button>
+                <label class="waktu">Waktu:20-11-2019 20:00</label>
                 <input class="selengkapnya" type="submit" value="Lihat Selengkapnya >"/>
                 <hr>
                 <p class="enter">/enter</p>
