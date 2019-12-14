@@ -32,16 +32,20 @@
 
         <hr>
         </hr>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi at tempora eius dolorem assumenda libero, laboriosam deserunt animi illo earum asperiores quos nisi repellendus rerum vel maiores eum cupiditate enim?</p>
-        <div>
-            <tr>
-                <td>Lampiran : </td>
-                <td>Waktu :</td>
-                <td>
-                    <a href="<?= base_url('home/detail') ?>">Lihat selengkapnya &raquo;</a>
-                </td>
-            </tr>
-        </div>
+        <?php foreach ($result as $data) : ?>
+            <p><?= $data['isi_comm']; ?></p>
+            <div>
+                <tr>
+                    <td>Lampiran : <?= $data['lampiran']; ?></td>
+                    <td>Waktu :<?= $data['timestamp']; ?></td>
+                    <td>
+                        <a href="<?= base_url('home/detail') ?>">Lihat selengkapnya &raquo;</a>
+                    </td>
+                </tr>
+                <hr>
+                </hr>
+            </div>
+        <?php endforeach; ?>
     </div>
 </body>
 

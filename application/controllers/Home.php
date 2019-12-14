@@ -11,6 +11,7 @@ class Home extends CI_Controller
     public function index()
     {
         $data['judul'] = "Halaman Lapor";
+        $data['result'] = $this->Comment->sComm();
         $this->load->view('V_simple', $data);
     }
     public function buat()
@@ -25,6 +26,8 @@ class Home extends CI_Controller
     {
         $this->load->view('V_detail');
     }
+
+
     // public function fileUpload()
     // {
     //     $file['fileup'] = base_url('assets/file');
