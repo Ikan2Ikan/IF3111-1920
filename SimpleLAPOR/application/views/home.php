@@ -17,9 +17,9 @@
 		</ul>
 	</div>
 	<div id="box">	
-		<form action="" method="POST">
+		<form action="<?php echo base_url().'search' ?>" method="GET" >
 			<input class="search" type="text" placeholder="cari...">	
-			<input class="button" type="button" value="Cari"><br>
+			<input class="submit" type="button" value="Cari"><br>
 		</form>				
 		<div class="konten1">
 		<h4>Laporan/Komentar Terakhir</h4>

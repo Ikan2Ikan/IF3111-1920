@@ -38,20 +38,26 @@ class Control extends CI_Controller {
 		$this->load->view('buatlapor');	
 	}
 
+	public function search(){
+		redirect('');
+	}
+
 	public function tambah(){
-		$nama = $this->input->post('nama_lengkap');
+		$nama = $this->input->post('nama');
 		$kontak = $this->input->post('kontak');
 		$komentar = $this->input->post('komentar');
 		$aspek = $this->input->post('aspek_pelaporan');
-		$lampiran = $this->input->post('laporan');
+		$lampiran = $this->input->post('lampiran');
 
 		$data = array(
-			'nama_lengkap' => $nama;
-			'kontak' => $kontak;
-			'komentar' => $komentar;
-			'aspek_pelaporan' =>$aspek;
-			'lampiran' = >$lampiran;
-		)
+			'nama_lengkap' => $nama,
+			'kontak' => $kontak,
+			'komentar' => $komentar,
+			'aspek_pelaporan' =>$aspek,
+			'lampiran' =>$lampiran
+		);
+			$this->laporan_model->input_laporan('laporan', $data);
+			redirect('');
 
 
 	}

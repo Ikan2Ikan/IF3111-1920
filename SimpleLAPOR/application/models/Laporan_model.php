@@ -17,6 +17,10 @@ class Laporan_model extends CI_Model{
         return $query -> row_array();
     }
 
+    public function input_laporan($table, $data){
+        $this->db->insert($table, $data);
+    }
+
 }
 
 ?>

@@ -26,8 +26,8 @@
 			<form method="POST" action="<?php echo base_url().'tambah' ?>">
 				<input type="text" name="nama" placeholder="Nama" class="nama"><br><br>
 				<input type="text" name="kontak" placeholder="Kontak" class="kontak"><br><br>
-				<textarea cols="110" rows="20" placeholder="Laporan/Komentar"></textarea><br>
-				<select>
+				<textarea cols="110" rows="20" name ="komentar" placeholder="Laporan/Komentar"></textarea><br>
+				<select name="aspek_pelaporan">
 					<option selected="selected" disabled="disabled">Pilih Aspek Laporan/Komentar</option>
 					<optgroup label="--"></optgroup>
 					<option value="dosen">Dosen</option>
@@ -36,8 +36,8 @@
 					<option value="infrastruktur">Infrastruktur</option>
 					<option value="pengajaran">Pengajaran</option>
 				</select><br><br>
-				<input class="upload" type="file" value="Choose File"><br>
-				<input class="buat" type="button" value="Buat LAPOR!">
+				<input class="upload" type="file" name ="lampiran" value="Choose File"><br>
+				<input class="buat" type="submit" value="Buat LAPOR!">
 			</form>											
 		</div>
 		<div class="footer">
