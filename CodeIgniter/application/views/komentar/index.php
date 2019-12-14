@@ -6,9 +6,13 @@
         </div>
         <hr>
 
-        <form method="post" action="#" encytpe="multipart/form-data">
+        <form method="post" action="" encytpe="multipart/form-data">
+            <?php if(validation_errors()) : ?>    
+                <?=validation_errors()?>
+            <?php endif ;?>
+        
             <div class="main">
-                <input type="text" placeholder="Masukkan Judul Laporan/Komentar" name="judul_komentar">
+                <input type="text" name="judul_komentar" placeholder="Masukkan Judul Laporan/Komentar" >
                 <textarea name="komentar" placeholder="Masukkan Laporan/Komentar"></textarea>
             </div><br>
 
