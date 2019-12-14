@@ -19,7 +19,8 @@
                 <?php }?>
                 <div class="baca">
                     <p class="tgl"><?php echo $lap["tgl_laporan"];?>
-                    <a href="<?= base_url(); ?>laporan">Baca Selengkapnya <button class="button3">></button></a>
+
+                    <a href = "<?php echo base_url().'index.php/crud/view/'.$lap['id_laporan'];?>">Lihat selengkapnya</a>
                     </p>
                 </div>
                 <hr width="100%" color="gray" />

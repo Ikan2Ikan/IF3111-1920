@@ -10,7 +10,7 @@ class M_data extends CI_Model{
             return $query->result_array();
         }
         $query = $this->db->get_where('laporan', array('id_laporan'=>$id));
-        return $query->row_array;
+        return $query->row_array();
     }
 
     function input_data($data,$table){
