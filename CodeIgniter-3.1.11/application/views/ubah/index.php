@@ -29,7 +29,7 @@
 
 			<?php } ?>
 		</select><br />
-		<label>File Diwajibkan Dalam Bentuk Gambar / PDF</label><br \>
+		<label>File Diwajibkan Dalam Bentuk Gambar / PDF (max 2Mb)</label><br \>
 		<input id="file" type="file" name="File" ><br />
 		<input id="submit" value="Ubah" type="submit" name="submit">
 		<div style="clear: both;"></div>

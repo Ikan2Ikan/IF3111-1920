@@ -1,13 +1,15 @@
 -- phpMyAdmin SQL Dump
--- version 4.5.1
--- http://www.phpmyadmin.net
+-- version 4.8.4
+-- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 12, 2019 at 10:25 AM
--- Server version: 10.1.9-MariaDB
--- PHP Version: 7.0.0
+-- Generation Time: Dec 14, 2019 at 01:10 PM
+-- Server version: 10.1.37-MariaDB
+-- PHP Version: 5.6.40
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -30,7 +32,7 @@ CREATE TABLE `lapor` (
   `id` int(11) NOT NULL,
   `isi` text NOT NULL,
   `aspek` varchar(50) NOT NULL,
-  `file` varchar(50) NOT NULL,
+  `file` varchar(200) NOT NULL,
   `tanggal` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -39,9 +41,9 @@ CREATE TABLE `lapor` (
 --
 
 INSERT INTO `lapor` (`id`, `isi`, `aspek`, `file`, `tanggal`) VALUES
-(1, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\nquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\nconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\ncillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\r\nproident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 'infrastruktur', 'foto.jpg', '0000-00-00 00:00:00'),
-(2, 'in laporan ke dua Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\n			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\n			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\n			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\n			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\r\n			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 'dosen', 'nilai.pdf', '0000-00-00 00:00:00'),
-(4, 'Jakarta (/d???k??rt?/; Indonesian pronunciation: [d?a?karta]), officially the Special Capital Region of Jakarta (Indonesian: Daerah Khusus Ibukota Jakarta, literally Jakarta Capital Special Region), is the capital and largest city of Indonesia. Situated on the northwest coast of the world''s most populous island of Java, it is the centre of economy, culture and politics of Indonesia with a population of more than ten million as of 2014.[5][8] The Jakarta metropolitan area, which has an area of 6,392 square kilometres, is the world''s second most populous urban area after Tokyo, with a population of about 30 million as of 2010.[9] Jakarta''s business opportunities, as well as its potential to offer a higher standard of living, have attracted migrants from across the Indonesian archipelago, making it a melting pot of numerous cultures.[10] Jakarta is nicknamed the "Big Durian", the thorny strongly-odored fruit native to the region,[1] as the city is seen as the Indonesian equivalent of New York (Big Apple).[11]\r\n\r\nEstablished in the fourth century as Sunda Kelapa, the city became an important trading port for the Sunda Kingdom. It was the de facto capital of the Dutch East Indies when it was known as Batavia. Jakarta is officially a province with special capital region status, though it is commonly referred to as a city. Its provincial government consists of five administrative cities and one administrative regency. Jakarta is an alpha world city[12] and is the seat of the ASEAN secretariat,[13] making it an important city for international diplomacy.[14] Financial institutions such as the Bank of Indonesia, Indonesia Stock Exchange, and corporate headquarters of numerous Indonesian companies and multinational corporations are located in the city. Jakarta has grown more rapidly than Kuala Lumpur, B', 'Dosen', '210cd3cee071912757bcf396162b75c1.png', '2019-12-12 16:17:44');
+(45, 'Petunjuk Pengerjaan ??\r\n\r\n    Fork pada repository ini dengan akun github anda.\r\n    Silakan commit pada repository anda (hasil fork). Lakukan berberapa commit dengan pesan yang bermakna, contoh: fix css, membuat post done, jangan seperti final, benerin dikit, oke deh, update deh dll. Disarankan untuk tidak melakukan commit dengan perubahan yang besar karena akan mempengaruhi penilaian (contoh: hanya melakukan satu commit kemudian dikumpulkan).\r\n    Ubah Penjelasan Teknis pada bagian bawah readme.md ini dengan menjelaskan bagaimana cara anda:\r\n        Instalasi Framework, Koneksi basis data\r\n        Melakukan validasi pada client-side\r\n        Melakukan AJAX (mulai dari pengguna melakukan klik pada tombol LAPOR! sampai laporan/komentar terkirim).\r\n    Pull request dari repository anda ke repository ini dengan format NIM - Nama Lengkap. Waktu terkahir proses pull request adalah 4 hari setelah ujian akhir semester (UAS)\r\n  \r\n', 'Mahasiswa', '11.jpeg', '2019-12-13 09:44:53'),
+(59, 'Anda diminta untuk membuat tampilan sedemikian hingga mirip dengan tampilan berikut. Website yang diminta tidak harus responsive. Desain tampilan tidak perlu dibuat indah. Icon dan jenis font tidak harus sama dengan contoh. Warna font, garis pemisah, dan perbedaan ukuran font harus terlihat sesuai contoh. Perhatikan juga tata letak elemen-elemen.', 'Staff', 'TPBALDI1.pdf', '2019-12-14 18:49:11'),
+(65, 'Detail Laporan / Komentar\r\n\r\naldi indrawa, World champions Zheng Si Wei and Huang Ya Qiong crashed to one of their quickest defeats this year as their campaign at the HSBC BWF World Tour Finals 2019 started in lacklustre fashion. Zheng and Huang were evidently below par as they went down to Yuta Watanabe and Arisa Higashino, whom they had beaten six times in a row. The Japanese pocketed the Group B win 21-15 21-15 in just 33 minutes. “They made so many simple mistakes,” said a surprised Higashino. asikkkkkk', 'Dosen', 'Avengers_Endgame_2019_720p_HDTS_x264_mkv_snapshot_00_29_47_2019_05_03_11_51_58.jpg', '2019-12-14 19:09:14');
 
 --
 -- Indexes for dumped tables
@@ -61,7 +63,9 @@ ALTER TABLE `lapor`
 -- AUTO_INCREMENT for table `lapor`
 --
 ALTER TABLE `lapor`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=66;
+COMMIT;
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

@@ -21,13 +21,21 @@ class Home extends CI_Controller
 		if($this->form_validation->run() == FALSE){
 			$this->load->view('tambah/index');
 		}else{
-			$this->Lapor_model->tambah();
+			if($this->Lapor_model->tambah() == true){
 			echo "
 				<script>
 					alert('berhasil menambah data');
 					document.location.href='../';
 				</script>
 				";
+			}else{
+				echo "
+				<script>
+					alert('gagal menambah data,file yang anda upload tidak sesuai / melebihi 2Mb');
+					document.location.href='';
+				</script>
+				";
+			}
 		}
 		
 	}
@@ -66,13 +74,21 @@ class Home extends CI_Controller
 			//redirect("index.php/Home/detail2/$id");
 			
 		}else{
-			$this->Lapor_model->ubah($id);
+			if($this->Lapor_model->ubah($id) == true){
 			echo "
 				<script>
 					alert('berhasil update data');
 					document.location.href='../';
 				</script>
 				";
+			}else{
+				echo "
+				<script>
+					alert('gagal update data,file yang anda upload tidak sesuai / melebihi 2Mb');
+					document.location.href='../';
+				</script>
+				";
+			}
 		}
 		
 	}

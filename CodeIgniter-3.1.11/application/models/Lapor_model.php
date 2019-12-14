@@ -20,7 +20,6 @@ class Lapor_model extends CI_model
 
 			$this->load->library('upload',$config);
 			if(!$this->upload->do_upload('File')){
-				echo "gagal";
 			}else{
 				$file = $this->upload->data('file_name');
 			}
@@ -33,8 +32,12 @@ class Lapor_model extends CI_model
 			"tanggal" => $tanggal,
 			"file" => $file
 		];
-
+		if($file == ""){
+			return false;
+		}else{
 		$this->db->insert('lapor', $data);
+		return true;
+		}
 	}
 
 	public function detail($id){
@@ -68,7 +71,7 @@ class Lapor_model extends CI_model
 
 			$this->load->library('upload',$config);
 			if(!$this->upload->do_upload('File')){
-				echo "gagal";
+						
 			}else{
 				$file = $this->upload->data('file_name');
 			}
@@ -76,13 +79,17 @@ class Lapor_model extends CI_model
 
 			$isi = $this->input->post('isi');
 			$aspek = $this->input->post('aspek');
-
+		if($file == ""){
+			return false;
+		}else{
 		$this->db->set('isi', $isi);
 		$this->db->set('aspek', $aspek);
 		$this->db->set('tanggal', $tanggal);
 		$this->db->set('file', $file);
 		$this->db->where('id', $id);
 		$this->db->update('lapor');
+		return true;
+		}
 	}
 
 }
