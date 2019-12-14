@@ -23,7 +23,7 @@ class Laporan extends CI_Controller {
 
     public function add(){
         $this->load->view('template/header');
-        $this->load->view('pages/add', array('error' => ' '));
+        $this->load->view('pages/add');
         $this->load->view('template/footer');
     }
 
@@ -40,16 +40,16 @@ class Laporan extends CI_Controller {
             $config['file_name']    = date('Y-m-d H-i-s', time());
             $this->load->library('upload', $config);
 
-            if (!$this->upload->do_upload('lampiran')) {
-                echo "upload gagal"; die();
-            }else{
+            if ($this->upload->do_upload('lampiran')) {
                 $lampiran = $this->upload->data('file_name');
+            }else{
+                
             }
 
             $data = array(
-                'isi'   => $isi,
-                'aspek' => $aspek,
-                'lampiran' => $lampiran
+                'isi'       => $isi,
+                'aspek'     => $aspek,
+                'lampiran'  => $lampiran
             );
 
             $this->post_model->input_laporan($this->table_name, $data);
