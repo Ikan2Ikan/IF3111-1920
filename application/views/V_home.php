@@ -22,12 +22,11 @@
 				<p> Buat Laporan/Komentar</p>
 			</div>
 			<hr>
-			</hr>
-			<form method="post" action="<?= base_url('Home/fileUpload') ?>" enctype="multipart/form-data">
+			<form method="post" onsubmit="return validasi()">
 				<div class="keterangan">
 					<input type="text" placeholder="Nama Pelapor" name="nama">
 					<br>
-					<textarea name="comment" placeholder="Tulis Laporan/Komentar"></textarea>
+					<textarea name="comment" placeholder="Tulis Laporan/Komentar" id="text"></textarea>
 				</div>
 				<br>
 				<div class="aspek">
@@ -52,5 +51,22 @@
 	</div>
 
 </body>
+<script>
+	function validasi() {
+		var text = document.getElementById('text').value;
+		var panjang_kata = document.getElementById('text').value;
+		panjang_kata = panjang_kata.split('');
+		if (text == '') {
+			alert('Kolom harus diisi!');
+			return false;
+		} else if (panjang_kata.length < 20) {
+			alert('Laporan harus lebih dari 20 kata!');
+			return false;
+
+		} else if (text != "" && panjang_kata.length >= 20) {
+			return true;
+		}
+	}
+</script>
 
 </html>
