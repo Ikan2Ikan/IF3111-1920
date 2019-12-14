@@ -1,0 +1,62 @@
+.postengah {
+	font-family: sans-serif;
+	text-align: center;
+}
+
+.poskiri {
+	font-family: sans-serif;
+	text-align: left;
+}
+
+.poskanan {
+	padding-left: 400px;
+	font-family: sans-serif;
+	text-align: right;
+}
+
+textarea {
+	width: 100%;
+	height: 370px;
+}
+
+
+h1 {
+	font-size: 50px;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+body {
+	background: #eee;
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+header {
+	text-align: center;
+	color: #232323;
+}
+
+.wrap {
+	width: 50%;
+	margin: 25px auto;
+}
+
+.pinggir {
+	border-left: 1px black solid;
+	height: 170px;
+	width: 0px;
+}
+
+hr {
+	background: black;
+	border: 0;
+	size: 12px;
+	height: 1px;
+	width: 100%;
+	color: rgb(146, 138, 138);
+}
