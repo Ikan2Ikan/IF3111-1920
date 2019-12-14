@@ -6,15 +6,16 @@ class Home extends CI_Controller {
 	function __construct(){
 		parent::__construct();		
 		$this->load->model('m_data');
-		$this->load->helper('url');
-		$this->load->helper('form');
+		$this->load->helper('url','form');
+
  	}
 
 	public function index()
-	{
-		$data['lapor'] = $this->m_data->tampil_data()->result();
-		$this->load->view('v_home.php', $data);
-	}
+    {
+		$data ['lapor'] = $this->m_data->tampil_data();
+		$this->load->view('v_home',$data);
+     
+    }
 
 	public function lapor()
 	{
@@ -39,7 +40,7 @@ class Home extends CI_Controller {
 			'waktu' => $waktu
 			);
 		$this->m_data->input_data($data,'lapor');
-		redirect('home/index');
+		redirect('home');
 	}
 	public function search(){
 		$cari = $this->input->post('cari');

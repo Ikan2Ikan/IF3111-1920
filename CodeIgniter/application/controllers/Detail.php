@@ -1,20 +1,19 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-
 class Detail extends CI_Controller{
-
-	public function __construct()
+    public function __construct()
 	{
 		parent::__construct();
-        $this->load->model('Detail_model');
+        $this->load->model('m_data');
 		
 	}
-	
-	public function index()
-	{
-		$data ['judul'] = 'Detail Laporan';
-		$data ['detail'] = $this->Detail_model->getDetailLaporan();
-		$this->load->view('v_detail', $data);
-	}
-
+    
+    public function index()
+    {
+        $data ['detail'] = $this->m_data->getDetailLaporan();
+        $this->load->view('v_detail',$data);
+     
+    }
 }
+
+?>

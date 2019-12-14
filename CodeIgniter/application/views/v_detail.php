@@ -20,9 +20,9 @@
 		$no = 1;
 		foreach($detail as $d){ 
 		?>
-		 
+		 <?php $d['id'] ?>
 		<p align="justify">
-		<?php echo $d->laporan?>
+		<?= $d['laporan']; ?>
 		</p>
 
 		<p align="left"> Lampiran:
@@ -31,8 +31,8 @@
 		<img src="">
 		<br><br>
 		
-		Waktu: <?php echo $d->waktu?> &nbsp &nbsp
-		Aspek: <?php /**Panggil aspek**/?>
+		Waktu: <?= $d['waktu']; ?> &nbsp &nbsp
+		Aspek: <?= $d['aspek']; ?>
 
 		<span><a href="#"><i class="fa fa-edit"></i> 
 			Ubah Laporan</a> ||  

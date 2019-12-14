@@ -2,7 +2,8 @@
 
 class M_data extends CI_Model{
 	function tampil_data(){
-		return $this->db->get('lapor');
+		$this->db->order_by("id", "desc");
+        return $this->db->get('lapor',4)->result_array();
 	}
 
 	function input_data($data,$table){
@@ -18,6 +19,15 @@ class M_data extends CI_Model{
 		$this->db->or_like('aspek', $cari);
 		return $this->db->get()->result();
 	}
+	public function getDetailLaporan(){
+        // return $this->db->get('simple_lapor')->result_array();
+        $id = $_GET["detail_id"];
+        // return "SELECT * FROM simple_lapor WHERE id_lapor= '$id'";
+        // return $this->db->get('simple_lapor')->result_array();
+        $query = $this->db->get_where('lapor', array('id' => $id));
+        return $query->result_array();
+    }
+   
 
 	
 }

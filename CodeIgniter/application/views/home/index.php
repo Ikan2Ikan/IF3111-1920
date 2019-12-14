@@ -26,20 +26,20 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       <label class="lampiran">Lampiran/Komentar Terakhir</label>
   <hr>
       
-         <?php foreach ($lapor as $l )  :?>
-            <?php $id = $l['id']; ?>
-          <p align="left"> <i class="fa fa-user-circle"></i> Nama: <?= $l['nama'] ?> &nbsp &nbsp
-          <i class="fa fa-pencil"></i> Judul: <?= $l['judul'] ?></p>
+         <?php foreach ($lapor as $hm )  :?>
+            <?php $id = $hm['id']; ?>
+          <p align="left"> <i class="fa fa-user-circle"></i> Nama: <?= $hm['nama'] ?> &nbsp &nbsp
+          <i class="fa fa-pencil"></i> Judul: <?= $hm['judul'] ?></p>
             
           
           <p align="justify">
-            <?php echo substr($l['laporan'], 0, 450); ?></p>
+            <?php echo substr($hm['laporan'], 0, 450); ?></p>
           
           <p align="left">
             <i class="fa fa-folder"></i>
               <?php
-                echo 'Lampiran: '; 
-                echo  $l['file']; 
+                echo 'Lampiran:'; 
+                echo  $hm['file']; 
                 ?>
 
               
@@ -47,10 +47,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <i class="fa fa-calendar"></i>
                 Waktu:
                 <?= 
-                $l['waktu'];
+                $hm['waktu'];
                 ?>
 
-                || <a href="<?php echo site_url('detail?detail_id=$id')?>"></a>
+                ||
                 
                 <?php
                 echo "<tr>
