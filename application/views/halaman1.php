@@ -13,7 +13,7 @@
       <form action="" method="POST">
         <input type="text" name="text" placeholder="Cari.." class="cari">
         <button class="button"><img src="<?php echo base_url() ?>fitur/img/search.png" width="12px">Cari</button>
-		  <p>Buat Laporan/Komentar <a href="halaman2.html"><img src="<?php echo base_url() ?>fitur/img/plus.png" width="10px"></img></a></p>
+		  <p>Buat Laporan/Komentar <a href="<?php base_url('tubes/halaman2');?>"><img src="<?php echo base_url() ?>fitur/img/plus.png" width="10px"></img></a></p>
       </form>
     <div class="konten1">
       <h4>Laporan/Komentar Terakhir</h4>
