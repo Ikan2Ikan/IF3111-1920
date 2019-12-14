@@ -29,7 +29,7 @@
                                 <legend id="forgot-pass">Forgot password?</legend>
                             </a>
                             <input id="submit-btn" type="submit" name="submit" value="LOGIN" />
-                            <a href="#" id="sign">Tidak Punya Akun?</a>
+                            <a href="<?= base_url('account/daftar') ?>" id="sign">Tidak Punya Akun?</a>
 
                     </div>
                 </div>
