@@ -10,12 +10,12 @@ class Home extends CI_Controller {
         $this->load->view('templates/footer');
     }
 
-    // public function detailKomentar(){
-    //     $this->load->model('Md_komentar');
-    //     $data['id']=$this->uri->segment(3);
-    //     $data['result']=$this->Md_komentar->tampilDetailKomentar($data['id]');
-    //     $this->load->view('home/')
-        
-    // }
+    public function detailKomentar(){
+        $this->load->model('Md_komentar');
+        $data['id']=$this->uri->segment(3);
+        $data['result']=$this->Md_komentar->tampilDetailKomentar($data['id']);
+        $this->load->view('home/detail_komentar', $data);        
+    }
+    
 }
 ?>
