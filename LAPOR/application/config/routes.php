@@ -51,6 +51,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 $route['default_controller'] = 'Beranda';
 $route['laporan/view/(:any)']= 'detail_lapor/view/$1';
+$route['cari'] = 'Beranda/cari';
 $route['(:any)']='Beranda/index/$1';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

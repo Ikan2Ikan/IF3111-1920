@@ -8,11 +8,14 @@
   <body>
     <h1><center>Layanan Aspirasi dan Pengaduan Mahasiswa ITERA</center></h1>
     <div class="cari">
-      <form action= <?php echo base_url('cari'); ?> method="get">
-        <center><input type="text" name="cari">
+      <form action= "<?php echo base_url('cari'); ?>" method="get">
+        <center><input class="pencarian" type="text" name="cari">
         <input class="button" type="submit" value="Cari"></center><br>
       </form>
     </div>
+    <div class="container">
+      <h3>Hasil Pencarian</h3>
+      <hr>
       <?php foreach ($result as $cari): ?>
         <?php if (strlen($cari['kolom_komentar'])<=200) { ?>
           <p><?php echo $cari['kolom_komentar']; ?></p>
@@ -26,7 +29,6 @@
         <br>
         <hr>
       <?php endforeach; ?>
-    </div>
     </div>
   </body>
 </html>
