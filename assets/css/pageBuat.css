@@ -1,5 +1,10 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+
+}
 #judulPage{
-    color: blue;
+    color: black;
     text-align: center;
     margin-bottom: 40px;
     /* border: 3px solid green; */
@@ -37,6 +42,7 @@ button{
     float: right;
 }
 select{
+    border: 1px solid black;
+    color: black;
     height: 30px;
-    width: auto
 }
