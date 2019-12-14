@@ -97,19 +97,20 @@ Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/
 
 ### Penjelasan Teknis
                         A.Instalasi Framework dan Koneksi basis data 
-1. instalasi framework
-Instalasi Framework menggunakan framework CODEIGNITER atau yang sering di sebut CI, codeigniter merupakan sebuah framework php yang sangat sederhana, ringan, dan mudah untuk dipelajari, codeigniter sendiri telah mengadopsi pola MVC yaitu Model-View-Controller dimana kita dapat memisahkan logika dan tampilan sebuah website yang ingin dibangun dengan framework berbasis MVC ini.
+1. Instalasi Framework <br>
+menggunakan framework CODEIGNITER atau yang sering di sebut CI. codeigniter merupakan sebuah framework php yang sangat sederhana, ringan, dan mudah untuk dipelajari, codeigniter sendiri telah mengadopsi pola MVC yaitu Model-View-Controller dimana kita dapat memisahkan logika dan tampilan sebuah website yang ingin dibangun dengan framework berbasis MVC ini.
 -Cara Install Codeigniter
     1. download file Codeigniter pada web server dengan mengakses https://codeigniter.com/ kami mendownload versi 3.1.3
     2. Setelah Terdownload EKSTRAK dan Install Codeigniter Framework file Code-3.1.3.zip lalu rename menjadi codeigniter lalu salin folder tersebut ke folder root anda, yaitu di htdocs di file IF3111-1920 setelah selesai melakukan instalasi framework
 2. Koneksi basis data
-    1. Konfigurasi Base URL CodeIgniter
-    Maka selanjutkan melakukan konfigurasi base url yang terdapat di folder application/config/config.php lalu buka dengan teks editor kami menggunakan Visual Studio Code lalu ubah $config ['base_url'] = 'http://localhost/codeigniter' ;
+    1. Konfigurasi Base URL CodeIgniter <br>
+    Maka selanjutkan melakukan konfigurasi base url yang terdapat di folder application/config/config.php lalu buka dengan teks editor kami menggunakan Visual Studio Code lalu ubah $config ['base_url'] = 'http://localhost/codeigniter' ; pada repository ini kami menggunakan http://localhost/IF3111-1920/untuk base url nya 
     2. Cek dengan membuka http://localhost/codeigniter jika keluar tampilan welcome to CodeIgniter maka sudah terkoneksi dengan database. 
 
-                        B. Melakukan validasi pada client-side
+
+                       B. Melakukan validasi pada client-side
     --Langkah langkah dalam memvalidasi client-side--
-    1. langkah pertama yaitu dengan melakukan penambahan folder pada application/controller/ lalu buat file Laporan.php lalu isi file dengan menambahkan fungsi yang bertujuan untuk mengendalikan atau memanggil di folder view.
+    1. langkah pertama yaitu dengan melakukan penambahan folder pada application/controller/ lalu buat file Laporan.php lalu isi file dengan menambahkan fungsi yang bertujuan untuk mengendalikan atau memanggil di folder view.<br>
     2. langkah kedua membuat file pada application/vies/erorrs  dengan nama file buatLaporan.php pada file ini terdapat 4 inputan yaitu,
      1)kolom laporan/komentar harus mempunyai nilai minimal 20 karakter yang berarti laporan atau komentar harus melebihi 20 karakter hal ini merupakan VALIDASI CLIENT-SIDE
     (isi gambar disini1 ja)

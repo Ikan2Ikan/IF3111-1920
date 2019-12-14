@@ -53,42 +53,42 @@
     </div>
     <script>
     
-    function validation(){
-        var submitButton = document.getElementById('submitButton')
-        var error_laporan = document.getElementById('error_laporan')
-        var laporan = document.getElementById('laporan')
-        console.log(submitButton)
-        console.log(laporan.value.length)
-        if(laporan.value.length>20){
-            submitButton.removeAttribute('disabled')
-            error_laporan.innerHTML=''
-        }else{
-            submitButton.setAttribute('disabled', true)
-            error_laporan.innerHTML= 'Panjang kata harus lebih dari 20'
-        }
-        return true;
-    }
-
-    function getFileName(name){
-        var splitName = name.split('.')
-        return splitName[splitName.length-1].toLowerCase()
-    }
-
-    function validateFile(){
-        var file = document.getElementById('file_lapor')
-        if(file.value.length!=0){
-            var name = getFileName(file.value)
-            if(name == "png" || name == "jpg" || name == "jpeg" || name == "doc" || name == "docx" || name == "pdf" || name == "xls" || name == "xlsx" || name == "ppt" || name == "pptx"){
-                return true
+        function validation(){
+            var submitButton = document.getElementById('submitButton')
+            var error_laporan = document.getElementById('error_laporan')
+            var laporan = document.getElementById('laporan')
+            console.log(submitButton)
+            console.log(laporan.value.length)
+            if(laporan.value.length>20){
+                submitButton.removeAttribute('disabled')
+                error_laporan.innerHTML=''
             }else{
-                alert('format file tidak diterima !')
-                return false
+                submitButton.setAttribute('disabled', true)
+                error_laporan.innerHTML= 'Panjang kata harus lebih dari 20'
+            }
+            return true;
+        }
+
+        function getFileName(name){
+            var splitName = name.split('.')
+            return splitName[splitName.length-1].toLowerCase()
+        }
+
+        function validateFile(){
+            var file = document.getElementById('file_lapor')
+            if(file.value.length!=0){
+                var name = getFileName(file.value)
+                if(name == "png" || name == "jpg" || name == "jpeg" || name == "doc" || name == "docx" || name == "pdf" || name == "xls" || name == "xlsx" || name == "ppt" || name == "pptx"){
+                    return true
+                }else{
+                    alert('format file tidak diterima !')
+                    return false
+                }
             }
         }
-    }
-    document.addEventListener('keyup', function(){
-        validation()
-    });
+        document.addEventListener('keyup', function(){
+            validation()
+        });
 
     </script>
     </body>
