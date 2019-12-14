@@ -9,7 +9,7 @@
                 <input type="text" name ="keyword" placeholder="Cari...">
                 <input type="submit"value="Cari"><br>
             </form>
-        </div>
+       
         <div class="buat">
         <a href="<?php echo base_url().'index.php/buatlaporan'; ?>">
             Buat Laporan/Komentar <i class="fa fa-plus-square"></i>
@@ -36,7 +36,7 @@
             <?php endforeach;?>
 
                     
-        </div>
+        
     </div>
     
 </body>
