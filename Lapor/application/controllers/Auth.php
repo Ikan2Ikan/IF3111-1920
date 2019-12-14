@@ -24,8 +24,27 @@ class Auth extends CI_Controller
 
     public function Buat_Laporan()
     {
-        $this->load->view('auth/BuatLaporan');
-        
+        $this->load->view('auth/BuatLaporan');   
     }
-    
+
+    public function insertLaporan()
+    {
+        date_default_timezone_set('Asia/Jakarta'); //agar waktu jadi GMT +7
+        $komentar = $this->input->post('komentar');
+        $tipe = $this->input->post('kategori');
+        $file = $this->input->post('file');
+        $waktu = date("Y/m/d H:i");
+
+        $data = array(
+            'isi' => $komentar,
+            'type' => $tipe,
+            'file' => $file,
+            'tanggal' => $waktu
+        );
+        $this->Auth_model->inputKomentar($data);
+        $this->load->view('auth/header');
+        $data['user'] = $this->Auth_model->tampilLapor()->result();
+        redirect('auth/');
+    }
+
 }
