@@ -13,4 +13,11 @@ class Beranda extends CI_Controller {
 		$data['laporan'] = $this->Beranda_model->getAllLapor();
 		$this->load->view('beranda',$data);
 	}
+
+	public function cari()
+	{
+		$keyword = $this->input->get('keyword');
+		$data['result'] = $this->Beranda_model->getCari($keyword, 'laporan');
+		$this->load->view('hasilcari',$data);
+	}
 }

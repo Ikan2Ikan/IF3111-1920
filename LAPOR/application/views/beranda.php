@@ -9,9 +9,9 @@
   <body>
     <h1><center>Layanan Aspirasi dan Pengaduan Mahasiswa ITERA</center></h1>
     <div class="cari">
-      <form action="Cari.php" method="get">
-        <center><input type="text" name="cari">
-        <input class="button" type="button" value="Cari"></center><br>
+      <form action= "<?php echo base_url('cari'); ?>" method="get">
+        <center><input type="text" name="keyword">
+        <input class="button" type="submit" value="Cari"></center><br>
       </form>
     </div>
 
