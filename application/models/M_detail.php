@@ -1,8 +1,4 @@
 <?php
-<<<<<<< HEAD
-=======
-
->>>>>>> master
 class M_detail extends CI_Model {
 	function __construct()
 	{
@@ -12,7 +8,7 @@ class M_detail extends CI_Model {
 	/* Menampilkan posting */
 	function list_posting()
 	{
-		$query = $this->db->query('select * from posting order by ID desc limit 20');
+		$query = $this->db->query('select * from laporan order by id desc limit 20');
 		//lihat apakah ada data dalam tabel
 		$num = $query->num_rows();
 		if($num>0){
@@ -25,12 +21,8 @@ class M_detail extends CI_Model {
 			//Kirimkan 0 jika tidak ada datanya
 		}
 	}
-<<<<<<< HEAD
-	
 	function hapus_data($id,$posting){
 	$this->db->where($id);
 	$this->db->delete($posting);
 	}
-=======
->>>>>>> master
 }

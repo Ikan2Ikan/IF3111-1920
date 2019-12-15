@@ -14,7 +14,7 @@
 	<?php
 	if(is_array($posting)){
 		foreach($posting as $key){
-			$isi = $key->Isi;
+			$isi = $key->teks_laporan;
 			echo $isi;
 		}
 	}
@@ -22,7 +22,7 @@
 	
 	<br><p>Lampiran :</p>
 	<?php foreach ($posting as $key){?>
-		<img  src="<?php'$lampiran = $key->Lampiran' echo $lampiran;?>">
+		<img  src="<?php'$lampiran = $key->lampiran' echo $lampiran;?>">
 	<?php } ?>
 	
 	<p> Waktu : <?php date_default_timezone_set('Asia/Jakarta'); 
@@ -30,13 +30,13 @@
 		Aspek: <?php
 		if(is_array($posting)){
 			foreach($posting as $key){
-				$aspek = $key->Aspek;
+				$aspek = $key->aspek_laporan;
 				echo $aspek;
 			}
 		}?>
 		<span>
 		<?php foreach($posting as $key){?>
-			<?php echo anchor('detail/hapus/'.$id = $key->ID,'Hapus Laporan/Komentar X'); ?></span> </a>
+			<?php echo anchor('detail/hapus/'.$id = $key->id,'Hapus Laporan/Komentar X'); ?></span> </a>
 		<?php } ?>
 	</p></div>
 	<hr color="black" size="2">

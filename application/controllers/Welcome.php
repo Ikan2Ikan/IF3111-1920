@@ -15,7 +15,3 @@ class Welcome extends CI_Controller {
 		$this->load->view('contentt',$data);
 		$this->load->view('footer');
 	}
-	public function detail()
-	{
-		$this->load->view('v_detail.php');
-	}
