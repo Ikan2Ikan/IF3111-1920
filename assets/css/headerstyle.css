@@ -1,0 +1,26 @@
+.container{
+	margin-left: 10.7vw;
+	margin-right: 10.7vw;
+	font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.head{
+	margin-left: 10.7vw;
+	margin-right: 10.7vw;
+	font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+	float: left;
+}
+.tab{
+	margin:10px;
+	float: left;
+}
+.tab a{
+	text-decoration: none;
+	background-color: #1a53ff;
+	color: #800000;
+	padding: 9px;
+	border-radius: 5px;
+}
+.head .tab{
+	text-decoration: none;
+
+}

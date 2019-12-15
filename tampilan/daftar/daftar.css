@@ -1,0 +1,23 @@
+label{
+	font-size: 12pt;
+	margin-left: 520px;
+
+}
+.daftar{
+	
+	width: 20%;
+	padding: 1%;
+	font-size: 11pt;
+	margin-bottom: 20px;
+	margin-left: 520px;
+}
+.tombol_daftar{
+	background: #46de4b;
+	color: white;
+	font-size: 11pt;
+	width: 22%;
+	border: none;
+	border-radius: 3px;
+	padding: 10px;
+	margin-left: 520px;
+}
