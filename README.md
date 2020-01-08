@@ -10,6 +10,9 @@ di program studi teknik informatika ITERA.
 
 ### Anggota Tim :cyclone:
 Project dikerjakan secara **berkelompok** dengan maksimal jumlah anggota adalah 2-3 orang mahasiswa.
+Anggota Kelompok :
+Muhammad Haidar Rais - 14117057
+Muhammad Nur Faqqih  - 14117168
 
 ### Petunjuk Pengerjaan :umbrella:
 1. Fork pada repository ini dengan akun github anda.
@@ -28,6 +31,10 @@ ujian akhir semester (UAS)**
    - Source code aplikasi
    - Basis data, dan
    - Cara instalasi aplikasi anda
+   
+   - Sediakan Folder Vendor dari LAravel , karena saat kami push ke git , folder Vendor dan file .env tidak terupload 
+   - Untuk file .env itu merupakan penguhung koneksi kedatabase , lakukan sesuai petunjuk teknis dibawah !
+   
 6. Penilaian:
    - Kerjasama tim
    - Kesesuaian dengan spesifikasi
@@ -37,9 +44,14 @@ ujian akhir semester (UAS)**
    
 ### Tools :hammer:
 1. Untuk backend, wajib menggunakan PHP framework apapun (Contoh: Codeigniter, Laravel, Slim, Yii dll).
+
+      KAmi menggunakan LARAVEL 6
 2. Gunakan MySQL atau basis data relasional lain untuk menyimpan data.
+      
+      Kami menggunakan Mysql 
 3. Untuk frontend, gunakan Javascript, HTML dan CSS. **Tidak boleh menggunakan library atau framework CSS atau JS seperti 
 JQuery atau Bootstrap.** CSS sebisa mungkin ada di file yang berbeda (tidak inline styling/embeding styling).
+      KAmi menggunakan External dan inine CSS dan juga Javascript
 
 ### Spesifikasi Simple LAPOR!
 #### Tampilan :soccer:
@@ -96,7 +108,11 @@ Validasi **wajib** dilakukan pada *client-side*, dengan menggunakan **javascript
 Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/komentar`.
 
 ### Penjelasan Teknis
-`Silakan isi bagian ini dengan penjelasan anda, sesuai Petunjuk Pengerjaan di atas.`
+`Framework yang digunakan yaitu Laravel, untuk installasi laravel perlu memiliki spesifikasi aplikasi yang sudah terinstall, sesuai dengan panduan yang ada pada situs resmi laravel. Untuk koneksi ke database, hanya perlu membuat file .env berdasarkan file .env.example  dengan host, nama database, user, dan password yang sama .`
+
+`Validasi pada client-side menggunakan javascript dengan menambahkan fungsi yang dipanggil ketika submit terklik, setiap ketidak sesuaian yang ada, akan ditampilkan melalui pop up default javascript di browser`
+
+`AJAX yang ada pada aplikasi ini yaitu ada pada setiap fungsi dan tombol yang ada, dari menambhakan, melihat detail, update, delate juga cari`
 
 ### Knowledge
 Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaikan tugas ini.
