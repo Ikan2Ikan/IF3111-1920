@@ -1,0 +1,161 @@
+/* CONTAINER */
+
+.container{
+    
+        width: 1000px;
+        border: 15px;
+        padding: 30px;
+        margin: auto;
+      
+}
+/* AKHIR CONTAINER */
+/* HALAMAN AWAL */
+h1{
+    
+    text-align: center;
+    font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 36px;
+    line-height: 4;
+    color: #333333;
+   
+}
+
+#search-box{
+
+ 
+   width: 876px;
+   height: 9%;
+   padding: 10px;
+   font-size: 15px;
+   
+
+
+}
+
+
+.searchbutton:hover{
+    background-color: magenta;
+}
+
+.search{
+    text-align: center;
+}
+
+#key{
+    width: 870px;
+    height: 9%;
+}
+
+#sub{
+    
+    width: 120px;
+    height: 9%;
+}
+
+.buat {
+    line-height: 50px;
+    text-align: center;
+}
+
+.buat a{
+    color: black;
+    text-decoration: none;
+}
+
+.laporanterakhir{
+    text-align: justify;
+    font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    
+}
+
+
+.detail{
+  float: right;
+}
+.detail a{
+  text-decoration: none;
+  color: black;
+}
+
+.waktu{
+    text-align: right;
+}
+
+.laporanterakhir{
+    float: right;
+
+}
+
+.more {
+    float: right;
+}
+/* AKHIR HALAMAN AWAL */
+
+/* HALAMAN BUAT LAPORAN */
+.judulbuatlaporan{
+   margin-top:-50px;
+    width: 970px;
+    
+}
+
+#kolom-laporan{
+    
+   margin-bottom: 10;
+    padding: 10px;  
+}
+
+#dropdown-buat{
+    
+    width: 215px;
+    height: 25px;
+    
+}
+
+.lampiran{
+    margin-top:20;
+
+}
+
+#button-lapor{
+    margin-top:20;
+
+   float: right;
+   background: white;
+   text-decoration: none;
+   border:black solid 1px;
+   width:120px;
+   height:50px;
+}
+/* AKHIR BUAT LAPORAN */
+
+/* HALAMAN DETAIL LAPORAN */
+.container {
+    text-align: justify;
+    font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    
+}
+
+.momen{
+    text-align: left;
+}
+
+.momen .aspek {
+       display: inline;
+   }
+
+.aspek .hapus {
+    display: inline;
+}
+
+.hapus a {
+    float: right;
+    text-decoration: none;
+    color: black;
+}
+
+.footer{
+    width: 100%;
+    line-height: 100px;
+    background: black;
+    color: black;
+}
