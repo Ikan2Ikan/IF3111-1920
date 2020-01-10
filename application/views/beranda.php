@@ -379,7 +379,7 @@
           <div class="container-team">
             <h2>Robby Legitra K.</h2>
             <p class="title">Developer</p>
-            <p>example@example.com</p>
+            <p>https://github.com/robbylegitra</p>
           </div>
         </div>
       </div>
@@ -389,7 +389,7 @@
           <div class="container-team">
             <h2>Angelica Kirana S. D.</h2>
             <p class="title">Developer</p>
-            <p>example@example.com</p>
+            <p>https://github.com/angelicakirana</p>
           </div>
         </div>
       </div>
@@ -399,7 +399,7 @@
           <div class="container-team">
             <h2>Yusuf Firmansyah W. P.</h2>
             <p class="title">Developer</p>
-            <p>example@example.com</p>
+            <p>https://github.com/firmansyahwp</p>
           </div>
         </div>
       </div>
