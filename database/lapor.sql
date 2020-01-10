@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 14, 2019 at 07:33 AM
+-- Generation Time: Jan 10, 2020 at 09:00 AM
 -- Server version: 10.4.6-MariaDB
 -- PHP Version: 7.3.9
 
@@ -39,7 +39,8 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`id_admin`, `password`, `username`) VALUES
-(1, '21232f297a57a5a743894a0e4a801fc3', 'admin');
+(1, '21232f297a57a5a743894a0e4a801fc3', 'admin'),
+(2, 'admin', 'robby');
 
 -- --------------------------------------------------------
 
@@ -66,7 +67,8 @@ INSERT INTO `laporan` (`id_laporan`, `nim`, `aspek`, `hal`, `lampiran`, `status`
 (1, '14116097', '', 'Permohonan peringanan biaya uang kuliah tunggal', 'Program Studi Teknik Informatika.docx', 'BERHASIL', '082281718656', '2019-12-13 14:46:10'),
 (2, '14116097', '', 'Peniadaan hari tanpa asap di wilayah kampus', '', 'MENUNGGU', '082281718656', '2019-12-13 14:46:10'),
 (5, '14117101', '', 'Jalanan Rusak', 'header.jpg', 'MENUNGGU', '082167423559', '2019-12-14 04:25:26'),
-(6, '14117101', 'Dosen', 'Tes Dosen', 'header.jpg', 'MENUNGGU', '082167423559', '2019-12-14 06:14:47');
+(6, '14117101', 'Dosen', 'Tes Dosen', 'header.jpg', 'MENUNGGU', '082167423559', '2019-12-14 06:14:47'),
+(7, '14116097', 'Mahasiswa', 'tes 123457', 'b66f504ae848468a198b935b06240475.jpg', 'MENUNGGU', '0821647898484', '2020-01-10 07:46:54');
 
 -- --------------------------------------------------------
 
@@ -120,13 +122,13 @@ ALTER TABLE `mahasiswa`
 -- AUTO_INCREMENT for table `admin`
 --
 ALTER TABLE `admin`
-  MODIFY `id_admin` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_admin` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `laporan`
 --
 ALTER TABLE `laporan`
-  MODIFY `id_laporan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id_laporan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
