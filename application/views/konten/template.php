@@ -1,9 +1,7 @@
 
     <div class="container">
 
-        <!-- <div class="search">
-            <input type="text" name="searchbox" id="search-box" placeholder="Telusuri laporan">
-           -->
+        
             <!-- <button type class="searchbutton">  <i class="fa fa-search"> Cari</i> -->
             <form action="<?php echo base_url().'index.php/search'?>" method="GET">
                 <input type="text" name ="keyword" id="key" placeholder="Cari...">
@@ -33,10 +31,11 @@
             </div>
                 </div>  
                 <hr>
+                
             <?php endforeach;?>
-
-                    
-        
+            </div>
+                
+            </div>   
     </div>
     
 </body>
