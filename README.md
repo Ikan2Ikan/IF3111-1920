@@ -10,6 +10,10 @@ di program studi teknik informatika ITERA.
 
 ### Anggota Tim :cyclone:
 Project dikerjakan secara **berkelompok** dengan maksimal jumlah anggota adalah 2-3 orang mahasiswa.
+Anggota kelompok :
+Robby Legitra K. - 14117101
+Yusuf Firmansyah W. P. - 1411609
+Angelica Kirana Sandra Dewi - 14117008
 
 ### Petunjuk Pengerjaan :umbrella:
 1. Fork pada repository ini dengan akun github anda.
@@ -96,7 +100,72 @@ Validasi **wajib** dilakukan pada *client-side*, dengan menggunakan **javascript
 Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/komentar`.
 
 ### Penjelasan Teknis
-`Silakan isi bagian ini dengan penjelasan anda, sesuai Petunjuk Pengerjaan di atas.`
+Pengembangan website ini dilakukan dengan menggunakan framework CodeIgniter dikarenakakn penggunaan CI yang mudah dipelajari dan cukup ringan.
+
+Cara untuk memasang CI yaitu:
+
+    1. Buka web browser lalu kunjungi situs https://codeigniter.com/ dan mengunduh The latest is Version 3.1.11
+    2. Kemudian ekstrak file yang telah diunduh lalu pindahkan file ke dalam folder htdocx, hidupkan apache dan MsySQL supaya PHP dapat dijalankan.
+    gunakan text editor untuk mengembangkan website
+
+Cara mengoneksikan CodeIgniter terhadap localhost yaitu :
+
+    Buka folder Application -> Config -> config.php
+    Ubah base url menjadi $config['base_url'] = 'http://localhost/CodeIgniter/';
+    akses loocalhost dengan menghidupkan apache pada XAMPP
+    kunjungi $config['base_url'] = 'http://localhost/CodeIgniter/'; ,maka akan muncul pesan welcome dan CodeIgniter telah terpasang dengan baik.
+
+Cara menghubungkan CodeIgniter dengan database yaitu sebagai berikut : database berada pada folder CodeIgniter
+
+    mengaktifkan modul yang bernama database pada folder Application -> Config -> database.php 'hostname' => 'localhost', 'username' => 'root', 'password' => '', 'database' => 'lapor',
+
+Untuk masuk ke tampilan awal : http://localhost/IF3111-1920/beranda
+
+Tampilan yang ada :
+    1. Halaman awal untuk guest
+    2. List Laporan
+    3. Halaman awal admin
+    4. Pengaturan Akun    
+
+Form validation untuk membuat laporan lakukan sebagai berikut :
+
+    1. Pengguna harus mendaftarkan diri terlebih dahulu sebelum membuat laporan
+    2. Setelah mendaftarkan diri, akun pendaftar akan terlebih dahulu divalidasi oleh admin
+    3. Admin login untuk mengaktivasi akun dari pendaftar
+    4. Setelah akun pendaftar di aktivasi, pendaftar login untuk membuat laporan
+    5. Setelah masuk akan terdapat halaman awal buat pengguna
+    6. Pengguna dapat melihat daftar laporan dan juga dapat membuat laporan
+
+    Note : akun pengguna yang telah diaktivasi
+        1. username : 14116097 password : 14116097
+
+field deskripsi adalah kolom untuk menampung laporan dimana rules yang diterapkan yaitu required berarti dibutuhkan untuk mengisi, dan minimum isi adalah 20 character
+
+kemudain file aspek juga perlu diisi, dan yang terakhir adalah field berkas, dimana wajib diisi dan memiliki ketentuan file yang boleh dimasukkan yaitu <= 8192 KB.
+
+$config['allowed_types']	= 'gif|jpeg|jpg|png|pdf|docx|doc|GIF|JPEG|JPG|PNG|DOCX|DOC|PDF';
+		$config['max_size'] 			= '8192';
+		$config['upload_path'] 		= './assets/lampiran';
+
+    $this->load->library('upload',$config);
+
+    if (!$this->upload->do_upload('berkas')) {
+      echo "Gagal Menggunggah Lampiran!"; die();
+    } else {
+      $gambar = $this->upload->data('file_name');
+    }
+
+    $data = array(
+                    'nim' => $nim,
+                    'aspek' => $aspek,
+                    'cp' => $cp,
+                    'hal' => $hal,
+                    'status' => $status,
+                    'lampiran' => $lampiran
+                 );
+    $this->db->insert('laporan', $data);
+  }
+
 
 ### Knowledge
 Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaikan tugas ini.
